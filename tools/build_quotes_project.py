@@ -19,6 +19,7 @@ POSTPONED_PATH = ROOT / "data" / "review" / "ai-dystopia-quotes.postponed.json"
 DECLINED_PATH = ROOT / "data" / "review" / "ai-dystopia-quotes.declined.json"
 REVIEW_BOARD_MD_PATH = ROOT / "docs" / "review-board.md"
 SITE_PATH = ROOT / "site" / "ai-dystopia-quotes-public-page.html"
+PROJECT_REPO_URL = "https://github.com/sgwoods/sci-fi-ai-dystopian-project"
 
 TODAY = date.today().isoformat()
 VALID_STATUSES = {"candidate", "approved", "postponed", "declined"}
@@ -915,6 +916,7 @@ def build_site(board: dict[str, Any]) -> None:
                 <a class="button" href="/" target="_blank" rel="noreferrer">Open Review Workbench</a>
                 <a class="button" href="/data/approved/ai-dystopia-quotes.approved.json" target="_blank" rel="noreferrer">Open Approved JSON</a>
                 <a class="button" href="/docs/review-board.md" target="_blank" rel="noreferrer">Open Review Board</a>
+                <a class="button" href="{PROJECT_REPO_URL}" target="_blank" rel="noreferrer">Open Source Project</a>
             </div>
             <div class="meta">
                 <div class="metaCard">
@@ -949,6 +951,7 @@ def build_site(board: dict[str, Any]) -> None:
                 <a class="button" href="/data/approved/ai-dystopia-quotes.approved.json" target="_blank" rel="noreferrer">Approved JSON</a>
                 <a class="button" href="/data/review/ai-dystopia-quotes.review-board.json" target="_blank" rel="noreferrer">Review Board JSON</a>
                 <a class="button" href="/" target="_blank" rel="noreferrer">Project Workbench</a>
+                <a class="button" href="{PROJECT_REPO_URL}" target="_blank" rel="noreferrer">Source Project</a>
             </div>
             <p class="footer">Generated from <code>data/review/ai-dystopia-quotes.review-board.json</code> on {TODAY}.</p>
         </section>
