@@ -15,6 +15,10 @@ through a small generated-data toolchain.
 - `check_ui_routes.py`
   Scriptable local route check for the review app, public page, harness page,
   and key launch controls.
+- `publish_public_project.py`
+  Rebuilds the local project outputs, syncs the public-site copy of the page
+  and approved JSON, writes the shared public manifest, and rerenders the
+  shared Steven Woods homepage.
 
 ## Canonical Source Of Truth
 
@@ -35,6 +39,7 @@ python3 tools/review_quotes.py postpone m3gan-primary-user-now-me --note "Keep f
 python3 tools/review_quotes.py decline some-quote-id --note "Too generic."
 python3 tools/review_app_server.py --port 8123
 python3 tools/check_ui_routes.py --base-url http://127.0.0.1:8123
+python3 tools/publish_public_project.py --public-root /Users/stevenwoods/GitPages/public
 ```
 
 ## Review App
@@ -80,3 +85,30 @@ command line.
 - `data/review/ai-dystopia-quotes.declined.json`
 - `docs/review-board.md`
 - `site/ai-dystopia-quotes-public-page.html`
+
+## Publish Flow
+
+The recommended publish sequence is:
+
+```bash
+python3 tools/build_quotes_project.py
+python3 tools/publish_public_project.py --public-root /Users/stevenwoods/GitPages/public
+```
+
+That flow will:
+
+- rebuild the local approved JSON and public page
+- sync the approved JSON into `GitPages/public/data/`
+- sync the public project page into `GitPages/public/`
+- write this project's canonical shared manifest under
+  `GitPages/public/data/projects/`
+- rerender the shared Steven Woods homepage from the manifest set
+
+Useful flags:
+
+- `--skip-build`
+  publish the existing generated outputs without rebuilding first
+- `--skip-index`
+  sync only this project's files without rerendering the shared homepage
+- `--dry-run`
+  verify the publish inputs and print the intended targets without writing

@@ -45,6 +45,7 @@ Current first-pass position:
 - [Repository structure review](./docs/repository-structure-review.md): explanation of how the repo is organized and what counts as canonical
 - [Incoming intake](./incoming/README.md): single landing zone for newly found material before review
 - [Tools guide](./tools/README.md): build and review commands
+- [Publish flow](./tools/README.md#publish-flow): sync the public page, approved JSON, and shared homepage manifest
 - [Review app](./site/ai-dystopia-quotes-review-app.html): browser UI served locally by `tools/review_app_server.py`
 - [UI harness](./site/ai-dystopia-quotes-ui-harness.html): in-browser non-destructive checks for the local user-facing pages
 
@@ -95,3 +96,6 @@ Each normalized quote record currently includes:
   page are generated from that single board.
 - The widening-search workflow now tracks a title-discovery goal of `100`
   candidate source works under `data/discovery/`.
+- The repo now includes a dedicated publish script that syncs the approved
+  public artifacts into the shared `GitPages/public` site and refreshes the
+  Steven Woods projects index from the manifest flow rather than by hand.

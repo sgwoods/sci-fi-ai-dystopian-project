@@ -13,7 +13,10 @@ renovation projects.
 4. The quote can then move to `approved`, `postponed`, or `declined`.
 5. Generated JSON exports are rebuilt from the review board.
 6. The local source trail is preserved under `data/source-snapshots/`.
-7. Editorial notes and policy updates live under `docs/`.
+7. Once approved content is ready for public consumption, the publish flow syncs
+   the approved JSON, public project page, and shared homepage manifest into
+   `GitPages/public`.
+8. Editorial notes and policy updates live under `docs/`.
 
 ## Promotion Standard
 
@@ -52,4 +55,5 @@ python3 tools/review_quotes.py approve <quote-id> --note "why it belongs"
 python3 tools/review_quotes.py postpone <quote-id> --note "why to hold it"
 python3 tools/review_quotes.py decline <quote-id> --note "why to drop it"
 python3 tools/review_quotes.py candidate <quote-id> --priority high --next-action "what to decide next"
+python3 tools/publish_public_project.py --public-root /Users/stevenwoods/GitPages/public
 ```
