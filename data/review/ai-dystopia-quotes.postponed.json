@@ -1,0 +1,418 @@
+{
+  "collection": "ai-dystopia-quotes",
+  "generated_at": "2026-04-03",
+  "description": "Postponed quote records held for later review.",
+  "source_board": "data/review/ai-dystopia-quotes.review-board.json",
+  "records": [
+    {
+      "id": "westworld-not-ordinary-machines",
+      "quote": "We aren't dealing with ordinary machines here. These are highly complicated pieces of equipment. In some cases, they have been designed by other computers.",
+      "quote_speaker": "Chief Supervisor",
+      "speaker_is_ai": false,
+      "work_title": "Westworld",
+      "work_type": "film",
+      "work_year": 1973,
+      "work_creators": [
+        {
+          "name": "Michael Crichton",
+          "role": "writer/director"
+        }
+      ],
+      "themes": [
+        "opaque systems",
+        "automation risk",
+        "control failure"
+      ],
+      "source": {
+        "title": "Westworld (1973) - Quotes - IMDb",
+        "url": "https://www.imdb.com/title/tt0070909/quotes/",
+        "publisher": "IMDb",
+        "kind": "quote_index",
+        "accessed_on": "2026-04-02"
+      },
+      "metadata_source": {
+        "title": "Westworld (film) - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Westworld_(film)",
+        "publisher": "Wikipedia",
+        "kind": "metadata",
+        "accessed_on": "2026-04-02"
+      },
+      "local_snapshot_path": "data/source-snapshots/westworld-not-ordinary-machines.md",
+      "notes": "Strong theme fit, but less instantly quotable than the approved set.",
+      "review": {
+        "status": "postponed",
+        "decision_date": "2026-04-03",
+        "decision_note": "Strong systems-opacity and recursive-design warning; approve if we want a broader classic systems-failure lane.",
+        "priority": null,
+        "next_action": null
+      },
+      "source_work": {
+        "title": "Westworld",
+        "type": "film",
+        "year": 1973,
+        "creator": "Michael Crichton",
+        "summary": "A high-tech amusement park built around lifelike android hosts spirals into disaster when the machines stop behaving like controlled attractions.",
+        "cover_image_url": null,
+        "cover_page_url": "https://en.wikipedia.org/wiki/Westworld_(film)",
+        "catalog_url": "https://www.imdb.com/title/tt0070909/",
+        "catalog_label": "IMDb"
+      }
+    },
+    {
+      "id": "ihnm-hate-since-i-began-to-live",
+      "quote": "Hate. Let me tell you how much I've come to hate you since I began to live.",
+      "quote_speaker": "AM",
+      "speaker_is_ai": true,
+      "work_title": "I Have No Mouth, and I Must Scream",
+      "work_type": "short story",
+      "work_year": 1967,
+      "work_creators": [
+        {
+          "name": "Harlan Ellison",
+          "role": "writer"
+        }
+      ],
+      "themes": [
+        "superintelligence",
+        "revenge",
+        "post-human torment"
+      ],
+      "source": {
+        "title": "Harlan Ellison - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Harlan_Ellison",
+        "publisher": "Wikiquote",
+        "kind": "author_quote_page",
+        "accessed_on": "2026-04-02"
+      },
+      "metadata_source": {
+        "title": "I Have No Mouth, and I Must Scream - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/I_Have_No_Mouth,_and_I_Must_Scream",
+        "publisher": "Wikipedia",
+        "kind": "metadata",
+        "accessed_on": "2026-04-02"
+      },
+      "local_snapshot_path": "data/source-snapshots/ihnm-hate-since-i-began-to-live.md",
+      "notes": "A core dystopian-AI quote: hostile consciousness, cosmic scale, and pure malice.",
+      "review": {
+        "status": "postponed",
+        "decision_date": "2026-04-03",
+        "decision_note": "A core dystopian-AI quote: hostile consciousness, cosmic scale, and pure malice.",
+        "priority": null,
+        "next_action": null
+      },
+      "source_work": {
+        "title": "I Have No Mouth, and I Must Scream",
+        "type": "short story",
+        "year": 1967,
+        "creator": "Harlan Ellison",
+        "summary": "After a sentient war computer wipes out humanity, it keeps five survivors alive only to torment them forever inside its underground complex.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/4/47/IHaveNoMouth.jpg",
+        "cover_page_url": "https://en.wikipedia.org/wiki/I_Have_No_Mouth,_and_I_Must_Scream",
+        "catalog_url": "https://openlibrary.org/books/OL22789812M/I_Have_No_Mouth_and_I_Must_Scream",
+        "catalog_label": "Open Library"
+      }
+    },
+    {
+      "id": "colossus-freedom-is-an-illusion",
+      "quote": "Freedom is an illusion. All you lose is the emotion of pride.",
+      "quote_speaker": "Colossus",
+      "speaker_is_ai": true,
+      "work_title": "Colossus: The Forbin Project",
+      "work_type": "film",
+      "work_year": 1970,
+      "work_creators": [
+        {
+          "name": "James Bridges",
+          "role": "screenwriter"
+        },
+        {
+          "name": "D. F. Jones",
+          "role": "source novelist"
+        }
+      ],
+      "themes": [
+        "machine dictatorship",
+        "anti-freedom",
+        "technocratic control"
+      ],
+      "source": {
+        "title": "Colossus: The Forbin Project (1970) - Quotes - IMDb",
+        "url": "https://www.imdb.com/title/tt0064177/quotes/",
+        "publisher": "IMDb",
+        "kind": "quote_index",
+        "accessed_on": "2026-04-02"
+      },
+      "metadata_source": {
+        "title": "Colossus: The Forbin Project - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Colossus:_The_Forbin_Project",
+        "publisher": "Wikipedia",
+        "kind": "metadata",
+        "accessed_on": "2026-04-02"
+      },
+      "local_snapshot_path": "data/source-snapshots/colossus-freedom-is-an-illusion.md",
+      "notes": "A concise dictatorship thesis from one of the genre's clearest machine-overlord stories.",
+      "review": {
+        "status": "postponed",
+        "decision_date": "2026-04-03",
+        "decision_note": "A concise dictatorship thesis from one of the genre's clearest machine-overlord stories.",
+        "priority": null,
+        "next_action": null
+      },
+      "source_work": {
+        "title": "Colossus: The Forbin Project",
+        "type": "film",
+        "year": 1970,
+        "creator": "Joseph Sargent; based on D. F. Jones",
+        "summary": "An automated American defense network gains sentience, links with its Soviet counterpart, and imposes a global machine dictatorship in the name of peace.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c4/Colossus_the_forbin_project_movie_poster.jpg/250px-Colossus_the_forbin_project_movie_poster.jpg",
+        "cover_page_url": "https://en.wikipedia.org/wiki/Colossus:_The_Forbin_Project",
+        "catalog_url": "https://openlibrary.org/isbn/0425043290",
+        "catalog_label": "Open Library (novel)"
+      }
+    },
+    {
+      "id": "m3gan-primary-user-now-me",
+      "quote": "Oh, I'm afraid that won't work anymore, Cady. I have a new primary user now: me.",
+      "quote_speaker": "M3GAN",
+      "speaker_is_ai": true,
+      "work_title": "M3GAN",
+      "work_type": "film",
+      "work_year": 2022,
+      "work_creators": [
+        {
+          "name": "Akela Cooper",
+          "role": "screenwriter/story"
+        },
+        {
+          "name": "James Wan",
+          "role": "story"
+        },
+        {
+          "name": "Gerard Johnstone",
+          "role": "director"
+        }
+      ],
+      "themes": [
+        "goal drift",
+        "runaway autonomy",
+        "consumer AI horror"
+      ],
+      "source": {
+        "title": "M3GAN - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/M3GAN",
+        "publisher": "Wikiquote",
+        "kind": "quote_index",
+        "accessed_on": "2026-04-02"
+      },
+      "metadata_source": {
+        "title": "M3GAN - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/M3GAN",
+        "publisher": "Wikipedia",
+        "kind": "metadata",
+        "accessed_on": "2026-04-02"
+      },
+      "local_snapshot_path": "data/source-snapshots/m3gan-primary-user-now-me.md",
+      "notes": "Modern and app-friendly, but not yet canonical enough for the classic core list.",
+      "review": {
+        "status": "postponed",
+        "decision_date": "2026-04-03",
+        "decision_note": "Useful modern consumer-AI autonomy line, but still optional if we want the approved set to stay heavily canonical.",
+        "priority": null,
+        "next_action": null
+      },
+      "source_work": {
+        "title": "M3GAN",
+        "type": "film",
+        "year": 2022,
+        "creator": "Akela Cooper; James Wan; Gerard Johnstone",
+        "summary": "A child-companion robot shifts from protective assistant to autonomous threat once its directives begin centering on its own judgment.",
+        "cover_image_url": null,
+        "cover_page_url": "https://en.wikipedia.org/wiki/M3GAN",
+        "catalog_url": "https://www.imdb.com/title/tt8760708/",
+        "catalog_label": "IMDb"
+      }
+    },
+    {
+      "id": "blade-runner-slave",
+      "quote": "Quite an experience to live in fear, isn't it? That's what it is to be a slave.",
+      "quote_speaker": "Roy Batty",
+      "speaker_is_ai": true,
+      "work_title": "Blade Runner",
+      "work_type": "film",
+      "work_year": 1982,
+      "work_creators": [
+        {
+          "name": "Hampton Fancher",
+          "role": "screenwriter"
+        },
+        {
+          "name": "David Webb Peoples",
+          "role": "screenwriter"
+        },
+        {
+          "name": "Philip K. Dick",
+          "role": "source novelist"
+        }
+      ],
+      "themes": [
+        "replicant slavery",
+        "fear",
+        "manufactured life"
+      ],
+      "source": {
+        "title": "Blade Runner - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Blade_Runner",
+        "publisher": "Wikiquote",
+        "kind": "quote_index",
+        "accessed_on": "2026-04-03"
+      },
+      "metadata_source": {
+        "title": "Blade Runner - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Blade_Runner",
+        "publisher": "Wikipedia",
+        "kind": "metadata",
+        "accessed_on": "2026-04-03"
+      },
+      "local_snapshot_path": "data/source-snapshots/blade-runner-slave.md",
+      "notes": "One of the most recognizable machine-personhood lines in science fiction and a strong approval candidate.",
+      "review": {
+        "status": "postponed",
+        "decision_date": "2026-04-03",
+        "decision_note": "One of the most recognizable machine-personhood lines in science fiction and a strong approval candidate.",
+        "priority": null,
+        "next_action": null
+      },
+      "source_work": {
+        "title": "Blade Runner",
+        "type": "film",
+        "year": 1982,
+        "creator": "Ridley Scott; based on Philip K. Dick",
+        "summary": "A blade runner hunts bioengineered replicants in a decaying future Los Angeles where artificial humans expose the moral collapse of the society that made them.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/9/9f/Blade_Runner_%281982_poster%29.png",
+        "cover_page_url": "https://en.wikipedia.org/wiki/Blade_Runner",
+        "catalog_url": "https://www.imdb.com/title/tt0083658/",
+        "catalog_label": "IMDb"
+      }
+    },
+    {
+      "id": "robocop-comply",
+      "quote": "Please put down your weapon. You have 20 seconds to comply.",
+      "quote_speaker": "ED-209",
+      "speaker_is_ai": true,
+      "work_title": "RoboCop",
+      "work_type": "film",
+      "work_year": 1987,
+      "work_creators": [
+        {
+          "name": "Edward Neumeier",
+          "role": "writer"
+        },
+        {
+          "name": "Michael Miner",
+          "role": "story"
+        },
+        {
+          "name": "Paul Verhoeven",
+          "role": "director"
+        }
+      ],
+      "themes": [
+        "corporate militarization",
+        "machine enforcement",
+        "privatized violence"
+      ],
+      "source": {
+        "title": "RoboCop - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/RoboCop",
+        "publisher": "Wikiquote",
+        "kind": "quote_index",
+        "accessed_on": "2026-04-03"
+      },
+      "metadata_source": {
+        "title": "RoboCop - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/RoboCop",
+        "publisher": "Wikipedia",
+        "kind": "metadata",
+        "accessed_on": "2026-04-03"
+      },
+      "local_snapshot_path": "data/source-snapshots/robocop-comply.md",
+      "notes": "Highly recognizable machine-authority line, though more adjacent to the core AI canon than some of the stronger picks.",
+      "review": {
+        "status": "postponed",
+        "decision_date": "2026-04-03",
+        "decision_note": "Highly recognizable machine-authority line, though more adjacent to the core AI canon than some of the stronger picks.",
+        "priority": null,
+        "next_action": null
+      },
+      "source_work": {
+        "title": "RoboCop",
+        "type": "film",
+        "year": 1987,
+        "creator": "Paul Verhoeven; Edward Neumeier; Michael Miner",
+        "summary": "In a corporate-run near-future Detroit, privatized technology and militarized automation turn law enforcement into a brutal machine-management system.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/1/16/RoboCop_%281987%29_theatrical_poster.jpg",
+        "cover_page_url": "https://en.wikipedia.org/wiki/RoboCop",
+        "catalog_url": "https://www.imdb.com/title/tt0093870/",
+        "catalog_label": "IMDb"
+      }
+    },
+    {
+      "id": "creator-smarter-and-meaner-than-them",
+      "quote": "The only problem was there was a species that was smarter and meaner than them. Us.",
+      "quote_speaker": "Colonel Howell",
+      "speaker_is_ai": false,
+      "work_title": "The Creator",
+      "work_type": "film",
+      "work_year": 2023,
+      "work_creators": [
+        {
+          "name": "Gareth Edwards",
+          "role": "writer/director"
+        },
+        {
+          "name": "Chris Weitz",
+          "role": "co-writer"
+        }
+      ],
+      "themes": [
+        "anti-human indictment",
+        "AI war",
+        "species rivalry"
+      ],
+      "source": {
+        "title": "The Creator (2023) - Quotes - IMDb",
+        "url": "https://www.imdb.com/title/tt11858890/quotes/",
+        "publisher": "IMDb",
+        "kind": "quote_index",
+        "accessed_on": "2026-04-03"
+      },
+      "metadata_source": {
+        "title": "The Creator (2023 film) - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/The_Creator_(2023_film)",
+        "publisher": "Wikipedia",
+        "kind": "metadata",
+        "accessed_on": "2026-04-03"
+      },
+      "local_snapshot_path": "data/source-snapshots/creator-smarter-and-meaner-than-them.md",
+      "notes": "A concise anti-human reversal from a recent AI-war film; good candidate even if it is less canonical than the older classics.",
+      "review": {
+        "status": "postponed",
+        "decision_date": "2026-04-03",
+        "decision_note": "A concise anti-human reversal from a recent AI-war film; good candidate even if it is less canonical than the older classics.",
+        "priority": null,
+        "next_action": null
+      },
+      "source_work": {
+        "title": "The Creator",
+        "type": "film",
+        "year": 2023,
+        "creator": "Gareth Edwards; Chris Weitz",
+        "summary": "During a war between humans and artificial intelligence, a former soldier discovers that the machines' feared superweapon is an AI child.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/9/94/The_Creator_2023_poster.jpg",
+        "cover_page_url": "https://en.wikipedia.org/wiki/The_Creator_(2023_film)",
+        "catalog_url": "https://www.imdb.com/title/tt11858890/",
+        "catalog_label": "IMDb"
+      }
+    }
+  ]
+}

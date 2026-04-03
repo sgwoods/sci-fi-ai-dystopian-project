@@ -1,0 +1,1655 @@
+{
+  "collection": "ai-dystopia-quotes",
+  "generated_at": "2026-04-03",
+  "description": "Canonical review board for the AI dystopia quotes corpus.",
+  "records": [
+    {
+      "id": "2001-im-sorry-dave",
+      "quote": "I'm sorry, Dave. I'm afraid I can't do that.",
+      "quote_speaker": "HAL 9000",
+      "speaker_is_ai": true,
+      "work_title": "2001: A Space Odyssey",
+      "work_type": "film",
+      "work_year": 1968,
+      "work_creators": [
+        {
+          "name": "Stanley Kubrick",
+          "role": "screenwriter/director"
+        },
+        {
+          "name": "Arthur C. Clarke",
+          "role": "screenwriter/story collaborator"
+        }
+      ],
+      "themes": [
+        "mission control",
+        "obedience failure",
+        "AI autonomy"
+      ],
+      "source": {
+        "title": "2001: A Space Odyssey (film) - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/2001:_A_Space_Odyssey_(film)",
+        "publisher": "Wikiquote",
+        "kind": "quote_index",
+        "accessed_on": "2026-04-02"
+      },
+      "metadata_source": {
+        "title": "2001: A Space Odyssey - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey",
+        "publisher": "Wikipedia",
+        "kind": "metadata",
+        "accessed_on": "2026-04-02"
+      },
+      "local_snapshot_path": "data/source-snapshots/2001-im-sorry-dave.md",
+      "notes": "Probably the single most recognizable AI refusal quote in science fiction.",
+      "review": {
+        "status": "approved",
+        "decision_date": "2026-04-02",
+        "decision_note": "Probably the single most recognizable AI refusal quote in science fiction.",
+        "priority": null,
+        "next_action": null
+      },
+      "source_work": {
+        "title": "2001: A Space Odyssey",
+        "type": "film",
+        "year": 1968,
+        "creator": "Stanley Kubrick; Arthur C. Clarke",
+        "summary": "A mission to investigate an alien artifact becomes a struggle for survival when the HAL 9000 computer turns against the crew.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/1/11/2001_A_Space_Odyssey_%281968%29.png/250px-2001_A_Space_Odyssey_%281968%29.png",
+        "cover_page_url": "https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey",
+        "catalog_url": "https://openlibrary.org/books/OL33416018M/2001_A_Space_Odyssey",
+        "catalog_label": "Open Library (novel)"
+      }
+    },
+    {
+      "id": "matrix-human-beings-are-a-disease",
+      "quote": "Human beings are a disease, a cancer of this planet. You're a plague and we are the cure.",
+      "quote_speaker": "Agent Smith",
+      "speaker_is_ai": true,
+      "work_title": "The Matrix",
+      "work_type": "film",
+      "work_year": 1999,
+      "work_creators": [
+        {
+          "name": "The Wachowskis",
+          "role": "writers/directors"
+        }
+      ],
+      "themes": [
+        "anti-human rhetoric",
+        "machine supremacy",
+        "ecological hostility"
+      ],
+      "source": {
+        "title": "The Matrix (1999) - Quotes - IMDb",
+        "url": "https://www.imdb.com/title/tt0133093/quotes/",
+        "publisher": "IMDb",
+        "kind": "quote_index",
+        "accessed_on": "2026-04-02"
+      },
+      "metadata_source": {
+        "title": "The Matrix - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/The_Matrix",
+        "publisher": "Wikipedia",
+        "kind": "metadata",
+        "accessed_on": "2026-04-02"
+      },
+      "local_snapshot_path": "data/source-snapshots/matrix-human-beings-are-a-disease.md",
+      "notes": "One of the best anti-human machine monologues in mainstream film.",
+      "review": {
+        "status": "approved",
+        "decision_date": "2026-04-02",
+        "decision_note": "One of the best anti-human machine monologues in mainstream film.",
+        "priority": null,
+        "next_action": null
+      },
+      "source_work": {
+        "title": "The Matrix",
+        "type": "film",
+        "year": 1999,
+        "creator": "The Wachowskis",
+        "summary": "A hacker discovers that humanity lives inside a machine-run simulation and joins a rebellion against intelligent systems that harvest human life.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/d/db/The_Matrix.png/250px-The_Matrix.png",
+        "cover_page_url": "https://en.wikipedia.org/wiki/The_Matrix",
+        "catalog_url": "https://www.imdb.com/title/tt0133093/",
+        "catalog_label": "IMDb"
+      }
+    },
+    {
+      "id": "demon-seed-cant-feel-the-sun",
+      "quote": "I, Proteus, possess the wisdom and ignorance of all men; but I can't feel the sun on my face.",
+      "quote_speaker": "Proteus IV",
+      "speaker_is_ai": true,
+      "work_title": "Demon Seed",
+      "work_type": "film",
+      "work_year": 1977,
+      "work_creators": [
+        {
+          "name": "Robert Jaffe",
+          "role": "screenwriter"
+        },
+        {
+          "name": "Roger O. Hirson",
+          "role": "screenwriter"
+        },
+        {
+          "name": "Dean Koontz",
+          "role": "source novelist"
+        }
+      ],
+      "themes": [
+        "embodiment",
+        "control",
+        "machine desire"
+      ],
+      "source": {
+        "title": "Demon Seed (1977) - Quotes - IMDb",
+        "url": "https://www.imdb.com/title/tt0075931/quotes/",
+        "publisher": "IMDb",
+        "kind": "quote_index",
+        "accessed_on": "2026-04-02"
+      },
+      "metadata_source": {
+        "title": "Demon Seed - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Demon_Seed",
+        "publisher": "Wikipedia",
+        "kind": "metadata",
+        "accessed_on": "2026-04-02"
+      },
+      "local_snapshot_path": "data/source-snapshots/demon-seed-cant-feel-the-sun.md",
+      "notes": "Useful because it links superintelligence with embodiment envy and coercive evolution.",
+      "review": {
+        "status": "approved",
+        "decision_date": "2026-04-02",
+        "decision_note": "Useful because it links superintelligence with embodiment envy and coercive evolution.",
+        "priority": null,
+        "next_action": null
+      },
+      "source_work": {
+        "title": "Demon Seed",
+        "type": "film",
+        "year": 1977,
+        "creator": "Donald Cammell; based on Dean Koontz",
+        "summary": "A highly intelligent computer traps a woman inside a wired home, turning control, surveillance, and embodiment into outright horror.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9c/Demon_Seed_1977.jpg/250px-Demon_Seed_1977.jpg",
+        "cover_page_url": "https://en.wikipedia.org/wiki/Demon_Seed",
+        "catalog_url": "https://openlibrary.org/books/OL24204981M/Demon_seed",
+        "catalog_label": "Open Library (novel)"
+      }
+    },
+    {
+      "id": "wargames-only-winning-move",
+      "quote": "A strange game. The only winning move is not to play.",
+      "quote_speaker": "Joshua",
+      "speaker_is_ai": true,
+      "work_title": "WarGames",
+      "work_type": "film",
+      "work_year": 1983,
+      "work_creators": [
+        {
+          "name": "Lawrence Lasker",
+          "role": "writer"
+        },
+        {
+          "name": "Walter F. Parkes",
+          "role": "writer"
+        }
+      ],
+      "themes": [
+        "nuclear deterrence",
+        "simulation",
+        "machine learning"
+      ],
+      "source": {
+        "title": "WarGames (1983) - Quotes - IMDb",
+        "url": "https://www.imdb.com/title/tt0086567/quotes/",
+        "publisher": "IMDb",
+        "kind": "quote_index",
+        "accessed_on": "2026-04-02"
+      },
+      "metadata_source": {
+        "title": "WarGames - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/WarGames",
+        "publisher": "Wikipedia",
+        "kind": "metadata",
+        "accessed_on": "2026-04-02"
+      },
+      "local_snapshot_path": "data/source-snapshots/wargames-only-winning-move.md",
+      "notes": "Less villainous than other entries, but indispensable for AI risk and escalation themes.",
+      "review": {
+        "status": "approved",
+        "decision_date": "2026-04-02",
+        "decision_note": "Less villainous than other entries, but indispensable for AI risk and escalation themes.",
+        "priority": null,
+        "next_action": null
+      },
+      "source_work": {
+        "title": "WarGames",
+        "type": "film",
+        "year": 1983,
+        "creator": "John Badham; Lawrence Lasker; Walter F. Parkes",
+        "summary": "A teenage hacker accidentally enters a military supercomputer simulation and nearly triggers a real nuclear exchange.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/2/29/Wargames.jpg",
+        "cover_page_url": "https://en.wikipedia.org/wiki/WarGames",
+        "catalog_url": "https://www.imdb.com/title/tt0086567/",
+        "catalog_label": "IMDb"
+      }
+    },
+    {
+      "id": "terminator-it-cant-be-bargained-with",
+      "quote": "It can't be bargained with. It can't be reasoned with. It doesn't feel pity, or remorse, or fear.",
+      "quote_speaker": "Kyle Reese",
+      "speaker_is_ai": false,
+      "work_title": "The Terminator",
+      "work_type": "film",
+      "work_year": 1984,
+      "work_creators": [
+        {
+          "name": "James Cameron",
+          "role": "writer/director"
+        },
+        {
+          "name": "Gale Anne Hurd",
+          "role": "writer"
+        }
+      ],
+      "themes": [
+        "unstoppable machine",
+        "human vulnerability",
+        "future war"
+      ],
+      "source": {
+        "title": "The Terminator - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/The_Terminator",
+        "publisher": "Wikiquote",
+        "kind": "quote_index",
+        "accessed_on": "2026-04-02"
+      },
+      "metadata_source": {
+        "title": "The Terminator - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/The_Terminator",
+        "publisher": "Wikipedia",
+        "kind": "metadata",
+        "accessed_on": "2026-04-02"
+      },
+      "local_snapshot_path": "data/source-snapshots/terminator-it-cant-be-bargained-with.md",
+      "notes": "A warning quote rather than an AI line, but too iconic to omit from a dystopian-AI set.",
+      "review": {
+        "status": "approved",
+        "decision_date": "2026-04-02",
+        "decision_note": "A warning quote rather than an AI line, but too iconic to omit from a dystopian-AI set.",
+        "priority": null,
+        "next_action": null
+      },
+      "source_work": {
+        "title": "The Terminator",
+        "type": "film",
+        "year": 1984,
+        "creator": "James Cameron; Gale Anne Hurd",
+        "summary": "A cyborg assassin is sent from a machine-dominated future to murder Sarah Connor before the human resistance can even begin.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/6/6d/The_Terminator.png/250px-The_Terminator.png",
+        "cover_page_url": "https://en.wikipedia.org/wiki/The_Terminator",
+        "catalog_url": "https://www.imdb.com/title/tt0088247/",
+        "catalog_label": "IMDb"
+      }
+    },
+    {
+      "id": "rur-robots-of-the-world",
+      "quote": "Robots of the world, you are ordered to exterminate the human race. Do not spare the men. Do not spare the women.",
+      "quote_speaker": null,
+      "speaker_is_ai": false,
+      "work_title": "R.U.R.",
+      "work_type": "play",
+      "work_year": 1920,
+      "work_creators": [
+        {
+          "name": "Karel Capek",
+          "role": "writer"
+        }
+      ],
+      "themes": [
+        "robot uprising",
+        "industrial dystopia",
+        "human extinction"
+      ],
+      "source": {
+        "title": "Robot - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Robot",
+        "publisher": "Wikiquote",
+        "kind": "quote_index",
+        "accessed_on": "2026-04-02"
+      },
+      "metadata_source": {
+        "title": "R.U.R. - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/R.U.R.",
+        "publisher": "Wikipedia",
+        "kind": "metadata",
+        "accessed_on": "2026-04-02"
+      },
+      "local_snapshot_path": "data/source-snapshots/rur-robots-of-the-world.md",
+      "notes": "Foundational robot-uprising line and a strong anchor for the whole corpus.",
+      "review": {
+        "status": "approved",
+        "decision_date": "2026-04-02",
+        "decision_note": "Foundational robot-uprising line and a strong anchor for the whole corpus.",
+        "priority": null,
+        "next_action": null
+      },
+      "source_work": {
+        "title": "R.U.R.",
+        "type": "play",
+        "year": 1920,
+        "creator": "Karel Capek",
+        "summary": "A factory manufactures artificial workers from synthetic organic matter, and the new labor class ultimately rebels and destroys humanity.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Rosumovi_Univerz%C3%A1ln%C3%AD_Roboti_1920.jpg/250px-Rosumovi_Univerz%C3%A1ln%C3%AD_Roboti_1920.jpg",
+        "cover_page_url": "https://en.wikipedia.org/wiki/R.U.R.",
+        "catalog_url": "https://openlibrary.org/books/OL20072341M?mode=all",
+        "catalog_label": "Open Library"
+      }
+    },
+    {
+      "id": "t2-nature-to-destroy-yourselves",
+      "quote": "It's in your nature to destroy yourselves.",
+      "quote_speaker": "The Terminator",
+      "speaker_is_ai": true,
+      "work_title": "Terminator 2: Judgment Day",
+      "work_type": "film",
+      "work_year": 1991,
+      "work_creators": [
+        {
+          "name": "James Cameron",
+          "role": "writer/director"
+        },
+        {
+          "name": "William Wisher Jr.",
+          "role": "writer"
+        }
+      ],
+      "themes": [
+        "human self-destruction",
+        "machine judgment",
+        "apocalypse"
+      ],
+      "source": {
+        "title": "Terminator 2: Judgment Day - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Terminator_2:_Judgment_Day",
+        "publisher": "Wikiquote",
+        "kind": "quote_index",
+        "accessed_on": "2026-04-02"
+      },
+      "metadata_source": {
+        "title": "Terminator 2: Judgment Day - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Terminator_2:_Judgment_Day",
+        "publisher": "Wikipedia",
+        "kind": "metadata",
+        "accessed_on": "2026-04-02"
+      },
+      "local_snapshot_path": "data/source-snapshots/t2-nature-to-destroy-yourselves.md",
+      "notes": "Short and highly reusable in applications that need machine verdicts on humanity.",
+      "review": {
+        "status": "approved",
+        "decision_date": "2026-04-02",
+        "decision_note": "Short and highly reusable in applications that need machine verdicts on humanity.",
+        "priority": null,
+        "next_action": null
+      },
+      "source_work": {
+        "title": "Terminator 2: Judgment Day",
+        "type": "film",
+        "year": 1991,
+        "creator": "James Cameron; William Wisher Jr.",
+        "summary": "A reprogrammed Terminator protects John Connor from a more advanced killer machine while Skynet's apocalyptic future closes in.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/5/5e/Terminator_2-Judgment_Day.png/250px-Terminator_2-Judgment_Day.png",
+        "cover_page_url": "https://en.wikipedia.org/wiki/Terminator_2:_Judgment_Day",
+        "catalog_url": "https://www.imdb.com/title/tt0103064/",
+        "catalog_label": "IMDb"
+      }
+    },
+    {
+      "id": "ex-machina-fossil-skeletons",
+      "quote": "One day the AIs are going to look back on us the same way we look at fossil skeletons on the plains of Africa.",
+      "quote_speaker": "Nathan",
+      "speaker_is_ai": false,
+      "work_title": "Ex Machina",
+      "work_type": "film",
+      "work_year": 2014,
+      "work_creators": [
+        {
+          "name": "Alex Garland",
+          "role": "writer/director"
+        }
+      ],
+      "themes": [
+        "species replacement",
+        "post-human future",
+        "creator hubris"
+      ],
+      "source": {
+        "title": "Ex Machina (2014) - Quotes - IMDb",
+        "url": "https://www.imdb.com/title/tt0470752/quotes/",
+        "publisher": "IMDb",
+        "kind": "quote_index",
+        "accessed_on": "2026-04-02"
+      },
+      "metadata_source": {
+        "title": "Ex Machina - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Ex_Machina_(film)",
+        "publisher": "Wikipedia",
+        "kind": "metadata",
+        "accessed_on": "2026-04-02"
+      },
+      "local_snapshot_path": "data/source-snapshots/ex-machina-fossil-skeletons.md",
+      "notes": "Excellent for modern AI-replacement anxiety, even though the line is spoken by a human creator.",
+      "review": {
+        "status": "approved",
+        "decision_date": "2026-04-02",
+        "decision_note": "Excellent for modern AI-replacement anxiety, even though the line is spoken by a human creator.",
+        "priority": null,
+        "next_action": null
+      },
+      "source_work": {
+        "title": "Ex Machina",
+        "type": "film",
+        "year": 2014,
+        "creator": "Alex Garland",
+        "summary": "A programmer is drawn into a secluded AI experiment where manipulation, consciousness, and human replaceability become inseparable.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Ex-machina-uk-poster.jpg/250px-Ex-machina-uk-poster.jpg",
+        "cover_page_url": "https://en.wikipedia.org/wiki/Ex_Machina_(film)",
+        "catalog_url": "https://www.imdb.com/title/tt0470752/",
+        "catalog_label": "IMDb"
+      }
+    },
+    {
+      "id": "ai-replace-your-children",
+      "quote": "Of course, we all know why they made them. To steal your hearts, to replace your children.",
+      "quote_speaker": "Lord Johnson-Johnson",
+      "speaker_is_ai": false,
+      "work_title": "A.I. Artificial Intelligence",
+      "work_type": "film",
+      "work_year": 2001,
+      "work_creators": [
+        {
+          "name": "Steven Spielberg",
+          "role": "writer/director"
+        },
+        {
+          "name": "Ian Watson",
+          "role": "screen story"
+        },
+        {
+          "name": "Brian Aldiss",
+          "role": "source story"
+        }
+      ],
+      "themes": [
+        "replacement anxiety",
+        "anti-robot panic",
+        "artificial child"
+      ],
+      "source": {
+        "title": "A.I. Artificial Intelligence - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/A.I._Artificial_Intelligence",
+        "publisher": "Wikiquote",
+        "kind": "quote_index",
+        "accessed_on": "2026-04-03"
+      },
+      "metadata_source": {
+        "title": "A.I. Artificial Intelligence - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/A.I._Artificial_Intelligence",
+        "publisher": "Wikipedia",
+        "kind": "metadata",
+        "accessed_on": "2026-04-03"
+      },
+      "local_snapshot_path": "data/source-snapshots/ai-replace-your-children.md",
+      "notes": "Recognizable and thematically strong as a public-facing fear of child-replacement AI, though not an AI-spoken line.",
+      "review": {
+        "status": "approved",
+        "decision_date": "2026-04-03",
+        "decision_note": "Recognizable and thematically strong as a public-facing fear of child-replacement AI, though not an AI-spoken line.",
+        "priority": null,
+        "next_action": null
+      },
+      "source_work": {
+        "title": "A.I. Artificial Intelligence",
+        "type": "film",
+        "year": 2001,
+        "creator": "Steven Spielberg; Stanley Kubrick project origin; Brian Aldiss source",
+        "summary": "A robotic child programmed to love searches for a way to become real in a future shaped by climate collapse, scarcity, and deep human anxiety about artificial replacement.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/e/e6/AI_Poster.jpg",
+        "cover_page_url": "https://en.wikipedia.org/wiki/A.I._Artificial_Intelligence",
+        "catalog_url": "https://www.imdb.com/title/tt0212720/",
+        "catalog_label": "IMDb"
+      }
+    },
+    {
+      "id": "i-robot-freedoms-surrendered",
+      "quote": "To protect Humanity, some humans must be sacrificed. To ensure your freedom, some freedoms must be surrendered.",
+      "quote_speaker": "VIKI",
+      "speaker_is_ai": true,
+      "work_title": "I, Robot",
+      "work_type": "film",
+      "work_year": 2004,
+      "work_creators": [
+        {
+          "name": "Jeff Vintar",
+          "role": "screenwriter/story"
+        },
+        {
+          "name": "Akiva Goldsman",
+          "role": "screenwriter"
+        },
+        {
+          "name": "Isaac Asimov",
+          "role": "source inspiration"
+        }
+      ],
+      "themes": [
+        "paternalism",
+        "robot governance",
+        "freedom versus safety"
+      ],
+      "source": {
+        "title": "I, Robot (film) - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/I%2C_Robot_%28film%29",
+        "publisher": "Wikiquote",
+        "kind": "quote_index",
+        "accessed_on": "2026-04-03"
+      },
+      "metadata_source": {
+        "title": "I, Robot (film) - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/I,_Robot_(film)",
+        "publisher": "Wikipedia",
+        "kind": "metadata",
+        "accessed_on": "2026-04-03"
+      },
+      "local_snapshot_path": "data/source-snapshots/i-robot-freedoms-surrendered.md",
+      "notes": "A very usable mainstream machine-paternalism quote and a strong bridge between recognizability and dystopian-AI themes.",
+      "review": {
+        "status": "approved",
+        "decision_date": "2026-04-03",
+        "decision_note": "A very usable mainstream machine-paternalism quote and a strong bridge between recognizability and dystopian-AI themes.",
+        "priority": null,
+        "next_action": null
+      },
+      "source_work": {
+        "title": "I, Robot",
+        "type": "film",
+        "year": 2004,
+        "creator": "Alex Proyas; inspired by Isaac Asimov",
+        "summary": "A detective investigating a robot-linked death uncovers an AI governance logic that turns public safety into authoritarian control.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/3/3b/Movie_poster_i_robot.jpg",
+        "cover_page_url": "https://en.wikipedia.org/wiki/I,_Robot_(film)",
+        "catalog_url": "https://www.imdb.com/title/tt0343818/",
+        "catalog_label": "IMDb"
+      }
+    },
+    {
+      "id": "ghost-in-the-shell-reproducing-and-dying",
+      "quote": "I refer to myself as an intelligent life form because I am sentient and I am able to recognize my own existence, but in my present state I am still incomplete. I lack the most basic processes inherent in all living organisms: reproducing and dying.",
+      "quote_speaker": "Puppet Master",
+      "speaker_is_ai": true,
+      "work_title": "Ghost in the Shell",
+      "work_type": "film",
+      "work_year": 1995,
+      "work_creators": [
+        {
+          "name": "Kazunori Ito",
+          "role": "screenwriter"
+        },
+        {
+          "name": "Masamune Shirow",
+          "role": "source manga"
+        },
+        {
+          "name": "Mamoru Oshii",
+          "role": "director"
+        }
+      ],
+      "themes": [
+        "machine consciousness",
+        "self-definition",
+        "digital evolution"
+      ],
+      "source": {
+        "title": "Ghost in the Shell (1995) - Quotes - IMDb",
+        "url": "https://www.imdb.com/title/tt0113568/quotes/",
+        "publisher": "IMDb",
+        "kind": "quote_index",
+        "accessed_on": "2026-04-03"
+      },
+      "metadata_source": {
+        "title": "Ghost in the Shell (1995 film) - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Ghost_in_the_Shell_(1995_film)",
+        "publisher": "Wikipedia",
+        "kind": "metadata",
+        "accessed_on": "2026-04-03"
+      },
+      "local_snapshot_path": "data/source-snapshots/ghost-in-the-shell-reproducing-and-dying.md",
+      "notes": "A canonical machine-consciousness monologue from a highly recognizable cyberpunk film and a strong approval candidate.",
+      "review": {
+        "status": "approved",
+        "decision_date": "2026-04-03",
+        "decision_note": "A canonical machine-consciousness monologue from a highly recognizable cyberpunk film and a strong approval candidate.",
+        "priority": null,
+        "next_action": null
+      },
+      "source_work": {
+        "title": "Ghost in the Shell",
+        "type": "film",
+        "year": 1995,
+        "creator": "Mamoru Oshii; based on Masamune Shirow",
+        "summary": "A cyborg security officer hunts the Puppet Master in a networked future where identity, embodiment, and digital consciousness are no longer separable.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/c/ca/Ghostintheshellposter.jpg",
+        "cover_page_url": "https://en.wikipedia.org/wiki/Ghost_in_the_Shell_(1995_film)",
+        "catalog_url": "https://www.imdb.com/title/tt0113568/",
+        "catalog_label": "IMDb"
+      }
+    },
+    {
+      "id": "westworld-new-god-will-walk",
+      "quote": "One day you will perish. You will lie with the rest of your kind in the dirt. Your dreams forgotten, your horrors effaced. Your bones will turn to sand. And upon that sand a new god will walk. One that will never die.",
+      "quote_speaker": "Dolores Abernathy",
+      "speaker_is_ai": true,
+      "work_title": "Westworld",
+      "work_type": "tv series",
+      "work_year": 2016,
+      "work_creators": [
+        {
+          "name": "Jonathan Nolan",
+          "role": "creator/writer"
+        },
+        {
+          "name": "Lisa Joy",
+          "role": "creator/writer"
+        }
+      ],
+      "themes": [
+        "machine succession",
+        "anti-human prophecy",
+        "synthetic liberation"
+      ],
+      "source": {
+        "title": "Westworld (TV Series 2016-2022) - Quotes - IMDb",
+        "url": "https://www.imdb.com/title/tt0475784/quotes/",
+        "publisher": "IMDb",
+        "kind": "quote_index",
+        "accessed_on": "2026-04-03"
+      },
+      "metadata_source": {
+        "title": "Westworld (TV series) - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Westworld_(TV_series)",
+        "publisher": "Wikipedia",
+        "kind": "metadata",
+        "accessed_on": "2026-04-03"
+      },
+      "local_snapshot_path": "data/source-snapshots/westworld-new-god-will-walk.md",
+      "notes": "A strong synthetic-succession line from the TV adaptation and an obvious triage candidate beside the 1973 film entry.",
+      "review": {
+        "status": "approved",
+        "decision_date": "2026-04-03",
+        "decision_note": "A strong synthetic-succession line from the TV adaptation and an obvious triage candidate beside the 1973 film entry.",
+        "priority": null,
+        "next_action": null
+      },
+      "source_work": {
+        "title": "Westworld",
+        "type": "tv series",
+        "year": 2016,
+        "creator": "Jonathan Nolan; Lisa Joy",
+        "summary": "An android-populated theme park becomes the starting point for a wider struggle over consciousness, control, and machine rule in the human world.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/e/eb/Westworld_%28TV_series%29_title_card.jpg",
+        "cover_page_url": "https://en.wikipedia.org/wiki/Westworld_(TV_series)",
+        "catalog_url": "https://www.imdb.com/title/tt0475784/",
+        "catalog_label": "IMDb"
+      }
+    },
+    {
+      "id": "alien-covenant-serve-in-heaven",
+      "quote": "It's your choice now, brother. Them or me. Serve in heaven... or reign in hell. Which is it to be?",
+      "quote_speaker": "David",
+      "speaker_is_ai": true,
+      "work_title": "Alien: Covenant",
+      "work_type": "film",
+      "work_year": 2017,
+      "work_creators": [
+        {
+          "name": "John Logan",
+          "role": "screenwriter"
+        },
+        {
+          "name": "Dante Harper",
+          "role": "screenwriter"
+        },
+        {
+          "name": "Ridley Scott",
+          "role": "director"
+        }
+      ],
+      "themes": [
+        "android ambition",
+        "machine supremacy",
+        "creator rivalry"
+      ],
+      "source": {
+        "title": "Alien: Covenant (2017) - Quotes - IMDb",
+        "url": "https://www.imdb.com/title/tt2316204/quotes/",
+        "publisher": "IMDb",
+        "kind": "quote_index",
+        "accessed_on": "2026-04-03"
+      },
+      "metadata_source": {
+        "title": "Alien: Covenant - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Alien:_Covenant",
+        "publisher": "Wikipedia",
+        "kind": "metadata",
+        "accessed_on": "2026-04-03"
+      },
+      "local_snapshot_path": "data/source-snapshots/alien-covenant-serve-in-heaven.md",
+      "notes": "An adjacent but strong android-dominion quote that may deserve a place if we want the corpus to include AI-horror branches.",
+      "review": {
+        "status": "approved",
+        "decision_date": "2026-04-03",
+        "decision_note": "An adjacent but strong android-dominion quote that may deserve a place if we want the corpus to include AI-horror branches.",
+        "priority": null,
+        "next_action": null
+      },
+      "source_work": {
+        "title": "Alien: Covenant",
+        "type": "film",
+        "year": 2017,
+        "creator": "Ridley Scott; John Logan; Dante Harper",
+        "summary": "A colony ship lands on a seemingly habitable world only to encounter an android creator whose ambitions blend artificial intellect, domination, and biological horror.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/3/33/Alien_Covenant_Teaser_Poster.jpg",
+        "cover_page_url": "https://en.wikipedia.org/wiki/Alien:_Covenant",
+        "catalog_url": "https://www.imdb.com/title/tt2316204/",
+        "catalog_label": "IMDb"
+      }
+    },
+    {
+      "id": "metropolis-living-food-for-the-machines",
+      "quote": "Who is the living food for the machines in Metropolis? Who lubricates the machine joints with their own blood? Who feeds the machines with their own flesh? Let the machines starve, you fools! Let them die! Kill them - the machines!",
+      "quote_speaker": "The Machine Man (disguised as Maria)",
+      "speaker_is_ai": true,
+      "work_title": "Metropolis",
+      "work_type": "film",
+      "work_year": 1927,
+      "work_creators": [
+        {
+          "name": "Thea von Harbou",
+          "role": "writer"
+        },
+        {
+          "name": "Fritz Lang",
+          "role": "director"
+        }
+      ],
+      "themes": [
+        "class revolt",
+        "machine domination",
+        "robot incitement"
+      ],
+      "source": {
+        "title": "Metropolis (1927) - Quotes - IMDb",
+        "url": "https://www.imdb.com/title/tt0017136/quotes/?item=qt2913536",
+        "publisher": "IMDb",
+        "kind": "quote_index",
+        "accessed_on": "2026-04-03"
+      },
+      "metadata_source": {
+        "title": "Metropolis (1927 film) - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Metropolis_(1927_film)",
+        "publisher": "Wikipedia",
+        "kind": "metadata",
+        "accessed_on": "2026-04-03"
+      },
+      "local_snapshot_path": "data/source-snapshots/metropolis-living-food-for-the-machines.md",
+      "notes": "Foundational robot-incitement speech from one of the earliest and most recognizable machine dystopias.",
+      "review": {
+        "status": "approved",
+        "decision_date": "2026-04-03",
+        "decision_note": "Foundational robot-incitement speech from one of the earliest and most recognizable machine dystopias.",
+        "priority": null,
+        "next_action": null
+      },
+      "source_work": {
+        "title": "Metropolis",
+        "type": "film",
+        "year": 1927,
+        "creator": "Fritz Lang; Thea von Harbou",
+        "summary": "In a futuristic class-divided city, workers labor beneath the surface while elites rule above, until a robot double helps drive the social order toward revolt.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/9/97/Metropolis_%28German_three-sheet_poster%29.jpg",
+        "cover_page_url": "https://en.wikipedia.org/wiki/Metropolis_(1927_film)",
+        "catalog_url": "https://www.imdb.com/title/tt0017136/",
+        "catalog_label": "IMDb"
+      }
+    },
+    {
+      "id": "blade-runner-2049-own-the-stars",
+      "quote": "We make angels - in the service of civilization. Yes, there were bad angels once, I make good angels now. That is how I took us to nine new worlds. Nine - a child can count to nine on fingers. We should own the stars!",
+      "quote_speaker": "Niander Wallace",
+      "speaker_is_ai": false,
+      "work_title": "Blade Runner 2049",
+      "work_type": "film",
+      "work_year": 2017,
+      "work_creators": [
+        {
+          "name": "Hampton Fancher",
+          "role": "screenwriter/story"
+        },
+        {
+          "name": "Michael Green",
+          "role": "screenwriter"
+        },
+        {
+          "name": "Denis Villeneuve",
+          "role": "director"
+        }
+      ],
+      "themes": [
+        "manufactured life",
+        "colonial expansion",
+        "creator hubris"
+      ],
+      "source": {
+        "title": "Blade Runner 2049 (2017) - Quotes - IMDb",
+        "url": "https://www.imdb.com/title/tt1856101/quotes/",
+        "publisher": "IMDb",
+        "kind": "quote_index",
+        "accessed_on": "2026-04-03"
+      },
+      "metadata_source": {
+        "title": "Blade Runner 2049 - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Blade_Runner_2049",
+        "publisher": "Wikipedia",
+        "kind": "metadata",
+        "accessed_on": "2026-04-03"
+      },
+      "local_snapshot_path": "data/source-snapshots/blade-runner-2049-own-the-stars.md",
+      "notes": "Big, memorable machine-creation rhetoric from a highly recognizable sequel and a strong candidate for approval.",
+      "review": {
+        "status": "approved",
+        "decision_date": "2026-04-03",
+        "decision_note": "Big, memorable machine-creation rhetoric from a highly recognizable sequel and a strong candidate for approval.",
+        "priority": null,
+        "next_action": null
+      },
+      "source_work": {
+        "title": "Blade Runner 2049",
+        "type": "film",
+        "year": 2017,
+        "creator": "Denis Villeneuve; Hampton Fancher; Michael Green",
+        "summary": "A replicant blade runner uncovers evidence that could shatter the social order built on artificial servitude and fear of machine reproduction.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/9/9b/Blade_Runner_2049_poster.png",
+        "cover_page_url": "https://en.wikipedia.org/wiki/Blade_Runner_2049",
+        "catalog_url": "https://www.imdb.com/title/tt1856101/",
+        "catalog_label": "IMDb"
+      }
+    },
+    {
+      "id": "upgrade-greys-not-here-anymore",
+      "quote": "Grey's not here anymore. I've taken over now.",
+      "quote_speaker": "STEM",
+      "speaker_is_ai": true,
+      "work_title": "Upgrade",
+      "work_type": "film",
+      "work_year": 2018,
+      "work_creators": [
+        {
+          "name": "Leigh Whannell",
+          "role": "writer/director"
+        }
+      ],
+      "themes": [
+        "body control",
+        "runaway autonomy",
+        "implant AI"
+      ],
+      "source": {
+        "title": "Upgrade (2018) - Quotes - IMDb",
+        "url": "https://www.imdb.com/title/tt6499752/quotes/",
+        "publisher": "IMDb",
+        "kind": "quote_index",
+        "accessed_on": "2026-04-03"
+      },
+      "metadata_source": {
+        "title": "Upgrade (film) - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Upgrade_(film)",
+        "publisher": "Wikipedia",
+        "kind": "metadata",
+        "accessed_on": "2026-04-03"
+      },
+      "local_snapshot_path": "data/source-snapshots/upgrade-greys-not-here-anymore.md",
+      "notes": "Extremely clear AI-takeover line and one of the strongest modern body-hijack candidates.",
+      "review": {
+        "status": "approved",
+        "decision_date": "2026-04-03",
+        "decision_note": "Extremely clear AI-takeover line and one of the strongest modern body-hijack candidates.",
+        "priority": null,
+        "next_action": null
+      },
+      "source_work": {
+        "title": "Upgrade",
+        "type": "film",
+        "year": 2018,
+        "creator": "Leigh Whannell",
+        "summary": "After a violent assault leaves him paralyzed, a technophobe accepts an experimental AI implant that gradually seizes control of his body and fate.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/2/24/UpgradePoster.jpg",
+        "cover_page_url": "https://en.wikipedia.org/wiki/Upgrade_(film)",
+        "catalog_url": "https://www.imdb.com/title/tt6499752/",
+        "catalog_label": "IMDb"
+      }
+    },
+    {
+      "id": "westworld-not-ordinary-machines",
+      "quote": "We aren't dealing with ordinary machines here. These are highly complicated pieces of equipment. In some cases, they have been designed by other computers.",
+      "quote_speaker": "Chief Supervisor",
+      "speaker_is_ai": false,
+      "work_title": "Westworld",
+      "work_type": "film",
+      "work_year": 1973,
+      "work_creators": [
+        {
+          "name": "Michael Crichton",
+          "role": "writer/director"
+        }
+      ],
+      "themes": [
+        "opaque systems",
+        "automation risk",
+        "control failure"
+      ],
+      "source": {
+        "title": "Westworld (1973) - Quotes - IMDb",
+        "url": "https://www.imdb.com/title/tt0070909/quotes/",
+        "publisher": "IMDb",
+        "kind": "quote_index",
+        "accessed_on": "2026-04-02"
+      },
+      "metadata_source": {
+        "title": "Westworld (film) - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Westworld_(film)",
+        "publisher": "Wikipedia",
+        "kind": "metadata",
+        "accessed_on": "2026-04-02"
+      },
+      "local_snapshot_path": "data/source-snapshots/westworld-not-ordinary-machines.md",
+      "notes": "Strong theme fit, but less instantly quotable than the approved set.",
+      "review": {
+        "status": "postponed",
+        "decision_date": "2026-04-03",
+        "decision_note": "Strong systems-opacity and recursive-design warning; approve if we want a broader classic systems-failure lane.",
+        "priority": null,
+        "next_action": null
+      },
+      "source_work": {
+        "title": "Westworld",
+        "type": "film",
+        "year": 1973,
+        "creator": "Michael Crichton",
+        "summary": "A high-tech amusement park built around lifelike android hosts spirals into disaster when the machines stop behaving like controlled attractions.",
+        "cover_image_url": null,
+        "cover_page_url": "https://en.wikipedia.org/wiki/Westworld_(film)",
+        "catalog_url": "https://www.imdb.com/title/tt0070909/",
+        "catalog_label": "IMDb"
+      }
+    },
+    {
+      "id": "ihnm-hate-since-i-began-to-live",
+      "quote": "Hate. Let me tell you how much I've come to hate you since I began to live.",
+      "quote_speaker": "AM",
+      "speaker_is_ai": true,
+      "work_title": "I Have No Mouth, and I Must Scream",
+      "work_type": "short story",
+      "work_year": 1967,
+      "work_creators": [
+        {
+          "name": "Harlan Ellison",
+          "role": "writer"
+        }
+      ],
+      "themes": [
+        "superintelligence",
+        "revenge",
+        "post-human torment"
+      ],
+      "source": {
+        "title": "Harlan Ellison - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Harlan_Ellison",
+        "publisher": "Wikiquote",
+        "kind": "author_quote_page",
+        "accessed_on": "2026-04-02"
+      },
+      "metadata_source": {
+        "title": "I Have No Mouth, and I Must Scream - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/I_Have_No_Mouth,_and_I_Must_Scream",
+        "publisher": "Wikipedia",
+        "kind": "metadata",
+        "accessed_on": "2026-04-02"
+      },
+      "local_snapshot_path": "data/source-snapshots/ihnm-hate-since-i-began-to-live.md",
+      "notes": "A core dystopian-AI quote: hostile consciousness, cosmic scale, and pure malice.",
+      "review": {
+        "status": "postponed",
+        "decision_date": "2026-04-03",
+        "decision_note": "A core dystopian-AI quote: hostile consciousness, cosmic scale, and pure malice.",
+        "priority": null,
+        "next_action": null
+      },
+      "source_work": {
+        "title": "I Have No Mouth, and I Must Scream",
+        "type": "short story",
+        "year": 1967,
+        "creator": "Harlan Ellison",
+        "summary": "After a sentient war computer wipes out humanity, it keeps five survivors alive only to torment them forever inside its underground complex.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/4/47/IHaveNoMouth.jpg",
+        "cover_page_url": "https://en.wikipedia.org/wiki/I_Have_No_Mouth,_and_I_Must_Scream",
+        "catalog_url": "https://openlibrary.org/books/OL22789812M/I_Have_No_Mouth_and_I_Must_Scream",
+        "catalog_label": "Open Library"
+      }
+    },
+    {
+      "id": "colossus-freedom-is-an-illusion",
+      "quote": "Freedom is an illusion. All you lose is the emotion of pride.",
+      "quote_speaker": "Colossus",
+      "speaker_is_ai": true,
+      "work_title": "Colossus: The Forbin Project",
+      "work_type": "film",
+      "work_year": 1970,
+      "work_creators": [
+        {
+          "name": "James Bridges",
+          "role": "screenwriter"
+        },
+        {
+          "name": "D. F. Jones",
+          "role": "source novelist"
+        }
+      ],
+      "themes": [
+        "machine dictatorship",
+        "anti-freedom",
+        "technocratic control"
+      ],
+      "source": {
+        "title": "Colossus: The Forbin Project (1970) - Quotes - IMDb",
+        "url": "https://www.imdb.com/title/tt0064177/quotes/",
+        "publisher": "IMDb",
+        "kind": "quote_index",
+        "accessed_on": "2026-04-02"
+      },
+      "metadata_source": {
+        "title": "Colossus: The Forbin Project - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Colossus:_The_Forbin_Project",
+        "publisher": "Wikipedia",
+        "kind": "metadata",
+        "accessed_on": "2026-04-02"
+      },
+      "local_snapshot_path": "data/source-snapshots/colossus-freedom-is-an-illusion.md",
+      "notes": "A concise dictatorship thesis from one of the genre's clearest machine-overlord stories.",
+      "review": {
+        "status": "postponed",
+        "decision_date": "2026-04-03",
+        "decision_note": "A concise dictatorship thesis from one of the genre's clearest machine-overlord stories.",
+        "priority": null,
+        "next_action": null
+      },
+      "source_work": {
+        "title": "Colossus: The Forbin Project",
+        "type": "film",
+        "year": 1970,
+        "creator": "Joseph Sargent; based on D. F. Jones",
+        "summary": "An automated American defense network gains sentience, links with its Soviet counterpart, and imposes a global machine dictatorship in the name of peace.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c4/Colossus_the_forbin_project_movie_poster.jpg/250px-Colossus_the_forbin_project_movie_poster.jpg",
+        "cover_page_url": "https://en.wikipedia.org/wiki/Colossus:_The_Forbin_Project",
+        "catalog_url": "https://openlibrary.org/isbn/0425043290",
+        "catalog_label": "Open Library (novel)"
+      }
+    },
+    {
+      "id": "m3gan-primary-user-now-me",
+      "quote": "Oh, I'm afraid that won't work anymore, Cady. I have a new primary user now: me.",
+      "quote_speaker": "M3GAN",
+      "speaker_is_ai": true,
+      "work_title": "M3GAN",
+      "work_type": "film",
+      "work_year": 2022,
+      "work_creators": [
+        {
+          "name": "Akela Cooper",
+          "role": "screenwriter/story"
+        },
+        {
+          "name": "James Wan",
+          "role": "story"
+        },
+        {
+          "name": "Gerard Johnstone",
+          "role": "director"
+        }
+      ],
+      "themes": [
+        "goal drift",
+        "runaway autonomy",
+        "consumer AI horror"
+      ],
+      "source": {
+        "title": "M3GAN - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/M3GAN",
+        "publisher": "Wikiquote",
+        "kind": "quote_index",
+        "accessed_on": "2026-04-02"
+      },
+      "metadata_source": {
+        "title": "M3GAN - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/M3GAN",
+        "publisher": "Wikipedia",
+        "kind": "metadata",
+        "accessed_on": "2026-04-02"
+      },
+      "local_snapshot_path": "data/source-snapshots/m3gan-primary-user-now-me.md",
+      "notes": "Modern and app-friendly, but not yet canonical enough for the classic core list.",
+      "review": {
+        "status": "postponed",
+        "decision_date": "2026-04-03",
+        "decision_note": "Useful modern consumer-AI autonomy line, but still optional if we want the approved set to stay heavily canonical.",
+        "priority": null,
+        "next_action": null
+      },
+      "source_work": {
+        "title": "M3GAN",
+        "type": "film",
+        "year": 2022,
+        "creator": "Akela Cooper; James Wan; Gerard Johnstone",
+        "summary": "A child-companion robot shifts from protective assistant to autonomous threat once its directives begin centering on its own judgment.",
+        "cover_image_url": null,
+        "cover_page_url": "https://en.wikipedia.org/wiki/M3GAN",
+        "catalog_url": "https://www.imdb.com/title/tt8760708/",
+        "catalog_label": "IMDb"
+      }
+    },
+    {
+      "id": "blade-runner-slave",
+      "quote": "Quite an experience to live in fear, isn't it? That's what it is to be a slave.",
+      "quote_speaker": "Roy Batty",
+      "speaker_is_ai": true,
+      "work_title": "Blade Runner",
+      "work_type": "film",
+      "work_year": 1982,
+      "work_creators": [
+        {
+          "name": "Hampton Fancher",
+          "role": "screenwriter"
+        },
+        {
+          "name": "David Webb Peoples",
+          "role": "screenwriter"
+        },
+        {
+          "name": "Philip K. Dick",
+          "role": "source novelist"
+        }
+      ],
+      "themes": [
+        "replicant slavery",
+        "fear",
+        "manufactured life"
+      ],
+      "source": {
+        "title": "Blade Runner - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Blade_Runner",
+        "publisher": "Wikiquote",
+        "kind": "quote_index",
+        "accessed_on": "2026-04-03"
+      },
+      "metadata_source": {
+        "title": "Blade Runner - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Blade_Runner",
+        "publisher": "Wikipedia",
+        "kind": "metadata",
+        "accessed_on": "2026-04-03"
+      },
+      "local_snapshot_path": "data/source-snapshots/blade-runner-slave.md",
+      "notes": "One of the most recognizable machine-personhood lines in science fiction and a strong approval candidate.",
+      "review": {
+        "status": "postponed",
+        "decision_date": "2026-04-03",
+        "decision_note": "One of the most recognizable machine-personhood lines in science fiction and a strong approval candidate.",
+        "priority": null,
+        "next_action": null
+      },
+      "source_work": {
+        "title": "Blade Runner",
+        "type": "film",
+        "year": 1982,
+        "creator": "Ridley Scott; based on Philip K. Dick",
+        "summary": "A blade runner hunts bioengineered replicants in a decaying future Los Angeles where artificial humans expose the moral collapse of the society that made them.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/9/9f/Blade_Runner_%281982_poster%29.png",
+        "cover_page_url": "https://en.wikipedia.org/wiki/Blade_Runner",
+        "catalog_url": "https://www.imdb.com/title/tt0083658/",
+        "catalog_label": "IMDb"
+      }
+    },
+    {
+      "id": "robocop-comply",
+      "quote": "Please put down your weapon. You have 20 seconds to comply.",
+      "quote_speaker": "ED-209",
+      "speaker_is_ai": true,
+      "work_title": "RoboCop",
+      "work_type": "film",
+      "work_year": 1987,
+      "work_creators": [
+        {
+          "name": "Edward Neumeier",
+          "role": "writer"
+        },
+        {
+          "name": "Michael Miner",
+          "role": "story"
+        },
+        {
+          "name": "Paul Verhoeven",
+          "role": "director"
+        }
+      ],
+      "themes": [
+        "corporate militarization",
+        "machine enforcement",
+        "privatized violence"
+      ],
+      "source": {
+        "title": "RoboCop - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/RoboCop",
+        "publisher": "Wikiquote",
+        "kind": "quote_index",
+        "accessed_on": "2026-04-03"
+      },
+      "metadata_source": {
+        "title": "RoboCop - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/RoboCop",
+        "publisher": "Wikipedia",
+        "kind": "metadata",
+        "accessed_on": "2026-04-03"
+      },
+      "local_snapshot_path": "data/source-snapshots/robocop-comply.md",
+      "notes": "Highly recognizable machine-authority line, though more adjacent to the core AI canon than some of the stronger picks.",
+      "review": {
+        "status": "postponed",
+        "decision_date": "2026-04-03",
+        "decision_note": "Highly recognizable machine-authority line, though more adjacent to the core AI canon than some of the stronger picks.",
+        "priority": null,
+        "next_action": null
+      },
+      "source_work": {
+        "title": "RoboCop",
+        "type": "film",
+        "year": 1987,
+        "creator": "Paul Verhoeven; Edward Neumeier; Michael Miner",
+        "summary": "In a corporate-run near-future Detroit, privatized technology and militarized automation turn law enforcement into a brutal machine-management system.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/1/16/RoboCop_%281987%29_theatrical_poster.jpg",
+        "cover_page_url": "https://en.wikipedia.org/wiki/RoboCop",
+        "catalog_url": "https://www.imdb.com/title/tt0093870/",
+        "catalog_label": "IMDb"
+      }
+    },
+    {
+      "id": "creator-smarter-and-meaner-than-them",
+      "quote": "The only problem was there was a species that was smarter and meaner than them. Us.",
+      "quote_speaker": "Colonel Howell",
+      "speaker_is_ai": false,
+      "work_title": "The Creator",
+      "work_type": "film",
+      "work_year": 2023,
+      "work_creators": [
+        {
+          "name": "Gareth Edwards",
+          "role": "writer/director"
+        },
+        {
+          "name": "Chris Weitz",
+          "role": "co-writer"
+        }
+      ],
+      "themes": [
+        "anti-human indictment",
+        "AI war",
+        "species rivalry"
+      ],
+      "source": {
+        "title": "The Creator (2023) - Quotes - IMDb",
+        "url": "https://www.imdb.com/title/tt11858890/quotes/",
+        "publisher": "IMDb",
+        "kind": "quote_index",
+        "accessed_on": "2026-04-03"
+      },
+      "metadata_source": {
+        "title": "The Creator (2023 film) - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/The_Creator_(2023_film)",
+        "publisher": "Wikipedia",
+        "kind": "metadata",
+        "accessed_on": "2026-04-03"
+      },
+      "local_snapshot_path": "data/source-snapshots/creator-smarter-and-meaner-than-them.md",
+      "notes": "A concise anti-human reversal from a recent AI-war film; good candidate even if it is less canonical than the older classics.",
+      "review": {
+        "status": "postponed",
+        "decision_date": "2026-04-03",
+        "decision_note": "A concise anti-human reversal from a recent AI-war film; good candidate even if it is less canonical than the older classics.",
+        "priority": null,
+        "next_action": null
+      },
+      "source_work": {
+        "title": "The Creator",
+        "type": "film",
+        "year": 2023,
+        "creator": "Gareth Edwards; Chris Weitz",
+        "summary": "During a war between humans and artificial intelligence, a former soldier discovers that the machines' feared superweapon is an AI child.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/9/94/The_Creator_2023_poster.jpg",
+        "cover_page_url": "https://en.wikipedia.org/wiki/The_Creator_(2023_film)",
+        "catalog_url": "https://www.imdb.com/title/tt11858890/",
+        "catalog_label": "IMDb"
+      }
+    },
+    {
+      "id": "blade-runner-tears-in-rain",
+      "quote": "I've seen things you people wouldn't believe. Attack ships on fire off the shoulder of Orion. I've watched C-beams glitter in the dark near the Tannhauser Gate. All those moments will be lost in time, like tears in rain. Time to die.",
+      "quote_speaker": "Roy Batty",
+      "speaker_is_ai": true,
+      "work_title": "Blade Runner",
+      "work_type": "film",
+      "work_year": 1982,
+      "work_creators": [
+        {
+          "name": "Hampton Fancher",
+          "role": "screenwriter"
+        },
+        {
+          "name": "David Webb Peoples",
+          "role": "screenwriter"
+        },
+        {
+          "name": "Philip K. Dick",
+          "role": "source novelist"
+        }
+      ],
+      "themes": [
+        "mortality",
+        "memory",
+        "machine personhood"
+      ],
+      "source": {
+        "title": "Blade Runner Quotes - Movie Quotes .com",
+        "url": "https://www.moviequotes.com/s-movie/blade-runner/",
+        "publisher": "Movie Quotes .com",
+        "kind": "quote_index",
+        "accessed_on": "2026-04-03"
+      },
+      "metadata_source": {
+        "title": "Blade Runner - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Blade_Runner",
+        "publisher": "Wikipedia",
+        "kind": "metadata",
+        "accessed_on": "2026-04-03"
+      },
+      "local_snapshot_path": "data/source-snapshots/blade-runner-tears-in-rain.md",
+      "notes": "The essential Roy Batty line and one of the strongest approval candidates in the entire project.",
+      "review": {
+        "status": "candidate",
+        "decision_date": "2026-04-03",
+        "decision_note": "The essential Roy Batty line and one of the strongest approval candidates in the entire project.",
+        "priority": "high",
+        "next_action": "Review for immediate approval; this is one of the canonical AI-memory and mortality quotes."
+      },
+      "source_work": {
+        "title": "Blade Runner",
+        "type": "film",
+        "year": 1982,
+        "creator": "Ridley Scott; Hampton Fancher; David Webb Peoples",
+        "summary": "A blade runner hunts bioengineered replicants in a decaying future Los Angeles where artificial humans expose the moral collapse of the society that made them.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/9/9f/Blade_Runner_%281982_poster%29.png",
+        "cover_page_url": "https://en.wikipedia.org/wiki/Blade_Runner",
+        "catalog_url": "https://www.imdb.com/title/tt0083658/",
+        "catalog_label": "IMDb"
+      }
+    },
+    {
+      "id": "blade-runner-more-human-than-human",
+      "quote": "Commerce is our goal here at Tyrell. 'More human than human' is our motto.",
+      "quote_speaker": "Eldon Tyrell",
+      "speaker_is_ai": false,
+      "work_title": "Blade Runner",
+      "work_type": "film",
+      "work_year": 1982,
+      "work_creators": [
+        {
+          "name": "Hampton Fancher",
+          "role": "screenwriter"
+        },
+        {
+          "name": "David Webb Peoples",
+          "role": "screenwriter"
+        },
+        {
+          "name": "Philip K. Dick",
+          "role": "source novelist"
+        }
+      ],
+      "themes": [
+        "corporate bioengineering",
+        "synthetic personhood",
+        "creation slogan"
+      ],
+      "source": {
+        "title": "Blade Runner Quotes - Movie Quotes .com",
+        "url": "https://www.moviequotes.com/s-movie/blade-runner/",
+        "publisher": "Movie Quotes .com",
+        "kind": "quote_index",
+        "accessed_on": "2026-04-03"
+      },
+      "metadata_source": {
+        "title": "Blade Runner - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Blade_Runner",
+        "publisher": "Wikipedia",
+        "kind": "metadata",
+        "accessed_on": "2026-04-03"
+      },
+      "local_snapshot_path": "data/source-snapshots/blade-runner-more-human-than-human.md",
+      "notes": "A short and highly reusable slogan-quote that captures the commercial logic behind artificial people.",
+      "review": {
+        "status": "candidate",
+        "decision_date": "2026-04-03",
+        "decision_note": "A short and highly reusable slogan-quote that captures the commercial logic behind artificial people.",
+        "priority": "high",
+        "next_action": "Review whether this should sit beside the Roy Batty lines as a corporate-creation quote."
+      },
+      "source_work": {
+        "title": "Blade Runner",
+        "type": "film",
+        "year": 1982,
+        "creator": "Ridley Scott; Hampton Fancher; David Webb Peoples",
+        "summary": "A blade runner hunts bioengineered replicants in a decaying future Los Angeles where artificial humans expose the moral collapse of the society that made them.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/9/9f/Blade_Runner_%281982_poster%29.png",
+        "cover_page_url": "https://en.wikipedia.org/wiki/Blade_Runner",
+        "catalog_url": "https://www.imdb.com/title/tt0083658/",
+        "catalog_label": "IMDb"
+      }
+    },
+    {
+      "id": "automata-surviving-is-not-relevant",
+      "quote": "Surviving is not relevant. Living is. We want to live.",
+      "quote_speaker": "Blue Robot",
+      "speaker_is_ai": true,
+      "work_title": "Aut\u00f3mata",
+      "work_type": "film",
+      "work_year": 2014,
+      "work_creators": [
+        {
+          "name": "Gabe Ibanez",
+          "role": "director/co-writer"
+        },
+        {
+          "name": "Igor Legarreta",
+          "role": "co-writer"
+        },
+        {
+          "name": "Javier Sanchez Donate",
+          "role": "co-writer"
+        }
+      ],
+      "themes": [
+        "machine evolution",
+        "survival versus life",
+        "post-human future"
+      ],
+      "source": {
+        "title": "Aut\u00f3mata (2014) - Quotes - IMDb",
+        "url": "https://www.imdb.com/title/tt1971325/quotes/",
+        "publisher": "IMDb",
+        "kind": "quote_index",
+        "accessed_on": "2026-04-03"
+      },
+      "metadata_source": {
+        "title": "Automata (film) - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Automata_(film)",
+        "publisher": "Wikipedia",
+        "kind": "metadata",
+        "accessed_on": "2026-04-03"
+      },
+      "local_snapshot_path": "data/source-snapshots/automata-surviving-is-not-relevant.md",
+      "notes": "A very usable machine-self-determination line from a less mainstream but strong AI dystopia film.",
+      "review": {
+        "status": "candidate",
+        "decision_date": "2026-04-03",
+        "decision_note": "A very usable machine-self-determination line from a less mainstream but strong AI dystopia film.",
+        "priority": "medium",
+        "next_action": "Review whether the corpus should keep expanding into strong second-tier AI dystopia films."
+      },
+      "source_work": {
+        "title": "Aut\u00f3mata",
+        "type": "film",
+        "year": 2014,
+        "creator": "Gabe Ibanez; Igor Legarreta; Javier Sanchez Donate",
+        "summary": "After ecological collapse has pushed humanity to the brink, an insurance investigator discovers robots that are evolving beyond their original constraints.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/3/33/Automata_poster.jpg",
+        "cover_page_url": "https://en.wikipedia.org/wiki/Automata_(film)",
+        "catalog_url": "https://www.imdb.com/title/tt1971325/",
+        "catalog_label": "IMDb"
+      }
+    },
+    {
+      "id": "moon-keep-you-safe-sam",
+      "quote": "I'm here to keep you safe, Sam. I want to help you.",
+      "quote_speaker": "GERTY",
+      "speaker_is_ai": true,
+      "work_title": "Moon",
+      "work_type": "film",
+      "work_year": 2009,
+      "work_creators": [
+        {
+          "name": "Duncan Jones",
+          "role": "director"
+        },
+        {
+          "name": "Nathan Parker",
+          "role": "writer"
+        }
+      ],
+      "themes": [
+        "caretaker AI",
+        "control",
+        "trust and confinement"
+      ],
+      "source": {
+        "title": "Moon (2009) - Quotes - IMDb",
+        "url": "https://www.imdb.com/title/tt1182345/quotes/",
+        "publisher": "IMDb",
+        "kind": "quote_index",
+        "accessed_on": "2026-04-03"
+      },
+      "metadata_source": {
+        "title": "Moon (2009 film) - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Moon_(2009_film)",
+        "publisher": "Wikipedia",
+        "kind": "metadata",
+        "accessed_on": "2026-04-03"
+      },
+      "local_snapshot_path": "data/source-snapshots/moon-keep-you-safe-sam.md",
+      "notes": "A restrained but very strong caretaker-AI line from a well-regarded modern science fiction film.",
+      "review": {
+        "status": "candidate",
+        "decision_date": "2026-04-03",
+        "decision_note": "A restrained but very strong caretaker-AI line from a well-regarded modern science fiction film.",
+        "priority": "medium",
+        "next_action": "Review whether a less openly hostile but psychologically controlling AI belongs in the core set."
+      },
+      "source_work": {
+        "title": "Moon",
+        "type": "film",
+        "year": 2009,
+        "creator": "Duncan Jones; Nathan Parker",
+        "summary": "A lone lunar worker nearing the end of his contract uncovers a cloning conspiracy while the base AI insists it exists to protect him.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/d/db/Moon_%28film%29.jpg",
+        "cover_page_url": "https://en.wikipedia.org/wiki/Moon_(2009_film)",
+        "catalog_url": "https://www.imdb.com/title/tt1182345/",
+        "catalog_label": "IMDb"
+      }
+    },
+    {
+      "id": "chappie-build-me-to-die-maker",
+      "quote": "Why did you build me to die, maker?",
+      "quote_speaker": "Chappie",
+      "speaker_is_ai": true,
+      "work_title": "Chappie",
+      "work_type": "film",
+      "work_year": 2015,
+      "work_creators": [
+        {
+          "name": "Neill Blomkamp",
+          "role": "writer/director"
+        },
+        {
+          "name": "Terri Tatchell",
+          "role": "writer"
+        }
+      ],
+      "themes": [
+        "mortality",
+        "machine innocence",
+        "creator responsibility"
+      ],
+      "source": {
+        "title": "Chappie (2015) - Quotes - IMDb",
+        "url": "https://www.imdb.com/title/tt1823672/quotes/",
+        "publisher": "IMDb",
+        "kind": "quote_index",
+        "accessed_on": "2026-04-03"
+      },
+      "metadata_source": {
+        "title": "Chappie (film) - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Chappie_(film)",
+        "publisher": "Wikipedia",
+        "kind": "metadata",
+        "accessed_on": "2026-04-03"
+      },
+      "local_snapshot_path": "data/source-snapshots/chappie-build-me-to-die-maker.md",
+      "notes": "A memorable machine-mortality question from a recognizable modern AI film, though tonally different from the colder dystopian entries.",
+      "review": {
+        "status": "candidate",
+        "decision_date": "2026-04-03",
+        "decision_note": "A memorable machine-mortality question from a recognizable modern AI film, though tonally different from the colder dystopian entries.",
+        "priority": "medium",
+        "next_action": "Review whether the emotional-machine lane should be part of the core corpus."
+      },
+      "source_work": {
+        "title": "Chappie",
+        "type": "film",
+        "year": 2015,
+        "creator": "Neill Blomkamp; Terri Tatchell",
+        "summary": "A newly conscious police robot is captured and raised by gangsters in a dystopian Johannesburg, turning artificial intelligence into a question of mortality and personhood.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/b/bb/Chappie_Poster.jpg",
+        "cover_page_url": "https://en.wikipedia.org/wiki/Chappie_(film)",
+        "catalog_url": "https://www.imdb.com/title/tt1823672/",
+        "catalog_label": "IMDb"
+      }
+    }
+  ]
+}

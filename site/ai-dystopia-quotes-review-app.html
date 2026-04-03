@@ -1,0 +1,1465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Dystopia Quotes Review Workbench</title>
+    <style>
+        :root {
+            --bg: #091117;
+            --bg2: #18252f;
+            --panel: rgba(12, 20, 27, 0.9);
+            --panel-2: rgba(17, 27, 35, 0.94);
+            --line: rgba(226, 237, 245, 0.12);
+            --line-strong: rgba(226, 237, 245, 0.24);
+            --text: #eef5fb;
+            --muted: #acc0cf;
+            --soft: #dce9f2;
+            --accent: #95d5ff;
+            --good: #78d2a8;
+            --warn: #f2c36f;
+            --danger: #ed8269;
+            --shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            color: var(--text);
+            font-family: "Avenir Next", "Segoe UI", sans-serif;
+            background:
+                radial-gradient(circle at top left, rgba(149, 213, 255, 0.16), transparent 24%),
+                radial-gradient(circle at top right, rgba(242, 195, 111, 0.12), transparent 24%),
+                linear-gradient(160deg, var(--bg), var(--bg2));
+            min-height: 100vh;
+        }
+
+        a {
+            color: #e8f5ff;
+        }
+
+        button,
+        input,
+        select,
+        textarea {
+            font: inherit;
+        }
+
+        .shell {
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 24px 18px 72px;
+        }
+
+        .hero,
+        .panel {
+            border: 1px solid var(--line);
+            border-radius: 28px;
+            background:
+                linear-gradient(160deg, rgba(18, 28, 35, 0.96), rgba(10, 18, 24, 0.84)),
+                radial-gradient(circle at 24% 0%, rgba(149, 213, 255, 0.12), transparent 34%);
+            box-shadow: var(--shadow);
+        }
+
+        .hero {
+            padding: 30px 28px 28px;
+        }
+
+        .panel {
+            margin-top: 20px;
+            padding: 22px;
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 7px 12px;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.08);
+            color: #def1ff;
+            font-size: 12px;
+            letter-spacing: .14em;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            margin: 16px 0 10px;
+            font-size: clamp(34px, 5vw, 58px);
+            line-height: .95;
+            letter-spacing: -0.04em;
+        }
+
+        p {
+            color: var(--muted);
+            line-height: 1.6;
+        }
+
+        .heroCopy {
+            max-width: 980px;
+            font-size: 18px;
+        }
+
+        .meta {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 12px;
+            margin-top: 22px;
+        }
+
+        .metaCard,
+        .laneIntro,
+        .reviewItem,
+        .sourceCard,
+        .tableCard,
+        .frameIntro,
+        .empty {
+            border: 1px solid var(--line);
+            border-radius: 22px;
+            background: rgba(255, 255, 255, 0.04);
+        }
+
+        .metaCard {
+            padding: 14px 16px;
+        }
+
+        .metaLabel {
+            display: block;
+            color: #9edfff;
+            font-size: 11px;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            margin-bottom: 6px;
+        }
+
+        .metaValue {
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+        .toolbar {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) auto auto auto;
+            gap: 12px;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .search,
+        .input,
+        .select,
+        .textarea {
+            width: 100%;
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text);
+            padding: 12px 14px;
+        }
+
+        .textarea {
+            min-height: 88px;
+            resize: vertical;
+        }
+
+        .tabs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 18px;
+        }
+
+        .tabButton,
+        .button,
+        .miniButton,
+        .statusButton {
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            background: rgba(255, 255, 255, 0.06);
+            color: var(--text);
+            border-radius: 999px;
+            cursor: pointer;
+            text-decoration: none;
+            font-family: inherit;
+        }
+
+        .tabButton {
+            padding: 11px 15px;
+            font-size: 14px;
+            letter-spacing: .04em;
+        }
+
+        .tabButton.active {
+            background: rgba(149, 213, 255, 0.18);
+            border-color: rgba(149, 213, 255, 0.34);
+        }
+
+        .tabCount,
+        .tag,
+        .laneBadge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 3px 9px;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.08);
+            color: #e4f2fc;
+            font-size: 12px;
+            letter-spacing: .06em;
+            text-transform: uppercase;
+        }
+
+        .tabCount {
+            margin-left: 8px;
+        }
+
+        .button {
+            padding: 11px 16px;
+            font-size: 14px;
+        }
+
+        .button.primary {
+            background: rgba(120, 210, 168, 0.18);
+            border-color: rgba(120, 210, 168, 0.3);
+        }
+
+        .button.neutral {
+            background: rgba(149, 213, 255, 0.16);
+            border-color: rgba(149, 213, 255, 0.28);
+        }
+
+        .button.warn {
+            background: rgba(242, 195, 111, 0.18);
+            border-color: rgba(242, 195, 111, 0.28);
+        }
+
+        .miniButton,
+        .statusButton {
+            padding: 8px 12px;
+            font-size: 12px;
+            letter-spacing: .06em;
+            text-transform: uppercase;
+        }
+
+        .statusButton.active {
+            border-color: rgba(149, 213, 255, 0.36);
+            background: rgba(149, 213, 255, 0.2);
+        }
+
+        .statusButton.approved.active {
+            border-color: rgba(120, 210, 168, 0.36);
+            background: rgba(120, 210, 168, 0.18);
+        }
+
+        .statusButton.postponed.active {
+            border-color: rgba(242, 195, 111, 0.34);
+            background: rgba(242, 195, 111, 0.18);
+        }
+
+        .statusButton.declined.active {
+            border-color: rgba(237, 130, 105, 0.34);
+            background: rgba(237, 130, 105, 0.18);
+        }
+
+        .statusLine {
+            color: #d8f2ff;
+            font-size: 14px;
+        }
+
+        .laneIntro {
+            padding: 16px 18px;
+            margin-bottom: 14px;
+        }
+
+        .laneIntro h2,
+        .sourceCard h2,
+        .tableCard h2,
+        .frameIntro h2 {
+            margin: 0 0 8px;
+            font-size: 24px;
+            letter-spacing: -0.03em;
+        }
+
+        .list {
+            display: grid;
+            gap: 14px;
+        }
+
+        .reviewItem {
+            padding: 18px;
+            background:
+                linear-gradient(160deg, rgba(19, 30, 38, 0.94), rgba(12, 20, 27, 0.9)),
+                radial-gradient(circle at 18% 0%, rgba(149, 213, 255, 0.08), transparent 30%);
+        }
+
+        .reviewItem.dragging {
+            opacity: 0.5;
+        }
+
+        .reviewItem.dropBefore {
+            box-shadow: inset 0 4px 0 rgba(149, 213, 255, 0.7);
+            border-color: rgba(149, 213, 255, 0.44);
+        }
+
+        .reviewItem.dropAfter {
+            box-shadow: inset 0 -4px 0 rgba(149, 213, 255, 0.7);
+            border-color: rgba(149, 213, 255, 0.44);
+        }
+
+        .itemTop {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 14px;
+            margin-bottom: 12px;
+        }
+
+        .itemHeaderActions {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+
+        .reorderButtons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: flex-end;
+        }
+
+        .titleBlock h3 {
+            margin: 0 0 8px;
+            font-size: 28px;
+            line-height: 1.02;
+            letter-spacing: -0.03em;
+        }
+
+        .itemPreview,
+        .collapsedMeta {
+            margin: 10px 0 0;
+            color: var(--soft);
+        }
+
+        .itemPreview {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .collapsedMeta {
+            font-size: 14px;
+            line-height: 1.55;
+        }
+
+        .tagRow,
+        .statusRow,
+        .actionRow {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .dragHandle {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 14px;
+            min-width: 120px;
+            border-radius: 18px;
+            border: 1px dashed rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.03);
+            color: #d7eaf6;
+            font-size: 12px;
+            letter-spacing: .08em;
+            text-transform: uppercase;
+            cursor: grab;
+            user-select: none;
+        }
+
+        .toggleButton {
+            min-width: 118px;
+        }
+
+        .detailBody {
+            margin-top: 14px;
+            padding-top: 14px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .quoteGrid {
+            display: grid;
+            grid-template-columns: minmax(0, 1.12fr) minmax(320px, 0.88fr);
+            gap: 18px;
+            align-items: start;
+        }
+
+        .quotePanel,
+        .sourcePanel,
+        .editPanel {
+            padding: 16px;
+            border-radius: 20px;
+            border: 1px solid var(--line);
+            background: rgba(255, 255, 255, 0.035);
+        }
+
+        .quotePanel blockquote {
+            margin: 0 0 16px;
+            color: #fff8ef;
+            font-size: clamp(24px, 3vw, 34px);
+            line-height: 1.16;
+            letter-spacing: -0.02em;
+        }
+
+        .quotePanel p {
+            margin: 10px 0 0;
+        }
+
+        .detailGrid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+        }
+
+        .detailCell {
+            padding: 12px 13px;
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            background: rgba(255, 255, 255, 0.03);
+        }
+
+        .detailCell strong,
+        .fieldBlock label,
+        .editPanel label,
+        .snapshotWrap summary {
+            display: block;
+            margin-bottom: 6px;
+            color: #9ddfff;
+            font-size: 11px;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+        }
+
+        .sourceTop {
+            display: grid;
+            grid-template-columns: 120px minmax(0, 1fr);
+            gap: 14px;
+            margin-bottom: 14px;
+        }
+
+        .cover,
+        .coverFallback {
+            width: 100%;
+            display: block;
+            border-radius: 16px;
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.24);
+        }
+
+        .coverFallback {
+            aspect-ratio: 2 / 3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(180deg, rgba(149, 213, 255, 0.24), rgba(242, 195, 111, 0.18));
+            color: #eef7ff;
+            font-size: 30px;
+            font-weight: 700;
+            letter-spacing: .08em;
+        }
+
+        .sourcePanel h4,
+        .editPanel h4 {
+            margin: 0 0 10px;
+            font-size: 18px;
+            letter-spacing: -0.02em;
+        }
+
+        .fieldGrid {
+            display: grid;
+            grid-template-columns: 160px minmax(0, 1fr);
+            gap: 12px;
+        }
+
+        .snapshotWrap {
+            margin-top: 14px;
+        }
+
+        .snapshotWrap summary {
+            cursor: pointer;
+            list-style: none;
+        }
+
+        .snapshotWrap summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .snapshotBox {
+            margin-top: 10px;
+            padding: 14px;
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            background: rgba(255, 255, 255, 0.03);
+            white-space: pre-wrap;
+            word-break: break-word;
+            max-height: 320px;
+            overflow: auto;
+            color: #deebf5;
+            font: 13px/1.55 ui-monospace, SFMono-Regular, Menlo, monospace;
+        }
+
+        .snapshotStatus {
+            margin-top: 10px;
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        .empty {
+            padding: 28px 20px;
+            text-align: center;
+        }
+
+        .sourceGrid {
+            display: grid;
+            grid-template-columns: minmax(0, 0.86fr) minmax(0, 1.14fr);
+            gap: 18px;
+        }
+
+        .sourceCard,
+        .tableCard,
+        .frameIntro {
+            padding: 18px;
+        }
+
+        .tableWrap {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 10px 8px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            text-align: left;
+            vertical-align: top;
+            font-size: 14px;
+        }
+
+        th {
+            color: #9ddfff;
+            font-size: 11px;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+        }
+
+        .iframePanel {
+            margin-top: 16px;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid var(--line);
+            background: rgba(255, 255, 255, 0.04);
+        }
+
+        iframe {
+            width: 100%;
+            min-height: 860px;
+            border: 0;
+            background: white;
+        }
+
+        code {
+            font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        }
+
+        @media (max-width: 1100px) {
+            .quoteGrid,
+            .sourceGrid {
+                grid-template-columns: 1fr;
+            }
+
+            .fieldGrid,
+            .toolbar,
+            .sourceTop {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 760px) {
+            .shell {
+                padding: 18px 12px 56px;
+            }
+
+            .hero,
+            .panel {
+                padding: 20px 16px;
+            }
+
+            h1 {
+                font-size: 40px;
+            }
+
+            .quotePanel blockquote {
+                font-size: 24px;
+            }
+
+            .titleBlock h3 {
+                font-size: 24px;
+            }
+
+            .itemTop {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="shell">
+        <section class="hero">
+            <span class="eyebrow">Local Review Workbench</span>
+            <h1>AI Dystopia Quotes</h1>
+            <p class="heroCopy">Each quote now carries its own status actions, ordering handle, and sourcing context directly in the list item itself. Use the same interaction pattern in every lane: read the quote, click the new status if needed, and drag the item to reorder within that lane.</p>
+            <div class="meta" id="meta"></div>
+            <div class="toolbar">
+                <input id="search" class="search" type="search" placeholder="Search title, quote, speaker, theme, note, creator, or discovery title">
+                <button id="clearSearch" class="button">Clear Search</button>
+                <a class="button neutral" href="/public" target="_blank" rel="noreferrer">Open Public Page in Browser</a>
+                <span class="statusLine" id="boardStatus">Loading workbench…</span>
+            </div>
+        </section>
+
+        <section class="panel">
+            <div class="tabs" id="tabs"></div>
+            <div id="tabContent"></div>
+        </section>
+    </main>
+
+    <script>
+        const tabs = [
+            { key: "candidate", label: "Candidates" },
+            { key: "approved", label: "Approved" },
+            { key: "postponed", label: "Postponed" },
+            { key: "declined", label: "Declined" },
+            { key: "sources", label: "Sources" },
+            { key: "public", label: "Public Page" },
+            { key: "harness", label: "Harness" }
+        ];
+
+        const laneLabels = {
+            candidate: "Candidates",
+            approved: "Approved",
+            postponed: "Postponed",
+            declined: "Declined"
+        };
+
+        const laneDescriptions = {
+            candidate: "Use the status buttons on each item to approve, postpone, or decline directly from the card. Drag items by the reorder handle to change review order.",
+            approved: "Approved items use the same card layout and the same drag-to-reorder interaction. Reorder in place or move any quote back into review directly from the card.",
+            postponed: "Postponed items stay actionable here with the same inline controls and the same ordering behavior.",
+            declined: "Declined does not mean gone. Use the same inline actions to bring anything back whenever you want."
+        };
+
+        let board = null;
+        let sourceScans = null;
+        let discovery = null;
+        let activeTab = "candidate";
+        let searchTerm = "";
+        const snapshotCache = {};
+        let dragState = null;
+        let autoScrollRaf = null;
+        let autoScrollStep = 0;
+        const expandedByStatus = {
+            candidate: {},
+            approved: {},
+            postponed: {},
+            declined: {}
+        };
+
+        function escapeHtml(value) {
+            return String(value ?? "")
+                .replaceAll("&", "&amp;")
+                .replaceAll("<", "&lt;")
+                .replaceAll(">", "&gt;")
+                .replaceAll('"', "&quot;");
+        }
+
+        async function api(path, options = {}) {
+            const response = await fetch(path, {
+                headers: { "Content-Type": "application/json" },
+                ...options
+            });
+            if (!response.ok) {
+                let message = `Request failed: ${response.status}`;
+                try {
+                    const payload = await response.json();
+                    message = payload.error || message;
+                } catch (error) {
+                    // Ignore JSON parse errors here.
+                }
+                throw new Error(message);
+            }
+            return response.json();
+        }
+
+        async function loadAll() {
+            const [boardPayload, scansPayload, discoveryPayload] = await Promise.all([
+                api("/api/board"),
+                api("/api/source-scans"),
+                api("/api/discovery")
+            ]);
+            board = boardPayload;
+            sourceScans = scansPayload;
+            discovery = discoveryPayload;
+            render();
+        }
+
+        function statusCounts() {
+            return Object.fromEntries(
+                ["candidate", "approved", "postponed", "declined"].map((status) => [
+                    status,
+                    board.records.filter((record) => record.review.status === status).length
+                ])
+            );
+        }
+
+        function filteredLaneRecords(status) {
+            const records = board.records.filter((record) => record.review.status === status);
+            if (!searchTerm.trim()) {
+                return records;
+            }
+            const query = searchTerm.trim().toLowerCase();
+            return records.filter((record) => {
+                const haystack = [
+                    record.work_title,
+                    record.quote,
+                    record.quote_speaker || "",
+                    record.review.decision_note || "",
+                    record.review.next_action || "",
+                    (record.work_creators || []).map((person) => `${person.name} ${person.role || ""}`).join(" "),
+                    (record.themes || []).join(" "),
+                    record.source_work?.summary || ""
+                ].join(" ").toLowerCase();
+                return haystack.includes(query);
+            });
+        }
+
+        function filteredDiscoveryRecords() {
+            const records = discovery.records;
+            if (!searchTerm.trim()) {
+                return records;
+            }
+            const query = searchTerm.trim().toLowerCase();
+            return records.filter((record) => {
+                const haystack = [
+                    record.title,
+                    record.creator,
+                    record.notes || "",
+                    record.strategy_id,
+                    record.work_type || ""
+                ].join(" ").toLowerCase();
+                return haystack.includes(query);
+            });
+        }
+
+        function renderMeta() {
+            const counts = statusCounts();
+            const discovered = discovery.records.length;
+            const target = discovery.target_count;
+            const scans = sourceScans.scanned_sources.length;
+            const nextStrategy = sourceScans.strategies.find((strategy) => strategy.status === "ready");
+
+            const meta = document.getElementById("meta");
+            meta.innerHTML = "";
+            const cards = [
+                ["Approved", counts.approved],
+                ["Candidates", counts.candidate],
+                ["Postponed", counts.postponed],
+                ["Declined", counts.declined],
+                ["Discovered", `${discovered} / ${target}`],
+                ["Scans", scans],
+                ["Next Search", nextStrategy ? nextStrategy.label : "Complete"]
+            ];
+
+            for (const [label, value] of cards) {
+                const card = document.createElement("div");
+                card.className = "metaCard";
+                card.innerHTML = `<span class="metaLabel">${escapeHtml(label)}</span><span class="metaValue">${escapeHtml(value)}</span>`;
+                meta.appendChild(card);
+            }
+        }
+
+        function renderTabs() {
+            const counts = statusCounts();
+            const tabsNode = document.getElementById("tabs");
+            tabsNode.innerHTML = "";
+            for (const tab of tabs) {
+                const count = ["candidate", "approved", "postponed", "declined"].includes(tab.key)
+                    ? (() => {
+                        const filtered = filteredLaneRecords(tab.key).length;
+                        const total = counts[tab.key];
+                        return searchTerm.trim() ? `${filtered}/${total}` : total;
+                    })()
+                    : tab.key === "sources"
+                        ? sourceScans.scanned_sources.length
+                        : "";
+                const button = document.createElement("button");
+                button.className = `tabButton${activeTab === tab.key ? " active" : ""}`;
+                button.innerHTML = count === "" ? tab.label : `${tab.label}<span class="tabCount">${count}</span>`;
+                button.addEventListener("click", () => {
+                    activeTab = tab.key;
+                    renderTabs();
+                    renderContent();
+                });
+                tabsNode.appendChild(button);
+            }
+        }
+
+        function coverHtml(record) {
+            const image = record.source_work?.cover_image_url;
+            if (image) {
+                return `<img class="cover" src="${escapeHtml(image)}" alt="${escapeHtml(record.work_title)} cover">`;
+            }
+            const initials = record.work_title.split(/\s+/).slice(0, 3).map((part) => part[0] || "").join("").toUpperCase();
+            return `<div class="coverFallback">${escapeHtml(initials || "AI")}</div>`;
+        }
+
+        function truncateText(value, maxLength) {
+            const text = String(value || "");
+            if (text.length <= maxLength) {
+                return text;
+            }
+            return `${text.slice(0, maxLength - 1).trimEnd()}…`;
+        }
+
+        function tagsHtml(record, index) {
+            const tags = [
+                `<span class="laneBadge">#${index + 1}</span>`,
+                `<span class="tag">${escapeHtml(record.work_type)}</span>`,
+                `<span class="tag">${escapeHtml(record.work_year)}</span>`
+            ];
+            if (record.speaker_is_ai) {
+                tags.push('<span class="tag">AI speaker</span>');
+            }
+            if (record.review.priority) {
+                tags.push(`<span class="tag">${escapeHtml(record.review.priority)} priority</span>`);
+            }
+            return tags.join("");
+        }
+
+        function statusButtonsHtml(record) {
+            return ["candidate", "approved", "postponed", "declined"].map((status) => `
+                <button
+                    type="button"
+                    class="statusButton ${escapeHtml(status)} ${record.review.status === status ? "active" : ""}"
+                    data-status-action="${escapeHtml(status)}"
+                >
+                    ${escapeHtml(status)}
+                </button>
+            `).join("");
+        }
+
+        function itemTemplate(record, index, laneIndex, laneSize) {
+            const creators = (record.work_creators || []).map((person) => `${person.name}${person.role ? ` (${person.role})` : ""}`).join(", ");
+            const themes = (record.themes || []).join(", ");
+            const snapshot = snapshotCache[record.id];
+            const expanded = Boolean(expandedByStatus[record.review.status]?.[record.id]);
+            const priorityDisabled = record.review.status !== "candidate" ? "disabled" : "";
+            const nextActionDisabled = record.review.status !== "candidate" ? "disabled" : "";
+            const previewQuote = truncateText(record.quote, 180);
+            const previewSummary = truncateText(record.source_work.summary, 150);
+
+            return `
+                <article class="reviewItem" data-id="${escapeHtml(record.id)}" draggable="true">
+                    <div class="itemTop">
+                        <div class="titleBlock">
+                            <h3>${escapeHtml(record.work_title)}</h3>
+                            <div class="tagRow">${tagsHtml(record, laneIndex)}</div>
+                            <p class="itemPreview">"${escapeHtml(previewQuote)}"</p>
+                            <p class="collapsedMeta">
+                                <strong>Speaker:</strong> ${escapeHtml(record.quote_speaker || "Unspecified")}
+                                | <strong>Source:</strong> ${escapeHtml(previewSummary)}
+                            </p>
+                        </div>
+                        <div class="itemHeaderActions">
+                            <div class="reorderButtons">
+                                <button type="button" class="miniButton" data-move-direction="top" ${laneIndex === 0 ? "disabled" : ""}>Top</button>
+                                <button type="button" class="miniButton" data-move-direction="bottom" ${laneIndex === laneSize - 1 ? "disabled" : ""}>Bottom</button>
+                            </div>
+                            <button type="button" class="miniButton toggleButton" data-toggle-details="${escapeHtml(record.id)}">
+                                ${expanded ? "Hide Details" : "Open Details"}
+                            </button>
+                            <div class="dragHandle" title="Drag to reorder in this lane">Drag to reorder</div>
+                        </div>
+                    </div>
+                    <div class="statusRow">
+                        ${statusButtonsHtml(record)}
+                    </div>
+                    ${expanded ? `
+                        <div class="detailBody">
+                            <div class="quoteGrid">
+                                <section class="quotePanel">
+                                    <blockquote>"${escapeHtml(record.quote)}"</blockquote>
+                                    <div class="detailGrid">
+                                        <div class="detailCell">
+                                            <strong>Speaker</strong>
+                                            ${escapeHtml(record.quote_speaker || "Unspecified")}
+                                        </div>
+                                        <div class="detailCell">
+                                            <strong>Creators</strong>
+                                            ${escapeHtml(creators || record.source_work.creator)}
+                                        </div>
+                                        <div class="detailCell">
+                                            <strong>Themes</strong>
+                                            ${escapeHtml(themes || "-")}
+                                        </div>
+                                        <div class="detailCell">
+                                            <strong>Decision date</strong>
+                                            ${escapeHtml(record.review.decision_date || "-")}
+                                        </div>
+                                    </div>
+                                    <p>${escapeHtml(record.source_work.summary)}</p>
+                                </section>
+                                <section class="sourcePanel">
+                                    <div class="sourceTop">
+                                        <div>${coverHtml(record)}</div>
+                                        <div>
+                                            <h4>${escapeHtml(record.source_work.title)}</h4>
+                                            <p>${escapeHtml(record.source_work.creator)}</p>
+                                            <div class="actionRow">
+                                                <a class="miniButton" href="${escapeHtml(record.source.url)}" target="_blank" rel="noreferrer">Quote Source</a>
+                                                <a class="miniButton" href="${escapeHtml(record.metadata_source.url)}" target="_blank" rel="noreferrer">Metadata</a>
+                                                <a class="miniButton" href="${escapeHtml(record.source_work.catalog_url)}" target="_blank" rel="noreferrer">${escapeHtml(record.source_work.catalog_label)}</a>
+                                                <a class="miniButton" href="/snapshot/${encodeURIComponent(record.id)}" target="_blank" rel="noreferrer">Open Snapshot</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <details class="snapshotWrap">
+                                        <summary>Local Snapshot</summary>
+                                        ${snapshot
+                                            ? `<div class="snapshotBox">${escapeHtml(snapshot.content)}</div>`
+                                            : '<div class="snapshotStatus">Loading local snapshot…</div>'
+                                        }
+                                    </details>
+                                </section>
+                            </div>
+                            <section class="editPanel" style="margin-top: 16px;">
+                                <h4>Editorial Notes</h4>
+                                <div class="fieldGrid">
+                                    <div class="fieldBlock">
+                                        <label>Priority</label>
+                                        <select class="select" data-field="priority" ${priorityDisabled}>
+                                            <option value="" ${!record.review.priority ? "selected" : ""}>None</option>
+                                            <option value="high" ${record.review.priority === "high" ? "selected" : ""}>High</option>
+                                            <option value="medium" ${record.review.priority === "medium" ? "selected" : ""}>Medium</option>
+                                            <option value="low" ${record.review.priority === "low" ? "selected" : ""}>Low</option>
+                                        </select>
+                                    </div>
+                                    <div class="fieldBlock">
+                                        <label>Next Action</label>
+                                        <input class="input" data-field="next_action" value="${escapeHtml(record.review.next_action || "")}" ${nextActionDisabled}>
+                                    </div>
+                                </div>
+                                <div style="margin-top: 12px;">
+                                    <label>Review Note</label>
+                                    <textarea class="textarea" data-field="decision_note">${escapeHtml(record.review.decision_note || "")}</textarea>
+                                </div>
+                                <div class="actionRow" style="margin-top: 12px;">
+                                    <button type="button" class="button primary" data-action="save-note">Save Notes</button>
+                                    <a class="button neutral" href="${escapeHtml(record.source_work.cover_page_url)}" target="_blank" rel="noreferrer">Cover Page</a>
+                                </div>
+                            </section>
+                        </div>
+                    ` : ""}
+                </article>
+            `;
+        }
+
+        function laneTemplate(status) {
+            const records = filteredLaneRecords(status);
+            const totalRecords = board.records.filter((record) => record.review.status === status).length;
+            const fullLane = board.records.filter((record) => record.review.status === status);
+            if (!records.length) {
+                return `
+                    <section class="laneIntro">
+                        <h2>${escapeHtml(laneLabels[status])}</h2>
+                        <p>${escapeHtml(laneDescriptions[status])}</p>
+                        <p><strong>Showing:</strong> 0 of ${escapeHtml(totalRecords)} ${escapeHtml(status)} items.</p>
+                    </section>
+                    <div class="empty">No ${escapeHtml(status)} records match the current filter.</div>
+                `;
+            }
+
+            return `
+                <section class="laneIntro">
+                    <h2>${escapeHtml(laneLabels[status])}</h2>
+                    <p>${escapeHtml(laneDescriptions[status])}</p>
+                    <p><strong>Showing:</strong> ${escapeHtml(records.length)} of ${escapeHtml(totalRecords)} ${escapeHtml(status)} items${searchTerm.trim() ? " for the current search" : ""}.</p>
+                </section>
+                <div class="list" data-lane="${escapeHtml(status)}">
+                    ${records.map((record, index) => itemTemplate(
+                        record,
+                        index,
+                        fullLane.findIndex((candidate) => candidate.id === record.id),
+                        fullLane.length
+                    )).join("")}
+                </div>
+            `;
+        }
+
+        function renderSourcesTab() {
+            const nextStrategy = sourceScans.strategies.find((strategy) => strategy.status === "ready");
+            const discovered = filteredDiscoveryRecords();
+            return `
+                <div class="sourceGrid">
+                    <section class="sourceCard">
+                        <h2>Source Discovery</h2>
+                        <p>Track what has been scanned, when it was scanned, and which widening strategy should run next as we push toward the 100-title starting pool.</p>
+                        <div class="actionRow">
+                            <button class="button warn" id="expandSearchButton">Expand Search</button>
+                            <a class="button neutral" href="/harness" target="_blank" rel="noreferrer">Open Harness in Browser</a>
+                        </div>
+                        <div class="detailGrid" style="margin-top: 14px;">
+                            <div class="detailCell">
+                                <strong>Next widening strategy</strong>
+                                ${escapeHtml(nextStrategy ? nextStrategy.label : "All strategies applied")}
+                            </div>
+                            <div class="detailCell">
+                                <strong>Discovered titles</strong>
+                                ${escapeHtml(`${discovery.records.length} / ${discovery.target_count}`)}
+                            </div>
+                            <div class="detailCell">
+                                <strong>Source scans logged</strong>
+                                ${escapeHtml(sourceScans.scanned_sources.length)}
+                            </div>
+                        </div>
+                    </section>
+                    <section class="tableCard">
+                        <h2>Widening Strategies</h2>
+                        <div class="tableWrap">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Strategy</th>
+                                        <th>Status</th>
+                                        <th>Providers</th>
+                                        <th>Applied</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    ${sourceScans.strategies.map((strategy) => `
+                                        <tr>
+                                            <td><strong>${escapeHtml(strategy.label)}</strong><br>${escapeHtml(strategy.notes || "")}</td>
+                                            <td>${escapeHtml(strategy.status)}</td>
+                                            <td>${escapeHtml((strategy.providers || []).join(", "))}</td>
+                                            <td>${escapeHtml(strategy.applied_on || "-")}</td>
+                                        </tr>
+                                    `).join("")}
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                </div>
+                <section class="tableCard" style="margin-top: 18px;">
+                    <h2>Discovered Titles</h2>
+                    <div class="tableWrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Title</th>
+                                    <th>Year</th>
+                                    <th>Type</th>
+                                    <th>Strategy</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                ${discovered.map((record) => `
+                                    <tr>
+                                        <td><strong>${escapeHtml(record.title)}</strong><br>${escapeHtml(record.creator)}</td>
+                                        <td>${escapeHtml(record.year ?? "-")}</td>
+                                        <td>${escapeHtml(record.work_type)}</td>
+                                        <td>${escapeHtml(record.strategy_id)}</td>
+                                    </tr>
+                                `).join("")}
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+                <section class="tableCard" style="margin-top: 18px;">
+                    <h2>Scanned Source Log</h2>
+                    <div class="tableWrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Label</th>
+                                    <th>Provider</th>
+                                    <th>Scanned</th>
+                                    <th>Strategy</th>
+                                    <th>Kind</th>
+                                    <th>Open</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                ${sourceScans.scanned_sources.map((record) => `
+                                    <tr>
+                                        <td><strong>${escapeHtml(record.label)}</strong><br>${escapeHtml(record.notes || "")}</td>
+                                        <td>${escapeHtml(record.provider)}</td>
+                                        <td>${escapeHtml(record.scanned_on)}</td>
+                                        <td>${escapeHtml(record.strategy_id)}</td>
+                                        <td>${escapeHtml(record.kind)}</td>
+                                        <td><a href="${escapeHtml(record.url)}" target="_blank" rel="noreferrer">Open in browser</a></td>
+                                    </tr>
+                                `).join("")}
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            `;
+        }
+
+        function renderEmbeddedPage(pageKey) {
+            const pageMap = {
+                public: {
+                    title: "Public Page",
+                    href: "/public",
+                    description: "This generated page is displayed in-app below and can also be opened in its own browser tab."
+                },
+                harness: {
+                    title: "UI Harness",
+                    href: "/harness",
+                    description: "Use the harness to sanity-check the local user-facing surfaces and the expected launch paths."
+                }
+            };
+            const page = pageMap[pageKey];
+            return `
+                <section class="frameIntro">
+                    <h2>${escapeHtml(page.title)}</h2>
+                    <p>${escapeHtml(page.description)}</p>
+                    <div class="actionRow">
+                        <a class="button neutral" href="${page.href}" target="_blank" rel="noreferrer">Open in Browser Tab</a>
+                    </div>
+                </section>
+                <div class="iframePanel">
+                    <iframe src="${page.href}" title="${escapeHtml(page.title)}"></iframe>
+                </div>
+            `;
+        }
+
+        async function fetchSnapshot(id) {
+            if (snapshotCache[id]) {
+                return snapshotCache[id];
+            }
+            const payload = await api(`/api/source-snapshot/${encodeURIComponent(id)}`);
+            snapshotCache[id] = payload;
+            return payload;
+        }
+
+        function queueVisibleSnapshots() {
+            if (!["candidate", "approved", "postponed", "declined"].includes(activeTab)) {
+                return;
+            }
+            const records = filteredLaneRecords(activeTab);
+            for (const record of records) {
+                if (!expandedByStatus[record.review.status]?.[record.id]) {
+                    continue;
+                }
+                if (snapshotCache[record.id]) {
+                    continue;
+                }
+                fetchSnapshot(record.id).then(() => {
+                    if (activeTab === record.review.status) {
+                        renderContent();
+                    }
+                }).catch((error) => {
+                    snapshotCache[record.id] = { content: `Snapshot unavailable: ${error.message}` };
+                    renderContent();
+                });
+            }
+        }
+
+        function renderContent() {
+            const content = document.getElementById("tabContent");
+            let html = "";
+            if (["candidate", "approved", "postponed", "declined"].includes(activeTab)) {
+                html = laneTemplate(activeTab);
+            } else if (activeTab === "sources") {
+                html = renderSourcesTab();
+            } else if (activeTab === "public" || activeTab === "harness") {
+                html = renderEmbeddedPage(activeTab);
+            }
+            content.innerHTML = html;
+            wireRenderedContent();
+            queueVisibleSnapshots();
+        }
+
+        function readCardPayload(card, statusOverride = null) {
+            const currentRecord = board.records.find((record) => record.id === card.dataset.id);
+            const priorityField = card.querySelector('[data-field="priority"]');
+            const nextActionField = card.querySelector('[data-field="next_action"]');
+            const noteField = card.querySelector('[data-field="decision_note"]');
+            return {
+                status: statusOverride || currentRecord?.review.status || "candidate",
+                priority: priorityField
+                    ? (priorityField.disabled ? null : (priorityField.value || null))
+                    : (currentRecord?.review.priority || null),
+                next_action: nextActionField
+                    ? (nextActionField.disabled ? null : (nextActionField.value || null))
+                    : (currentRecord?.review.next_action || null),
+                decision_note: noteField ? noteField.value : (currentRecord?.review.decision_note || "")
+            };
+        }
+
+        async function saveCard(card, statusOverride = null) {
+            const recordId = card.dataset.id;
+            const currentRecord = board.records.find((record) => record.id === recordId);
+            const sourceStatus = currentRecord?.review.status || activeTab;
+            const payload = readCardPayload(card, statusOverride);
+            setStatus(`Saving ${recordId}…`);
+            const response = await api(`/api/record/${encodeURIComponent(recordId)}`, {
+                method: "POST",
+                body: JSON.stringify(payload)
+            });
+            board = response.board;
+            if (sourceStatus && expandedByStatus[sourceStatus]) {
+                expandedByStatus[sourceStatus][recordId] = false;
+            }
+            if (statusOverride && expandedByStatus[statusOverride]) {
+                expandedByStatus[statusOverride][recordId] = false;
+            }
+            render();
+            setStatus(
+                statusOverride
+                    ? `Moved ${recordId} from ${sourceStatus} to ${statusOverride}.`
+                    : `Saved notes for ${recordId}.`
+            );
+        }
+
+        async function repositionCard(recordId, targetLaneIndex) {
+            setStatus(`Reordering ${recordId}…`);
+            const response = await api(`/api/record/${encodeURIComponent(recordId)}/reposition`, {
+                method: "POST",
+                body: JSON.stringify({ target_lane_index: targetLaneIndex })
+            });
+            board = response.board;
+            render();
+            setStatus(`Reordered ${recordId}.`);
+        }
+
+        async function moveCard(recordId, direction) {
+            setStatus(`Moving ${recordId} ${direction}…`);
+            const response = await api(`/api/record/${encodeURIComponent(recordId)}/move`, {
+                method: "POST",
+                body: JSON.stringify({ direction })
+            });
+            board = response.board;
+            render();
+            setStatus(`Moved ${recordId} ${direction}.`);
+        }
+
+        function clearDropMarkers() {
+            document.querySelectorAll(".reviewItem").forEach((card) => {
+                card.classList.remove("dropBefore", "dropAfter", "dragging");
+            });
+        }
+
+        function stopAutoScroll() {
+            autoScrollStep = 0;
+            if (autoScrollRaf !== null) {
+                cancelAnimationFrame(autoScrollRaf);
+                autoScrollRaf = null;
+            }
+        }
+
+        function runAutoScroll() {
+            if (!dragState || autoScrollStep === 0) {
+                autoScrollRaf = null;
+                return;
+            }
+            window.scrollBy(0, autoScrollStep);
+            autoScrollRaf = requestAnimationFrame(runAutoScroll);
+        }
+
+        function updateAutoScroll(clientY) {
+            if (!dragState) {
+                stopAutoScroll();
+                return;
+            }
+            const threshold = Math.min(140, Math.floor(window.innerHeight * 0.2));
+            let nextStep = 0;
+            if (clientY < threshold) {
+                const intensity = (threshold - clientY) / threshold;
+                nextStep = -Math.max(10, Math.round(26 * intensity));
+            } else if (clientY > window.innerHeight - threshold) {
+                const intensity = (clientY - (window.innerHeight - threshold)) / threshold;
+                nextStep = Math.max(10, Math.round(26 * intensity));
+            }
+
+            autoScrollStep = nextStep;
+            if (autoScrollStep === 0) {
+                stopAutoScroll();
+                return;
+            }
+            if (autoScrollRaf === null) {
+                autoScrollRaf = requestAnimationFrame(runAutoScroll);
+            }
+        }
+
+        function computeFinalLaneIndex(sourceIndex, targetIndex, placeAfter) {
+            if (placeAfter) {
+                return sourceIndex < targetIndex ? targetIndex : targetIndex + 1;
+            }
+            return sourceIndex < targetIndex ? targetIndex - 1 : targetIndex;
+        }
+
+        async function expandSearch() {
+            setStatus("Expanding search…");
+            const response = await api("/api/expand-search", {
+                method: "POST",
+                body: JSON.stringify({})
+            });
+            sourceScans = response.scans;
+            discovery = response.discovery;
+            render();
+            setStatus(response.message);
+        }
+
+        function wireRenderedContent() {
+            document.querySelectorAll("[data-toggle-details]").forEach((button) => {
+                button.addEventListener("click", () => {
+                    const recordId = button.dataset.toggleDetails;
+                    expandedByStatus[activeTab][recordId] = !expandedByStatus[activeTab][recordId];
+                    renderContent();
+                });
+            });
+
+            document.querySelectorAll('[data-action="save-note"]').forEach((button) => {
+                button.addEventListener("click", async () => {
+                    await saveCard(button.closest(".reviewItem"));
+                });
+            });
+
+            document.querySelectorAll("[data-move-direction]").forEach((button) => {
+                button.addEventListener("click", async () => {
+                    const card = button.closest(".reviewItem");
+                    await moveCard(card.dataset.id, button.dataset.moveDirection);
+                });
+            });
+
+            document.querySelectorAll("[data-status-action]").forEach((button) => {
+                button.addEventListener("click", async () => {
+                    const card = button.closest(".reviewItem");
+                    await saveCard(card, button.dataset.statusAction);
+                });
+            });
+
+            const laneRecords = filteredLaneRecords(activeTab);
+            const fullLane = board.records.filter((record) => record.review.status === activeTab);
+
+            document.querySelectorAll(".reviewItem").forEach((card) => {
+                card.addEventListener("dragstart", (event) => {
+                    const sourceId = card.dataset.id;
+                    const sourceIndex = fullLane.findIndex((record) => record.id === sourceId);
+                    dragState = { sourceId, sourceIndex };
+                    event.dataTransfer.effectAllowed = "move";
+                    event.dataTransfer.setData("text/plain", sourceId);
+                    card.classList.add("dragging");
+                });
+
+                card.addEventListener("dragend", () => {
+                    dragState = null;
+                    stopAutoScroll();
+                    clearDropMarkers();
+                });
+
+                card.addEventListener("dragover", (event) => {
+                    if (!dragState) {
+                        return;
+                    }
+                    event.preventDefault();
+                    updateAutoScroll(event.clientY);
+                    const rect = card.getBoundingClientRect();
+                    const placeAfter = (event.clientY - rect.top) > (rect.height / 2);
+                    card.classList.toggle("dropBefore", !placeAfter);
+                    card.classList.toggle("dropAfter", placeAfter);
+                });
+
+                card.addEventListener("dragleave", () => {
+                    card.classList.remove("dropBefore", "dropAfter");
+                });
+
+                card.addEventListener("drop", async (event) => {
+                    if (!dragState) {
+                        return;
+                    }
+                    event.preventDefault();
+                    stopAutoScroll();
+                    const targetId = card.dataset.id;
+                    const targetIndex = fullLane.findIndex((record) => record.id === targetId);
+                    const rect = card.getBoundingClientRect();
+                    const placeAfter = (event.clientY - rect.top) > (rect.height / 2);
+                    clearDropMarkers();
+                    if (targetIndex < 0 || dragState.sourceIndex < 0) {
+                        return;
+                    }
+                    const finalIndex = computeFinalLaneIndex(dragState.sourceIndex, targetIndex, placeAfter);
+                    if (finalIndex === dragState.sourceIndex) {
+                        return;
+                    }
+                    await repositionCard(dragState.sourceId, finalIndex);
+                });
+            });
+
+            const expandButton = document.getElementById("expandSearchButton");
+            if (expandButton) {
+                expandButton.addEventListener("click", expandSearch);
+            }
+        }
+
+        function setStatus(message) {
+            document.getElementById("boardStatus").textContent = message;
+        }
+
+        function render() {
+            renderMeta();
+            renderTabs();
+            renderContent();
+        }
+
+        document.getElementById("search").addEventListener("input", (event) => {
+            searchTerm = event.target.value;
+            renderContent();
+            renderTabs();
+        });
+
+        document.getElementById("clearSearch").addEventListener("click", () => {
+            searchTerm = "";
+            document.getElementById("search").value = "";
+            render();
+        });
+
+        document.addEventListener("dragover", (event) => {
+            if (!dragState) {
+                return;
+            }
+            updateAutoScroll(event.clientY);
+        });
+
+        document.addEventListener("drop", () => {
+            stopAutoScroll();
+        });
+
+        document.addEventListener("dragend", () => {
+            stopAutoScroll();
+        });
+
+        loadAll().then(() => {
+            setStatus(`Workbench ready. Board updated ${board.generated_at}.`);
+        }).catch((error) => {
+            setStatus(error.message);
+        });
+    </script>
+</body>
+</html>

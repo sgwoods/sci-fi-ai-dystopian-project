@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Dystopia Quotes UI Harness</title>
+    <style>
+        :root {
+            --bg: #0a1218;
+            --bg2: #1a2a34;
+            --panel: rgba(10, 18, 24, 0.86);
+            --line: rgba(220, 235, 247, 0.12);
+            --text: #edf4fa;
+            --muted: #afc1d0;
+            --pass: #75d4a8;
+            --warn: #f6c46d;
+            --fail: #ea7b62;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            color: var(--text);
+            font-family: "Avenir Next", "Segoe UI", sans-serif;
+            background: linear-gradient(160deg, var(--bg), var(--bg2));
+            min-height: 100vh;
+        }
+
+        .shell {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 24px 18px 60px;
+        }
+
+        .panel {
+            border: 1px solid var(--line);
+            border-radius: 22px;
+            background: var(--panel);
+            padding: 22px;
+            margin-bottom: 18px;
+        }
+
+        h1 {
+            margin: 0 0 10px;
+            font-size: 42px;
+            letter-spacing: -0.04em;
+        }
+
+        p {
+            color: var(--muted);
+            line-height: 1.6;
+        }
+
+        .actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 14px;
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 11px 16px;
+            border-radius: 999px;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            background: rgba(255, 255, 255, 0.06);
+            color: var(--text);
+            text-decoration: none;
+            cursor: pointer;
+            font: inherit;
+        }
+
+        .results {
+            display: grid;
+            gap: 10px;
+            margin-top: 18px;
+        }
+
+        .result {
+            padding: 12px 14px;
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            background: rgba(255, 255, 255, 0.04);
+        }
+
+        .result.pass {
+            border-color: rgba(117, 212, 168, 0.24);
+        }
+
+        .result.fail {
+            border-color: rgba(234, 123, 98, 0.24);
+        }
+
+        .result.warn {
+            border-color: rgba(246, 196, 109, 0.24);
+        }
+
+        .label {
+            display: inline-flex;
+            padding: 4px 9px;
+            border-radius: 999px;
+            font-size: 12px;
+            letter-spacing: .08em;
+            text-transform: uppercase;
+            margin-right: 8px;
+        }
+
+        .label.pass {
+            background: rgba(117, 212, 168, 0.18);
+            color: var(--pass);
+        }
+
+        .label.fail {
+            background: rgba(234, 123, 98, 0.18);
+            color: var(--fail);
+        }
+
+        .label.warn {
+            background: rgba(246, 196, 109, 0.18);
+            color: var(--warn);
+        }
+
+        iframe {
+            width: 100%;
+            min-height: 420px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 18px;
+            background: white;
+        }
+
+        .frameGrid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+        }
+
+        @media (max-width: 900px) {
+            .frameGrid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="shell">
+        <section class="panel">
+            <h1>UI Harness</h1>
+            <p>This harness runs non-destructive checks against the review workbench and the generated public page. It verifies the local pages load, the main tabs are present, the source scan surface exposes its expand-search control, and external-launch links are configured to open in a browser tab.</p>
+            <div class="actions">
+                <button class="button" id="runTests">Run Tests</button>
+                <a class="button" href="/" target="_blank" rel="noreferrer">Open Review App in Browser</a>
+                <a class="button" href="/public" target="_blank" rel="noreferrer">Open Public Page in Browser</a>
+            </div>
+            <div class="results" id="results"></div>
+        </section>
+
+        <section class="panel">
+            <div class="frameGrid">
+                <div>
+                    <h2>Review App</h2>
+                    <iframe id="reviewFrame" src="/"></iframe>
+                </div>
+                <div>
+                    <h2>Public Page</h2>
+                    <iframe id="publicFrame" src="/public"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const resultsNode = document.getElementById("results");
+
+        function addResult(status, title, detail) {
+            const node = document.createElement("div");
+            node.className = `result ${status}`;
+            node.innerHTML = `<span class="label ${status}">${status}</span><strong>${title}</strong><div style="margin-top: 6px; color: #afc1d0;">${detail}</div>`;
+            resultsNode.appendChild(node);
+        }
+
+        function clearResults() {
+            resultsNode.innerHTML = "";
+        }
+
+        function waitForFrame(frame) {
+            return new Promise((resolve, reject) => {
+                const timeout = setTimeout(() => reject(new Error("Timed out waiting for frame load.")), 10000);
+                frame.addEventListener("load", () => {
+                    clearTimeout(timeout);
+                    resolve(frame.contentWindow);
+                }, { once: true });
+                try {
+                    if (frame.contentDocument?.readyState === "complete") {
+                        clearTimeout(timeout);
+                        resolve(frame.contentWindow);
+                    }
+                } catch (error) {
+                    reject(error);
+                }
+            });
+        }
+
+        async function runHarness() {
+            clearResults();
+            const reviewFrame = document.getElementById("reviewFrame");
+            const publicFrame = document.getElementById("publicFrame");
+
+            reviewFrame.src = "/";
+            publicFrame.src = "/public";
+
+            try {
+                const [reviewWindow, publicWindow] = await Promise.all([
+                    waitForFrame(reviewFrame),
+                    waitForFrame(publicFrame)
+                ]);
+                await new Promise((resolve) => setTimeout(resolve, 700));
+
+                const reviewDoc = reviewWindow.document;
+                const publicDoc = publicWindow.document;
+
+                addResult("pass", "Pages loaded", "Both local user-facing pages loaded inside the harness iframes.");
+
+                const requiredTabs = ["Candidates", "Approved", "Postponed", "Declined", "Sources", "Public Page", "Harness"];
+                const tabTexts = Array.from(reviewDoc.querySelectorAll(".tabButton")).map((node) => node.textContent.trim());
+                const missingTabs = requiredTabs.filter((label) => !tabTexts.some((text) => text.startsWith(label)));
+                if (missingTabs.length === 0) {
+                    addResult("pass", "Review tabs present", "The review app exposes all primary tabs and pages in-app.");
+                } else {
+                    addResult("fail", "Missing review tabs", missingTabs.join(", "));
+                }
+
+                const reviewCard = reviewDoc.querySelector(".reviewItem");
+                const statusButtons = reviewDoc.querySelectorAll("[data-status-action]");
+                if (reviewCard && statusButtons.length >= 4) {
+                    addResult("pass", "Inline review actions rendered", "The review app shows self-contained quote cards with direct status actions on the item itself.");
+                } else {
+                    addResult("fail", "Inline review actions missing", "Expected a review card and visible direct status actions on the item itself.");
+                }
+
+                const toggleButton = reviewDoc.querySelector("[data-toggle-details]");
+                if (toggleButton) {
+                    addResult("pass", "Compact list toggle rendered", "Review items start as compact list entries and expose an explicit open-details control.");
+                    toggleButton.click();
+                    await new Promise((resolve) => setTimeout(resolve, 250));
+                } else {
+                    addResult("fail", "Compact list toggle missing", "Expected a clear open-details control on the collapsed review item.");
+                }
+
+                const dragHandle = reviewDoc.querySelector(".dragHandle");
+                if (dragHandle) {
+                    addResult("pass", "Drag ordering handle rendered", "The review app exposes a visible drag-to-reorder affordance in the list.");
+                } else {
+                    addResult("fail", "Drag ordering handle missing", "Expected a visible drag-to-reorder affordance on the review card.");
+                }
+
+                const jumpButtons = reviewDoc.querySelectorAll("[data-move-direction]");
+                if (jumpButtons.length >= 2) {
+                    addResult("pass", "Quick reorder buttons rendered", "The review app exposes direct move controls so long jumps do not require a long drag.");
+                } else {
+                    addResult("fail", "Quick reorder buttons missing", "Expected compact direct move controls on the review card.");
+                }
+
+                const snapshotButton = reviewDoc.querySelector('a[href^="/snapshot/"][target="_blank"]');
+                if (snapshotButton) {
+                    addResult("pass", "Local snapshot launch available", "The review card exposes a browser-tab launch path for the local provenance snapshot.");
+                } else {
+                    addResult("fail", "Local snapshot launch missing", "Expected an Open Snapshot action on the review card.");
+                }
+
+                const sourcesTab = Array.from(reviewDoc.querySelectorAll(".tabButton")).find((node) => node.textContent.trim().startsWith("Sources"));
+                if (sourcesTab) {
+                    sourcesTab.click();
+                    await new Promise((resolve) => setTimeout(resolve, 400));
+                    const expandButton = reviewDoc.getElementById("expandSearchButton");
+                    if (expandButton) {
+                        addResult("pass", "Expand search control exposed", "The sources tab rendered the Expand Search control.");
+                    } else {
+                        addResult("fail", "Expand search control missing", "Sources tab opened but did not render the button.");
+                    }
+                } else {
+                    addResult("fail", "Sources tab unavailable", "Could not click into the sources surface.");
+                }
+
+                const publicTab = Array.from(reviewDoc.querySelectorAll(".tabButton")).find((node) => node.textContent.trim().startsWith("Public Page"));
+                if (publicTab) {
+                    publicTab.click();
+                    await new Promise((resolve) => setTimeout(resolve, 400));
+                    const iframe = reviewDoc.querySelector('iframe[src="/public"]');
+                    const browserLink = reviewDoc.querySelector('a[href="/public"][target="_blank"]');
+                    if (iframe && browserLink) {
+                        addResult("pass", "Internal and browser launch paths available", "The public page can be viewed in-app and opened in a browser tab.");
+                    } else {
+                        addResult("fail", "Launch paths incomplete", "Expected both an in-app iframe and a browser-tab launch link for the public page.");
+                    }
+                }
+
+                const reviewExternalLinks = Array.from(reviewDoc.querySelectorAll('a[target="_blank"]'));
+                if (reviewExternalLinks.length >= 3) {
+                    addResult("pass", "External launch links configured", `Found ${reviewExternalLinks.length} review-app links marked to open in a browser tab.`);
+                } else {
+                    addResult("warn", "Few external launch links", "The review app loaded, but the number of browser-tab links looked smaller than expected.");
+                }
+
+                const publicLinks = Array.from(publicDoc.querySelectorAll('a[target="_blank"]'));
+                if (publicLinks.length >= 3) {
+                    addResult("pass", "Public page external links configured", `Found ${publicLinks.length} public-page links marked to open in a browser tab.`);
+                } else {
+                    addResult("fail", "Public page browser-tab links missing", "Expected public-page links to be marked for browser-tab launch.");
+                }
+
+                const publicHeading = publicDoc.querySelector("h1");
+                if (publicHeading && /AI Dystopia Quotes/i.test(publicHeading.textContent)) {
+                    addResult("pass", "Public page rendered intended content", "The public page title and main content are present.");
+                } else {
+                    addResult("fail", "Public page heading missing", "The public page did not render the expected title.");
+                }
+            } catch (error) {
+                addResult("fail", "Harness execution failed", error.message);
+            }
+        }
+
+        document.getElementById("runTests").addEventListener("click", runHarness);
+        runHarness();
+    </script>
+</body>
+</html>
