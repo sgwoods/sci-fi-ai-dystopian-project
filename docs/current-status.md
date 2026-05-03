@@ -1,6 +1,6 @@
 # Current Status
 
-This repository is in the active curation-and-recovery-audit phase.
+This repository is in the stable-and-safe operating phase.
 
 ## Current Position
 
@@ -26,8 +26,19 @@ This repository is in the active curation-and-recovery-audit phase.
 - the repo now has a preserved user-supplied Gemini intake and its non-duplicate
   source works have been merged into discovery as queued leads
 
+## Big Picture
+
+The project goal is now straightforward:
+
+1. keep bringing in better dystopian-AI quotes
+2. let the reviewer approve or reject them quickly
+3. preserve enough provenance that the approved corpus can be trusted and reused
+4. keep the system operationally safe so the work can be resumed from GitHub and
+   the canonical iCloud-backed clone without reconstruction work
+
 ## What Is Working Well
 
+- the canonical iCloud-backed working copy has been established and verified
 - there is now a clean ingest-ready approved JSON export
 - there is now a single canonical review board driving all derived outputs
 - candidate and approved states are clearly separated
@@ -44,10 +55,10 @@ This repository is in the active curation-and-recovery-audit phase.
 - the approved set now has a generated public project page under `site/`
 - the repo now has the same broad operating pattern as the nearby renovation
   projects: strong top-level README, `docs/`, `data/`, and `incoming/`
-- there is now a dedicated recovery audit documenting what is and is not yet
-  safely reconstructible from GitHub alone
-- the current recovery checkpoint has been pushed to GitHub and verified in the
-  iCloud-backed clone
+- there is now a dedicated recovery audit documenting how to resume the project
+  safely from GitHub
+- the canonical iCloud-backed clone has been verified as the day-to-day working
+  copy
 
 ## Main Open Gaps
 
@@ -59,17 +70,15 @@ This repository is in the active curation-and-recovery-audit phase.
 
 ## Next Sensible Steps
 
-1. keep using the iCloud-backed clone as the canonical working copy and retire
-   the older local copy from active use
-2. make `Find More Quotes` lean more directly on the new source registry,
-   query library, and watchlist
-3. mine the active top-10 author lane into literary quote candidates
-4. widen the literary and story-based quote coverage
-5. mine the recognizable-classics discovery lane into quote-level
-   candidates before widening too far into less familiar material
-6. add intake items for newly found source pages or scans before review
-7. keep widening each sourcing phase in larger, less repetitive batches
-8. decide whether the approved export should also carry retrieval-oriented
+1. keep using the iCloud-backed clone as the canonical working copy and avoid
+   returning to the older local copy for normal editing
+2. refill the empty `Candidates` lane from broader internet sourcing so the
+   next review session has real quote choices again
+3. make `Find More Quotes` draw more aggressively from the source registry,
+   query library, watchlist, and quote-oriented web research
+4. mine the active top-10 author lane into stronger literary quote candidates
+5. keep widening each sourcing phase in larger, less repetitive batches
+6. decide whether the approved export should also carry retrieval-oriented
    fields such as `tone`, `threat_level`, or `voice_style`
-9. decide how aggressively to add poster or cover art for records that still
+7. decide how aggressively to add poster or cover art for records that still
    rely on fallbacks

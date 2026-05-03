@@ -28,23 +28,29 @@ dystopian AI quotes while keeping the broader research trail visible:
 
 ## Current Status
 
-This repository is in the active curation-and-recovery phase.
+This repository is now in the stable-and-safe operating phase.
 
-Current first-pass position:
+Current live position:
 
-- the candidate corpus contains `12` records
-- the approved export contains `10` records
-- the current approved set is centered on classic works such as `R.U.R.`,
-  `2001: A Space Odyssey`, `I Have No Mouth, and I Must Scream`,
-  `Colossus: The Forbin Project`, `WarGames`, `The Terminator`,
-  `The Matrix`, and `Ex Machina`
+- the canonical review board contains `44` records
+- the approved export contains `32` records
+- the postponed lane contains `10` records
+- the declined lane contains `2` records
+- the active candidate lane is currently empty, which means the next priority
+  is replenishing reviewable quote candidates rather than restructuring the repo
+- the discovery system contains `183` source-work leads, `21` source places,
+  `19` reusable query patterns, and `10` recurring follow-up lanes
 - local source snapshots are preserved as compact research captures rather
   than full third-party webpage mirrors
+- the approved set spans recognizable classics from `The Machine Stops` and
+  `R.U.R.` through `2001: A Space Odyssey`, `Blade Runner`, `The Matrix`,
+  `Ex Machina`, and `Dune`
 
 ## Documentation Map
 
 - [Data index](./data/README.md): canonical data directories and what each one means
 - [Current status](./docs/current-status.md): concise live project snapshot
+- [Canonical working copy](./docs/canonical-working-copy.md): exact repo path and daily-use commands for the canonical iCloud-backed clone
 - [Project state and recovery audit](./docs/project-state-and-recovery-audit.md): exact status of the current working tree, GitHub checkpoint, and portability gaps
 - [Expanding plan](./docs/expanding-plan.md): current widening strategy including the active top-10 author lane
 - [Initial review](./docs/initial-review.md): editorial assessment of the first-pass quote set
@@ -72,6 +78,26 @@ incoming/                  Single intake bucket for newly found material
 site/                      Generated public project page
 tools/                     Review and build scripts
 ```
+
+## Canonical Workspace
+
+The canonical day-to-day working copy is now:
+
+- `/Users/stevenwoods/Library/Mobile Documents/com~apple~CloudDocs/Projects/sci-fi-ai-dystopian-project`
+
+Use that clone for normal editing, review, commits, and publishing.
+
+## Near-Term Plan
+
+Now that the repo itself is stable and recoverable, the next product work is:
+
+1. refill the `Candidates` lane with stronger quote options from broader
+   internet sourcing
+2. make `Find More Quotes` behave more like a determined researcher and less
+   like a local-packs shortcut
+3. grow literary coverage alongside recognizable film and game coverage
+4. keep publishing only the strongest approved records into the public JSON and
+   public project page
 
 ## Record Shape
 

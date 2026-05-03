@@ -41,16 +41,25 @@ The canonical review board file is:
 
 ## Git Checkpoint Truth
 
-The current pushed recovery point is:
+The operating rule is:
 
-- branch: `main`
-- local HEAD: `1be7269c6546a7987e1286b53bc9e8874b6cbf48`
-- remote `origin/main`: `1be7269c6546a7987e1286b53bc9e8874b6cbf48`
+- the project should remain on branch `main`
+- the canonical iCloud-backed clone should stay aligned with `origin/main`
+- after each substantive stabilization or curation step, local `HEAD` and
+  `origin/main` should match again
 
-This means the repository is **not ahead of origin by commits**.
+Practical verification commands:
 
-At the time of the checkpoint, the substantive project state has been committed
-and pushed.
+```bash
+git rev-parse HEAD
+git rev-parse origin/main
+git status --short
+```
+
+The desired steady state is:
+
+- `HEAD` matches `origin/main`
+- `git status --short` is empty unless new work is intentionally in progress
 
 ## What Is Checked In And Recoverable From GitHub Right Now
 
@@ -58,21 +67,21 @@ The GitHub recovery point now includes the current substantive working state,
 including the newer source-expansion system, recovery audit, and tracked local
 source snapshots.
 
-Tracked file count at the current recovery point:
+Tracked file count after the current operating-guide step is committed:
 
-- total tracked files: `98`
+- total tracked files: `85`
 
 Tracked top-level groups:
 
-- `data`: `62`
-- `docs`: `8`
+- `data`: `61`
+- `docs`: `9`
 - `incoming`: `3`
 - `site`: `3`
 - `tools`: `6`
-- root docs/config files: `4`
+- root docs/config files: `3`
 
-This means a clean clone of `origin/main` can recover the current committed
-project state.
+This means a clean clone of `origin/main` can recover the committed project
+state, including the canonical operating guide under `docs/`.
 
 ## What Is Not Yet Checked In
 
@@ -85,8 +94,7 @@ ignored.
 ## Critical Recovery Gaps
 
 The earlier critical gap was that many board-linked snapshot files and the
-newer source-expansion files were only local. That gap has now been closed by
-the recovery checkpoint commit.
+newer source-expansion files were only local. That gap has now been closed.
 
 ## Machine-Specific Assumptions
 
@@ -107,13 +115,13 @@ need either:
 
 ## Precise Recovery Assessment
 
-Current answer: **Yes, the committed project state is now recoverable from GitHub alone.**
+Current answer: **Yes, the committed project state is recoverable from GitHub alone.**
 
 Current answer in more detail:
 
 - a clean clone of `origin/main` can recreate the committed project state
 - that clone has already been verified in an iCloud-backed working directory
-- the iCloud-backed clone is now the recommended day-to-day working copy
+- the iCloud-backed clone is now the canonical day-to-day working copy
 
 ## Recommended Next Steps
 
@@ -136,4 +144,4 @@ without redoing work", do this next:
 
 The correct management summary right now is:
 
-`The project now has a recoverable remote checkpoint, and the canonical working copy is the verified iCloud-backed clone.`
+`The project is recoverable from GitHub, and the canonical working copy is the verified iCloud-backed clone.`

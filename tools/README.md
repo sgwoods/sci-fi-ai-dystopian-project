@@ -28,6 +28,10 @@ The canonical editable data file is:
 
 Everything else in the workflow is derived from that file.
 
+The canonical working copy for running these commands is:
+
+- `/Users/stevenwoods/Library/Mobile Documents/com~apple~CloudDocs/Projects/sci-fi-ai-dystopian-project`
+
 ## Common Commands
 
 ```bash
@@ -50,6 +54,12 @@ Run:
 python3 tools/review_app_server.py --port 8123
 ```
 
+Recommended working directory:
+
+```bash
+cd "/Users/stevenwoods/Library/Mobile Documents/com~apple~CloudDocs/Projects/sci-fi-ai-dystopian-project"
+```
+
 Then open:
 
 - `http://127.0.0.1:8123/` for the review workbench
@@ -70,6 +80,10 @@ The review app lets you:
 The `Find More Quotes` flow is intentionally quote-first. The user asks for
 more quotes, while the app quietly draws from the supporting research system in
 `data/discovery/`.
+
+The product priority from here is to keep turning broader internet research
+into stronger quote candidates, not to make the reviewer manage the underlying
+research machinery directly.
 
 ## UI Harness
 
