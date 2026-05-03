@@ -1,0 +1,216 @@
+{
+  "collection": "ai-dystopia-query-library",
+  "generated_at": "2026-04-04",
+  "description": "Reusable search patterns for widening source leads and mining verified dystopian AI quote candidates.",
+  "records": [
+    {
+      "id": "query-blade-runner-classics",
+      "label": "Blade Runner classics",
+      "modes": ["mixed", "source"],
+      "tags": ["blade runner", "film", "recognizable", "quotes"],
+      "query_text": "Blade Runner Roy Batty tears in rain Tyrell quotes IMDb Wikiquote",
+      "source_targets": ["IMDb quote pages", "Wikiquote", "Wikipedia"],
+      "goal": "Find additional recognizable Blade Runner lines beyond the existing approval set.",
+      "success_signal": "Multiple stable quote pages or high-confidence quote variants.",
+      "notes": "Best when the user wants more recognizable film lines."
+    },
+    {
+      "id": "query-black-mirror-copies",
+      "label": "Black Mirror copied consciousness",
+      "modes": ["mixed", "source", "query"],
+      "tags": ["black mirror", "copied consciousness", "tv", "quotes"],
+      "query_text": "Black Mirror White Christmas Be Right Back copied consciousness quotes IMDb transcript",
+      "source_targets": ["IMDb quote pages", "transcript hints", "Wikipedia"],
+      "goal": "Find strong AI punishment, replacement, and digital consciousness lines.",
+      "success_signal": "An ominous line with stable wording and strong episode context.",
+      "notes": "High-yield modern lane for quote-rich AI dread."
+    },
+    {
+      "id": "query-asimov-robots",
+      "label": "Asimov robot law pass",
+      "modes": ["mixed", "author"],
+      "tags": ["asimov", "robots", "books", "classic"],
+      "query_text": "Isaac Asimov robot quotes I Robot The Complete Robot laws of robotics",
+      "source_targets": ["Wikiquote", "Open Library", "Wikipedia", "Goodreads"],
+      "goal": "Widen literary robot-control and personhood coverage from a canonical author lane.",
+      "success_signal": "A quotable line tied to a recognizable Asimov work with clear attribution.",
+      "notes": "Useful when the corpus needs more books and classic robot fiction."
+    },
+    {
+      "id": "query-foundation-control",
+      "label": "Foundation control systems",
+      "modes": ["mixed", "author", "query"],
+      "tags": ["foundation", "asimov", "control", "prediction"],
+      "query_text": "Foundation psychohistory control system quotes Asimov",
+      "source_targets": ["Wikiquote", "Open Library", "Wikipedia"],
+      "goal": "Mine adjacent control-dystopia lines from the Foundation lane.",
+      "success_signal": "A line that feels relevant to AI/system control rather than generic empire politics.",
+      "notes": "Useful when the user specifically asks for Foundation."
+    },
+    {
+      "id": "query-herbert-machines",
+      "label": "Frank Herbert anti-machine",
+      "modes": ["mixed", "author"],
+      "tags": ["dune", "herbert", "thinking machines", "books"],
+      "query_text": "Frank Herbert thinking machines quotes Dune Butlerian Jihad",
+      "source_targets": ["Wikiquote", "Wikipedia", "Open Library"],
+      "goal": "Find memorable anti-machine lines with strong literary recognition.",
+      "success_signal": "A line that directly names machine domination or human dependency.",
+      "notes": "Good for the adjacent anti-machine canon the user requested."
+    },
+    {
+      "id": "query-orwell-control",
+      "label": "Orwell control language",
+      "modes": ["mixed", "author", "query"],
+      "tags": ["orwell", "control", "surveillance", "adjacent"],
+      "query_text": "George Orwell quotes future control surveillance boot stamping",
+      "source_targets": ["Wikiquote", "Wikipedia", "Open Library"],
+      "goal": "Find adjacent control-dystopia language that supports the AI tyranny theme.",
+      "success_signal": "A line with strong future-control rhetoric and high recognizability.",
+      "notes": "Adjacent lane, not core AI verification."
+    },
+    {
+      "id": "query-robot-rebellion",
+      "label": "Robot rebellion film and game pass",
+      "modes": ["mixed", "query", "source"],
+      "tags": ["robot rebellion", "uprising", "films", "games"],
+      "query_text": "robot rebellion quotes sci fi movie game AI uprising quotes",
+      "source_targets": ["Google", "Reddit", "TV Tropes", "IMDb quote pages"],
+      "goal": "Find ominous revolt lines from recognizable robot and AI rebellion works.",
+      "success_signal": "A line tied to a named recognizable work, not just a generic slogan.",
+      "notes": "Useful when the user asks for more robot revolt material."
+    },
+    {
+      "id": "query-machine-control",
+      "label": "Machine control language",
+      "modes": ["mixed", "query"],
+      "tags": ["control", "surveillance", "machine rule"],
+      "query_text": "machine control quotes dystopian AI total control surveillance",
+      "source_targets": ["Google", "Wikiquote", "Wikipedia", "Reddit"],
+      "goal": "Find lines about surrendering agency to systems and algorithms.",
+      "success_signal": "A memorable line that reads clearly out of context.",
+      "notes": "Good fallback for broad ominous-control hunts."
+    },
+    {
+      "id": "query-consciousness",
+      "label": "Machine consciousness and selfhood",
+      "modes": ["mixed", "query", "source"],
+      "tags": ["consciousness", "selfhood", "identity", "ai"],
+      "query_text": "AI consciousness quotes Ghost in the Shell Ex Machina Her westworld",
+      "source_targets": ["Wikiquote", "IMDb quote pages", "Wikipedia"],
+      "goal": "Find haunting selfhood and post-human identity lines.",
+      "success_signal": "A line that is both ominous and reusable outside its full scene.",
+      "notes": "Useful when the user asks for consciousness-heavy material."
+    },
+    {
+      "id": "query-games-ominous",
+      "label": "Ominous AI game quotes",
+      "modes": ["mixed", "query", "source"],
+      "tags": ["games", "portal", "mass effect", "system shock"],
+      "query_text": "ominous AI video game quotes GLaDOS SHODAN Legion",
+      "source_targets": ["Wikiquote", "game wikis", "Wikipedia", "Reddit"],
+      "goal": "Keep the project from becoming too film-heavy while staying recognizable.",
+      "success_signal": "A memorable game line from a major title with strong AI themes.",
+      "notes": "Useful whenever game coverage feels thin."
+    },
+    {
+      "id": "query-imdb-quotes-ai",
+      "label": "IMDb AI movie quote sweep",
+      "modes": ["mixed", "source"],
+      "tags": ["imdb", "films", "quotes", "recognizable"],
+      "query_text": "site:imdb.com/title/ quotes artificial intelligence sci fi movie",
+      "source_targets": ["Google", "IMDb quote pages"],
+      "goal": "Find titles with already-aggregated quote pages for fast candidate harvesting.",
+      "success_signal": "A title-specific IMDb quote page with stable ominous lines.",
+      "notes": "Fastest way to widen film quote candidates."
+    },
+    {
+      "id": "query-reddit-books-ai",
+      "label": "Reddit literary AI recommendations",
+      "modes": ["mixed", "author", "query"],
+      "tags": ["reddit", "books", "ai", "recommendations"],
+      "query_text": "site:reddit.com/r/printSF AI fiction recommendations robots dystopia",
+      "source_targets": ["Google", "r/printSF", "r/suggestmeabook"],
+      "goal": "Find books and stories not already in the main canon list.",
+      "success_signal": "A thread producing multiple plausible works to add to discovery.",
+      "notes": "Best for keeping the literary lane fresh."
+    },
+    {
+      "id": "query-reddit-films-ai",
+      "label": "Reddit AI movie recommendations",
+      "modes": ["mixed", "source", "query"],
+      "tags": ["reddit", "films", "ai", "recommendations"],
+      "query_text": "site:reddit.com/r/scifi AI movie recommendations robot dystopia",
+      "source_targets": ["Google", "r/scifi", "Letterboxd"],
+      "goal": "Find recognizable film and TV works that people still surface organically.",
+      "success_signal": "A thread or list that yields recognizable missing titles.",
+      "notes": "Useful when the film lane feels repetitive."
+    },
+    {
+      "id": "query-theme-site-wikiquote",
+      "label": "Wikiquote topic page pass",
+      "modes": ["mixed", "source", "query"],
+      "tags": ["wikiquote", "topic", "robots", "ai"],
+      "query_text": "site:en.wikiquote.org robot artificial intelligence dystopia quotes",
+      "source_targets": ["Google", "Wikiquote"],
+      "goal": "Find quote-rich topic pages and title pages quickly.",
+      "success_signal": "A stable quote page that yields more than one usable lead.",
+      "notes": "Good high-trust widening pass."
+    },
+    {
+      "id": "query-long-tail-books",
+      "label": "Long-tail AI dystopia books",
+      "modes": ["mixed", "author", "query"],
+      "tags": ["books", "long-tail", "ai", "dystopia"],
+      "query_text": "obscure classic AI dystopia novels quotes robots supercomputer fiction",
+      "source_targets": ["Google", "Goodreads", "LibraryThing", "Open Library"],
+      "goal": "Push past the most obvious canon once recognizability coverage is healthy.",
+      "success_signal": "A work that repeatedly appears across independent discovery surfaces.",
+      "notes": "Good later-wave expansion query."
+    },
+    {
+      "id": "query-transcript-hints",
+      "label": "Transcript hint sweep",
+      "modes": ["mixed", "source"],
+      "tags": ["transcripts", "hint", "films", "tv"],
+      "query_text": "AI movie transcript quotes ominous robot lines site:subslikescript.com",
+      "source_targets": ["Google", "Subslikescript", "Quotes.net", "Movie Quotes .com"],
+      "goal": "Generate follow-up leads when stable quote pages are thin.",
+      "success_signal": "A promising line worth verifying later from a stronger source.",
+      "notes": "Never final verification by itself."
+    },
+    {
+      "id": "query-gemini-ideation",
+      "label": "Gemini widening prompt",
+      "modes": ["mixed", "author", "query", "source"],
+      "tags": ["gemini", "ideation", "prompts"],
+      "query_text": "Give me 20 recognizable dystopian AI works likely to contain ominous quotable lines, grouped by medium and decade.",
+      "source_targets": ["Gemini"],
+      "goal": "Broaden the candidate work queue with new title clusters.",
+      "success_signal": "A batch of plausible works that can be verified elsewhere.",
+      "notes": "Idea generation only, never final quote truth."
+    },
+    {
+      "id": "query-chatgpt-ideation",
+      "label": "ChatGPT widening prompt",
+      "modes": ["mixed", "author", "query", "source"],
+      "tags": ["chatgpt", "ideation", "prompts"],
+      "query_text": "Suggest recognizable AI dystopia books, films, shows, and games with likely ominous quote scenes; bias toward classics first, then long-tail.",
+      "source_targets": ["ChatGPT"],
+      "goal": "Generate alternate widening angles and reduce blind spots.",
+      "success_signal": "A usable set of titles or author lanes to verify manually.",
+      "notes": "Idea generation only, not quote verification."
+    },
+    {
+      "id": "query-claude-ideation",
+      "label": "Claude widening prompt",
+      "modes": ["mixed", "author", "query", "source"],
+      "tags": ["claude", "ideation", "prompts"],
+      "query_text": "Generate increasingly obscure but still worthwhile dystopian AI works that may contain memorable lines about machine control, rebellion, or synthetic consciousness.",
+      "source_targets": ["Claude"],
+      "goal": "Push beyond the current canon without losing thematic fit.",
+      "success_signal": "A follow-up work list with some overlap and some genuinely new leads.",
+      "notes": "Useful for later-wave long-tail expansion."
+    }
+  ]
+}

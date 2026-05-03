@@ -20,7 +20,9 @@ between `candidate`, `approved`, `postponed`, and `declined`.
 
 Use one of these two paths:
 
-- local development source:
+- local development source inside a checkout of this repository:
+  `data/approved/ai-dystopia-quotes.approved.json`
+- machine-specific absolute example on the original development machine:
   `/Users/stevenwoods/SciFi AI Dystopian Project/data/approved/ai-dystopia-quotes.approved.json`
 - published public copy:
   `/Users/stevenwoods/GitPages/public/data/ai-dystopia-quotes.approved.json`
@@ -86,6 +88,9 @@ The publishing command for this project is:
 ```bash
 python3 tools/publish_public_project.py --public-root /Users/stevenwoods/GitPages/public
 ```
+
+The `--public-root` value is machine-specific and should be changed on a new
+machine if the shared public-site checkout lives somewhere else.
 
 That command refreshes:
 

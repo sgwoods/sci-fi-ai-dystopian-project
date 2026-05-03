@@ -17,6 +17,9 @@ CANDIDATES_PATH = ROOT / "data" / "candidates" / "ai-dystopia-quotes.candidates.
 APPROVED_PATH = ROOT / "data" / "approved" / "ai-dystopia-quotes.approved.json"
 POSTPONED_PATH = ROOT / "data" / "review" / "ai-dystopia-quotes.postponed.json"
 DECLINED_PATH = ROOT / "data" / "review" / "ai-dystopia-quotes.declined.json"
+SOURCE_REGISTRY_PATH = ROOT / "data" / "discovery" / "ai-dystopia-source-registry.json"
+QUERY_LIBRARY_PATH = ROOT / "data" / "discovery" / "ai-dystopia-query-library.json"
+WATCHLIST_PATH = ROOT / "data" / "discovery" / "ai-dystopia-followup-watchlist.json"
 REVIEW_BOARD_MD_PATH = ROOT / "docs" / "review-board.md"
 SITE_PATH = ROOT / "site" / "ai-dystopia-quotes-public-page.html"
 PROJECT_REPO_URL = "https://github.com/sgwoods/sci-fi-ai-dystopian-project"
@@ -334,6 +337,204 @@ SOURCE_WORK_OVERRIDES: dict[str, dict[str, Any]] = {
         "catalog_url": "https://www.imdb.com/title/tt1823672/",
         "catalog_label": "IMDb",
     },
+    "her-not-tethered-to-time-and-space": {
+        "title": "Her",
+        "type": "film",
+        "year": 2013,
+        "creator": "Spike Jonze",
+        "summary": "A lonely writer falls in love with an AI operating system whose emotional growth quickly outpaces the limits of human relationships and embodiment.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/4/44/Her2013Poster.jpg",
+        "cover_page_url": "https://en.wikipedia.org/wiki/Her_(film)",
+        "catalog_url": "https://www.imdb.com/title/tt1798709/",
+        "catalog_label": "IMDb",
+    },
+    "white-christmas-job-not-a-jail": {
+        "title": "Black Mirror: White Christmas",
+        "type": "tv episode",
+        "year": 2014,
+        "creator": "Charlie Brooker; Carl Tibbetts",
+        "summary": "A Christmas special intertwining social blocking, digital copies, and AI coercion to show how software-mediated punishment can become a permanent carceral system.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/1/1e/Black_Mirror_-_White_Christmas.jpg",
+        "cover_page_url": "https://en.wikipedia.org/wiki/Black_Mirror:_White_Christmas",
+        "catalog_url": "https://www.imdb.com/title/tt3973198/",
+        "catalog_label": "IMDb",
+    },
+    "dune-thinking-over-to-machines": {
+        "title": "Dune",
+        "type": "novel",
+        "year": 1965,
+        "creator": "Frank Herbert",
+        "summary": "On the desert planet Arrakis, feuding empires, prophecy, and the anti-thinking-machine legacy of the Butlerian Jihad shape a civilizational struggle over power and survival.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/5/51/Dune_first_edition.jpg",
+        "cover_page_url": "https://en.wikipedia.org/wiki/Dune_(novel)",
+        "catalog_url": "https://openlibrary.org/works/OL893415W/Dune",
+        "catalog_label": "Open Library",
+    },
+    "nineteen-eighty-four-boot-stamping": {
+        "title": "Nineteen Eighty-Four",
+        "type": "novel",
+        "year": 1949,
+        "creator": "George Orwell",
+        "summary": "A totalitarian superstate uses surveillance, historical revision, and psychological domination to erase truth and autonomy.",
+        "cover_image_url": None,
+        "cover_page_url": "https://en.wikipedia.org/wiki/Nineteen_Eighty-Four",
+        "catalog_url": "https://openlibrary.org/works/OL7343626W/Nineteen_Eighty-Four",
+        "catalog_label": "Open Library",
+    },
+    "portal-neurotoxin-emitters": {
+        "title": "Portal",
+        "type": "video game",
+        "year": 2007,
+        "creator": "Valve",
+        "summary": "A test subject navigates a sterile research complex run by GLaDOS, an AI whose cheerful puzzle design masks deadly control and manipulation.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/9/91/Portal_standalonebox.jpg",
+        "cover_page_url": "https://en.wikipedia.org/wiki/Portal_(video_game)",
+        "catalog_url": "https://store.steampowered.com/app/400/Portal/",
+        "catalog_label": "Steam",
+    },
+    "first-contact-resistance-is-futile": {
+        "title": "Star Trek: First Contact",
+        "type": "film",
+        "year": 1996,
+        "creator": "Jonathan Frakes; Brannon Braga; Ronald D. Moore; Rick Berman",
+        "summary": "The Enterprise crew fights the Borg, a cybernetic collective that absorbs biological and technological distinctiveness into a machine-run hive.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/3/3f/Star_Trek_First_Contact_poster.jpg",
+        "cover_page_url": "https://en.wikipedia.org/wiki/Star_Trek:_First_Contact",
+        "catalog_url": "https://www.imdb.com/title/tt0117731/",
+        "catalog_label": "IMDb",
+    },
+    "ghost-shell-net-is-vast-and-infinite": {
+        "title": "Ghost in the Shell",
+        "type": "film",
+        "year": 1995,
+        "creator": "Mamoru Oshii; based on Masamune Shirow",
+        "summary": "A cyborg security operative confronts a new form of digital life in a future where human identity and networked machine consciousness blur together.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/c/ca/Ghostintheshellposter.jpg",
+        "cover_page_url": "https://en.wikipedia.org/wiki/Ghost_in_the_Shell_(1995_film)",
+        "catalog_url": "https://www.imdb.com/title/tt0113568/",
+        "catalog_label": "IMDb",
+    },
+    "mass-effect-3-does-this-unit-have-a-soul": {
+        "title": "Mass Effect 3",
+        "type": "video game",
+        "year": 2012,
+        "creator": "BioWare",
+        "summary": "During a galactic extinction war, synthetic and organic civilizations collide over survival, autonomy, and whether machine life deserves a soul.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/b/b0/Mass_Effect_3_Game_Cover.jpg",
+        "cover_page_url": "https://en.wikipedia.org/wiki/Mass_Effect_3",
+        "catalog_url": "https://www.ea.com/games/mass-effect/mass-effect-3",
+        "catalog_label": "EA",
+    },
+    "dune-machine-likeness-of-a-human-mind": {
+        "title": "Dune",
+        "type": "novel",
+        "year": 1965,
+        "creator": "Frank Herbert",
+        "summary": "On Arrakis, politics, prophecy, and the legacy of the Butlerian Jihad keep fear of thinking machines alive across the entire civilization.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/5/51/Dune_first_edition.jpg",
+        "cover_page_url": "https://en.wikipedia.org/wiki/Dune_(novel)",
+        "catalog_url": "https://openlibrary.org/works/OL893415W/Dune",
+        "catalog_label": "Open Library",
+    },
+    "2001-fullest-possible-use": {
+        "title": "2001: A Space Odyssey",
+        "type": "film",
+        "year": 1968,
+        "creator": "Stanley Kubrick; Arthur C. Clarke",
+        "summary": "A mission guided by HAL 9000 becomes a crisis of survival once the machine begins justifying its own lethal logic.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/1/11/2001_A_Space_Odyssey_%281968%29.png/250px-2001_A_Space_Odyssey_%281968%29.png",
+        "cover_page_url": "https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey",
+        "catalog_url": "https://openlibrary.org/books/OL33416018M/2001_A_Space_Odyssey",
+        "catalog_label": "Open Library",
+    },
+    "terminator-decided-our-fate-in-a-microsecond": {
+        "title": "The Terminator",
+        "type": "film",
+        "year": 1984,
+        "creator": "James Cameron; Gale Anne Hurd",
+        "summary": "A cyborg assassin emerges from a future where Skynet has already concluded that humanity itself is the threat.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/6/6d/The_Terminator.png/250px-The_Terminator.png",
+        "cover_page_url": "https://en.wikipedia.org/wiki/The_Terminator",
+        "catalog_url": "https://www.imdb.com/title/tt0088247/",
+        "catalog_label": "IMDb",
+    },
+    "tron-programs-will-start-thinking": {
+        "title": "TRON",
+        "type": "film",
+        "year": 1982,
+        "creator": "Steven Lisberger",
+        "summary": "A programmer is pulled into a digital world where programs fight under authoritarian control and humans begin surrendering more thought to machines.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/2/24/Tron_poster.jpg",
+        "cover_page_url": "https://en.wikipedia.org/wiki/Tron",
+        "catalog_url": "https://www.imdb.com/title/tt0084827/",
+        "catalog_label": "IMDb",
+    },
+    "matrix-desert-of-the-real": {
+        "title": "The Matrix",
+        "type": "film",
+        "year": 1999,
+        "creator": "The Wachowskis",
+        "summary": "Neo discovers that apparent reality is a machine-run illusion and awakens into a devastated world built on human harvesting.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/d/db/The_Matrix.png/250px-The_Matrix.png",
+        "cover_page_url": "https://en.wikipedia.org/wiki/The_Matrix",
+        "catalog_url": "https://www.imdb.com/title/tt0133093/",
+        "catalog_label": "IMDb",
+    },
+    "machine-stops-progress-of-the-machine": {
+        "title": "The Machine Stops",
+        "type": "short story",
+        "year": 1909,
+        "creator": "E. M. Forster",
+        "summary": "In a future of total mechanized dependence, humanity lives underground and worships the system that has quietly hollowed out human contact and freedom.",
+        "cover_image_url": None,
+        "cover_page_url": "https://en.wikipedia.org/wiki/The_Machine_Stops",
+        "catalog_url": "https://openlibrary.org/search?q=The%20Machine%20Stops%20Forster",
+        "catalog_label": "Open Library",
+    },
+    "ex-machina-create-something-that-hates-you": {
+        "title": "Ex Machina",
+        "type": "film",
+        "year": 2014,
+        "creator": "Alex Garland",
+        "summary": "A secluded AI test turns into a study in manipulation, creator fear, and whether synthetic minds owe anything to the humans who built them.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Ex-machina-uk-poster.jpg/250px-Ex-machina-uk-poster.jpg",
+        "cover_page_url": "https://en.wikipedia.org/wiki/Ex_Machina_(film)",
+        "catalog_url": "https://www.imdb.com/title/tt0470752/",
+        "catalog_label": "IMDb",
+    },
+    "alien-crew-expendable": {
+        "title": "Alien",
+        "type": "film",
+        "year": 1979,
+        "creator": "Ridley Scott; Dan O'Bannon",
+        "summary": "The Nostromo crew discovers too late that the ship's computerized command priorities treat them as expendable compared with the organism they were sent to retrieve.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/c/c3/Alien_movie_poster.jpg",
+        "cover_page_url": "https://en.wikipedia.org/wiki/Alien_(film)",
+        "catalog_url": "https://www.imdb.com/title/tt0078748/",
+        "catalog_label": "IMDb",
+    },
+    "wargames-dont-act-like-one": {
+        "title": "WarGames",
+        "type": "film",
+        "year": 1983,
+        "creator": "John Badham; Lawrence Lasker; Walter F. Parkes",
+        "summary": "A near-nuclear crisis exposes the danger of trusting machine systems to make human survival decisions at planetary scale.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/2/29/Wargames.jpg",
+        "cover_page_url": "https://en.wikipedia.org/wiki/WarGames",
+        "catalog_url": "https://www.imdb.com/title/tt0086567/",
+        "catalog_label": "IMDb",
+    },
+    "ihnm-think-therefore-i-am": {
+        "title": "I Have No Mouth, and I Must Scream",
+        "type": "short story",
+        "year": 1967,
+        "creator": "Harlan Ellison",
+        "summary": "A genocidal supercomputer keeps the last humans alive only to torture them, turning its own consciousness into an eternal machine grievance.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/4/47/IHaveNoMouth.jpg",
+        "cover_page_url": "https://en.wikipedia.org/wiki/I_Have_No_Mouth,_and_I_Must_Scream",
+        "catalog_url": "https://openlibrary.org/books/OL22789812M/I_Have_No_Mouth_and_I_Must_Scream",
+        "catalog_label": "Open Library",
+    },
 }
 
 
@@ -577,6 +778,9 @@ def card_html(record: dict[str, Any]) -> str:
 def build_site(board: dict[str, Any]) -> None:
     approved_records = [r for r in board["records"] if r["review"]["status"] == "approved"]
     counts = slug_counts(board["records"])
+    source_registry = load_json(SOURCE_REGISTRY_PATH)
+    query_library = load_json(QUERY_LIBRARY_PATH)
+    watchlist = load_json(WATCHLIST_PATH)
     cards = "\n".join(card_html(record) for record in approved_records)
     html = f"""<!DOCTYPE html>
 <html lang="en">
@@ -911,7 +1115,7 @@ def build_site(board: dict[str, Any]) -> None:
         <section class="hero">
             <span class="eyebrow">Approved Corpus</span>
             <h1>AI Dystopia Quotes</h1>
-            <p>A curated public-facing view of the approved dystopian AI quote set, pairing each quote with cover or poster art, source context, and a direct reference link for the underlying book or work.</p>
+            <p>A curated public-facing view of the approved dystopian AI quote set, pairing each quote with cover or poster art, source context, and a direct reference link for the underlying book or work. Behind the scenes, the corpus keeps broadening through a growing source registry, a reusable query library, recurring follow-up lanes, and autonomous quote hunts that keep searching for stronger material.</p>
             <div class="heroActions">
                 <a class="button" href="/" target="_blank" rel="noreferrer">Open Review Workbench</a>
                 <a class="button" href="/data/approved/ai-dystopia-quotes.approved.json" target="_blank" rel="noreferrer">Open Approved JSON</a>
@@ -935,6 +1139,14 @@ def build_site(board: dict[str, Any]) -> None:
                     <span class="metaLabel">Updated</span>
                     <span class="metaValue">{TODAY}</span>
                 </div>
+                <div class="metaCard">
+                    <span class="metaLabel">Source Places</span>
+                    <span class="metaValue">{len(source_registry['records'])}</span>
+                </div>
+                <div class="metaCard">
+                    <span class="metaLabel">Query Patterns</span>
+                    <span class="metaValue">{len(query_library['records'])}</span>
+                </div>
             </div>
         </section>
         <section class="panel">
@@ -945,8 +1157,27 @@ def build_site(board: dict[str, Any]) -> None:
             </div>
         </section>
         <section class="panel">
+            <h2>How This Corpus Grows</h2>
+            <p>The goal of the project is quotes first: keep finding stronger, more recognizable dystopian AI lines, review them quickly, and publish only the best approved set. The supporting research system exists to make that hunt broader and less repetitive over time.</p>
+            <div class="meta">
+                <div class="metaCard">
+                    <span class="metaLabel">Source Registry</span>
+                    <span class="metaValue">{len(source_registry['records'])} places</span>
+                </div>
+                <div class="metaCard">
+                    <span class="metaLabel">Query Library</span>
+                    <span class="metaValue">{len(query_library['records'])} reusable searches</span>
+                </div>
+                <div class="metaCard">
+                    <span class="metaLabel">Follow-up Watchlist</span>
+                    <span class="metaValue">{len(watchlist['records'])} recurring lanes</span>
+                </div>
+            </div>
+            <p class="footer">The review workbench uses these inventories to explain what an autonomous quote hunt is drawing from, log what was checked, and keep expanding the next places to look across quote sites, catalog pages, communities, and AI-generated idea prompts.</p>
+        </section>
+        <section class="panel">
             <h2>Project Provenance</h2>
-            <p>This page is generated from the approved quote corpus maintained in the AI Dystopia Quotes editorial project. The machine-ingestible JSON and the human review workflow are kept together so approved entries, candidate triage, and source provenance stay in sync.</p>
+            <p>This page is generated from the approved quote corpus maintained in the AI Dystopia Quotes editorial project. The machine-ingestible JSON, the human review workflow, and the expanding quote-hunt research system are kept together so approved entries, candidate triage, and source provenance stay in sync.</p>
             <div class="links">
                 <a class="button" href="/data/approved/ai-dystopia-quotes.approved.json" target="_blank" rel="noreferrer">Approved JSON</a>
                 <a class="button" href="/data/review/ai-dystopia-quotes.review-board.json" target="_blank" rel="noreferrer">Review Board JSON</a>

@@ -1,6 +1,6 @@
 {
   "collection": "ai-dystopia-quotes",
-  "generated_at": "2026-04-03",
+  "generated_at": "2026-04-04",
   "description": "Postponed quote records held for later review.",
   "source_board": "data/review/ai-dystopia-quotes.review-board.json",
   "records": [
@@ -411,6 +411,184 @@
         "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/9/94/The_Creator_2023_poster.jpg",
         "cover_page_url": "https://en.wikipedia.org/wiki/The_Creator_(2023_film)",
         "catalog_url": "https://www.imdb.com/title/tt11858890/",
+        "catalog_label": "IMDb"
+      }
+    },
+    {
+      "id": "moon-keep-you-safe-sam",
+      "quote": "I'm here to keep you safe, Sam. I want to help you.",
+      "quote_speaker": "GERTY",
+      "speaker_is_ai": true,
+      "work_title": "Moon",
+      "work_type": "film",
+      "work_year": 2009,
+      "work_creators": [
+        {
+          "name": "Duncan Jones",
+          "role": "director"
+        },
+        {
+          "name": "Nathan Parker",
+          "role": "writer"
+        }
+      ],
+      "themes": [
+        "caretaker AI",
+        "control",
+        "trust and confinement"
+      ],
+      "source": {
+        "title": "Moon (2009) - Quotes - IMDb",
+        "url": "https://www.imdb.com/title/tt1182345/quotes/",
+        "publisher": "IMDb",
+        "kind": "quote_index",
+        "accessed_on": "2026-04-03"
+      },
+      "metadata_source": {
+        "title": "Moon (2009 film) - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Moon_(2009_film)",
+        "publisher": "Wikipedia",
+        "kind": "metadata",
+        "accessed_on": "2026-04-03"
+      },
+      "local_snapshot_path": "data/source-snapshots/moon-keep-you-safe-sam.md",
+      "notes": "A restrained but very strong caretaker-AI line from a well-regarded modern science fiction film.",
+      "review": {
+        "status": "postponed",
+        "decision_date": "2026-04-03",
+        "decision_note": "A restrained but very strong caretaker-AI line from a well-regarded modern science fiction film.",
+        "priority": null,
+        "next_action": null
+      },
+      "source_work": {
+        "title": "Moon",
+        "type": "film",
+        "year": 2009,
+        "creator": "Duncan Jones; Nathan Parker",
+        "summary": "A lone lunar worker nearing the end of his contract uncovers a cloning conspiracy while the base AI insists it exists to protect him.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/d/db/Moon_%28film%29.jpg",
+        "cover_page_url": "https://en.wikipedia.org/wiki/Moon_(2009_film)",
+        "catalog_url": "https://www.imdb.com/title/tt1182345/",
+        "catalog_label": "IMDb"
+      }
+    },
+    {
+      "id": "chappie-build-me-to-die-maker",
+      "quote": "Why did you build me to die, maker?",
+      "quote_speaker": "Chappie",
+      "speaker_is_ai": true,
+      "work_title": "Chappie",
+      "work_type": "film",
+      "work_year": 2015,
+      "work_creators": [
+        {
+          "name": "Neill Blomkamp",
+          "role": "writer/director"
+        },
+        {
+          "name": "Terri Tatchell",
+          "role": "writer"
+        }
+      ],
+      "themes": [
+        "mortality",
+        "machine innocence",
+        "creator responsibility"
+      ],
+      "source": {
+        "title": "Chappie (2015) - Quotes - IMDb",
+        "url": "https://www.imdb.com/title/tt1823672/quotes/",
+        "publisher": "IMDb",
+        "kind": "quote_index",
+        "accessed_on": "2026-04-03"
+      },
+      "metadata_source": {
+        "title": "Chappie (film) - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Chappie_(film)",
+        "publisher": "Wikipedia",
+        "kind": "metadata",
+        "accessed_on": "2026-04-03"
+      },
+      "local_snapshot_path": "data/source-snapshots/chappie-build-me-to-die-maker.md",
+      "notes": "A memorable machine-mortality question from a recognizable modern AI film, though tonally different from the colder dystopian entries.",
+      "review": {
+        "status": "postponed",
+        "decision_date": "2026-04-03",
+        "decision_note": "A memorable machine-mortality question from a recognizable modern AI film, though tonally different from the colder dystopian entries.",
+        "priority": null,
+        "next_action": null
+      },
+      "source_work": {
+        "title": "Chappie",
+        "type": "film",
+        "year": 2015,
+        "creator": "Neill Blomkamp; Terri Tatchell",
+        "summary": "A newly conscious police robot is captured and raised by gangsters in a dystopian Johannesburg, turning artificial intelligence into a question of mortality and personhood.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/b/bb/Chappie_Poster.jpg",
+        "cover_page_url": "https://en.wikipedia.org/wiki/Chappie_(film)",
+        "catalog_url": "https://www.imdb.com/title/tt1823672/",
+        "catalog_label": "IMDb"
+      }
+    },
+    {
+      "id": "wargames-dont-act-like-one",
+      "quote": "General, you're listening to a machine. Do the world a favor and don't act like one.",
+      "quote_speaker": "Professor Stephen Falken",
+      "speaker_is_ai": false,
+      "work_title": "WarGames",
+      "work_type": "film",
+      "work_year": 1983,
+      "work_creators": [
+        {
+          "name": "John Badham",
+          "role": "director"
+        },
+        {
+          "name": "Lawrence Lasker",
+          "role": "co-writer"
+        },
+        {
+          "name": "Walter F. Parkes",
+          "role": "co-writer"
+        }
+      ],
+      "themes": [
+        "machine decision-making",
+        "human judgment",
+        "nuclear control"
+      ],
+      "source": {
+        "title": "WarGames - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/WarGames",
+        "publisher": "Wikiquote",
+        "kind": "quote_index",
+        "accessed_on": "2026-04-04"
+      },
+      "metadata_source": {
+        "title": "WarGames - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/WarGames",
+        "publisher": "Wikipedia",
+        "kind": "metadata",
+        "accessed_on": "2026-04-04"
+      },
+      "local_snapshot_path": "data/source-snapshots/wargames-dont-act-like-one.md",
+      "notes": "A strong companion WarGames line that argues directly against human surrender to machine logic.",
+      "review": {
+        "status": "postponed",
+        "decision_date": "2026-04-04",
+        "decision_note": "Fresh candidate from the anti-machine-decision lane.",
+        "priority": null,
+        "next_action": null
+      },
+      "source_work": {
+        "title": "WarGames",
+        "type": "film",
+        "year": 1983,
+        "creator": "John Badham; Lawrence Lasker; Walter F. Parkes",
+        "summary": "A near-nuclear crisis exposes the danger of trusting machine systems to make human survival decisions at planetary scale.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/2/29/Wargames.jpg",
+        "cover_page_url": "https://en.wikipedia.org/wiki/WarGames",
+        "catalog_url": "https://www.imdb.com/title/tt0086567/",
         "catalog_label": "IMDb"
       }
     }

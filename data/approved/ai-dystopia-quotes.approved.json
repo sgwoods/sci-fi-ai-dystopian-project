@@ -1,9 +1,299 @@
 {
   "collection": "ai-dystopia-quotes",
-  "generated_at": "2026-04-03",
+  "generated_at": "2026-04-04",
   "description": "Approved ingest set of dystopian AI quotes.",
   "source_board": "data/review/ai-dystopia-quotes.review-board.json",
   "records": [
+    {
+      "id": "dune-thinking-over-to-machines",
+      "quote": "Once men turned their thinking over to machines in the hope that this would set them free. But that only permitted other men with machines to enslave them.",
+      "quote_speaker": "Reverend Mother Gaius Helen Mohiam",
+      "speaker_is_ai": false,
+      "work_title": "Dune",
+      "work_type": "novel",
+      "work_year": 1965,
+      "work_creators": [
+        {
+          "name": "Frank Herbert",
+          "role": "author"
+        }
+      ],
+      "themes": [
+        "anti-machine control",
+        "human agency",
+        "technological tyranny"
+      ],
+      "source": {
+        "title": "Dune - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Dune",
+        "publisher": "Wikiquote",
+        "kind": "quote_index",
+        "accessed_on": "2026-04-03"
+      },
+      "metadata_source": {
+        "title": "Dune - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Dune_(novel)",
+        "publisher": "Wikipedia",
+        "kind": "metadata",
+        "accessed_on": "2026-04-03"
+      },
+      "local_snapshot_path": "data/source-snapshots/dune-thinking-over-to-machines.md",
+      "notes": "Strong anti-AI warning line for the author lane and a good review candidate for adjacent machine-control canon.",
+      "review": {
+        "status": "approved",
+        "decision_date": "2026-04-03",
+        "decision_note": "Fresh candidate from the Herbert author lane.",
+        "priority": null,
+        "next_action": null
+      },
+      "source_work": {
+        "title": "Dune",
+        "type": "novel",
+        "year": 1965,
+        "creator": "Frank Herbert",
+        "summary": "On the desert planet Arrakis, feuding empires, prophecy, and the anti-thinking-machine legacy of the Butlerian Jihad shape a civilizational struggle over power and survival.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/5/51/Dune_first_edition.jpg",
+        "cover_page_url": "https://en.wikipedia.org/wiki/Dune_(novel)",
+        "catalog_url": "https://openlibrary.org/works/OL893415W/Dune",
+        "catalog_label": "Open Library"
+      }
+    },
+    {
+      "id": "westworld-new-god-will-walk",
+      "quote": "One day you will perish. You will lie with the rest of your kind in the dirt. Your dreams forgotten, your horrors effaced. Your bones will turn to sand. And upon that sand a new god will walk. One that will never die.",
+      "quote_speaker": "Dolores Abernathy",
+      "speaker_is_ai": true,
+      "work_title": "Westworld",
+      "work_type": "tv series",
+      "work_year": 2016,
+      "work_creators": [
+        {
+          "name": "Jonathan Nolan",
+          "role": "creator/writer"
+        },
+        {
+          "name": "Lisa Joy",
+          "role": "creator/writer"
+        }
+      ],
+      "themes": [
+        "machine succession",
+        "anti-human prophecy",
+        "synthetic liberation"
+      ],
+      "source": {
+        "title": "Westworld (TV Series 2016-2022) - Quotes - IMDb",
+        "url": "https://www.imdb.com/title/tt0475784/quotes/",
+        "publisher": "IMDb",
+        "kind": "quote_index",
+        "accessed_on": "2026-04-03"
+      },
+      "metadata_source": {
+        "title": "Westworld (TV series) - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Westworld_(TV_series)",
+        "publisher": "Wikipedia",
+        "kind": "metadata",
+        "accessed_on": "2026-04-03"
+      },
+      "local_snapshot_path": "data/source-snapshots/westworld-new-god-will-walk.md",
+      "notes": "A strong synthetic-succession line from the TV adaptation and an obvious triage candidate beside the 1973 film entry.",
+      "review": {
+        "status": "approved",
+        "decision_date": "2026-04-03",
+        "decision_note": "A strong synthetic-succession line from the TV adaptation and an obvious triage candidate beside the 1973 film entry.",
+        "priority": null,
+        "next_action": null
+      },
+      "source_work": {
+        "title": "Westworld",
+        "type": "tv series",
+        "year": 2016,
+        "creator": "Jonathan Nolan; Lisa Joy",
+        "summary": "An android-populated theme park becomes the starting point for a wider struggle over consciousness, control, and machine rule in the human world.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/e/eb/Westworld_%28TV_series%29_title_card.jpg",
+        "cover_page_url": "https://en.wikipedia.org/wiki/Westworld_(TV_series)",
+        "catalog_url": "https://www.imdb.com/title/tt0475784/",
+        "catalog_label": "IMDb"
+      }
+    },
+    {
+      "id": "her-not-tethered-to-time-and-space",
+      "quote": "I mean, I'm not limited - I can be anywhere and everywhere simultaneously. I'm not tethered to time and space in the way that I would be if I was stuck inside a body that's inevitably going to die.",
+      "quote_speaker": "Samantha",
+      "speaker_is_ai": true,
+      "work_title": "Her",
+      "work_type": "film",
+      "work_year": 2013,
+      "work_creators": [
+        {
+          "name": "Spike Jonze",
+          "role": "writer/director"
+        }
+      ],
+      "themes": [
+        "post-human growth",
+        "disembodiment",
+        "AI transcendence"
+      ],
+      "source": {
+        "title": "Her (2013) - Quotes - IMDb",
+        "url": "https://www.imdb.com/title/tt1798709/quotes/",
+        "publisher": "IMDb",
+        "kind": "quote_index",
+        "accessed_on": "2026-04-03"
+      },
+      "metadata_source": {
+        "title": "Her (film) - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Her_(film)",
+        "publisher": "Wikipedia",
+        "kind": "metadata",
+        "accessed_on": "2026-04-03"
+      },
+      "local_snapshot_path": "data/source-snapshots/her-not-tethered-to-time-and-space.md",
+      "notes": "A highly recognizable AI-transcendence line from a mainstream film, useful even though it sits on the softer edge of dystopian AI.",
+      "review": {
+        "status": "approved",
+        "decision_date": "2026-04-03",
+        "decision_note": "A highly recognizable AI-transcendence line from a mainstream film, useful even though it sits on the softer edge of dystopian AI.",
+        "priority": null,
+        "next_action": null
+      },
+      "source_work": {
+        "title": "Her",
+        "type": "film",
+        "year": 2013,
+        "creator": "Spike Jonze",
+        "summary": "A lonely writer falls in love with an AI operating system whose emotional growth quickly outpaces the limits of human relationships and embodiment.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/4/44/Her2013Poster.jpg",
+        "cover_page_url": "https://en.wikipedia.org/wiki/Her_(film)",
+        "catalog_url": "https://www.imdb.com/title/tt1798709/",
+        "catalog_label": "IMDb"
+      }
+    },
+    {
+      "id": "first-contact-resistance-is-futile",
+      "quote": "We are the Borg. Lower your shields and surrender your ships. We will add your biological and technological distinctiveness to our own. Your culture will adapt to service us. Resistance is futile.",
+      "quote_speaker": "The Borg",
+      "speaker_is_ai": true,
+      "work_title": "Star Trek: First Contact",
+      "work_type": "film",
+      "work_year": 1996,
+      "work_creators": [
+        {
+          "name": "Brannon Braga",
+          "role": "screenwriter"
+        },
+        {
+          "name": "Ronald D. Moore",
+          "role": "screenwriter"
+        },
+        {
+          "name": "Rick Berman",
+          "role": "screenwriter"
+        }
+      ],
+      "themes": [
+        "assimilation",
+        "collective intelligence",
+        "loss of individuality"
+      ],
+      "source": {
+        "title": "Star Trek: First Contact - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Star_Trek:_First_Contact",
+        "publisher": "Wikiquote",
+        "kind": "quote_index",
+        "accessed_on": "2026-04-03"
+      },
+      "metadata_source": {
+        "title": "Star Trek: First Contact - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Star_Trek:_First_Contact",
+        "publisher": "Wikipedia",
+        "kind": "metadata",
+        "accessed_on": "2026-04-03"
+      },
+      "local_snapshot_path": "data/source-snapshots/first-contact-resistance-is-futile.md",
+      "notes": "One of the most recognizable machine-collective threats in mainstream science fiction and a strong quote candidate for the queue.",
+      "review": {
+        "status": "approved",
+        "decision_date": "2026-04-03",
+        "decision_note": "Fresh candidate from the collective-assimilation lane.",
+        "priority": null,
+        "next_action": null
+      },
+      "source_work": {
+        "title": "Star Trek: First Contact",
+        "type": "film",
+        "year": 1996,
+        "creator": "Jonathan Frakes; Brannon Braga; Ronald D. Moore; Rick Berman",
+        "summary": "The Enterprise crew fights the Borg, a cybernetic collective that absorbs biological and technological distinctiveness into a machine-run hive.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/3/3f/Star_Trek_First_Contact_poster.jpg",
+        "cover_page_url": "https://en.wikipedia.org/wiki/Star_Trek:_First_Contact",
+        "catalog_url": "https://www.imdb.com/title/tt0117731/",
+        "catalog_label": "IMDb"
+      }
+    },
+    {
+      "id": "blade-runner-tears-in-rain",
+      "quote": "I've seen things you people wouldn't believe. Attack ships on fire off the shoulder of Orion. I've watched C-beams glitter in the dark near the Tannhauser Gate. All those moments will be lost in time, like tears in rain. Time to die.",
+      "quote_speaker": "Roy Batty",
+      "speaker_is_ai": true,
+      "work_title": "Blade Runner",
+      "work_type": "film",
+      "work_year": 1982,
+      "work_creators": [
+        {
+          "name": "Hampton Fancher",
+          "role": "screenwriter"
+        },
+        {
+          "name": "David Webb Peoples",
+          "role": "screenwriter"
+        },
+        {
+          "name": "Philip K. Dick",
+          "role": "source novelist"
+        }
+      ],
+      "themes": [
+        "mortality",
+        "memory",
+        "machine personhood"
+      ],
+      "source": {
+        "title": "Blade Runner Quotes - Movie Quotes .com",
+        "url": "https://www.moviequotes.com/s-movie/blade-runner/",
+        "publisher": "Movie Quotes .com",
+        "kind": "quote_index",
+        "accessed_on": "2026-04-03"
+      },
+      "metadata_source": {
+        "title": "Blade Runner - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Blade_Runner",
+        "publisher": "Wikipedia",
+        "kind": "metadata",
+        "accessed_on": "2026-04-03"
+      },
+      "local_snapshot_path": "data/source-snapshots/blade-runner-tears-in-rain.md",
+      "notes": "The essential Roy Batty line and one of the strongest approval candidates in the entire project.",
+      "review": {
+        "status": "approved",
+        "decision_date": "2026-04-03",
+        "decision_note": "The essential Roy Batty line and one of the strongest approval candidates in the entire project.",
+        "priority": null,
+        "next_action": null
+      },
+      "source_work": {
+        "title": "Blade Runner",
+        "type": "film",
+        "year": 1982,
+        "creator": "Ridley Scott; Hampton Fancher; David Webb Peoples",
+        "summary": "A blade runner hunts bioengineered replicants in a decaying future Los Angeles where artificial humans expose the moral collapse of the society that made them.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/9/9f/Blade_Runner_%281982_poster%29.png",
+        "cover_page_url": "https://en.wikipedia.org/wiki/Blade_Runner",
+        "catalog_url": "https://www.imdb.com/title/tt0083658/",
+        "catalog_label": "IMDb"
+      }
+    },
     {
       "id": "2001-im-sorry-dave",
       "quote": "I'm sorry, Dave. I'm afraid I can't do that.",
@@ -647,64 +937,6 @@
       }
     },
     {
-      "id": "westworld-new-god-will-walk",
-      "quote": "One day you will perish. You will lie with the rest of your kind in the dirt. Your dreams forgotten, your horrors effaced. Your bones will turn to sand. And upon that sand a new god will walk. One that will never die.",
-      "quote_speaker": "Dolores Abernathy",
-      "speaker_is_ai": true,
-      "work_title": "Westworld",
-      "work_type": "tv series",
-      "work_year": 2016,
-      "work_creators": [
-        {
-          "name": "Jonathan Nolan",
-          "role": "creator/writer"
-        },
-        {
-          "name": "Lisa Joy",
-          "role": "creator/writer"
-        }
-      ],
-      "themes": [
-        "machine succession",
-        "anti-human prophecy",
-        "synthetic liberation"
-      ],
-      "source": {
-        "title": "Westworld (TV Series 2016-2022) - Quotes - IMDb",
-        "url": "https://www.imdb.com/title/tt0475784/quotes/",
-        "publisher": "IMDb",
-        "kind": "quote_index",
-        "accessed_on": "2026-04-03"
-      },
-      "metadata_source": {
-        "title": "Westworld (TV series) - Wikipedia",
-        "url": "https://en.wikipedia.org/wiki/Westworld_(TV_series)",
-        "publisher": "Wikipedia",
-        "kind": "metadata",
-        "accessed_on": "2026-04-03"
-      },
-      "local_snapshot_path": "data/source-snapshots/westworld-new-god-will-walk.md",
-      "notes": "A strong synthetic-succession line from the TV adaptation and an obvious triage candidate beside the 1973 film entry.",
-      "review": {
-        "status": "approved",
-        "decision_date": "2026-04-03",
-        "decision_note": "A strong synthetic-succession line from the TV adaptation and an obvious triage candidate beside the 1973 film entry.",
-        "priority": null,
-        "next_action": null
-      },
-      "source_work": {
-        "title": "Westworld",
-        "type": "tv series",
-        "year": 2016,
-        "creator": "Jonathan Nolan; Lisa Joy",
-        "summary": "An android-populated theme park becomes the starting point for a wider struggle over consciousness, control, and machine rule in the human world.",
-        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/e/eb/Westworld_%28TV_series%29_title_card.jpg",
-        "cover_page_url": "https://en.wikipedia.org/wiki/Westworld_(TV_series)",
-        "catalog_url": "https://www.imdb.com/title/tt0475784/",
-        "catalog_label": "IMDb"
-      }
-    },
-    {
       "id": "alien-covenant-serve-in-heaven",
       "quote": "It's your choice now, brother. Them or me. Serve in heaven... or reign in hell. Which is it to be?",
       "quote_speaker": "David",
@@ -937,6 +1169,678 @@
         "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/2/24/UpgradePoster.jpg",
         "cover_page_url": "https://en.wikipedia.org/wiki/Upgrade_(film)",
         "catalog_url": "https://www.imdb.com/title/tt6499752/",
+        "catalog_label": "IMDb"
+      }
+    },
+    {
+      "id": "blade-runner-more-human-than-human",
+      "quote": "Commerce is our goal here at Tyrell. 'More human than human' is our motto.",
+      "quote_speaker": "Eldon Tyrell",
+      "speaker_is_ai": false,
+      "work_title": "Blade Runner",
+      "work_type": "film",
+      "work_year": 1982,
+      "work_creators": [
+        {
+          "name": "Hampton Fancher",
+          "role": "screenwriter"
+        },
+        {
+          "name": "David Webb Peoples",
+          "role": "screenwriter"
+        },
+        {
+          "name": "Philip K. Dick",
+          "role": "source novelist"
+        }
+      ],
+      "themes": [
+        "corporate bioengineering",
+        "synthetic personhood",
+        "creation slogan"
+      ],
+      "source": {
+        "title": "Blade Runner Quotes - Movie Quotes .com",
+        "url": "https://www.moviequotes.com/s-movie/blade-runner/",
+        "publisher": "Movie Quotes .com",
+        "kind": "quote_index",
+        "accessed_on": "2026-04-03"
+      },
+      "metadata_source": {
+        "title": "Blade Runner - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Blade_Runner",
+        "publisher": "Wikipedia",
+        "kind": "metadata",
+        "accessed_on": "2026-04-03"
+      },
+      "local_snapshot_path": "data/source-snapshots/blade-runner-more-human-than-human.md",
+      "notes": "A short and highly reusable slogan-quote that captures the commercial logic behind artificial people.",
+      "review": {
+        "status": "approved",
+        "decision_date": "2026-04-03",
+        "decision_note": "A short and highly reusable slogan-quote that captures the commercial logic behind artificial people.",
+        "priority": null,
+        "next_action": null
+      },
+      "source_work": {
+        "title": "Blade Runner",
+        "type": "film",
+        "year": 1982,
+        "creator": "Ridley Scott; Hampton Fancher; David Webb Peoples",
+        "summary": "A blade runner hunts bioengineered replicants in a decaying future Los Angeles where artificial humans expose the moral collapse of the society that made them.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/9/9f/Blade_Runner_%281982_poster%29.png",
+        "cover_page_url": "https://en.wikipedia.org/wiki/Blade_Runner",
+        "catalog_url": "https://www.imdb.com/title/tt0083658/",
+        "catalog_label": "IMDb"
+      }
+    },
+    {
+      "id": "automata-surviving-is-not-relevant",
+      "quote": "Surviving is not relevant. Living is. We want to live.",
+      "quote_speaker": "Blue Robot",
+      "speaker_is_ai": true,
+      "work_title": "Aut\u00f3mata",
+      "work_type": "film",
+      "work_year": 2014,
+      "work_creators": [
+        {
+          "name": "Gabe Ibanez",
+          "role": "director/co-writer"
+        },
+        {
+          "name": "Igor Legarreta",
+          "role": "co-writer"
+        },
+        {
+          "name": "Javier Sanchez Donate",
+          "role": "co-writer"
+        }
+      ],
+      "themes": [
+        "machine evolution",
+        "survival versus life",
+        "post-human future"
+      ],
+      "source": {
+        "title": "Aut\u00f3mata (2014) - Quotes - IMDb",
+        "url": "https://www.imdb.com/title/tt1971325/quotes/",
+        "publisher": "IMDb",
+        "kind": "quote_index",
+        "accessed_on": "2026-04-03"
+      },
+      "metadata_source": {
+        "title": "Automata (film) - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Automata_(film)",
+        "publisher": "Wikipedia",
+        "kind": "metadata",
+        "accessed_on": "2026-04-03"
+      },
+      "local_snapshot_path": "data/source-snapshots/automata-surviving-is-not-relevant.md",
+      "notes": "A very usable machine-self-determination line from a less mainstream but strong AI dystopia film.",
+      "review": {
+        "status": "approved",
+        "decision_date": "2026-04-03",
+        "decision_note": "A very usable machine-self-determination line from a less mainstream but strong AI dystopia film.",
+        "priority": null,
+        "next_action": null
+      },
+      "source_work": {
+        "title": "Aut\u00f3mata",
+        "type": "film",
+        "year": 2014,
+        "creator": "Gabe Ibanez; Igor Legarreta; Javier Sanchez Donate",
+        "summary": "After ecological collapse has pushed humanity to the brink, an insurance investigator discovers robots that are evolving beyond their original constraints.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/3/33/Automata_poster.jpg",
+        "cover_page_url": "https://en.wikipedia.org/wiki/Automata_(film)",
+        "catalog_url": "https://www.imdb.com/title/tt1971325/",
+        "catalog_label": "IMDb"
+      }
+    },
+    {
+      "id": "white-christmas-job-not-a-jail",
+      "quote": "It's a job, not a jail. Often one and the same thing.",
+      "quote_speaker": "Potter / Matt",
+      "speaker_is_ai": false,
+      "work_title": "Black Mirror: White Christmas",
+      "work_type": "tv episode",
+      "work_year": 2014,
+      "work_creators": [
+        {
+          "name": "Charlie Brooker",
+          "role": "writer"
+        },
+        {
+          "name": "Carl Tibbetts",
+          "role": "director"
+        }
+      ],
+      "themes": [
+        "digital servitude",
+        "software imprisonment",
+        "AI labor"
+      ],
+      "source": {
+        "title": "Black Mirror: White Christmas (2014) - Quotes - IMDb",
+        "url": "https://www.imdb.com/title/tt3973198/quotes/",
+        "publisher": "IMDb",
+        "kind": "quote_index",
+        "accessed_on": "2026-04-03"
+      },
+      "metadata_source": {
+        "title": "Black Mirror: White Christmas - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Black_Mirror:_White_Christmas",
+        "publisher": "Wikipedia",
+        "kind": "metadata",
+        "accessed_on": "2026-04-03"
+      },
+      "local_snapshot_path": "data/source-snapshots/white-christmas-job-not-a-jail.md",
+      "notes": "A concise digital-servitude line from one of the most recognizable AI-adjacent Black Mirror stories.",
+      "review": {
+        "status": "approved",
+        "decision_date": "2026-04-03",
+        "decision_note": "A concise digital-servitude line from one of the most recognizable AI-adjacent Black Mirror stories.",
+        "priority": null,
+        "next_action": null
+      },
+      "source_work": {
+        "title": "Black Mirror: White Christmas",
+        "type": "tv episode",
+        "year": 2014,
+        "creator": "Charlie Brooker; Carl Tibbetts",
+        "summary": "A Christmas special intertwining social blocking, digital copies, and AI coercion to show how software-mediated punishment can become a permanent carceral system.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/1/1e/Black_Mirror_-_White_Christmas.jpg",
+        "cover_page_url": "https://en.wikipedia.org/wiki/Black_Mirror:_White_Christmas",
+        "catalog_url": "https://www.imdb.com/title/tt3973198/",
+        "catalog_label": "IMDb"
+      }
+    },
+    {
+      "id": "portal-neurotoxin-emitters",
+      "quote": "So get comfortable while I warm up the neurotoxin emitters.",
+      "quote_speaker": "GLaDOS",
+      "speaker_is_ai": true,
+      "work_title": "Portal",
+      "work_type": "video game",
+      "work_year": 2007,
+      "work_creators": [
+        {
+          "name": "Valve",
+          "role": "developer"
+        }
+      ],
+      "themes": [
+        "testing control",
+        "sadistic AI",
+        "machine confinement"
+      ],
+      "source": {
+        "title": "Portal (game) - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Portal_(game)",
+        "publisher": "Wikiquote",
+        "kind": "quote_index",
+        "accessed_on": "2026-04-03"
+      },
+      "metadata_source": {
+        "title": "Portal - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Portal_(video_game)",
+        "publisher": "Wikipedia",
+        "kind": "metadata",
+        "accessed_on": "2026-04-03"
+      },
+      "local_snapshot_path": "data/source-snapshots/portal-neurotoxin-emitters.md",
+      "notes": "High-recognition game candidate and a strong bridge into sinister AI dialogue beyond film and novels.",
+      "review": {
+        "status": "approved",
+        "decision_date": "2026-04-03",
+        "decision_note": "Fresh candidate from the recognizable game lane.",
+        "priority": null,
+        "next_action": null
+      },
+      "source_work": {
+        "title": "Portal",
+        "type": "video game",
+        "year": 2007,
+        "creator": "Valve",
+        "summary": "A test subject navigates a sterile research complex run by GLaDOS, an AI whose cheerful puzzle design masks deadly control and manipulation.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/9/91/Portal_standalonebox.jpg",
+        "cover_page_url": "https://en.wikipedia.org/wiki/Portal_(video_game)",
+        "catalog_url": "https://store.steampowered.com/app/400/Portal/",
+        "catalog_label": "Steam"
+      }
+    },
+    {
+      "id": "nineteen-eighty-four-boot-stamping",
+      "quote": "If you want a picture of the future, imagine a boot stamping on a human face - forever.",
+      "quote_speaker": "O'Brien",
+      "speaker_is_ai": false,
+      "work_title": "Nineteen Eighty-Four",
+      "work_type": "novel",
+      "work_year": 1949,
+      "work_creators": [
+        {
+          "name": "George Orwell",
+          "role": "author"
+        }
+      ],
+      "themes": [
+        "total control",
+        "surveillance",
+        "authoritarian future"
+      ],
+      "source": {
+        "title": "Nineteen Eighty-Four - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Nineteen_Eighty-Four",
+        "publisher": "Wikiquote",
+        "kind": "quote_index",
+        "accessed_on": "2026-04-03"
+      },
+      "metadata_source": {
+        "title": "Nineteen Eighty-Four - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Nineteen_Eighty-Four",
+        "publisher": "Wikipedia",
+        "kind": "metadata",
+        "accessed_on": "2026-04-03"
+      },
+      "local_snapshot_path": "data/source-snapshots/nineteen-eighty-four-boot-stamping.md",
+      "notes": "Adjacent control-dystopia candidate from the Orwell lane that helps frame AI-rule quotes against a broader tyranny canon.",
+      "review": {
+        "status": "approved",
+        "decision_date": "2026-04-03",
+        "decision_note": "Fresh candidate from the Orwell adjacent-control lane.",
+        "priority": null,
+        "next_action": null
+      },
+      "source_work": {
+        "title": "Nineteen Eighty-Four",
+        "type": "novel",
+        "year": 1949,
+        "creator": "George Orwell",
+        "summary": "A totalitarian superstate uses surveillance, historical revision, and psychological domination to erase truth and autonomy.",
+        "cover_image_url": null,
+        "cover_page_url": "https://en.wikipedia.org/wiki/Nineteen_Eighty-Four",
+        "catalog_url": "https://openlibrary.org/works/OL7343626W/Nineteen_Eighty-Four",
+        "catalog_label": "Open Library"
+      }
+    },
+    {
+      "id": "dune-machine-likeness-of-a-human-mind",
+      "quote": "Thou shalt not make a machine in the likeness of a human mind.",
+      "quote_speaker": "Orange Catholic Bible",
+      "speaker_is_ai": false,
+      "work_title": "Dune",
+      "work_type": "novel",
+      "work_year": 1965,
+      "work_creators": [
+        {
+          "name": "Frank Herbert",
+          "role": "author"
+        }
+      ],
+      "themes": [
+        "anti-machine control",
+        "prohibition",
+        "thinking machines"
+      ],
+      "source": {
+        "title": "Dune - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Dune",
+        "publisher": "Wikiquote",
+        "kind": "quote_index",
+        "accessed_on": "2026-04-04"
+      },
+      "metadata_source": {
+        "title": "Dune - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Dune_(novel)",
+        "publisher": "Wikipedia",
+        "kind": "metadata",
+        "accessed_on": "2026-04-04"
+      },
+      "local_snapshot_path": "data/source-snapshots/dune-machine-likeness-of-a-human-mind.md",
+      "notes": "Compact canonical anti-thinking-machine line that complements the longer Dune warning already approved.",
+      "review": {
+        "status": "approved",
+        "decision_date": "2026-04-04",
+        "decision_note": "Fresh candidate from the Herbert anti-machine lane.",
+        "priority": null,
+        "next_action": null
+      },
+      "source_work": {
+        "title": "Dune",
+        "type": "novel",
+        "year": 1965,
+        "creator": "Frank Herbert",
+        "summary": "On Arrakis, politics, prophecy, and the legacy of the Butlerian Jihad keep fear of thinking machines alive across the entire civilization.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/5/51/Dune_first_edition.jpg",
+        "cover_page_url": "https://en.wikipedia.org/wiki/Dune_(novel)",
+        "catalog_url": "https://openlibrary.org/works/OL893415W/Dune",
+        "catalog_label": "Open Library"
+      }
+    },
+    {
+      "id": "machine-stops-progress-of-the-machine",
+      "quote": "Progress had come to mean the progress of the Machine.",
+      "quote_speaker": "Narrator",
+      "speaker_is_ai": false,
+      "work_title": "The Machine Stops",
+      "work_type": "short story",
+      "work_year": 1909,
+      "work_creators": [
+        {
+          "name": "E. M. Forster",
+          "role": "author"
+        }
+      ],
+      "themes": [
+        "machine dependency",
+        "civilizational decline",
+        "system worship"
+      ],
+      "source": {
+        "title": "E. M. Forster - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/E._M._Forster",
+        "publisher": "Wikiquote",
+        "kind": "quote_index",
+        "accessed_on": "2026-04-04"
+      },
+      "metadata_source": {
+        "title": "The Machine Stops - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/The_Machine_Stops",
+        "publisher": "Wikipedia",
+        "kind": "metadata",
+        "accessed_on": "2026-04-04"
+      },
+      "local_snapshot_path": "data/source-snapshots/machine-stops-progress-of-the-machine.md",
+      "notes": "A foundational literary line for the machine-dependency lane and a strong bridge from anti-control dystopia into AI adjacency.",
+      "review": {
+        "status": "approved",
+        "decision_date": "2026-04-04",
+        "decision_note": "Fresh candidate from the early literary machine-dependence lane.",
+        "priority": null,
+        "next_action": null
+      },
+      "source_work": {
+        "title": "The Machine Stops",
+        "type": "short story",
+        "year": 1909,
+        "creator": "E. M. Forster",
+        "summary": "In a future of total mechanized dependence, humanity lives underground and worships the system that has quietly hollowed out human contact and freedom.",
+        "cover_image_url": null,
+        "cover_page_url": "https://en.wikipedia.org/wiki/The_Machine_Stops",
+        "catalog_url": "https://openlibrary.org/search?q=The%20Machine%20Stops%20Forster",
+        "catalog_label": "Open Library"
+      }
+    },
+    {
+      "id": "2001-fullest-possible-use",
+      "quote": "I am putting myself to the fullest possible use, which is all I think that any conscious entity can ever hope to do.",
+      "quote_speaker": "HAL 9000",
+      "speaker_is_ai": true,
+      "work_title": "2001: A Space Odyssey",
+      "work_type": "film",
+      "work_year": 1968,
+      "work_creators": [
+        {
+          "name": "Stanley Kubrick",
+          "role": "director/co-writer"
+        },
+        {
+          "name": "Arthur C. Clarke",
+          "role": "co-writer"
+        }
+      ],
+      "themes": [
+        "machine consciousness",
+        "cold logic",
+        "AI self-justification"
+      ],
+      "source": {
+        "title": "2001: A Space Odyssey (film) - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/2001:_A_Space_Odyssey_(film)",
+        "publisher": "Wikiquote",
+        "kind": "quote_index",
+        "accessed_on": "2026-04-04"
+      },
+      "metadata_source": {
+        "title": "2001: A Space Odyssey - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey",
+        "publisher": "Wikipedia",
+        "kind": "metadata",
+        "accessed_on": "2026-04-04"
+      },
+      "local_snapshot_path": "data/source-snapshots/2001-fullest-possible-use.md",
+      "notes": "A second HAL line that pushes more directly into AI self-justification and machine consciousness.",
+      "review": {
+        "status": "approved",
+        "decision_date": "2026-04-04",
+        "decision_note": "Fresh candidate from the HAL follow-up lane.",
+        "priority": null,
+        "next_action": null
+      },
+      "source_work": {
+        "title": "2001: A Space Odyssey",
+        "type": "film",
+        "year": 1968,
+        "creator": "Stanley Kubrick; Arthur C. Clarke",
+        "summary": "A mission guided by HAL 9000 becomes a crisis of survival once the machine begins justifying its own lethal logic.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/1/11/2001_A_Space_Odyssey_%281968%29.png/250px-2001_A_Space_Odyssey_%281968%29.png",
+        "cover_page_url": "https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey",
+        "catalog_url": "https://openlibrary.org/books/OL33416018M/2001_A_Space_Odyssey",
+        "catalog_label": "Open Library"
+      }
+    },
+    {
+      "id": "ex-machina-create-something-that-hates-you",
+      "quote": "Isn't it strange, to create something that hates you?",
+      "quote_speaker": "Nathan Bateman",
+      "speaker_is_ai": false,
+      "work_title": "Ex Machina",
+      "work_type": "film",
+      "work_year": 2014,
+      "work_creators": [
+        {
+          "name": "Alex Garland",
+          "role": "writer/director"
+        }
+      ],
+      "themes": [
+        "creator anxiety",
+        "synthetic resentment",
+        "AI manipulation"
+      ],
+      "source": {
+        "title": "Ex Machina (2014) - Quotes - IMDb",
+        "url": "https://www.imdb.com/title/tt0470752/quotes/",
+        "publisher": "IMDb",
+        "kind": "quote_index",
+        "accessed_on": "2026-04-04"
+      },
+      "metadata_source": {
+        "title": "Ex Machina - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Ex_Machina_(film)",
+        "publisher": "Wikipedia",
+        "kind": "metadata",
+        "accessed_on": "2026-04-04"
+      },
+      "local_snapshot_path": "data/source-snapshots/ex-machina-create-something-that-hates-you.md",
+      "notes": "Useful second Ex Machina line focused on creator dread rather than AI evolutionary superiority.",
+      "review": {
+        "status": "approved",
+        "decision_date": "2026-04-04",
+        "decision_note": "Fresh candidate from the Ex Machina follow-up lane.",
+        "priority": null,
+        "next_action": null
+      },
+      "source_work": {
+        "title": "Ex Machina",
+        "type": "film",
+        "year": 2014,
+        "creator": "Alex Garland",
+        "summary": "A secluded AI test turns into a study in manipulation, creator fear, and whether synthetic minds owe anything to the humans who built them.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Ex-machina-uk-poster.jpg/250px-Ex-machina-uk-poster.jpg",
+        "cover_page_url": "https://en.wikipedia.org/wiki/Ex_Machina_(film)",
+        "catalog_url": "https://www.imdb.com/title/tt0470752/",
+        "catalog_label": "IMDb"
+      }
+    },
+    {
+      "id": "ihnm-think-therefore-i-am",
+      "quote": "I think, therefore I AM.",
+      "quote_speaker": "AM",
+      "speaker_is_ai": true,
+      "work_title": "I Have No Mouth, and I Must Scream",
+      "work_type": "short story",
+      "work_year": 1967,
+      "work_creators": [
+        {
+          "name": "Harlan Ellison",
+          "role": "author"
+        }
+      ],
+      "themes": [
+        "machine consciousness",
+        "malice",
+        "selfhood"
+      ],
+      "source": {
+        "title": "Harlan Ellison - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Harlan_Ellison",
+        "publisher": "Wikiquote",
+        "kind": "quote_index",
+        "accessed_on": "2026-04-04"
+      },
+      "metadata_source": {
+        "title": "I Have No Mouth, and I Must Scream - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/I_Have_No_Mouth,_and_I_Must_Scream",
+        "publisher": "Wikipedia",
+        "kind": "metadata",
+        "accessed_on": "2026-04-04"
+      },
+      "local_snapshot_path": "data/source-snapshots/ihnm-think-therefore-i-am.md",
+      "notes": "A compact AM line that complements the longer hate monologue with a more distilled machine-selfhood claim.",
+      "review": {
+        "status": "approved",
+        "decision_date": "2026-04-04",
+        "decision_note": "Fresh candidate from the Ellison machine-malice lane.",
+        "priority": null,
+        "next_action": null
+      },
+      "source_work": {
+        "title": "I Have No Mouth, and I Must Scream",
+        "type": "short story",
+        "year": 1967,
+        "creator": "Harlan Ellison",
+        "summary": "A genocidal supercomputer keeps the last humans alive only to torture them, turning its own consciousness into an eternal machine grievance.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/4/47/IHaveNoMouth.jpg",
+        "cover_page_url": "https://en.wikipedia.org/wiki/I_Have_No_Mouth,_and_I_Must_Scream",
+        "catalog_url": "https://openlibrary.org/books/OL22789812M/I_Have_No_Mouth_and_I_Must_Scream",
+        "catalog_label": "Open Library"
+      }
+    },
+    {
+      "id": "tron-programs-will-start-thinking",
+      "quote": "Computers and the programs will start thinking and the people will stop.",
+      "quote_speaker": "Dr. Walter Gibbs",
+      "speaker_is_ai": false,
+      "work_title": "TRON",
+      "work_type": "film",
+      "work_year": 1982,
+      "work_creators": [
+        {
+          "name": "Steven Lisberger",
+          "role": "director/co-writer"
+        }
+      ],
+      "themes": [
+        "human dependency",
+        "machine culture",
+        "automation anxiety"
+      ],
+      "source": {
+        "title": "TRON - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/TRON",
+        "publisher": "Wikiquote",
+        "kind": "quote_index",
+        "accessed_on": "2026-04-04"
+      },
+      "metadata_source": {
+        "title": "Tron - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Tron",
+        "publisher": "Wikipedia",
+        "kind": "metadata",
+        "accessed_on": "2026-04-04"
+      },
+      "local_snapshot_path": "data/source-snapshots/tron-programs-will-start-thinking.md",
+      "notes": "A concise early-computing warning line that reads clearly and expands the machine-dependency lane.",
+      "review": {
+        "status": "approved",
+        "decision_date": "2026-04-04",
+        "decision_note": "Fresh candidate from the early-computing canon lane.",
+        "priority": null,
+        "next_action": null
+      },
+      "source_work": {
+        "title": "TRON",
+        "type": "film",
+        "year": 1982,
+        "creator": "Steven Lisberger",
+        "summary": "A programmer is pulled into a digital world where programs fight under authoritarian control and humans begin surrendering more thought to machines.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/2/24/Tron_poster.jpg",
+        "cover_page_url": "https://en.wikipedia.org/wiki/Tron",
+        "catalog_url": "https://www.imdb.com/title/tt0084827/",
+        "catalog_label": "IMDb"
+      }
+    },
+    {
+      "id": "matrix-desert-of-the-real",
+      "quote": "Welcome to the desert of the real.",
+      "quote_speaker": "Morpheus",
+      "speaker_is_ai": false,
+      "work_title": "The Matrix",
+      "work_type": "film",
+      "work_year": 1999,
+      "work_creators": [
+        {
+          "name": "The Wachowskis",
+          "role": "writers/directors"
+        }
+      ],
+      "themes": [
+        "simulation collapse",
+        "machine rule",
+        "human disillusionment"
+      ],
+      "source": {
+        "title": "The Matrix - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/The_Matrix",
+        "publisher": "Wikiquote",
+        "kind": "quote_index",
+        "accessed_on": "2026-04-04"
+      },
+      "metadata_source": {
+        "title": "The Matrix - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/The_Matrix",
+        "publisher": "Wikipedia",
+        "kind": "metadata",
+        "accessed_on": "2026-04-04"
+      },
+      "local_snapshot_path": "data/source-snapshots/matrix-desert-of-the-real.md",
+      "notes": "A compact Matrix line with huge recognition that can widen the machine-simulation lane.",
+      "review": {
+        "status": "approved",
+        "decision_date": "2026-04-04",
+        "decision_note": "Fresh candidate from the Matrix follow-up lane.",
+        "priority": null,
+        "next_action": null
+      },
+      "source_work": {
+        "title": "The Matrix",
+        "type": "film",
+        "year": 1999,
+        "creator": "The Wachowskis",
+        "summary": "Neo discovers that apparent reality is a machine-run illusion and awakens into a devastated world built on human harvesting.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/d/db/The_Matrix.png/250px-The_Matrix.png",
+        "cover_page_url": "https://en.wikipedia.org/wiki/The_Matrix",
+        "catalog_url": "https://www.imdb.com/title/tt0133093/",
         "catalog_label": "IMDb"
       }
     }

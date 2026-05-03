@@ -142,7 +142,7 @@
 
         .toolbar {
             display: grid;
-            grid-template-columns: minmax(0, 1fr) auto auto auto;
+            grid-template-columns: minmax(280px, 1fr) auto auto auto auto;
             gap: 12px;
             align-items: center;
             margin-top: 20px;
@@ -362,6 +362,30 @@
             gap: 8px;
         }
 
+        .helperRow,
+        .reasonRow {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .helperChip {
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--soft);
+            border-radius: 999px;
+            padding: 8px 12px;
+            cursor: pointer;
+            font-size: 12px;
+            letter-spacing: .04em;
+        }
+
+        .helperChip.emphasis {
+            background: rgba(149, 213, 255, 0.16);
+            border-color: rgba(149, 213, 255, 0.28);
+        }
+
         .dragHandle {
             display: inline-flex;
             align-items: center;
@@ -526,6 +550,170 @@
             gap: 18px;
         }
 
+        .ideaGrid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 14px;
+            margin-top: 14px;
+        }
+
+        .ideaCard {
+            padding: 16px;
+            border-radius: 18px;
+            border: 1px solid var(--line);
+            background: rgba(255, 255, 255, 0.035);
+        }
+
+        .ideaCard h3 {
+            margin: 0 0 10px;
+            font-size: 20px;
+            letter-spacing: -0.02em;
+        }
+
+        .ideaPrompt {
+            margin-top: 10px;
+            padding: 11px 12px;
+            border-radius: 14px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            background: rgba(255, 255, 255, 0.03);
+            color: #eef5fb;
+            font: 13px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace;
+            white-space: pre-wrap;
+            word-break: break-word;
+        }
+
+        .subtleNote {
+            margin-top: 12px;
+            color: #d8edf9;
+            font-size: 14px;
+        }
+
+        .searchHelp {
+            margin-top: 10px;
+            color: #cfe2ef;
+            font-size: 14px;
+        }
+
+        .focusBar {
+            margin-top: 16px;
+            padding: 16px 18px;
+            border-radius: 20px;
+            border: 1px solid rgba(149, 213, 255, 0.18);
+            background: rgba(149, 213, 255, 0.08);
+        }
+
+        .focusBar h2,
+        .feedbackCard h3,
+        .advancedPanel summary,
+        .suggestionCard h3 {
+            margin: 0 0 8px;
+            letter-spacing: -0.02em;
+        }
+
+        .focusActions {
+            display: grid;
+            grid-template-columns: minmax(240px, 1fr) auto auto;
+            gap: 10px;
+            align-items: center;
+            margin-top: 14px;
+        }
+
+        .feedbackCard,
+        .suggestionCard {
+            padding: 16px 18px;
+            border-radius: 20px;
+            border: 1px solid var(--line);
+            background: rgba(255, 255, 255, 0.035);
+        }
+
+        .simpleGrid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 14px;
+            margin-top: 18px;
+        }
+
+        .advancedPanel {
+            margin-top: 18px;
+            border: 1px solid var(--line);
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.035);
+            overflow: hidden;
+        }
+
+        .advancedPanel summary {
+            cursor: pointer;
+            list-style: none;
+            padding: 16px 18px;
+            color: #dff1ff;
+            font-size: 18px;
+        }
+
+        .advancedPanel summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .advancedBody {
+            padding: 0 18px 18px;
+        }
+
+        .busyPanel {
+            margin-top: 14px;
+            padding: 14px 16px;
+            border-radius: 18px;
+            border: 1px solid rgba(242, 195, 111, 0.32);
+            background: rgba(242, 195, 111, 0.1);
+            color: #fff2d3;
+        }
+
+        .busyPanel strong {
+            display: block;
+            margin-bottom: 6px;
+            color: #fff7e7;
+            font-size: 12px;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+        }
+
+        .busyPanel.global {
+            margin-top: 16px;
+            border-color: rgba(149, 213, 255, 0.34);
+            background: rgba(149, 213, 255, 0.12);
+            color: #e9f7ff;
+        }
+
+        .resultPanel {
+            margin-top: 16px;
+            padding: 16px 18px;
+            border-radius: 20px;
+            border: 1px solid rgba(149, 213, 255, 0.22);
+            background: rgba(149, 213, 255, 0.08);
+        }
+
+        .resultPanel.success {
+            border-color: rgba(120, 210, 168, 0.28);
+            background: rgba(120, 210, 168, 0.1);
+        }
+
+        .resultPanel.warning {
+            border-color: rgba(242, 195, 111, 0.28);
+            background: rgba(242, 195, 111, 0.1);
+        }
+
+        .resultPanel strong {
+            display: block;
+            margin-bottom: 6px;
+            color: #f1fbff;
+            font-size: 12px;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+        }
+
+        .newBadge {
+            background: rgba(120, 210, 168, 0.18);
+            border: 1px solid rgba(120, 210, 168, 0.3);
+        }
+
         .sourceCard,
         .tableCard,
         .frameIntro {
@@ -583,6 +771,7 @@
             }
 
             .fieldGrid,
+            .focusActions,
             .toolbar,
             .sourceTop {
                 grid-template-columns: 1fr;
@@ -622,14 +811,18 @@
         <section class="hero">
             <span class="eyebrow">Local Review Workbench</span>
             <h1>AI Dystopia Quotes</h1>
-            <p class="heroCopy">Each quote now carries its own status actions, ordering handle, and sourcing context directly in the list item itself. Use the same interaction pattern in every lane: read the quote, click the new status if needed, and drag the item to reorder within that lane.</p>
+            <p class="heroCopy">This workbench is here to help you find stronger quotes, review them quickly, and keep the approved set sharp. Everything else is secondary.</p>
             <div class="meta" id="meta"></div>
             <div class="toolbar">
-                <input id="search" class="search" type="search" placeholder="Search title, quote, speaker, theme, note, creator, or discovery title">
+                <input id="search" class="search" type="search" placeholder="Search the current list">
                 <button id="clearSearch" class="button">Clear Search</button>
+                <button id="sourceMoreToolbar" class="button warn">Find More Quotes</button>
+                <button id="publishToolbar" class="button primary">Publish</button>
                 <a class="button neutral" href="/public" target="_blank" rel="noreferrer">Open Public Page in Browser</a>
                 <span class="statusLine" id="boardStatus">Loading workbench…</span>
             </div>
+            <div class="searchHelp" id="searchHelp">Search the current list by quote, title, speaker, creator, theme, and notes.</div>
+            <div id="activityPanel"></div>
         </section>
 
         <section class="panel">
@@ -644,9 +837,7 @@
             { key: "approved", label: "Approved" },
             { key: "postponed", label: "Postponed" },
             { key: "declined", label: "Declined" },
-            { key: "sources", label: "Sources" },
-            { key: "public", label: "Public Page" },
-            { key: "harness", label: "Harness" }
+            { key: "sources", label: "More Quotes" }
         ];
 
         const laneLabels = {
@@ -657,21 +848,53 @@
         };
 
         const laneDescriptions = {
-            candidate: "Use the status buttons on each item to approve, postpone, or decline directly from the card. Drag items by the reorder handle to change review order.",
-            approved: "Approved items use the same card layout and the same drag-to-reorder interaction. Reorder in place or move any quote back into review directly from the card.",
-            postponed: "Postponed items stay actionable here with the same inline controls and the same ordering behavior.",
-            declined: "Declined does not mean gone. Use the same inline actions to bring anything back whenever you want."
+            candidate: "This is the main review queue. Open a quote only when you need more context, then approve, postpone, or decline it quickly.",
+            approved: "This is the publishable set. Reorder it in place or move any quote back out if it no longer feels right.",
+            postponed: "Postponed quotes stay here until you want another look.",
+            declined: "Declined quotes stay available in case you want to revive one later."
         };
+
+        const quickDeclineReasons = [
+            "Too adjacent to the AI theme",
+            "Not recognizable enough",
+            "Good source, weak quote",
+            "Not ominous enough",
+            "Too similar to quotes we already have"
+        ];
+
+        const inspirationPresets = [
+            { label: "More literary classics", mode: "author", focus: "Asimov, Herbert, Orwell, Capek" },
+            { label: "More movie canon", mode: "source", focus: "Blade Runner, Matrix, Westworld, Terminator" },
+            { label: "More games", mode: "query", focus: "Portal, Mass Effect, System Shock, Detroit" },
+            { label: "More robot revolt", mode: "query", focus: "robot uprising, machine rebellion" },
+            { label: "More machine-control quotes", mode: "query", focus: "machine control, surveillance, total control" },
+            { label: "More consciousness quotes", mode: "source", focus: "Ghost in the Shell, Ex Machina, Her" }
+        ];
 
         let board = null;
         let sourceScans = null;
         let discovery = null;
+        let sourceRegistry = null;
+        let queryLibrary = null;
+        let followupWatchlist = null;
+        let sourceIdeas = [];
         let activeTab = "candidate";
         let searchTerm = "";
         const snapshotCache = {};
         let dragState = null;
         let autoScrollRaf = null;
         let autoScrollStep = 0;
+        let sourceActionSummary = "";
+        let publishActionSummary = "";
+        let sourceActionBusy = false;
+        let publishActionBusy = false;
+        let recentSourceBatch = null;
+        let latestActionResult = null;
+        let latestAddedCandidateIds = [];
+        let latestHuntPlan = null;
+        let sourceActionKind = "candidate";
+        let sourceMode = "mixed";
+        let sourceFocus = "";
         const expandedByStatus = {
             candidate: {},
             approved: {},
@@ -706,14 +929,22 @@
         }
 
         async function loadAll() {
-            const [boardPayload, scansPayload, discoveryPayload] = await Promise.all([
+            const [boardPayload, scansPayload, discoveryPayload, sourceRegistryPayload, queryLibraryPayload, followupWatchlistPayload, sourceIdeasPayload] = await Promise.all([
                 api("/api/board"),
                 api("/api/source-scans"),
-                api("/api/discovery")
+                api("/api/discovery"),
+                api("/api/source-registry"),
+                api("/api/query-library"),
+                api("/api/followup-watchlist"),
+                api("/api/source-ideas")
             ]);
             board = boardPayload;
             sourceScans = scansPayload;
             discovery = discoveryPayload;
+            sourceRegistry = sourceRegistryPayload;
+            queryLibrary = queryLibraryPayload;
+            followupWatchlist = followupWatchlistPayload;
+            sourceIdeas = sourceIdeasPayload.ideas || [];
             render();
         }
 
@@ -767,21 +998,16 @@
 
         function renderMeta() {
             const counts = statusCounts();
-            const discovered = discovery.records.length;
-            const target = discovery.target_count;
-            const scans = sourceScans.scanned_sources.length;
-            const nextStrategy = sourceScans.strategies.find((strategy) => strategy.status === "ready");
+            const heldCount = counts.postponed + counts.declined;
+            const latestBatchCount = recentSourceBatch?.added_count || 0;
 
             const meta = document.getElementById("meta");
             meta.innerHTML = "";
             const cards = [
+                ["Ready Now", counts.candidate],
                 ["Approved", counts.approved],
-                ["Candidates", counts.candidate],
-                ["Postponed", counts.postponed],
-                ["Declined", counts.declined],
-                ["Discovered", `${discovered} / ${target}`],
-                ["Scans", scans],
-                ["Next Search", nextStrategy ? nextStrategy.label : "Complete"]
+                ["Held", heldCount],
+                ["Last Batch", latestBatchCount ? `${latestBatchCount} new` : "None yet"]
             ];
 
             for (const [label, value] of cards) {
@@ -803,9 +1029,7 @@
                         const total = counts[tab.key];
                         return searchTerm.trim() ? `${filtered}/${total}` : total;
                     })()
-                    : tab.key === "sources"
-                        ? sourceScans.scanned_sources.length
-                        : "";
+                    : "";
                 const button = document.createElement("button");
                 button.className = `tabButton${activeTab === tab.key ? " active" : ""}`;
                 button.innerHTML = count === "" ? tab.label : `${tab.label}<span class="tabCount">${count}</span>`;
@@ -816,6 +1040,124 @@
                 });
                 tabsNode.appendChild(button);
             }
+        }
+
+        function searchHelpText() {
+            if (activeTab === "sources") {
+                return "Search filters the supporting quote-hunt research by source leads, source registry, query library, watchlist notes, and scan log text.";
+            }
+            return "Search filters the current quote list by title, quote, speaker, creator, themes, notes, and summary.";
+        }
+
+        function sourceModeLabel(mode) {
+            return {
+                mixed: "Mixed widening",
+                author: "Author lane",
+                query: "Query sweep",
+                source: "Quote-site sweep"
+            }[mode] || "Mixed widening";
+        }
+
+        function sourceIdeaMode(idea) {
+            if (idea.category === "author_lane") {
+                return "author";
+            }
+            if (idea.category === "quote_followup") {
+                return "source";
+            }
+            return "mixed";
+        }
+
+        function declineFeedbackSummary() {
+            const declined = board.records.filter((record) => record.review.status === "declined");
+            const counts = {
+                "Too adjacent to AI": 0,
+                "Not recognizable enough": 0,
+                "Quote wording too weak": 0,
+                "Not ominous enough": 0,
+                "Too similar to existing picks": 0
+            };
+            for (const record of declined) {
+                const note = (record.review.decision_note || "").toLowerCase();
+                if (!note) {
+                    continue;
+                }
+                if (note.includes("adjacent")) {
+                    counts["Too adjacent to AI"] += 1;
+                }
+                if (note.includes("recognizable")) {
+                    counts["Not recognizable enough"] += 1;
+                }
+                if (note.includes("weak") || note.includes("generic")) {
+                    counts["Quote wording too weak"] += 1;
+                }
+                if (note.includes("ominous")) {
+                    counts["Not ominous enough"] += 1;
+                }
+                if (note.includes("similar")) {
+                    counts["Too similar to existing picks"] += 1;
+                }
+            }
+            return Object.entries(counts)
+                .filter(([, count]) => count > 0)
+                .sort((left, right) => right[1] - left[1]);
+        }
+
+        function applyInspiration(mode, focus, label) {
+            sourceMode = mode;
+            sourceFocus = focus;
+            activeTab = "sources";
+            render();
+            setStatus(`Set next quote hunt to ${label}.`);
+        }
+
+        function jumpToTop() {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+
+        function uiPause(delay = 140) {
+            return new Promise((resolve) => window.setTimeout(resolve, delay));
+        }
+
+        function renderActivityPanel() {
+            const panel = document.getElementById("activityPanel");
+            if (!panel) {
+                return;
+            }
+            if (sourceActionBusy) {
+                const isCandidateAction = sourceActionKind === "candidate";
+                panel.innerHTML = `
+                    <div class="busyPanel global">
+                        <strong>${isCandidateAction ? "Candidate Intake In Progress" : "Lead Refresh In Progress"}</strong>
+                        ${isCandidateAction
+                            ? "The app is building new quote options for the review queue now. You will be switched back to Candidates as soon as the batch finishes."
+                            : "The app is widening the supporting lead pool now. The refreshed lead batch will appear in Quote Intake when the run finishes."}
+                    </div>
+                `;
+                return;
+            }
+            if (publishActionBusy) {
+                panel.innerHTML = `
+                    <div class="busyPanel global">
+                        <strong>Publish In Progress</strong>
+                        The approved public artifacts are being regenerated and published now.
+                    </div>
+                `;
+                return;
+            }
+            if (recentSourceBatch) {
+                const isCandidateBatch = recentSourceBatch.kind === "candidate_batch";
+                panel.innerHTML = `
+                    <div class="busyPanel global">
+                        <strong>${isCandidateBatch ? "Latest Candidate Batch" : "Latest Lead Batch"}</strong>
+                        ${isCandidateBatch
+                            ? `Added ${escapeHtml(recentSourceBatch.added_count)} quote candidates using ${escapeHtml(sourceModeLabel(recentSourceBatch.mode || sourceMode))}${recentSourceBatch.focus ? ` with focus on ${escapeHtml(recentSourceBatch.focus)}` : ""}. Review the Candidates lane now.`
+                            : `Added ${escapeHtml(recentSourceBatch.added_count)} supporting source-work leads using ${escapeHtml(sourceModeLabel(recentSourceBatch.mode || sourceMode))}${recentSourceBatch.focus ? ` with focus on ${escapeHtml(recentSourceBatch.focus)}` : ""}. Review Quote Intake for the full batch list.`}
+                    </div>
+                `;
+                return;
+            }
+            panel.innerHTML = "";
         }
 
         function coverHtml(record) {
@@ -847,6 +1189,9 @@
             if (record.review.priority) {
                 tags.push(`<span class="tag">${escapeHtml(record.review.priority)} priority</span>`);
             }
+            if (latestAddedCandidateIds.includes(record.id)) {
+                tags.push('<span class="tag newBadge">New</span>');
+            }
             return tags.join("");
         }
 
@@ -873,7 +1218,7 @@
             const previewSummary = truncateText(record.source_work.summary, 150);
 
             return `
-                <article class="reviewItem" data-id="${escapeHtml(record.id)}" draggable="true">
+                <article class="reviewItem" data-id="${escapeHtml(record.id)}" data-status="${escapeHtml(record.review.status)}" draggable="true">
                     <div class="itemTop">
                         <div class="titleBlock">
                             <h3>${escapeHtml(record.work_title)}</h3>
@@ -898,6 +1243,13 @@
                     <div class="statusRow">
                         ${statusButtonsHtml(record)}
                     </div>
+                    ${record.review.status === "candidate" ? `
+                        <div class="reasonRow">
+                            ${quickDeclineReasons.map((reason) => `
+                                <button type="button" class="helperChip" data-quick-decline="${escapeHtml(reason)}">Decline: ${escapeHtml(reason)}</button>
+                            `).join("")}
+                        </div>
+                    ` : ""}
                     ${expanded ? `
                         <div class="detailBody">
                             <div class="quoteGrid">
@@ -969,6 +1321,7 @@
                                 </div>
                                 <div class="actionRow" style="margin-top: 12px;">
                                     <button type="button" class="button primary" data-action="save-note">Save Notes</button>
+                                    <button type="button" class="button" data-action="use-inspiration" data-focus="${escapeHtml(`${record.work_title}, ${(record.themes || []).slice(0, 2).join(', ')}`)}">More like this</button>
                                     <a class="button neutral" href="${escapeHtml(record.source_work.cover_page_url)}" target="_blank" rel="noreferrer">Cover Page</a>
                                 </div>
                             </section>
@@ -982,6 +1335,14 @@
             const records = filteredLaneRecords(status);
             const totalRecords = board.records.filter((record) => record.review.status === status).length;
             const fullLane = board.records.filter((record) => record.review.status === status);
+            const resultPanel = latestActionResult && status === "candidate"
+                ? `
+                    <div class="resultPanel ${escapeHtml(latestActionResult.kind)}">
+                        <strong>${escapeHtml(latestActionResult.title)}</strong>
+                        ${escapeHtml(latestActionResult.message)}
+                    </div>
+                `
+                : "";
             if (!records.length) {
                 return `
                     <section class="laneIntro">
@@ -989,6 +1350,7 @@
                         <p>${escapeHtml(laneDescriptions[status])}</p>
                         <p><strong>Showing:</strong> 0 of ${escapeHtml(totalRecords)} ${escapeHtml(status)} items.</p>
                     </section>
+                    ${resultPanel}
                     <div class="empty">No ${escapeHtml(status)} records match the current filter.</div>
                 `;
             }
@@ -999,6 +1361,7 @@
                     <p>${escapeHtml(laneDescriptions[status])}</p>
                     <p><strong>Showing:</strong> ${escapeHtml(records.length)} of ${escapeHtml(totalRecords)} ${escapeHtml(status)} items${searchTerm.trim() ? " for the current search" : ""}.</p>
                 </section>
+                ${resultPanel}
                 <div class="list" data-lane="${escapeHtml(status)}">
                     ${records.map((record, index) => itemTemplate(
                         record,
@@ -1013,110 +1376,392 @@
         function renderSourcesTab() {
             const nextStrategy = sourceScans.strategies.find((strategy) => strategy.status === "ready");
             const discovered = filteredDiscoveryRecords();
-            return `
-                <div class="sourceGrid">
-                    <section class="sourceCard">
-                        <h2>Source Discovery</h2>
-                        <p>Track what has been scanned, when it was scanned, and which widening strategy should run next as we push toward the 100-title starting pool.</p>
-                        <div class="actionRow">
-                            <button class="button warn" id="expandSearchButton">Expand Search</button>
-                            <a class="button neutral" href="/harness" target="_blank" rel="noreferrer">Open Harness in Browser</a>
-                        </div>
+            const feedbackSummary = declineFeedbackSummary();
+            const registryCount = sourceRegistry?.records?.length || 0;
+            const queryCount = queryLibrary?.records?.length || 0;
+            const watchlistCount = followupWatchlist?.records?.length || 0;
+            const huntPlan = latestHuntPlan;
+            const resultPanel = latestActionResult
+                ? `
+                    <div class="resultPanel ${escapeHtml(latestActionResult.kind)}">
+                        <strong>${escapeHtml(latestActionResult.title)}</strong>
+                        ${escapeHtml(latestActionResult.message)}
+                    </div>
+                `
+                : "";
+            const busyNotice = sourceActionBusy
+                ? `
+                    <div class="busyPanel">
+                        <strong>${sourceActionKind === "candidate" ? "Candidate intake in progress" : "Lead refresh in progress"}</strong>
+                        ${sourceActionKind === "candidate"
+                            ? "New quote options are being added to the Candidates queue now."
+                            : "The supporting lead pool is being widened now. New leads will appear here when the batch finishes."}
+                    </div>
+                `
+                : "";
+            const howItWorks = `
+                <section class="feedbackCard" style="margin-top: 18px;">
+                    <h3>What happens when you press Find More Quotes</h3>
+                    <p>1. Your prompt is matched against the query library, or the app chooses the next best hunt if you leave it blank. 2. The hunt lines up source places and follow-up lanes from the research system. 3. It widens supporting leads, checks multiple quote paths, then adds new verified quote cards to Candidates or tells you clearly what it tried.</p>
+                </section>
+            `;
+            const huntPlanPanel = huntPlan
+                ? `
+                    <section class="tableCard" style="margin-top: 18px;">
+                        <h2>Current Hunt Research Plan</h2>
+                        <p>This is the research footprint behind the latest quote hunt${huntPlan.focus ? ` for ${escapeHtml(huntPlan.focus)}` : ""}.</p>
                         <div class="detailGrid" style="margin-top: 14px;">
                             <div class="detailCell">
-                                <strong>Next widening strategy</strong>
-                                ${escapeHtml(nextStrategy ? nextStrategy.label : "All strategies applied")}
+                                <strong>Source places in system</strong>
+                                ${escapeHtml(huntPlan.counts.sources)}
                             </div>
                             <div class="detailCell">
-                                <strong>Discovered titles</strong>
-                                ${escapeHtml(`${discovery.records.length} / ${discovery.target_count}`)}
+                                <strong>Query patterns in system</strong>
+                                ${escapeHtml(huntPlan.counts.queries)}
                             </div>
                             <div class="detailCell">
-                                <strong>Source scans logged</strong>
-                                ${escapeHtml(sourceScans.scanned_sources.length)}
+                                <strong>Watchlist lanes in system</strong>
+                                ${escapeHtml(huntPlan.counts.watchlist)}
+                            </div>
+                            <div class="detailCell">
+                                <strong>Mode</strong>
+                                ${escapeHtml(sourceModeLabel(huntPlan.mode || sourceMode))}
                             </div>
                         </div>
+                        <div class="simpleGrid" style="margin-top: 18px;">
+                            <section class="feedbackCard">
+                                <h3>Source places used next</h3>
+                                <div class="helperRow">
+                                    ${(huntPlan.sources || []).map((item) => `<span class="tag">${escapeHtml(item.label)}</span>`).join("") || "<span class=\"tag\">None selected</span>"}
+                                </div>
+                            </section>
+                            <section class="feedbackCard">
+                                <h3>Query paths used next</h3>
+                                <div class="helperRow">
+                                    ${(huntPlan.queries || []).map((item) => `<span class="tag">${escapeHtml(item.label)}</span>`).join("") || "<span class=\"tag\">None selected</span>"}
+                                </div>
+                            </section>
+                        </div>
+                        <section class="feedbackCard" style="margin-top: 18px;">
+                            <h3>Follow-up lanes</h3>
+                            <div class="helperRow">
+                                ${(huntPlan.watchlist || []).map((item) => `<span class="tag">${escapeHtml(item.label)}</span>`).join("") || "<span class=\"tag\">None selected</span>"}
+                            </div>
+                        </section>
                     </section>
-                    <section class="tableCard">
-                        <h2>Widening Strategies</h2>
-                        <div class="tableWrap">
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Strategy</th>
-                                        <th>Status</th>
-                                        <th>Providers</th>
-                                        <th>Applied</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    ${sourceScans.strategies.map((strategy) => `
-                                        <tr>
-                                            <td><strong>${escapeHtml(strategy.label)}</strong><br>${escapeHtml(strategy.notes || "")}</td>
-                                            <td>${escapeHtml(strategy.status)}</td>
-                                            <td>${escapeHtml((strategy.providers || []).join(", "))}</td>
-                                            <td>${escapeHtml(strategy.applied_on || "-")}</td>
-                                        </tr>
-                                    `).join("")}
-                                </tbody>
-                            </table>
+                `
+                : "";
+            const recentBatch = recentSourceBatch
+                ? `
+                    <section class="tableCard" style="margin-top: 18px;">
+                        <h2>${escapeHtml(recentSourceBatch.kind === "candidate_batch" ? "Latest Candidate Batch" : "Latest Lead Batch")}</h2>
+                        <p>${escapeHtml(recentSourceBatch.message)}</p>
+                        <div class="detailGrid" style="margin-top: 14px;">
+                            <div class="detailCell">
+                                <strong>Mode</strong>
+                                ${escapeHtml(sourceModeLabel(recentSourceBatch.mode || "mixed"))}
+                            </div>
+                            <div class="detailCell">
+                                <strong>Focus</strong>
+                                ${escapeHtml(recentSourceBatch.focus || "-")}
+                            </div>
+                            <div class="detailCell">
+                                <strong>Strategies Applied</strong>
+                                ${escapeHtml((recentSourceBatch.applied_labels || []).join(", ") || "-")}
+                            </div>
+                            <div class="detailCell">
+                                <strong>${escapeHtml(recentSourceBatch.kind === "candidate_batch" ? "New quote options" : "New leads added")}</strong>
+                                ${escapeHtml(recentSourceBatch.added_count)}
+                            </div>
+                        </div>
+                        ${recentSourceBatch.added_records?.length
+                            ? `
+                                <div class="tableWrap" style="margin-top: 14px;">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Title</th>
+                                                <th>Year</th>
+                                                <th>Type</th>
+                                                <th>${escapeHtml(recentSourceBatch.kind === "candidate_batch" ? "Speaker" : "Strategy")}</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            ${recentSourceBatch.added_records.map((record) => `
+                                                <tr>
+                                                    <td><strong>${escapeHtml(record.title || record.work_title)}</strong><br>${escapeHtml(record.creator || record.quote || "")}</td>
+                                                    <td>${escapeHtml(record.year ?? record.work_year ?? "-")}</td>
+                                                    <td>${escapeHtml(record.work_type)}</td>
+                                                    <td>${escapeHtml(record.strategy_id || record.quote_speaker || "-")}</td>
+                                                </tr>
+                                            `).join("")}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            `
+                            : '<p class="subtleNote">This batch did not add new titles because the remaining strategies had already been applied.</p>'
+                        }
+                    </section>
+                `
+                : "";
+            return `
+                <section class="focusBar">
+                    <h2>Find More Quotes</h2>
+                    <p>Tell me what kind of quotes you want next and I’ll go hunt for another batch. If you leave the box blank, I’ll choose the next best hunt myself using your approvals, declines, the source registry, the query library, and the follow-up watchlist.</p>
+                    <div class="focusActions">
+                        <input class="input" id="sourceFocusInput" value="${escapeHtml(sourceFocus)}" placeholder="Try: more Asimov, more ominous AI, more games, more Orwell-style control, or leave blank" ${sourceActionBusy || publishActionBusy ? "disabled" : ""}>
+                        <button class="button warn" id="sourceCandidatesButton" ${sourceActionBusy || publishActionBusy ? "disabled" : ""}>Find 6 More Quotes</button>
+                        <button class="button primary" id="publishButton" ${sourceActionBusy || publishActionBusy ? "disabled" : ""}>Publish Approved</button>
+                    </div>
+                    <div class="helperRow">
+                        ${inspirationPresets.map((preset) => `
+                            <button
+                                type="button"
+                                class="helperChip emphasis"
+                                data-inspiration-mode="${escapeHtml(preset.mode)}"
+                                data-inspiration-focus="${escapeHtml(preset.focus)}"
+                                data-inspiration-label="${escapeHtml(preset.label)}"
+                            >
+                                ${escapeHtml(preset.label)}
+                            </button>
+                        `).join("")}
+                    </div>
+                    <p class="subtleNote"><strong>Research engine:</strong> ${escapeHtml(registryCount)} active source places, ${escapeHtml(queryCount)} reusable query patterns, ${escapeHtml(watchlistCount)} follow-up lanes.</p>
+                    ${busyNotice}
+                    ${resultPanel}
+                    ${sourceActionSummary ? `<p class="subtleNote"><strong>Last quote hunt:</strong> ${escapeHtml(sourceActionSummary)}</p>` : ""}
+                    ${publishActionSummary ? `<p class="subtleNote"><strong>Last publish:</strong> ${escapeHtml(publishActionSummary)}</p>` : ""}
+                </section>
+                ${howItWorks}
+                ${huntPlanPanel}
+                ${recentBatch}
+                <div class="simpleGrid">
+                    <section class="feedbackCard">
+                        <h3>What Your Declines Are Telling Me</h3>
+                        ${feedbackSummary.length
+                            ? `
+                                <p>I’ll use these signals to bias future hunting away from weak matches.</p>
+                                <div class="helperRow">
+                                    ${feedbackSummary.map(([label, count]) => `<span class="tag">${escapeHtml(label)} x${escapeHtml(count)}</span>`).join("")}
+                                </div>
+                            `
+                            : `<p>As you decline quotes with reasons, I’ll summarize the patterns here and use them to steer what I look for next.</p>`
+                        }
+                    </section>
+                    <section class="suggestionCard">
+                        <h3>Need Inspiration?</h3>
+                        <p>Pick one of these next-hunt ideas or type your own direction above.</p>
+                        <div class="helperRow">
+                            ${sourceIdeas.slice(0, 6).map((idea) => `
+                                <button
+                                    type="button"
+                                    class="helperChip"
+                                    data-inspiration-mode="${escapeHtml(sourceIdeaMode(idea))}"
+                                    data-inspiration-focus="${escapeHtml(idea.prompt)}"
+                                    data-inspiration-label="${escapeHtml(idea.title)}"
+                                >
+                                    ${escapeHtml(idea.title)}
+                                </button>
+                            `).join("")}
                         </div>
                     </section>
                 </div>
-                <section class="tableCard" style="margin-top: 18px;">
-                    <h2>Discovered Titles</h2>
-                    <div class="tableWrap">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Title</th>
-                                    <th>Year</th>
-                                    <th>Type</th>
-                                    <th>Strategy</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                ${discovered.map((record) => `
-                                    <tr>
-                                        <td><strong>${escapeHtml(record.title)}</strong><br>${escapeHtml(record.creator)}</td>
-                                        <td>${escapeHtml(record.year ?? "-")}</td>
-                                        <td>${escapeHtml(record.work_type)}</td>
-                                        <td>${escapeHtml(record.strategy_id)}</td>
-                                    </tr>
-                                `).join("")}
-                            </tbody>
-                        </table>
+                <details class="advancedPanel">
+                    <summary>Advanced intake details</summary>
+                    <div class="advancedBody">
+                        <p>The sections below are supporting machinery for widening the search. They’re here when needed, but not meant to be the main workflow.</p>
+                        <div class="fieldGrid" style="margin-top: 14px;">
+                            <div class="fieldBlock">
+                                <label>Hunt Mode</label>
+                                <select class="select" id="sourceModeSelect" ${sourceActionBusy || publishActionBusy ? "disabled" : ""}>
+                                    <option value="mixed" ${sourceMode === "mixed" ? "selected" : ""}>Mixed widening</option>
+                                    <option value="author" ${sourceMode === "author" ? "selected" : ""}>Author lane</option>
+                                    <option value="query" ${sourceMode === "query" ? "selected" : ""}>Query sweep</option>
+                                    <option value="source" ${sourceMode === "source" ? "selected" : ""}>Quote-site sweep</option>
+                                </select>
+                            </div>
+                            <div class="fieldBlock">
+                                <label>Supporting actions</label>
+                                <div class="actionRow">
+                                    <button class="button" id="sourceMoreButton" ${sourceActionBusy || publishActionBusy ? "disabled" : ""}>Refresh Lead Pool</button>
+                                    <button class="button" id="expandSearchButton" ${sourceActionBusy || publishActionBusy ? "disabled" : ""}>Single Lead Refresh</button>
+                                    <a class="button neutral" href="/harness" target="_blank" rel="noreferrer">Open Harness</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detailGrid" style="margin-top: 14px;">
+                            <div class="detailCell">
+                                <strong>Current hunt mode</strong>
+                                ${escapeHtml(sourceModeLabel(sourceMode))}
+                            </div>
+                            <div class="detailCell">
+                                <strong>Next lead refresh</strong>
+                                ${escapeHtml(nextStrategy ? nextStrategy.label : "All strategies applied")}
+                            </div>
+                            <div class="detailCell">
+                                <strong>Source places tracked</strong>
+                                ${escapeHtml(registryCount)}
+                            </div>
+                            <div class="detailCell">
+                                <strong>Query patterns tracked</strong>
+                                ${escapeHtml(queryCount)}
+                            </div>
+                            <div class="detailCell">
+                                <strong>Follow-up lanes tracked</strong>
+                                ${escapeHtml(watchlistCount)}
+                            </div>
+                            <div class="detailCell">
+                                <strong>Source-work leads</strong>
+                                ${escapeHtml(`${discovery.records.length} total (goal was ${discovery.target_count})`)}
+                            </div>
+                            <div class="detailCell">
+                                <strong>Scans logged</strong>
+                                ${escapeHtml(sourceScans.scanned_sources.length)}
+                            </div>
+                        </div>
+                        <details class="advancedPanel" style="margin-top: 18px;">
+                            <summary>Source registry</summary>
+                            <div class="advancedBody">
+                                <div class="tableWrap">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Source</th>
+                                                <th>Type</th>
+                                                <th>Cadence</th>
+                                                <th>Trust</th>
+                                                <th>Open</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            ${(sourceRegistry?.records || []).map((record) => `
+                                                <tr>
+                                                    <td><strong>${escapeHtml(record.label)}</strong><br>${escapeHtml(record.notes || "")}</td>
+                                                    <td>${escapeHtml(record.provider_type)}</td>
+                                                    <td>${escapeHtml(record.update_frequency)}</td>
+                                                    <td>${escapeHtml(record.trust_level)}</td>
+                                                    <td><a href="${escapeHtml(record.url)}" target="_blank" rel="noreferrer">Open in browser</a></td>
+                                                </tr>
+                                            `).join("")}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </details>
+                        <details class="advancedPanel" style="margin-top: 18px;">
+                            <summary>Query library</summary>
+                            <div class="advancedBody">
+                                <div class="tableWrap">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Query</th>
+                                                <th>Goal</th>
+                                                <th>Targets</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            ${(queryLibrary?.records || []).map((record) => `
+                                                <tr>
+                                                    <td><strong>${escapeHtml(record.label)}</strong><br>${escapeHtml(record.query_text || "")}</td>
+                                                    <td>${escapeHtml(record.goal || "")}</td>
+                                                    <td>${escapeHtml((record.source_targets || []).join(", "))}</td>
+                                                </tr>
+                                            `).join("")}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </details>
+                        <details class="advancedPanel" style="margin-top: 18px;">
+                            <summary>Follow-up watchlist</summary>
+                            <div class="advancedBody">
+                                <div class="tableWrap">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Lane</th>
+                                                <th>Cadence</th>
+                                                <th>Why watch</th>
+                                                <th>Open</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            ${(followupWatchlist?.records || []).map((record) => `
+                                                <tr>
+                                                    <td><strong>${escapeHtml(record.label)}</strong><br>${escapeHtml((record.next_queries || []).join(" | "))}</td>
+                                                    <td>${escapeHtml(record.refresh_cadence || "")}</td>
+                                                    <td>${escapeHtml(record.why_watch || "")}</td>
+                                                    <td><a href="${escapeHtml(record.url)}" target="_blank" rel="noreferrer">Open in browser</a></td>
+                                                </tr>
+                                            `).join("")}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </details>
+                        <details class="advancedPanel" style="margin-top: 18px;">
+                            <summary>Supporting source-work leads</summary>
+                            <div class="advancedBody">
+                                <div class="tableWrap">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Title</th>
+                                                <th>Year</th>
+                                                <th>Type</th>
+                                                <th>Strategy</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            ${discovered.map((record) => `
+                                                <tr>
+                                                    <td><strong>${escapeHtml(record.title)}</strong><br>${escapeHtml(record.creator)}</td>
+                                                    <td>${escapeHtml(record.year ?? "-")}</td>
+                                                    <td>${escapeHtml(record.work_type)}</td>
+                                                    <td>${escapeHtml(record.strategy_id)}</td>
+                                                </tr>
+                                            `).join("")}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </details>
+                        <details class="advancedPanel" style="margin-top: 18px;">
+                            <summary>Scanned source log</summary>
+                            <div class="advancedBody">
+                                <div class="tableWrap">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Label</th>
+                                                <th>Provider</th>
+                                                <th>Scanned at</th>
+                                                <th>Strategy</th>
+                                                <th>Outcome</th>
+                                                <th>Kind</th>
+                                                <th>Open</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            ${sourceScans.scanned_sources.slice().reverse().map((record) => `
+                                                <tr>
+                                                    <td><strong>${escapeHtml(record.label)}</strong><br>${escapeHtml(record.notes || "")}</td>
+                                                    <td>${escapeHtml(record.provider)}</td>
+                                                    <td>${escapeHtml(record.scanned_at || record.scanned_on || "-")}</td>
+                                                    <td>${escapeHtml(record.strategy_id)}</td>
+                                                    <td>${escapeHtml(record.status || "-")}</td>
+                                                    <td>${escapeHtml(record.kind)}</td>
+                                                    <td><a href="${escapeHtml(record.url)}" target="_blank" rel="noreferrer">Open in browser</a></td>
+                                                </tr>
+                                            `).join("")}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </details>
                     </div>
-                </section>
-                <section class="tableCard" style="margin-top: 18px;">
-                    <h2>Scanned Source Log</h2>
-                    <div class="tableWrap">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Label</th>
-                                    <th>Provider</th>
-                                    <th>Scanned</th>
-                                    <th>Strategy</th>
-                                    <th>Kind</th>
-                                    <th>Open</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                ${sourceScans.scanned_sources.map((record) => `
-                                    <tr>
-                                        <td><strong>${escapeHtml(record.label)}</strong><br>${escapeHtml(record.notes || "")}</td>
-                                        <td>${escapeHtml(record.provider)}</td>
-                                        <td>${escapeHtml(record.scanned_on)}</td>
-                                        <td>${escapeHtml(record.strategy_id)}</td>
-                                        <td>${escapeHtml(record.kind)}</td>
-                                        <td><a href="${escapeHtml(record.url)}" target="_blank" rel="noreferrer">Open in browser</a></td>
-                                    </tr>
-                                `).join("")}
-                            </tbody>
-                        </table>
-                    </div>
-                </section>
+                </details>
             `;
         }
 
@@ -1187,8 +1832,6 @@
                 html = laneTemplate(activeTab);
             } else if (activeTab === "sources") {
                 html = renderSourcesTab();
-            } else if (activeTab === "public" || activeTab === "harness") {
-                html = renderEmbeddedPage(activeTab);
             }
             content.innerHTML = html;
             wireRenderedContent();
@@ -1212,11 +1855,14 @@
             };
         }
 
-        async function saveCard(card, statusOverride = null) {
+        async function saveCard(card, statusOverride = null, overrides = {}) {
             const recordId = card.dataset.id;
             const currentRecord = board.records.find((record) => record.id === recordId);
             const sourceStatus = currentRecord?.review.status || activeTab;
-            const payload = readCardPayload(card, statusOverride);
+            const payload = {
+                ...readCardPayload(card, statusOverride),
+                ...overrides
+            };
             setStatus(`Saving ${recordId}…`);
             const response = await api(`/api/record/${encodeURIComponent(recordId)}`, {
                 method: "POST",
@@ -1315,15 +1961,165 @@
         }
 
         async function expandSearch() {
-            setStatus("Expanding search…");
-            const response = await api("/api/expand-search", {
-                method: "POST",
-                body: JSON.stringify({})
-            });
-            sourceScans = response.scans;
-            discovery = response.discovery;
+            sourceActionBusy = true;
+            sourceActionKind = "lead";
+            recentSourceBatch = null;
+            activeTab = "sources";
             render();
-            setStatus(response.message);
+            setStatus(`Running one ${sourceModeLabel(sourceMode).toLowerCase()} pass…`);
+            await uiPause();
+            try {
+                const endpoint = sourceMode === "mixed" ? "/api/expand-search" : "/api/source-more";
+                const response = await api(endpoint, {
+                    method: "POST",
+                    body: JSON.stringify(
+                        sourceMode === "mixed"
+                            ? {}
+                            : { strategy_count: 1, mode: sourceMode, focus: sourceFocus }
+                    )
+                });
+                sourceScans = response.scans;
+                discovery = response.discovery;
+                sourceIdeas = response.source_ideas?.ideas || sourceIdeas;
+                sourceActionSummary = response.message;
+                recentSourceBatch = {
+                    kind: "lead_batch",
+                    message: response.message,
+                    mode: response.mode || sourceMode,
+                    focus: response.focus || sourceFocus,
+                    applied_labels: response.applied_labels || [],
+                    added_count: response.added_count || 0,
+                    added_records: response.added_records || []
+                };
+                render();
+                setStatus(response.message);
+            } finally {
+                sourceActionBusy = false;
+                render();
+            }
+        }
+
+        async function sourceMore() {
+            sourceActionBusy = true;
+            sourceActionKind = "lead";
+            recentSourceBatch = null;
+            activeTab = "sources";
+            render();
+            setStatus(`Refreshing the lead pool by ${sourceModeLabel(sourceMode).toLowerCase()}${sourceFocus ? ` with focus on ${sourceFocus}` : ""}…`);
+            await uiPause();
+            try {
+                const response = await api("/api/source-more", {
+                    method: "POST",
+                    body: JSON.stringify({
+                        strategy_count: 3,
+                        mode: sourceMode,
+                        focus: sourceFocus
+                    })
+                });
+                sourceScans = response.scans;
+                discovery = response.discovery;
+                sourceIdeas = response.source_ideas?.ideas || sourceIdeas;
+                sourceActionSummary = response.message;
+                recentSourceBatch = {
+                    kind: "lead_batch",
+                    message: response.message,
+                    mode: response.mode || sourceMode,
+                    focus: response.focus || sourceFocus,
+                    applied_labels: response.applied_labels || [],
+                    added_count: response.added_count || 0,
+                    added_records: response.added_records || []
+                };
+                render();
+                setStatus(response.message);
+            } finally {
+                sourceActionBusy = false;
+                render();
+            }
+        }
+
+        async function sourceCandidates() {
+            sourceActionBusy = true;
+            sourceActionKind = "candidate";
+            recentSourceBatch = null;
+            latestActionResult = {
+                kind: "warning",
+                title: "Quote hunt started",
+                message: sourceFocus
+                    ? `Looking for more quotes with focus on ${sourceFocus}...`
+                    : "Looking for more quotes and choosing the next best hunt automatically..."
+            };
+            latestAddedCandidateIds = [];
+            activeTab = "sources";
+            render();
+            setStatus(`Sourcing quote candidates by ${sourceModeLabel(sourceMode).toLowerCase()}${sourceFocus ? ` with focus on ${sourceFocus}` : ""}…`);
+            jumpToTop();
+            await uiPause();
+            try {
+                const response = await api("/api/source-candidates", {
+                    method: "POST",
+                    body: JSON.stringify({
+                        batch_count: 6,
+                        mode: sourceMode,
+                        focus: sourceFocus
+                    })
+                });
+                board = response.board;
+                sourceScans = response.scans;
+                discovery = response.discovery;
+                sourceIdeas = response.source_ideas?.ideas || sourceIdeas;
+                latestHuntPlan = response.hunt_plan || latestHuntPlan;
+                sourceActionSummary = response.message;
+                recentSourceBatch = {
+                    kind: "candidate_batch",
+                    message: response.message,
+                    mode: response.mode || sourceMode,
+                    focus: response.focus || sourceFocus,
+                    applied_labels: response.applied_labels || [],
+                    added_count: response.added_count || 0,
+                    added_records: response.added_records || []
+                };
+                latestAddedCandidateIds = (response.added_records || []).map((record) => record.id);
+                if ((response.added_count || 0) > 0) {
+                    latestActionResult = {
+                        kind: "success",
+                        title: "New quotes are ready",
+                        message: `${response.added_count} new quotes were added to Candidates${sourceFocus ? ` for ${sourceFocus}` : ""}. This hunt drew from ${response.hunt_plan?.sources?.length || 0} source places and ${response.hunt_plan?.queries?.length || 0} query paths.`
+                    };
+                    activeTab = "candidate";
+                } else {
+                    latestActionResult = {
+                        kind: "warning",
+                        title: "No new quotes added",
+                        message: `The current hunt did not add anything new${sourceFocus ? ` for ${sourceFocus}` : ""}. I still logged the attempt and lined up ${response.hunt_plan?.sources?.length || 0} source places plus ${response.hunt_plan?.queries?.length || 0} query paths for follow-up below.`
+                    };
+                    activeTab = "sources";
+                }
+                render();
+                setStatus(response.message);
+                jumpToTop();
+            } finally {
+                sourceActionBusy = false;
+                render();
+            }
+        }
+
+        async function publishPublicArtifacts() {
+            publishActionBusy = true;
+            render();
+            setStatus("Publishing approved artifacts…");
+            await uiPause();
+            try {
+                const response = await api("/api/publish", {
+                    method: "POST",
+                    body: JSON.stringify({})
+                });
+                publishActionSummary = response.message;
+                render();
+                setStatus(response.message);
+            } finally {
+                publishActionBusy = false;
+                render();
+            }
         }
 
         function wireRenderedContent() {
@@ -1352,6 +2148,20 @@
                 button.addEventListener("click", async () => {
                     const card = button.closest(".reviewItem");
                     await saveCard(card, button.dataset.statusAction);
+                });
+            });
+
+            document.querySelectorAll("[data-quick-decline]").forEach((button) => {
+                button.addEventListener("click", async () => {
+                    const card = button.closest(".reviewItem");
+                    await saveCard(card, "declined", { decision_note: button.dataset.quickDecline });
+                });
+            });
+
+            document.querySelectorAll('[data-action="use-inspiration"]').forEach((button) => {
+                button.addEventListener("click", () => {
+                    const focus = button.dataset.focus || "";
+                    applyInspiration("mixed", focus, `more like ${focus}`);
                 });
             });
 
@@ -1416,6 +2226,46 @@
             if (expandButton) {
                 expandButton.addEventListener("click", expandSearch);
             }
+
+            const sourceModeSelect = document.getElementById("sourceModeSelect");
+            if (sourceModeSelect) {
+                sourceModeSelect.addEventListener("change", (event) => {
+                    sourceMode = event.target.value;
+                    render();
+                });
+            }
+
+            const sourceFocusInput = document.getElementById("sourceFocusInput");
+            if (sourceFocusInput) {
+                sourceFocusInput.addEventListener("input", (event) => {
+                    sourceFocus = event.target.value;
+                });
+            }
+
+            document.querySelectorAll("[data-inspiration-mode]").forEach((button) => {
+                button.addEventListener("click", () => {
+                    applyInspiration(
+                        button.dataset.inspirationMode,
+                        button.dataset.inspirationFocus,
+                        button.dataset.inspirationLabel
+                    );
+                });
+            });
+
+            const sourceMoreButton = document.getElementById("sourceMoreButton");
+            if (sourceMoreButton) {
+                sourceMoreButton.addEventListener("click", sourceMore);
+            }
+
+            const sourceCandidatesButton = document.getElementById("sourceCandidatesButton");
+            if (sourceCandidatesButton) {
+                sourceCandidatesButton.addEventListener("click", sourceCandidates);
+            }
+
+            const publishButton = document.getElementById("publishButton");
+            if (publishButton) {
+                publishButton.addEventListener("click", publishPublicArtifacts);
+            }
         }
 
         function setStatus(message) {
@@ -1426,6 +2276,10 @@
             renderMeta();
             renderTabs();
             renderContent();
+            document.getElementById("searchHelp").textContent = searchHelpText();
+            renderActivityPanel();
+            document.getElementById("sourceMoreToolbar").disabled = sourceActionBusy || publishActionBusy;
+            document.getElementById("publishToolbar").disabled = sourceActionBusy || publishActionBusy;
         }
 
         document.getElementById("search").addEventListener("input", (event) => {
@@ -1439,6 +2293,9 @@
             document.getElementById("search").value = "";
             render();
         });
+
+        document.getElementById("sourceMoreToolbar").addEventListener("click", sourceCandidates);
+        document.getElementById("publishToolbar").addEventListener("click", publishPublicArtifacts);
 
         document.addEventListener("dragover", (event) => {
             if (!dragState) {

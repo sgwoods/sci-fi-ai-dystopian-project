@@ -19,6 +19,8 @@ dystopian AI quotes while keeping the broader research trail visible:
 4. promote only the strongest entries into the approved application-facing JSON
 5. keep a clear boundary between approved corpus records, candidate records,
    and newly found unreviewed material
+6. keep widening the source registry and query library so quote hunting keeps
+   getting broader rather than more repetitive
 
 ## Current Status
 
@@ -39,8 +41,11 @@ Current first-pass position:
 
 - [Data index](./data/README.md): canonical data directories and what each one means
 - [Current status](./docs/current-status.md): concise live project snapshot
+- [Project state and recovery audit](./docs/project-state-and-recovery-audit.md): exact status of the current working tree, GitHub checkpoint, and portability gaps
+- [Expanding plan](./docs/expanding-plan.md): current widening strategy including the active top-10 author lane
 - [Initial review](./docs/initial-review.md): editorial assessment of the first-pass quote set
 - [Curation workflow](./docs/curation-workflow.md): recommended quote intake, verification, and promotion flow
+- [Source expansion system](./docs/source-expansion-system.md): the source registry, query library, and follow-up watchlist behind quote hunting
 - [Review board](./docs/review-board.md): actionable candidate, postponed, declined, and approved views
 - [Repository structure review](./docs/repository-structure-review.md): explanation of how the repo is organized and what counts as canonical
 - [Incoming intake](./incoming/README.md): single landing zone for newly found material before review
@@ -55,7 +60,7 @@ Current first-pass position:
 data/
   approved/                Canonical ingest-ready JSON exports
   candidates/              Broader reviewed quote pool, including non-approved records
-  discovery/               Widening-search title discovery queue and target progress
+  discovery/               Title discovery plus the source registry, query library, and follow-up watchlist
   review/                  Canonical review board and generated postponed/declined slices
   source-snapshots/        Local source captures for each quote record
 docs/                      Status, workflow, review, and structure notes
@@ -94,8 +99,16 @@ Each normalized quote record currently includes:
 - The canonical editable file is now `data/review/ai-dystopia-quotes.review-board.json`.
   The approved JSON, candidate queue, review board markdown, and public project
   page are generated from that single board.
-- The widening-search workflow now tracks a title-discovery goal of `100`
-  candidate source works under `data/discovery/`.
+- The widening-search workflow now includes three persistent research
+  inventories under `data/discovery/`: a source registry, a query library, and
+  a follow-up watchlist.
+- The `Find More Quotes` action is now treated as an autonomous multi-step
+  hunt: it can choose the next best direction on its own, widen supporting
+  leads, and then add the strongest locally-verified quote candidates it can
+  find.
+- The earlier title-discovery goal of `100` candidate source works is still
+  preserved as historical scaffolding, but the product goal is better quote
+  candidates, not a lead-count milestone by itself.
 - The repo now includes a dedicated publish script that syncs the approved
   public artifacts into the shared `GitPages/public` site and refreshes the
   Steven Woods projects index from the manifest flow rather than by hand.

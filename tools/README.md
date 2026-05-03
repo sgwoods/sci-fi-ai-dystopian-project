@@ -62,9 +62,14 @@ The review app lets you:
 - move declined items back whenever you want
 - edit the review note, priority, and next action
 - reorder items within each lane
-- inspect scanned sources and widening strategies
+- inspect the source registry, query library, follow-up watchlist, scanned
+  source log, and widening strategies
 - apply `Expand Search` to add the next title-discovery batch
 - view the generated public page and the UI harness in-app
+
+The `Find More Quotes` flow is intentionally quote-first. The user asks for
+more quotes, while the app quietly draws from the supporting research system in
+`data/discovery/`.
 
 ## UI Harness
 

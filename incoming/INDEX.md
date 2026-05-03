@@ -5,7 +5,7 @@ reclassified, or closed out.
 
 | Intake path | Added | Source | Apparent type | Status | Next action |
 |---|---|---|---|---|---|
-| _none yet_ | - | - | - | - | Add the first reviewed intake here |
+| `incoming/gemini-100-candidates-2026-04-03/README.md` | `2026-04-03` | Gemini via user-provided list | 100 quote and source-work leads | `pending` | Merge concrete non-duplicate source works into discovery and review quote-level verification separately |
 
 ## Status Values
 

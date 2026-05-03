@@ -1,0 +1,57 @@
+{
+  "collection": "ai-dystopia-author-top10",
+  "generated_at": "2026-04-03",
+  "description": "Focused top-10 author mining lane for immediate literary expansion of the AI dystopia quotes corpus.",
+  "records": [
+    {
+      "rank": 1,
+      "name": "Isaac Asimov",
+      "reason": "Highest-yield canonical robot and machine-governance writer for this project."
+    },
+    {
+      "rank": 2,
+      "name": "Philip K. Dick",
+      "reason": "Essential for android identity, machine paranoia, and human replacement themes."
+    },
+    {
+      "rank": 3,
+      "name": "Karel Capek",
+      "reason": "Foundational robot-uprising writer and a central historical anchor."
+    },
+    {
+      "rank": 4,
+      "name": "Jack Williamson",
+      "reason": "Critical for paternalistic machine control and humanoid overprotection."
+    },
+    {
+      "rank": 5,
+      "name": "Harlan Ellison",
+      "reason": "Essential hostile-superintelligence writer with highly quotable language."
+    },
+    {
+      "rank": 6,
+      "name": "E. M. Forster",
+      "reason": "Early and still-relevant machine-dependence dystopia."
+    },
+    {
+      "rank": 7,
+      "name": "Frank Herbert",
+      "reason": "Adjacent but crucial anti-machine civilizational thinker with quotable anti-computation language."
+    },
+    {
+      "rank": 8,
+      "name": "D. F. Jones",
+      "reason": "Core supercomputer-dictatorship writer."
+    },
+    {
+      "rank": 9,
+      "name": "Arthur C. Clarke",
+      "reason": "Canonical AI-computer fiction and broad mainstream recognizability."
+    },
+    {
+      "rank": 10,
+      "name": "Michael Crichton",
+      "reason": "High-recognition machine-control and systems-failure storyteller."
+    }
+  ]
+}

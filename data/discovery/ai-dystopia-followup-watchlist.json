@@ -1,0 +1,157 @@
+{
+  "collection": "ai-dystopia-followup-watchlist",
+  "generated_at": "2026-04-04",
+  "description": "Recurring places and high-yield follow-up lanes worth revisiting as the quote corpus grows.",
+  "records": [
+    {
+      "id": "watch-blade-runner",
+      "label": "Blade Runner quote follow-up",
+      "kind": "title_followup",
+      "url": "https://en.wikiquote.org/wiki/Blade_Runner",
+      "modes": ["mixed", "source"],
+      "tags": ["blade runner", "quotes", "recognizable", "high-priority"],
+      "refresh_cadence": "whenever the candidate queue feels thin",
+      "last_reviewed_at": "2026-04-04T10:20:00-04:00",
+      "why_watch": "The user explicitly loves Blade Runner and there are several strong remaining lines to mine.",
+      "next_queries": [
+        "Blade Runner Roy Batty tears in rain Tyrell Sebastian quotes",
+        "Blade Runner more human than human quotes"
+      ]
+    },
+    {
+      "id": "watch-black-mirror",
+      "label": "Black Mirror copied-consciousness episodes",
+      "kind": "series_followup",
+      "url": "https://www.imdb.com/find/?q=Black%20Mirror%20quotes",
+      "modes": ["mixed", "source", "query"],
+      "tags": ["black mirror", "tv", "consciousness", "modern"],
+      "refresh_cadence": "weekly during active sourcing",
+      "last_reviewed_at": "2026-04-04T10:18:00-04:00",
+      "why_watch": "Quote-rich series with dark AI punishment and replacement lines.",
+      "next_queries": [
+        "Black Mirror White Christmas quotes copied consciousness",
+        "Black Mirror Be Right Back quotes synthetic replacement"
+      ]
+    },
+    {
+      "id": "watch-asimov-robots",
+      "label": "Asimov robot stories",
+      "kind": "author_followup",
+      "url": "https://en.wikiquote.org/wiki/Isaac_Asimov",
+      "modes": ["mixed", "author"],
+      "tags": ["asimov", "robots", "books", "classic"],
+      "refresh_cadence": "weekly during author passes",
+      "last_reviewed_at": "2026-04-04T10:12:00-04:00",
+      "why_watch": "Best route to more classic literary robot quotes with high recognition.",
+      "next_queries": [
+        "Isaac Asimov robot quotes I Robot laws of robotics",
+        "The Complete Robot quotes machine ethics"
+      ]
+    },
+    {
+      "id": "watch-herbert-dune",
+      "label": "Herbert anti-machine lane",
+      "kind": "author_followup",
+      "url": "https://en.wikiquote.org/wiki/Dune",
+      "modes": ["mixed", "author"],
+      "tags": ["dune", "herbert", "anti-machine", "books"],
+      "refresh_cadence": "weekly during author passes",
+      "last_reviewed_at": "2026-04-04T10:11:00-04:00",
+      "why_watch": "The user explicitly asked for this kind of anti-machine warning language.",
+      "next_queries": [
+        "Frank Herbert thinking machines quotes Dune",
+        "Butlerian Jihad anti machine quotes"
+      ]
+    },
+    {
+      "id": "watch-orwell-adjacent",
+      "label": "Orwell adjacent control lane",
+      "kind": "author_followup",
+      "url": "https://en.wikiquote.org/wiki/George_Orwell",
+      "modes": ["mixed", "author", "query"],
+      "tags": ["orwell", "control", "surveillance", "adjacent"],
+      "refresh_cadence": "whenever adjacent-control coverage feels light",
+      "last_reviewed_at": "2026-04-04T10:09:00-04:00",
+      "why_watch": "Helpful for adjacent control language even though it is not core AI fiction.",
+      "next_queries": [
+        "George Orwell future control quotes",
+        "Nineteen Eighty-Four boot stamping quotes"
+      ]
+    },
+    {
+      "id": "watch-r-printsf",
+      "label": "r/printSF AI recommendation threads",
+      "kind": "community_watch",
+      "url": "https://www.reddit.com/r/printSF/",
+      "modes": ["mixed", "author", "query"],
+      "tags": ["reddit", "books", "community", "ai"],
+      "refresh_cadence": "weekly",
+      "last_reviewed_at": "2026-04-04T09:20:00-04:00",
+      "why_watch": "A strong source for literary AI leads and overlooked classics.",
+      "next_queries": [
+        "site:reddit.com/r/printSF AI fiction recommendations",
+        "site:reddit.com/r/printSF robot uprising novels"
+      ]
+    },
+    {
+      "id": "watch-r-scifi",
+      "label": "r/scifi recommendation threads",
+      "kind": "community_watch",
+      "url": "https://www.reddit.com/r/scifi/",
+      "modes": ["mixed", "query", "source"],
+      "tags": ["reddit", "films", "tv", "community"],
+      "refresh_cadence": "weekly",
+      "last_reviewed_at": "2026-04-04T09:18:00-04:00",
+      "why_watch": "Useful for mainstream recognizability and newer cross-media mentions.",
+      "next_queries": [
+        "site:reddit.com/r/scifi AI movie recommendations",
+        "site:reddit.com/r/scifi robot rebellion movies"
+      ]
+    },
+    {
+      "id": "watch-game-quotes",
+      "label": "AI game quote expansion",
+      "kind": "medium_followup",
+      "url": "https://en.wikiquote.org/wiki/Portal_(game)",
+      "modes": ["mixed", "query", "source"],
+      "tags": ["games", "portal", "system shock", "mass effect"],
+      "refresh_cadence": "whenever game coverage drops below film coverage",
+      "last_reviewed_at": "2026-04-04T10:06:00-04:00",
+      "why_watch": "Keeps the corpus from over-indexing on films alone.",
+      "next_queries": [
+        "ominous AI video game quotes GLaDOS SHODAN Legion",
+        "site:en.wikiquote.org AI game quotes"
+      ]
+    },
+    {
+      "id": "watch-quote-hint-sites",
+      "label": "Transcript and hint-site sweep",
+      "kind": "hint_followup",
+      "url": "https://subslikescript.com/",
+      "modes": ["mixed", "source"],
+      "tags": ["transcripts", "hint-source", "followup"],
+      "refresh_cadence": "only when stable quote sources run thin",
+      "last_reviewed_at": "2026-04-04T09:08:00-04:00",
+      "why_watch": "Useful for finding leads, but every line still needs stronger verification.",
+      "next_queries": [
+        "AI movie transcript quotes ominous robot lines",
+        "Black Mirror transcript AI quotes"
+      ]
+    },
+    {
+      "id": "watch-ai-ideation",
+      "label": "AI ideation prompt rotation",
+      "kind": "idea_followup",
+      "url": "https://chat.openai.com/",
+      "modes": ["mixed", "author", "query", "source"],
+      "tags": ["ideation", "prompts", "gemini", "chatgpt", "claude"],
+      "refresh_cadence": "whenever hunt results get repetitive",
+      "last_reviewed_at": "2026-04-04T10:48:00-04:00",
+      "why_watch": "Useful for generating new query angles and overlooked title clusters.",
+      "next_queries": [
+        "Give me 20 recognizable dystopian AI works likely to contain ominous quotable lines.",
+        "Suggest increasingly obscure AI dystopia works grouped by medium and decade."
+      ]
+    }
+  ]
+}

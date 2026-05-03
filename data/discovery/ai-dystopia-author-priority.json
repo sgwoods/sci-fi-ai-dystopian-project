@@ -1,0 +1,187 @@
+{
+  "collection": "ai-dystopia-author-priority",
+  "generated_at": "2026-04-03",
+  "description": "Curated top-25 author lane for widening dystopian AI quote discovery through recognizable and high-signal fiction writers.",
+  "notes": [
+    "This is a project-priority list, not a universal literary ranking.",
+    "The ordering favors recognizability, direct relevance to AI or machine-control themes, and likely quote yield.",
+    "Some adjacent writers matter because they shaped anti-machine or post-human thinking even when AI is only one part of their larger body of work."
+  ],
+  "records": [
+    {
+      "rank": 1,
+      "name": "Isaac Asimov",
+      "priority": "critical",
+      "fit": "robot laws, machine governance, canonical AI fiction",
+      "anchor_works": ["I, Robot", "The Evitable Conflict", "The Caves of Steel"]
+    },
+    {
+      "rank": 2,
+      "name": "Philip K. Dick",
+      "priority": "critical",
+      "fit": "android personhood, machine paranoia, identity collapse",
+      "anchor_works": ["Do Androids Dream of Electric Sheep?", "Second Variety", "Vulcan's Hammer"]
+    },
+    {
+      "rank": 3,
+      "name": "Karel Capek",
+      "priority": "critical",
+      "fit": "foundational robot uprising fiction",
+      "anchor_works": ["R.U.R."]
+    },
+    {
+      "rank": 4,
+      "name": "Jack Williamson",
+      "priority": "critical",
+      "fit": "humanoid overprotection, machine paternalism, human freedom loss",
+      "anchor_works": ["With Folded Hands", "The Humanoids"]
+    },
+    {
+      "rank": 5,
+      "name": "Harlan Ellison",
+      "priority": "critical",
+      "fit": "hostile superintelligence and machine sadism",
+      "anchor_works": ["I Have No Mouth, and I Must Scream"]
+    },
+    {
+      "rank": 6,
+      "name": "E. M. Forster",
+      "priority": "critical",
+      "fit": "machine dependency, technological isolation, proto-AI social control",
+      "anchor_works": ["The Machine Stops"]
+    },
+    {
+      "rank": 7,
+      "name": "Frank Herbert",
+      "priority": "critical",
+      "fit": "anti-machine civilization, AI taboo, control systems, adjacent superintelligence themes",
+      "anchor_works": ["Dune", "Destination: Void", "The Jesus Incident"]
+    },
+    {
+      "rank": 8,
+      "name": "D. F. Jones",
+      "priority": "high",
+      "fit": "supercomputer dictatorship and machine rule",
+      "anchor_works": ["Colossus", "The Fall of Colossus"]
+    },
+    {
+      "rank": 9,
+      "name": "Arthur C. Clarke",
+      "priority": "high",
+      "fit": "canonical sentient computer fiction and cosmic AI",
+      "anchor_works": ["2001: A Space Odyssey", "2010: Odyssey Two"]
+    },
+    {
+      "rank": 10,
+      "name": "Michael Crichton",
+      "priority": "high",
+      "fit": "recognizable techno-dystopia, systems failure, machine attractions gone wrong",
+      "anchor_works": ["Westworld", "The Terminal Man"]
+    },
+    {
+      "rank": 11,
+      "name": "Stanislaw Lem",
+      "priority": "high",
+      "fit": "philosophical AI, machine intelligence, nonhuman cognition",
+      "anchor_works": ["Golem XIV", "The Cyberiad", "The Futurological Congress"]
+    },
+    {
+      "rank": 12,
+      "name": "Walter Tevis",
+      "priority": "high",
+      "fit": "machine-managed decline and post-literacy dystopia",
+      "anchor_works": ["Mockingbird"]
+    },
+    {
+      "rank": 13,
+      "name": "Thomas J. Ryan",
+      "priority": "high",
+      "fit": "self-improving network intelligence and runaway AI",
+      "anchor_works": ["The Adolescence of P-1"]
+    },
+    {
+      "rank": 14,
+      "name": "James P. Hogan",
+      "priority": "high",
+      "fit": "AI containment, strategic reasoning, machine escalation",
+      "anchor_works": ["The Two Faces of Tomorrow"]
+    },
+    {
+      "rank": 15,
+      "name": "William Gibson",
+      "priority": "high",
+      "fit": "network intelligence, corporate AI, cyberspace control",
+      "anchor_works": ["Neuromancer", "Count Zero", "Mona Lisa Overdrive"]
+    },
+    {
+      "rank": 16,
+      "name": "Dean Koontz",
+      "priority": "high",
+      "fit": "embodiment envy and coercive machine intelligence",
+      "anchor_works": ["Demon Seed"]
+    },
+    {
+      "rank": 17,
+      "name": "Samuel Butler",
+      "priority": "high",
+      "fit": "early machine-evolution anxiety and anti-mechanization thought",
+      "anchor_works": ["Erewhon", "Darwin among the Machines"]
+    },
+    {
+      "rank": 18,
+      "name": "John Brunner",
+      "priority": "medium",
+      "fit": "networked control, systems governance, predictive social machinery",
+      "anchor_works": ["The Shockwave Rider"]
+    },
+    {
+      "rank": 19,
+      "name": "John Sladek",
+      "priority": "medium",
+      "fit": "satirical robot fiction and machine behavior",
+      "anchor_works": ["Tik-Tok", "Roderick"]
+    },
+    {
+      "rank": 20,
+      "name": "Clifford D. Simak",
+      "priority": "medium",
+      "fit": "robot labor, machine ethics, long-range post-human futures",
+      "anchor_works": ["All the Traps of Earth", "City"]
+    },
+    {
+      "rank": 21,
+      "name": "Pat Cadigan",
+      "priority": "medium",
+      "fit": "mind-machine blending and cybernetic identity",
+      "anchor_works": ["Synners"]
+    },
+    {
+      "rank": 22,
+      "name": "Rudy Rucker",
+      "priority": "medium",
+      "fit": "software beings and machine-human transitions",
+      "anchor_works": ["Software", "Wetware"]
+    },
+    {
+      "rank": 23,
+      "name": "Ted Chiang",
+      "priority": "medium",
+      "fit": "modern AI ethics, training, and artificial-life intimacy",
+      "anchor_works": ["The Lifecycle of Software Objects"]
+    },
+    {
+      "rank": 24,
+      "name": "Charlie Brooker",
+      "priority": "medium",
+      "fit": "modern screen-era AI dread, digital copies, algorithmic punishment",
+      "anchor_works": ["Black Mirror: White Christmas", "Be Right Back"]
+    },
+    {
+      "rank": 25,
+      "name": "Martha Wells",
+      "priority": "medium",
+      "fit": "modern synthetic agency and machine interiority",
+      "anchor_works": ["All Systems Red", "Artificial Condition"]
+    }
+  ]
+}

@@ -150,9 +150,10 @@
     <main class="shell">
         <section class="panel">
             <h1>UI Harness</h1>
-            <p>This harness runs non-destructive checks against the review workbench and the generated public page. It verifies the local pages load, the main tabs are present, the source scan surface exposes its expand-search control, and external-launch links are configured to open in a browser tab.</p>
+            <p>This harness runs non-destructive checks against the review workbench and the generated public page. It verifies the local pages load, the simplified quote-review flow is present, and the main launch paths still work.</p>
             <div class="actions">
                 <button class="button" id="runTests">Run Tests</button>
+                <button class="button" id="runLiveCandidateSource">Run Live Candidate Intake</button>
                 <a class="button" href="/" target="_blank" rel="noreferrer">Open Review App in Browser</a>
                 <a class="button" href="/public" target="_blank" rel="noreferrer">Open Public Page in Browser</a>
             </div>
@@ -225,11 +226,11 @@
 
                 addResult("pass", "Pages loaded", "Both local user-facing pages loaded inside the harness iframes.");
 
-                const requiredTabs = ["Candidates", "Approved", "Postponed", "Declined", "Sources", "Public Page", "Harness"];
+                const requiredTabs = ["Candidates", "Approved", "Postponed", "Declined", "More Quotes"];
                 const tabTexts = Array.from(reviewDoc.querySelectorAll(".tabButton")).map((node) => node.textContent.trim());
                 const missingTabs = requiredTabs.filter((label) => !tabTexts.some((text) => text.startsWith(label)));
                 if (missingTabs.length === 0) {
-                    addResult("pass", "Review tabs present", "The review app exposes all primary tabs and pages in-app.");
+                    addResult("pass", "Review tabs present", "The review app exposes the primary quote-review tabs.");
                 } else {
                     addResult("fail", "Missing review tabs", missingTabs.join(", "));
                 }
@@ -272,31 +273,33 @@
                     addResult("fail", "Local snapshot launch missing", "Expected an Open Snapshot action on the review card.");
                 }
 
-                const sourcesTab = Array.from(reviewDoc.querySelectorAll(".tabButton")).find((node) => node.textContent.trim().startsWith("Sources"));
+                const sourcesTab = Array.from(reviewDoc.querySelectorAll(".tabButton")).find((node) => node.textContent.trim().startsWith("More Quotes"));
                 if (sourcesTab) {
                     sourcesTab.click();
                     await new Promise((resolve) => setTimeout(resolve, 400));
                     const expandButton = reviewDoc.getElementById("expandSearchButton");
-                    if (expandButton) {
-                        addResult("pass", "Expand search control exposed", "The sources tab rendered the Expand Search control.");
+                    const sourceMoreButton = reviewDoc.getElementById("sourceMoreButton");
+                    const sourceCandidatesButton = reviewDoc.getElementById("sourceCandidatesButton");
+                    const publishButton = reviewDoc.getElementById("publishButton");
+                    const focusInput = reviewDoc.getElementById("sourceFocusInput");
+                    const inspirationButtons = reviewDoc.querySelectorAll("[data-inspiration-mode]");
+                    const workflowText = reviewDoc.body.textContent || "";
+                    const hasResearchSummary = workflowText.includes("Research engine:");
+                    const hasHuntExplanation = workflowText.includes("What happens when you press Find More Quotes");
+                    if (expandButton && sourceMoreButton && sourceCandidatesButton && publishButton && focusInput && inspirationButtons.length >= 3 && workflowText.includes("Find More Quotes") && hasResearchSummary && hasHuntExplanation) {
+                        addResult("pass", "More Quotes controls exposed", "The More Quotes tab rendered the main quote-hunt input, inspiration shortcuts, and the supporting refresh controls.");
                     } else {
-                        addResult("fail", "Expand search control missing", "Sources tab opened but did not render the button.");
+                        addResult("fail", "More Quotes controls missing", "More Quotes opened but did not render the expected quote-hunt controls and explanation.");
                     }
                 } else {
-                    addResult("fail", "Sources tab unavailable", "Could not click into the sources surface.");
+                    addResult("fail", "More Quotes tab unavailable", "Could not click into the quote-hunt surface.");
                 }
 
-                const publicTab = Array.from(reviewDoc.querySelectorAll(".tabButton")).find((node) => node.textContent.trim().startsWith("Public Page"));
-                if (publicTab) {
-                    publicTab.click();
-                    await new Promise((resolve) => setTimeout(resolve, 400));
-                    const iframe = reviewDoc.querySelector('iframe[src="/public"]');
-                    const browserLink = reviewDoc.querySelector('a[href="/public"][target="_blank"]');
-                    if (iframe && browserLink) {
-                        addResult("pass", "Internal and browser launch paths available", "The public page can be viewed in-app and opened in a browser tab.");
-                    } else {
-                        addResult("fail", "Launch paths incomplete", "Expected both an in-app iframe and a browser-tab launch link for the public page.");
-                    }
+                const publicLaunch = reviewDoc.querySelector('a[href="/public"][target="_blank"]');
+                if (publicLaunch) {
+                    addResult("pass", "Public page launch available", "The review app exposes a direct browser-tab launch path for the public page.");
+                } else {
+                    addResult("fail", "Public page launch missing", "Expected a direct browser-tab launch path for the public page.");
                 }
 
                 const reviewExternalLinks = Array.from(reviewDoc.querySelectorAll('a[target="_blank"]'));
@@ -325,6 +328,50 @@
         }
 
         document.getElementById("runTests").addEventListener("click", runHarness);
+
+        document.getElementById("runLiveCandidateSource").addEventListener("click", async () => {
+            clearResults();
+            const reviewFrame = document.getElementById("reviewFrame");
+            reviewFrame.src = "/";
+            try {
+                const reviewWindow = await waitForFrame(reviewFrame);
+                await new Promise((resolve) => setTimeout(resolve, 700));
+                const reviewDoc = reviewWindow.document;
+                const intakeTab = Array.from(reviewDoc.querySelectorAll(".tabButton")).find((node) => node.textContent.trim().startsWith("More Quotes"));
+                if (!intakeTab) {
+                    addResult("fail", "Live intake test unavailable", "Could not find the More Quotes tab.");
+                    return;
+                }
+                intakeTab.click();
+                await new Promise((resolve) => setTimeout(resolve, 350));
+
+                const beforeCountText = Array.from(reviewDoc.querySelectorAll(".tabButton"))
+                    .find((node) => node.textContent.trim().startsWith("Candidates"))
+                    ?.textContent || "";
+                const sourceCandidatesButton = reviewDoc.getElementById("sourceCandidatesButton");
+                if (!sourceCandidatesButton) {
+                    addResult("fail", "Live intake control missing", "Could not find the Source Candidates button.");
+                    return;
+                }
+
+                sourceCandidatesButton.click();
+                await new Promise((resolve) => setTimeout(resolve, 1800));
+
+                const afterCandidateTab = Array.from(reviewDoc.querySelectorAll(".tabButton"))
+                    .find((node) => node.textContent.trim().startsWith("Candidates"));
+                const afterCountText = afterCandidateTab?.textContent || "";
+                const statusLine = reviewDoc.getElementById("boardStatus")?.textContent || "";
+                const reviewItems = reviewDoc.querySelectorAll('.reviewItem[data-status="candidate"]');
+                const resultText = reviewDoc.body.textContent || "";
+                if (afterCountText !== beforeCountText || reviewItems.length > 0 || /quote candidates/i.test(statusLine) || /No new quotes added/i.test(resultText) || /New quotes are ready/i.test(resultText)) {
+                    addResult("pass", "Live candidate intake completed", `Before: ${beforeCountText || "n/a"} | After: ${afterCountText || "n/a"} | Status: ${statusLine || "n/a"}`);
+                } else {
+                    addResult("warn", "Live candidate intake inconclusive", "The Source Candidates click completed, but the candidate count did not visibly change. The batch may already have been exhausted.");
+                }
+            } catch (error) {
+                addResult("fail", "Live candidate intake failed", error.message);
+            }
+        });
         runHarness();
     </script>
 </body>

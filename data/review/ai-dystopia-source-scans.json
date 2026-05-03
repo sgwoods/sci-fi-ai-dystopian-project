@@ -1,6 +1,6 @@
 {
   "collection": "ai-dystopia-source-scans",
-  "generated_at": "2026-04-03",
+  "generated_at": "2026-04-04",
   "candidate_goal": 100,
   "description": "Registry of source scans and widening search strategies for the AI dystopia quotes corpus.",
   "strategies": [
@@ -59,9 +59,36 @@
       "applied_on": "2026-04-03"
     },
     {
+      "id": "quote-hint-followup-pass",
+      "label": "Quote-hint follow-up pass",
+      "status": "applied",
+      "widening_level": 2.5,
+      "providers": [
+        "IMDb",
+        "Movie Quotes .com",
+        "Quotes.net",
+        "Subslikescript",
+        "Google"
+      ],
+      "notes": "Track quote-aggregation and transcript-style sites as hint surfaces for follow-up mining while keeping final candidate capture anchored to more stable quote-index pages.",
+      "applied_on": "2026-04-03"
+    },
+    {
+      "id": "gemini-user-candidate-intake",
+      "label": "Gemini user-provided candidate intake",
+      "status": "applied",
+      "widening_level": 2.6,
+      "providers": [
+        "Gemini",
+        "User"
+      ],
+      "notes": "Merge a user-provided 100-candidate Gemini list into intake and dedupe concrete source works into the discovery queue while keeping quote verification separate.",
+      "applied_on": "2026-04-03"
+    },
+    {
       "id": "catalog-and-index-pass",
       "label": "Catalog and index pass",
-      "status": "ready",
+      "status": "applied",
       "widening_level": 2,
       "providers": [
         "Open Library",
@@ -69,24 +96,26 @@
         "Goodreads",
         "LibraryThing"
       ],
-      "notes": "Push title discovery through library and reader-catalog surfaces."
+      "notes": "Push title discovery through library and reader-catalog surfaces.",
+      "applied_on": "2026-04-03"
     },
     {
       "id": "ai-assisted-broadening",
       "label": "AI-assisted broadening",
-      "status": "ready",
+      "status": "applied",
       "widening_level": 3,
       "providers": [
         "ChatGPT",
         "Gemini",
         "Claude"
       ],
-      "notes": "Use LLM-assisted ideation and adjacency prompts to widen the long tail of candidate works."
+      "notes": "Use LLM-assisted ideation and adjacency prompts to widen the long tail of candidate works.",
+      "applied_on": "2026-04-03"
     },
     {
       "id": "community-and-fandom-pass",
       "label": "Community and fandom pass",
-      "status": "ready",
+      "status": "applied",
       "widening_level": 4,
       "providers": [
         "Reddit",
@@ -94,12 +123,13 @@
         "Letterboxd",
         "Wikipedia"
       ],
-      "notes": "Look for overlooked titles, recurring quote threads, and cross-media recommendations."
+      "notes": "Look for overlooked titles, recurring quote threads, and cross-media recommendations.",
+      "applied_on": "2026-04-03"
     },
     {
       "id": "long-tail-cleanup-pass",
       "label": "Long-tail cleanup pass",
-      "status": "ready",
+      "status": "applied",
       "widening_level": 5,
       "providers": [
         "Google",
@@ -107,12 +137,13 @@
         "Project Gutenberg",
         "Open Library"
       ],
-      "notes": "Catch older or less mainstream material after the main discovery passes are exhausted."
+      "notes": "Catch older or less mainstream material after the main discovery passes are exhausted.",
+      "applied_on": "2026-04-03"
     },
     {
       "id": "deep-long-tail-pass",
       "label": "Deep long-tail pass",
-      "status": "ready",
+      "status": "applied",
       "widening_level": 6,
       "providers": [
         "Gemini",
@@ -121,7 +152,8 @@
         "Wikipedia",
         "TV Tropes"
       ],
-      "notes": "Final widening pass for overlooked titles, sequel chains, and edge-case AI dystopia works."
+      "notes": "Final widening pass for overlooked titles, sequel chains, and edge-case AI dystopia works.",
+      "applied_on": "2026-04-03"
     }
   ],
   "scanned_sources": [
@@ -574,6 +606,1034 @@
       "strategy_id": "quote-index-harvest-pass",
       "kind": "metadata",
       "notes": "Metadata verification for title, year, and context."
+    },
+    {
+      "id": "source-her-imdb",
+      "label": "Her Quotes - IMDb",
+      "provider": "IMDb",
+      "url": "https://www.imdb.com/title/tt1798709/quotes/",
+      "scanned_on": "2026-04-03",
+      "strategy_id": "quote-hint-followup-pass",
+      "kind": "quote_index",
+      "notes": "Used to capture Samantha's AI-transcendence quote."
+    },
+    {
+      "id": "source-her-wikipedia",
+      "label": "Her (film) - Wikipedia",
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Her_(film)",
+      "scanned_on": "2026-04-03",
+      "strategy_id": "quote-hint-followup-pass",
+      "kind": "metadata",
+      "notes": "Metadata verification for title, year, and context."
+    },
+    {
+      "id": "source-white-christmas-imdb",
+      "label": "Black Mirror: White Christmas Quotes - IMDb",
+      "provider": "IMDb",
+      "url": "https://www.imdb.com/title/tt3973198/quotes/",
+      "scanned_on": "2026-04-03",
+      "strategy_id": "quote-hint-followup-pass",
+      "kind": "quote_index",
+      "notes": "Used to capture the digital-servitude quote exchange."
+    },
+    {
+      "id": "source-white-christmas-wikipedia",
+      "label": "Black Mirror: White Christmas - Wikipedia",
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Black_Mirror:_White_Christmas",
+      "scanned_on": "2026-04-03",
+      "strategy_id": "quote-hint-followup-pass",
+      "kind": "metadata",
+      "notes": "Metadata verification for title, year, and context."
+    },
+    {
+      "id": "source-blade-runner-moviequotes",
+      "label": "Blade Runner Quotes - Movie Quotes .com",
+      "provider": "Movie Quotes .com",
+      "url": "https://www.moviequotes.com/s-movie/blade-runner/",
+      "scanned_on": "2026-04-03",
+      "strategy_id": "quote-hint-followup-pass",
+      "kind": "quote_hint_index",
+      "notes": "Useful secondary quote-index surface for Blade Runner follow-up lines such as Roy Batty and Tyrell dialogue."
+    },
+    {
+      "id": "source-blade-runner-quotesnet",
+      "label": "Blade Runner Quotes - Quotes.net",
+      "provider": "Quotes.net",
+      "url": "https://www.quotes.net/movies/blade_runner_1199",
+      "scanned_on": "2026-04-03",
+      "strategy_id": "quote-hint-followup-pass",
+      "kind": "quote_hint_index",
+      "notes": "Secondary quote-hint source useful for spotting additional Blade Runner lines to verify elsewhere."
+    },
+    {
+      "id": "source-blade-runner-subslikescript",
+      "label": "Blade Runner transcript - Subslikescript",
+      "provider": "Subslikescript",
+      "url": "https://subslikescript.com/movie/Blade_Runner-83658",
+      "scanned_on": "2026-04-03",
+      "strategy_id": "quote-hint-followup-pass",
+      "kind": "transcript_hint",
+      "notes": "Transcript-style hint source for locating additional dialogue that can then be verified against stronger quote surfaces."
+    },
+    {
+      "id": "scan-catalog-and-index-pass-open-library",
+      "label": "Catalog and index pass / Open Library",
+      "provider": "Open Library",
+      "url": "https://openlibrary.org/search?q=artificial+intelligence+dystopia",
+      "scanned_on": "2026-04-03",
+      "strategy_id": "catalog-and-index-pass",
+      "kind": "search_pass",
+      "notes": "Applied widening strategy via Open Library. Added 15 discovered titles in this batch."
+    },
+    {
+      "id": "scan-catalog-and-index-pass-worldcat",
+      "label": "Catalog and index pass / WorldCat",
+      "provider": "WorldCat",
+      "url": "https://search.worldcat.org/search?q=artificial+intelligence+dystopia",
+      "scanned_on": "2026-04-03",
+      "strategy_id": "catalog-and-index-pass",
+      "kind": "search_pass",
+      "notes": "Applied widening strategy via WorldCat. Added 15 discovered titles in this batch."
+    },
+    {
+      "id": "scan-catalog-and-index-pass-goodreads",
+      "label": "Catalog and index pass / Goodreads",
+      "provider": "Goodreads",
+      "url": "https://www.goodreads.com/search?q=artificial+intelligence+dystopia",
+      "scanned_on": "2026-04-03",
+      "strategy_id": "catalog-and-index-pass",
+      "kind": "search_pass",
+      "notes": "Applied widening strategy via Goodreads. Added 15 discovered titles in this batch."
+    },
+    {
+      "id": "scan-catalog-and-index-pass-librarything",
+      "label": "Catalog and index pass / LibraryThing",
+      "provider": "LibraryThing",
+      "url": "https://www.librarything.com/search.php?search=artificial+intelligence+dystopia",
+      "scanned_on": "2026-04-03",
+      "strategy_id": "catalog-and-index-pass",
+      "kind": "search_pass",
+      "notes": "Applied widening strategy via LibraryThing. Added 15 discovered titles in this batch."
+    },
+    {
+      "id": "scan-ai-assisted-broadening-chatgpt",
+      "label": "AI-assisted broadening / ChatGPT",
+      "provider": "ChatGPT",
+      "url": "https://chat.openai.com/",
+      "scanned_on": "2026-04-03",
+      "strategy_id": "ai-assisted-broadening",
+      "kind": "search_pass",
+      "notes": "Applied widening strategy via ChatGPT. Added 14 discovered titles in this batch."
+    },
+    {
+      "id": "scan-ai-assisted-broadening-gemini",
+      "label": "AI-assisted broadening / Gemini",
+      "provider": "Gemini",
+      "url": "https://gemini.google.com/",
+      "scanned_on": "2026-04-03",
+      "strategy_id": "ai-assisted-broadening",
+      "kind": "search_pass",
+      "notes": "Applied widening strategy via Gemini. Added 14 discovered titles in this batch."
+    },
+    {
+      "id": "scan-ai-assisted-broadening-claude",
+      "label": "AI-assisted broadening / Claude",
+      "provider": "Claude",
+      "url": "https://claude.ai/",
+      "scanned_on": "2026-04-03",
+      "strategy_id": "ai-assisted-broadening",
+      "kind": "search_pass",
+      "notes": "Applied widening strategy via Claude. Added 14 discovered titles in this batch."
+    },
+    {
+      "id": "scan-community-and-fandom-pass-reddit",
+      "label": "Community and fandom pass / Reddit",
+      "provider": "Reddit",
+      "url": "https://www.reddit.com/search/?q=dystopian%20ai%20fiction",
+      "scanned_on": "2026-04-03",
+      "strategy_id": "community-and-fandom-pass",
+      "kind": "search_pass",
+      "notes": "Applied widening strategy via Reddit. Added 11 discovered titles in this batch."
+    },
+    {
+      "id": "scan-community-and-fandom-pass-tv-tropes",
+      "label": "Community and fandom pass / TV Tropes",
+      "provider": "TV Tropes",
+      "url": "https://tvtropes.org/pmwiki/pmwiki.php/Main/ArtificialIntelligence",
+      "scanned_on": "2026-04-03",
+      "strategy_id": "community-and-fandom-pass",
+      "kind": "search_pass",
+      "notes": "Applied widening strategy via TV Tropes. Added 11 discovered titles in this batch."
+    },
+    {
+      "id": "scan-community-and-fandom-pass-letterboxd",
+      "label": "Community and fandom pass / Letterboxd",
+      "provider": "Letterboxd",
+      "url": "https://letterboxd.com/search/artificial%20intelligence/",
+      "scanned_on": "2026-04-03",
+      "strategy_id": "community-and-fandom-pass",
+      "kind": "search_pass",
+      "notes": "Applied widening strategy via Letterboxd. Added 11 discovered titles in this batch."
+    },
+    {
+      "id": "scan-community-and-fandom-pass-wikipedia",
+      "label": "Community and fandom pass / Wikipedia",
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Artificial_intelligence_in_fiction",
+      "scanned_on": "2026-04-03",
+      "strategy_id": "community-and-fandom-pass",
+      "kind": "search_pass",
+      "notes": "Applied widening strategy via Wikipedia. Added 11 discovered titles in this batch."
+    },
+    {
+      "id": "scan-long-tail-cleanup-pass-google",
+      "label": "Long-tail cleanup pass / Google",
+      "provider": "Google",
+      "url": "https://www.google.com/search?q=dystopian+ai+quotes",
+      "scanned_on": "2026-04-03",
+      "strategy_id": "long-tail-cleanup-pass",
+      "kind": "search_pass",
+      "notes": "Applied widening strategy via Google. Added 15 discovered titles in this batch."
+    },
+    {
+      "id": "scan-long-tail-cleanup-pass-internet-archive",
+      "label": "Long-tail cleanup pass / Internet Archive",
+      "provider": "Internet Archive",
+      "url": "https://archive.org/search?query=artificial+intelligence+dystopia",
+      "scanned_on": "2026-04-03",
+      "strategy_id": "long-tail-cleanup-pass",
+      "kind": "search_pass",
+      "notes": "Applied widening strategy via Internet Archive. Added 15 discovered titles in this batch."
+    },
+    {
+      "id": "scan-long-tail-cleanup-pass-project-gutenberg",
+      "label": "Long-tail cleanup pass / Project Gutenberg",
+      "provider": "Project Gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/search/?query=robot",
+      "scanned_on": "2026-04-03",
+      "strategy_id": "long-tail-cleanup-pass",
+      "kind": "search_pass",
+      "notes": "Applied widening strategy via Project Gutenberg. Added 15 discovered titles in this batch."
+    },
+    {
+      "id": "scan-long-tail-cleanup-pass-open-library",
+      "label": "Long-tail cleanup pass / Open Library",
+      "provider": "Open Library",
+      "url": "https://openlibrary.org/search?q=artificial+intelligence+dystopia",
+      "scanned_on": "2026-04-03",
+      "strategy_id": "long-tail-cleanup-pass",
+      "kind": "search_pass",
+      "notes": "Applied widening strategy via Open Library. Added 15 discovered titles in this batch."
+    },
+    {
+      "id": "scan-deep-long-tail-pass-gemini",
+      "label": "Deep long-tail pass / Gemini",
+      "provider": "Gemini",
+      "url": "https://gemini.google.com/",
+      "scanned_on": "2026-04-03",
+      "strategy_id": "deep-long-tail-pass",
+      "kind": "search_pass",
+      "notes": "Applied widening strategy via Gemini. Added 14 discovered titles in this batch."
+    },
+    {
+      "id": "scan-deep-long-tail-pass-chatgpt",
+      "label": "Deep long-tail pass / ChatGPT",
+      "provider": "ChatGPT",
+      "url": "https://chat.openai.com/",
+      "scanned_on": "2026-04-03",
+      "strategy_id": "deep-long-tail-pass",
+      "kind": "search_pass",
+      "notes": "Applied widening strategy via ChatGPT. Added 14 discovered titles in this batch."
+    },
+    {
+      "id": "scan-deep-long-tail-pass-google",
+      "label": "Deep long-tail pass / Google",
+      "provider": "Google",
+      "url": "https://www.google.com/search?q=dystopian+ai+quotes",
+      "scanned_on": "2026-04-03",
+      "strategy_id": "deep-long-tail-pass",
+      "kind": "search_pass",
+      "notes": "Applied widening strategy via Google. Added 14 discovered titles in this batch."
+    },
+    {
+      "id": "scan-deep-long-tail-pass-wikipedia",
+      "label": "Deep long-tail pass / Wikipedia",
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Artificial_intelligence_in_fiction",
+      "scanned_on": "2026-04-03",
+      "strategy_id": "deep-long-tail-pass",
+      "kind": "search_pass",
+      "notes": "Applied widening strategy via Wikipedia. Added 14 discovered titles in this batch."
+    },
+    {
+      "id": "scan-deep-long-tail-pass-tv-tropes",
+      "label": "Deep long-tail pass / TV Tropes",
+      "provider": "TV Tropes",
+      "url": "https://tvtropes.org/pmwiki/pmwiki.php/Main/ArtificialIntelligence",
+      "scanned_on": "2026-04-03",
+      "strategy_id": "deep-long-tail-pass",
+      "kind": "search_pass",
+      "notes": "Applied widening strategy via TV Tropes. Added 14 discovered titles in this batch."
+    },
+    {
+      "id": "scan-author-candidate-orwell-wikipedia-73",
+      "label": "George Orwell adjacent-control lane / Wikipedia",
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Artificial_intelligence_in_fiction",
+      "scanned_on": "2026-04-03",
+      "strategy_id": "author-candidate-orwell",
+      "kind": "category_candidate_pass",
+      "notes": "Adjacent anti-control author pass for recognizable dystopian language the user specifically wants represented. Added 3 candidate works in this batch."
+    },
+    {
+      "id": "scan-author-candidate-orwell-goodreads-74",
+      "label": "George Orwell adjacent-control lane / Goodreads",
+      "provider": "Goodreads",
+      "url": "https://www.goodreads.com/search?q=artificial+intelligence+dystopia",
+      "scanned_on": "2026-04-03",
+      "strategy_id": "author-candidate-orwell",
+      "kind": "category_candidate_pass",
+      "notes": "Adjacent anti-control author pass for recognizable dystopian language the user specifically wants represented. Added 3 candidate works in this batch."
+    },
+    {
+      "id": "scan-author-candidate-orwell-open-library-75",
+      "label": "George Orwell adjacent-control lane / Open Library",
+      "provider": "Open Library",
+      "url": "https://openlibrary.org/search?q=artificial+intelligence+dystopia",
+      "scanned_on": "2026-04-03",
+      "strategy_id": "author-candidate-orwell",
+      "kind": "category_candidate_pass",
+      "notes": "Adjacent anti-control author pass for recognizable dystopian language the user specifically wants represented. Added 3 candidate works in this batch."
+    },
+    {
+      "id": "scan-author-candidate-asimov-wikiquote-76",
+      "label": "Isaac Asimov author lane / Wikiquote",
+      "provider": "Wikiquote",
+      "url": "https://www.google.com/search?q=dystopian+ai+quotes",
+      "scanned_on": "2026-04-03",
+      "strategy_id": "author-candidate-asimov",
+      "kind": "category_candidate_pass",
+      "notes": "Widen through canonical robot and Foundation-era Asimov works. Added 9 candidate works in this batch."
+    },
+    {
+      "id": "scan-author-candidate-asimov-wikipedia-77",
+      "label": "Isaac Asimov author lane / Wikipedia",
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Artificial_intelligence_in_fiction",
+      "scanned_on": "2026-04-03",
+      "strategy_id": "author-candidate-asimov",
+      "kind": "category_candidate_pass",
+      "notes": "Widen through canonical robot and Foundation-era Asimov works. Added 9 candidate works in this batch."
+    },
+    {
+      "id": "scan-author-candidate-asimov-open-library-78",
+      "label": "Isaac Asimov author lane / Open Library",
+      "provider": "Open Library",
+      "url": "https://openlibrary.org/search?q=artificial+intelligence+dystopia",
+      "scanned_on": "2026-04-03",
+      "strategy_id": "author-candidate-asimov",
+      "kind": "category_candidate_pass",
+      "notes": "Widen through canonical robot and Foundation-era Asimov works. Added 9 candidate works in this batch."
+    },
+    {
+      "id": "source-gemini-user-100-candidate-intake",
+      "label": "Gemini user-provided 100-candidate intake",
+      "provider": "Gemini",
+      "url": "https://gemini.google.com/",
+      "scanned_on": "2026-04-03",
+      "strategy_id": "gemini-user-candidate-intake",
+      "kind": "user_supplied_intake",
+      "notes": "User supplied a 100-item Gemini list of AI-dystopia quote leads. Local preserved copy lives under incoming/gemini-100-candidates-2026-04-03/README.md, and non-duplicate concrete source works were merged into discovery as queued leads."
+    },
+    {
+      "id": "scan-author-candidate-asimov-wikiquote-80",
+      "label": "Isaac Asimov author lane / Wikiquote",
+      "provider": "Wikiquote",
+      "url": "https://www.google.com/search?q=dystopian+ai+quotes",
+      "scanned_on": "2026-04-03",
+      "strategy_id": "author-candidate-asimov",
+      "kind": "category_candidate_pass",
+      "notes": "Widen through canonical robot and Foundation-era Asimov works. Added 0 candidate works in this batch."
+    },
+    {
+      "id": "scan-author-candidate-asimov-wikipedia-81",
+      "label": "Isaac Asimov author lane / Wikipedia",
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Artificial_intelligence_in_fiction",
+      "scanned_on": "2026-04-03",
+      "strategy_id": "author-candidate-asimov",
+      "kind": "category_candidate_pass",
+      "notes": "Widen through canonical robot and Foundation-era Asimov works. Added 0 candidate works in this batch."
+    },
+    {
+      "id": "scan-author-candidate-asimov-open-library-82",
+      "label": "Isaac Asimov author lane / Open Library",
+      "provider": "Open Library",
+      "url": "https://openlibrary.org/search?q=artificial+intelligence+dystopia",
+      "scanned_on": "2026-04-03",
+      "strategy_id": "author-candidate-asimov",
+      "kind": "category_candidate_pass",
+      "notes": "Widen through canonical robot and Foundation-era Asimov works. Added 0 candidate works in this batch."
+    },
+    {
+      "id": "scan-author-candidate-asimov-wikiquote-83",
+      "label": "Isaac Asimov author lane / Wikiquote",
+      "provider": "Wikiquote",
+      "url": "https://www.google.com/search?q=dystopian+ai+quotes",
+      "scanned_on": "2026-04-03",
+      "strategy_id": "author-candidate-asimov",
+      "kind": "category_candidate_pass",
+      "notes": "Widen through canonical robot and Foundation-era Asimov works. Added 0 candidate works in this batch."
+    },
+    {
+      "id": "scan-author-candidate-asimov-wikipedia-84",
+      "label": "Isaac Asimov author lane / Wikipedia",
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Artificial_intelligence_in_fiction",
+      "scanned_on": "2026-04-03",
+      "strategy_id": "author-candidate-asimov",
+      "kind": "category_candidate_pass",
+      "notes": "Widen through canonical robot and Foundation-era Asimov works. Added 0 candidate works in this batch."
+    },
+    {
+      "id": "scan-author-candidate-asimov-open-library-85",
+      "label": "Isaac Asimov author lane / Open Library",
+      "provider": "Open Library",
+      "url": "https://openlibrary.org/search?q=artificial+intelligence+dystopia",
+      "scanned_on": "2026-04-03",
+      "strategy_id": "author-candidate-asimov",
+      "kind": "category_candidate_pass",
+      "notes": "Widen through canonical robot and Foundation-era Asimov works. Added 0 candidate works in this batch."
+    },
+    {
+      "id": "scan-author-candidate-asimov-wikiquote-86",
+      "label": "Isaac Asimov author lane / Wikiquote",
+      "provider": "Wikiquote",
+      "url": "https://www.google.com/search?q=dystopian+ai+quotes",
+      "scanned_on": "2026-04-03",
+      "strategy_id": "author-candidate-asimov",
+      "kind": "category_candidate_pass",
+      "notes": "Widen through canonical robot and Foundation-era Asimov works. Added 0 candidate works in this batch."
+    },
+    {
+      "id": "scan-author-candidate-asimov-wikipedia-87",
+      "label": "Isaac Asimov author lane / Wikipedia",
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Artificial_intelligence_in_fiction",
+      "scanned_on": "2026-04-03",
+      "strategy_id": "author-candidate-asimov",
+      "kind": "category_candidate_pass",
+      "notes": "Widen through canonical robot and Foundation-era Asimov works. Added 0 candidate works in this batch."
+    },
+    {
+      "id": "scan-author-candidate-asimov-open-library-88",
+      "label": "Isaac Asimov author lane / Open Library",
+      "provider": "Open Library",
+      "url": "https://openlibrary.org/search?q=artificial+intelligence+dystopia",
+      "scanned_on": "2026-04-03",
+      "strategy_id": "author-candidate-asimov",
+      "kind": "category_candidate_pass",
+      "notes": "Widen through canonical robot and Foundation-era Asimov works. Added 0 candidate works in this batch."
+    },
+    {
+      "id": "scan-author-candidate-asimov-wikiquote-89",
+      "label": "Isaac Asimov author lane / Wikiquote",
+      "provider": "Wikiquote",
+      "url": "https://www.google.com/search?q=dystopian+ai+quotes",
+      "scanned_on": "2026-04-03",
+      "strategy_id": "author-candidate-asimov",
+      "kind": "category_candidate_pass",
+      "notes": "Widen through canonical robot and Foundation-era Asimov works. Added 0 candidate works in this batch."
+    },
+    {
+      "id": "scan-author-candidate-asimov-wikipedia-90",
+      "label": "Isaac Asimov author lane / Wikipedia",
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Artificial_intelligence_in_fiction",
+      "scanned_on": "2026-04-03",
+      "strategy_id": "author-candidate-asimov",
+      "kind": "category_candidate_pass",
+      "notes": "Widen through canonical robot and Foundation-era Asimov works. Added 0 candidate works in this batch."
+    },
+    {
+      "id": "scan-author-candidate-asimov-open-library-91",
+      "label": "Isaac Asimov author lane / Open Library",
+      "provider": "Open Library",
+      "url": "https://openlibrary.org/search?q=artificial+intelligence+dystopia",
+      "scanned_on": "2026-04-03",
+      "strategy_id": "author-candidate-asimov",
+      "kind": "category_candidate_pass",
+      "notes": "Widen through canonical robot and Foundation-era Asimov works. Added 0 candidate works in this batch."
+    },
+    {
+      "id": "scan-author-candidate-asimov-wikiquote-92",
+      "label": "Isaac Asimov author lane / Wikiquote",
+      "provider": "Wikiquote",
+      "url": "https://www.google.com/search?q=dystopian+ai+quotes",
+      "scanned_on": "2026-04-03",
+      "strategy_id": "author-candidate-asimov",
+      "kind": "category_candidate_pass",
+      "notes": "Widen through canonical robot and Foundation-era Asimov works. Added 0 candidate works in this batch."
+    },
+    {
+      "id": "scan-author-candidate-asimov-wikipedia-93",
+      "label": "Isaac Asimov author lane / Wikipedia",
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Artificial_intelligence_in_fiction",
+      "scanned_on": "2026-04-03",
+      "strategy_id": "author-candidate-asimov",
+      "kind": "category_candidate_pass",
+      "notes": "Widen through canonical robot and Foundation-era Asimov works. Added 0 candidate works in this batch."
+    },
+    {
+      "id": "scan-author-candidate-asimov-open-library-94",
+      "label": "Isaac Asimov author lane / Open Library",
+      "provider": "Open Library",
+      "url": "https://openlibrary.org/search?q=artificial+intelligence+dystopia",
+      "scanned_on": "2026-04-03",
+      "strategy_id": "author-candidate-asimov",
+      "kind": "category_candidate_pass",
+      "notes": "Widen through canonical robot and Foundation-era Asimov works. Added 0 candidate works in this batch."
+    },
+    {
+      "id": "scan-quote-candidate-pass-95",
+      "label": "Quote candidate intake / mixed",
+      "provider": "Local curated intake",
+      "url": "http://127.0.0.1:8123/",
+      "scanned_on": "2026-04-03",
+      "strategy_id": "quote-candidate-mixed",
+      "kind": "quote_candidate_pass",
+      "notes": "Added 6 quote candidates for review with focus Dune, Orwell, Portal, Borg, Ghost in the Shell, Mass Effect."
+    },
+    {
+      "id": "scan-quote-candidate-mixed-96",
+      "label": "Quote hunt / mixed",
+      "provider": "Local curated intake",
+      "url": "http://127.0.0.1:8123/",
+      "scanned_on": "2026-04-04",
+      "scanned_at": "2026-04-04T09:19:32-04:00",
+      "status": "no_new_quotes",
+      "strategy_id": "quote-candidate-mixed",
+      "kind": "quote_candidate_pass",
+      "notes": "Quote hunt at 2026-04-04T09:19:32-04:00. Focus: more robot rebellion. Attempted: Dune, Nineteen Eighty-Four, Portal, Star Trek: First Contact, Ghost in the Shell, Mass Effect 3. Added 0 quote candidates."
+    },
+    {
+      "id": "scan-quote-candidate-mixed-97",
+      "label": "Quote hunt / mixed",
+      "provider": "Local curated intake",
+      "url": "http://127.0.0.1:8123/",
+      "scanned_on": "2026-04-04",
+      "scanned_at": "2026-04-04T09:40:51-04:00",
+      "status": "no_new_quotes",
+      "strategy_id": "quote-candidate-mixed",
+      "kind": "quote_candidate_pass",
+      "notes": "Quote hunt at 2026-04-04T09:40:51-04:00. Focus: none. Attempted: Dune, Nineteen Eighty-Four, Portal, Star Trek: First Contact, Ghost in the Shell, Mass Effect 3. Added 0 quote candidates. Research plan sources: ChatGPT ideation, Gemini ideation, Google search, IMDb quote pages, Reddit / r/printSF, Wikiquote / Robot. Research plan queries: ChatGPT widening prompt, Gemini widening prompt, IMDb AI movie quote sweep, Machine consciousness and selfhood, Machine control language."
+    },
+    {
+      "id": "scan-source-candidate-imdb-98",
+      "label": "IMDb quote-site sweep / IMDb",
+      "provider": "IMDb",
+      "url": "https://www.google.com/search?q=dystopian+ai+quotes",
+      "scanned_on": "2026-04-04",
+      "scanned_at": "2026-04-04T09:50:49-04:00",
+      "status": "added",
+      "strategy_id": "source-candidate-imdb",
+      "kind": "category_candidate_pass",
+      "notes": "Use quote-rich film and TV pages to reveal more recognizable ominous lines quickly. Added 2 candidate works in this batch."
+    },
+    {
+      "id": "scan-source-candidate-imdb-99",
+      "label": "IMDb quote-site sweep / Wikipedia",
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Artificial_intelligence_in_fiction",
+      "scanned_on": "2026-04-04",
+      "scanned_at": "2026-04-04T09:50:49-04:00",
+      "status": "added",
+      "strategy_id": "source-candidate-imdb",
+      "kind": "category_candidate_pass",
+      "notes": "Use quote-rich film and TV pages to reveal more recognizable ominous lines quickly. Added 2 candidate works in this batch."
+    },
+    {
+      "id": "scan-author-candidate-robots-100",
+      "label": "Classic robot-fiction lane / Wikiquote",
+      "provider": "Wikiquote",
+      "url": "https://www.google.com/search?q=dystopian+ai+quotes",
+      "scanned_on": "2026-04-04",
+      "scanned_at": "2026-04-04T09:50:49-04:00",
+      "status": "added",
+      "strategy_id": "author-candidate-robots",
+      "kind": "category_candidate_pass",
+      "notes": "Robot-centered literary lane spanning recognizable foundational works. Added 4 candidate works in this batch."
+    },
+    {
+      "id": "scan-author-candidate-robots-101",
+      "label": "Classic robot-fiction lane / Wikipedia",
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Artificial_intelligence_in_fiction",
+      "scanned_on": "2026-04-04",
+      "scanned_at": "2026-04-04T09:50:49-04:00",
+      "status": "added",
+      "strategy_id": "author-candidate-robots",
+      "kind": "category_candidate_pass",
+      "notes": "Robot-centered literary lane spanning recognizable foundational works. Added 4 candidate works in this batch."
+    },
+    {
+      "id": "scan-author-candidate-robots-102",
+      "label": "Classic robot-fiction lane / Open Library",
+      "provider": "Open Library",
+      "url": "https://openlibrary.org/search?q=artificial+intelligence+dystopia",
+      "scanned_on": "2026-04-04",
+      "scanned_at": "2026-04-04T09:50:49-04:00",
+      "status": "added",
+      "strategy_id": "author-candidate-robots",
+      "kind": "category_candidate_pass",
+      "notes": "Robot-centered literary lane spanning recognizable foundational works. Added 4 candidate works in this batch."
+    },
+    {
+      "id": "scan-quote-candidate-mixed-103",
+      "label": "Quote hunt / mixed",
+      "provider": "Local curated intake",
+      "url": "http://127.0.0.1:8123/",
+      "scanned_on": "2026-04-04",
+      "scanned_at": "2026-04-04T09:50:49-04:00",
+      "status": "no_new_quotes",
+      "strategy_id": "quote-candidate-mixed",
+      "kind": "quote_candidate_pass",
+      "notes": "Quote hunt at 2026-04-04T09:50:49-04:00. Focus: E. M. Forster thinking machines robots AI dystopia quotes The Machine Stops. Mode path: mixed, source, author, query. Attempted: Dune, Nineteen Eighty-Four, Portal, Star Trek: First Contact, Ghost in the Shell, Mass Effect 3. Added 0 quote candidates. Added 6 supporting source leads. Research plan sources: ChatGPT ideation, Gemini ideation, Google search, IMDb quote pages, Reddit / r/printSF, Wikiquote / Robot. Research plan queries: ChatGPT widening prompt, Gemini widening prompt, IMDb AI movie quote sweep, Machine consciousness and selfhood, Machine control language."
+    },
+    {
+      "id": "scan-source-candidate-imdb-104",
+      "label": "IMDb quote-site sweep / IMDb",
+      "provider": "IMDb",
+      "url": "https://www.google.com/search?q=dystopian+ai+quotes",
+      "scanned_on": "2026-04-04",
+      "scanned_at": "2026-04-04T09:53:08-04:00",
+      "status": "no_new_leads",
+      "strategy_id": "source-candidate-imdb",
+      "kind": "category_candidate_pass",
+      "notes": "Use quote-rich film and TV pages to reveal more recognizable ominous lines quickly. Added 0 candidate works in this batch."
+    },
+    {
+      "id": "scan-source-candidate-imdb-105",
+      "label": "IMDb quote-site sweep / Wikipedia",
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Artificial_intelligence_in_fiction",
+      "scanned_on": "2026-04-04",
+      "scanned_at": "2026-04-04T09:53:08-04:00",
+      "status": "no_new_leads",
+      "strategy_id": "source-candidate-imdb",
+      "kind": "category_candidate_pass",
+      "notes": "Use quote-rich film and TV pages to reveal more recognizable ominous lines quickly. Added 0 candidate works in this batch."
+    },
+    {
+      "id": "scan-author-candidate-robots-106",
+      "label": "Classic robot-fiction lane / Wikiquote",
+      "provider": "Wikiquote",
+      "url": "https://www.google.com/search?q=dystopian+ai+quotes",
+      "scanned_on": "2026-04-04",
+      "scanned_at": "2026-04-04T09:53:08-04:00",
+      "status": "no_new_leads",
+      "strategy_id": "author-candidate-robots",
+      "kind": "category_candidate_pass",
+      "notes": "Robot-centered literary lane spanning recognizable foundational works. Added 0 candidate works in this batch."
+    },
+    {
+      "id": "scan-author-candidate-robots-107",
+      "label": "Classic robot-fiction lane / Wikipedia",
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Artificial_intelligence_in_fiction",
+      "scanned_on": "2026-04-04",
+      "scanned_at": "2026-04-04T09:53:08-04:00",
+      "status": "no_new_leads",
+      "strategy_id": "author-candidate-robots",
+      "kind": "category_candidate_pass",
+      "notes": "Robot-centered literary lane spanning recognizable foundational works. Added 0 candidate works in this batch."
+    },
+    {
+      "id": "scan-author-candidate-robots-108",
+      "label": "Classic robot-fiction lane / Open Library",
+      "provider": "Open Library",
+      "url": "https://openlibrary.org/search?q=artificial+intelligence+dystopia",
+      "scanned_on": "2026-04-04",
+      "scanned_at": "2026-04-04T09:53:08-04:00",
+      "status": "no_new_leads",
+      "strategy_id": "author-candidate-robots",
+      "kind": "category_candidate_pass",
+      "notes": "Robot-centered literary lane spanning recognizable foundational works. Added 0 candidate works in this batch."
+    },
+    {
+      "id": "scan-quote-candidate-mixed-109",
+      "label": "Quote hunt / mixed",
+      "provider": "Local curated intake",
+      "url": "http://127.0.0.1:8123/",
+      "scanned_on": "2026-04-04",
+      "scanned_at": "2026-04-04T09:53:08-04:00",
+      "status": "added",
+      "strategy_id": "quote-candidate-mixed",
+      "kind": "quote_candidate_pass",
+      "notes": "Quote hunt at 2026-04-04T09:53:08-04:00. Focus: Arthur C. Clarke thinking machines robots AI dystopia quotes 2001: A Space Odyssey, 2010: Odyssey Two. Mode path: mixed, source, author, query. Attempted: Dune, Portal, Dune, 2001: A Space Odyssey, The Machine Stops, TRON, WarGames, Nineteen Eighty-Four, Star Trek: First Contact, Ghost in the Shell, Mass Effect 3, Ex Machina. Added 1 quote candidates. Added 0 supporting source leads. Research plan sources: Wikiquote / Robot, Movie Quotes .com, Quotes.net, ChatGPT ideation, Gemini ideation, Google search. Research plan queries: Frank Herbert anti-machine, Wikiquote topic page pass, Long-tail AI dystopia books, ChatGPT widening prompt, Machine control language."
+    },
+    {
+      "id": "scan-source-candidate-imdb-110",
+      "label": "IMDb quote-site sweep / IMDb",
+      "provider": "IMDb",
+      "url": "https://www.google.com/search?q=dystopian+ai+quotes",
+      "scanned_on": "2026-04-04",
+      "scanned_at": "2026-04-04T09:53:16-04:00",
+      "status": "no_new_leads",
+      "strategy_id": "source-candidate-imdb",
+      "kind": "category_candidate_pass",
+      "notes": "Use quote-rich film and TV pages to reveal more recognizable ominous lines quickly. Added 0 candidate works in this batch."
+    },
+    {
+      "id": "scan-source-candidate-imdb-111",
+      "label": "IMDb quote-site sweep / Wikipedia",
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Artificial_intelligence_in_fiction",
+      "scanned_on": "2026-04-04",
+      "scanned_at": "2026-04-04T09:53:16-04:00",
+      "status": "no_new_leads",
+      "strategy_id": "source-candidate-imdb",
+      "kind": "category_candidate_pass",
+      "notes": "Use quote-rich film and TV pages to reveal more recognizable ominous lines quickly. Added 0 candidate works in this batch."
+    },
+    {
+      "id": "scan-author-candidate-robots-112",
+      "label": "Classic robot-fiction lane / Wikiquote",
+      "provider": "Wikiquote",
+      "url": "https://www.google.com/search?q=dystopian+ai+quotes",
+      "scanned_on": "2026-04-04",
+      "scanned_at": "2026-04-04T09:53:16-04:00",
+      "status": "no_new_leads",
+      "strategy_id": "author-candidate-robots",
+      "kind": "category_candidate_pass",
+      "notes": "Robot-centered literary lane spanning recognizable foundational works. Added 0 candidate works in this batch."
+    },
+    {
+      "id": "scan-author-candidate-robots-113",
+      "label": "Classic robot-fiction lane / Wikipedia",
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Artificial_intelligence_in_fiction",
+      "scanned_on": "2026-04-04",
+      "scanned_at": "2026-04-04T09:53:16-04:00",
+      "status": "no_new_leads",
+      "strategy_id": "author-candidate-robots",
+      "kind": "category_candidate_pass",
+      "notes": "Robot-centered literary lane spanning recognizable foundational works. Added 0 candidate works in this batch."
+    },
+    {
+      "id": "scan-author-candidate-robots-114",
+      "label": "Classic robot-fiction lane / Open Library",
+      "provider": "Open Library",
+      "url": "https://openlibrary.org/search?q=artificial+intelligence+dystopia",
+      "scanned_on": "2026-04-04",
+      "scanned_at": "2026-04-04T09:53:16-04:00",
+      "status": "no_new_leads",
+      "strategy_id": "author-candidate-robots",
+      "kind": "category_candidate_pass",
+      "notes": "Robot-centered literary lane spanning recognizable foundational works. Added 0 candidate works in this batch."
+    },
+    {
+      "id": "scan-quote-candidate-mixed-115",
+      "label": "Quote hunt / mixed",
+      "provider": "Local curated intake",
+      "url": "http://127.0.0.1:8123/",
+      "scanned_on": "2026-04-04",
+      "scanned_at": "2026-04-04T09:53:16-04:00",
+      "status": "no_new_quotes",
+      "strategy_id": "quote-candidate-mixed",
+      "kind": "quote_candidate_pass",
+      "notes": "Quote hunt at 2026-04-04T09:53:16-04:00. Focus: Arthur C. Clarke thinking machines robots AI dystopia quotes 2001: A Space Odyssey, 2010: Odyssey Two. Mode path: mixed, source, author, query. Attempted: Dune, Portal, Dune, 2001: A Space Odyssey, The Machine Stops, TRON, WarGames, Nineteen Eighty-Four, Star Trek: First Contact, Ghost in the Shell, Mass Effect 3, Ex Machina. Added 0 quote candidates. Added 0 supporting source leads. Research plan sources: Wikiquote / Robot, Movie Quotes .com, Quotes.net, ChatGPT ideation, Gemini ideation, Google search. Research plan queries: Frank Herbert anti-machine, Wikiquote topic page pass, Long-tail AI dystopia books, ChatGPT widening prompt, Machine control language."
+    },
+    {
+      "id": "scan-source-candidate-imdb-116",
+      "label": "IMDb quote-site sweep / IMDb",
+      "provider": "IMDb",
+      "url": "https://www.google.com/search?q=dystopian+ai+quotes",
+      "scanned_on": "2026-04-04",
+      "scanned_at": "2026-04-04T16:09:57-04:00",
+      "status": "no_new_leads",
+      "strategy_id": "source-candidate-imdb",
+      "kind": "category_candidate_pass",
+      "notes": "Use quote-rich film and TV pages to reveal more recognizable ominous lines quickly. Added 0 candidate works in this batch."
+    },
+    {
+      "id": "scan-source-candidate-imdb-117",
+      "label": "IMDb quote-site sweep / Wikipedia",
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Artificial_intelligence_in_fiction",
+      "scanned_on": "2026-04-04",
+      "scanned_at": "2026-04-04T16:09:57-04:00",
+      "status": "no_new_leads",
+      "strategy_id": "source-candidate-imdb",
+      "kind": "category_candidate_pass",
+      "notes": "Use quote-rich film and TV pages to reveal more recognizable ominous lines quickly. Added 0 candidate works in this batch."
+    },
+    {
+      "id": "scan-author-candidate-robots-118",
+      "label": "Classic robot-fiction lane / Wikiquote",
+      "provider": "Wikiquote",
+      "url": "https://www.google.com/search?q=dystopian+ai+quotes",
+      "scanned_on": "2026-04-04",
+      "scanned_at": "2026-04-04T16:09:57-04:00",
+      "status": "no_new_leads",
+      "strategy_id": "author-candidate-robots",
+      "kind": "category_candidate_pass",
+      "notes": "Robot-centered literary lane spanning recognizable foundational works. Added 0 candidate works in this batch."
+    },
+    {
+      "id": "scan-author-candidate-robots-119",
+      "label": "Classic robot-fiction lane / Wikipedia",
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Artificial_intelligence_in_fiction",
+      "scanned_on": "2026-04-04",
+      "scanned_at": "2026-04-04T16:09:57-04:00",
+      "status": "no_new_leads",
+      "strategy_id": "author-candidate-robots",
+      "kind": "category_candidate_pass",
+      "notes": "Robot-centered literary lane spanning recognizable foundational works. Added 0 candidate works in this batch."
+    },
+    {
+      "id": "scan-author-candidate-robots-120",
+      "label": "Classic robot-fiction lane / Open Library",
+      "provider": "Open Library",
+      "url": "https://openlibrary.org/search?q=artificial+intelligence+dystopia",
+      "scanned_on": "2026-04-04",
+      "scanned_at": "2026-04-04T16:09:57-04:00",
+      "status": "no_new_leads",
+      "strategy_id": "author-candidate-robots",
+      "kind": "category_candidate_pass",
+      "notes": "Robot-centered literary lane spanning recognizable foundational works. Added 0 candidate works in this batch."
+    },
+    {
+      "id": "scan-quote-candidate-mixed-121",
+      "label": "Quote hunt / mixed",
+      "provider": "Local curated intake",
+      "url": "http://127.0.0.1:8123/",
+      "scanned_on": "2026-04-04",
+      "scanned_at": "2026-04-04T16:09:57-04:00",
+      "status": "no_new_quotes",
+      "strategy_id": "quote-candidate-mixed",
+      "kind": "quote_candidate_pass",
+      "notes": "Quote hunt at 2026-04-04T16:09:57-04:00. Focus: Arthur C. Clarke thinking machines robots AI dystopia quotes 2001: A Space Odyssey, 2010: Odyssey Two. Mode path: mixed, source, author, query. Attempted: Dune, Portal, Dune, 2001: A Space Odyssey, The Machine Stops, Nineteen Eighty-Four, TRON, WarGames, Star Trek: First Contact, Ghost in the Shell, Mass Effect 3, Ex Machina. Added 0 quote candidates. Added 0 supporting source leads. Research plan sources: Wikiquote / Robot, Movie Quotes .com, Quotes.net, ChatGPT ideation, Gemini ideation, Google search. Research plan queries: Frank Herbert anti-machine, Wikiquote topic page pass, Long-tail AI dystopia books, ChatGPT widening prompt, Machine control language."
+    },
+    {
+      "id": "scan-author-candidate-asimov-122",
+      "label": "Isaac Asimov author lane / Wikiquote",
+      "provider": "Wikiquote",
+      "url": "https://www.google.com/search?q=dystopian+ai+quotes",
+      "scanned_on": "2026-04-04",
+      "scanned_at": "2026-04-04T16:10:21-04:00",
+      "status": "no_new_leads",
+      "strategy_id": "author-candidate-asimov",
+      "kind": "category_candidate_pass",
+      "notes": "Widen through canonical robot and Foundation-era Asimov works. Added 0 candidate works in this batch."
+    },
+    {
+      "id": "scan-author-candidate-asimov-123",
+      "label": "Isaac Asimov author lane / Wikipedia",
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Artificial_intelligence_in_fiction",
+      "scanned_on": "2026-04-04",
+      "scanned_at": "2026-04-04T16:10:21-04:00",
+      "status": "no_new_leads",
+      "strategy_id": "author-candidate-asimov",
+      "kind": "category_candidate_pass",
+      "notes": "Widen through canonical robot and Foundation-era Asimov works. Added 0 candidate works in this batch."
+    },
+    {
+      "id": "scan-author-candidate-asimov-124",
+      "label": "Isaac Asimov author lane / Open Library",
+      "provider": "Open Library",
+      "url": "https://openlibrary.org/search?q=artificial+intelligence+dystopia",
+      "scanned_on": "2026-04-04",
+      "scanned_at": "2026-04-04T16:10:21-04:00",
+      "status": "no_new_leads",
+      "strategy_id": "author-candidate-asimov",
+      "kind": "category_candidate_pass",
+      "notes": "Widen through canonical robot and Foundation-era Asimov works. Added 0 candidate works in this batch."
+    },
+    {
+      "id": "scan-source-candidate-imdb-125",
+      "label": "IMDb quote-site sweep / IMDb",
+      "provider": "IMDb",
+      "url": "https://www.google.com/search?q=dystopian+ai+quotes",
+      "scanned_on": "2026-04-04",
+      "scanned_at": "2026-04-04T16:10:21-04:00",
+      "status": "no_new_leads",
+      "strategy_id": "source-candidate-imdb",
+      "kind": "category_candidate_pass",
+      "notes": "Use quote-rich film and TV pages to reveal more recognizable ominous lines quickly. Added 0 candidate works in this batch."
+    },
+    {
+      "id": "scan-source-candidate-imdb-126",
+      "label": "IMDb quote-site sweep / Wikipedia",
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Artificial_intelligence_in_fiction",
+      "scanned_on": "2026-04-04",
+      "scanned_at": "2026-04-04T16:10:21-04:00",
+      "status": "no_new_leads",
+      "strategy_id": "source-candidate-imdb",
+      "kind": "category_candidate_pass",
+      "notes": "Use quote-rich film and TV pages to reveal more recognizable ominous lines quickly. Added 0 candidate works in this batch."
+    },
+    {
+      "id": "scan-query-candidate-rogueai-127",
+      "label": "Rogue AI query sweep / Google",
+      "provider": "Google",
+      "url": "https://www.google.com/search?q=dystopian+ai+quotes",
+      "scanned_on": "2026-04-04",
+      "scanned_at": "2026-04-04T16:10:21-04:00",
+      "status": "added",
+      "strategy_id": "query-candidate-rogueai",
+      "kind": "category_candidate_pass",
+      "notes": "Query-led pass for hostile intelligence and machine-overlord language. Added 4 candidate works in this batch."
+    },
+    {
+      "id": "scan-query-candidate-rogueai-128",
+      "label": "Rogue AI query sweep / DuckDuckGo",
+      "provider": "DuckDuckGo",
+      "url": "https://duckduckgo.com/?q=dystopian+ai+quotes",
+      "scanned_on": "2026-04-04",
+      "scanned_at": "2026-04-04T16:10:21-04:00",
+      "status": "added",
+      "strategy_id": "query-candidate-rogueai",
+      "kind": "category_candidate_pass",
+      "notes": "Query-led pass for hostile intelligence and machine-overlord language. Added 4 candidate works in this batch."
+    },
+    {
+      "id": "scan-query-candidate-rogueai-129",
+      "label": "Rogue AI query sweep / Wikipedia",
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Artificial_intelligence_in_fiction",
+      "scanned_on": "2026-04-04",
+      "scanned_at": "2026-04-04T16:10:21-04:00",
+      "status": "added",
+      "strategy_id": "query-candidate-rogueai",
+      "kind": "category_candidate_pass",
+      "notes": "Query-led pass for hostile intelligence and machine-overlord language. Added 4 candidate works in this batch."
+    },
+    {
+      "id": "scan-quote-candidate-mixed-130",
+      "label": "Quote hunt / mixed",
+      "provider": "Local curated intake",
+      "url": "http://127.0.0.1:8123/",
+      "scanned_on": "2026-04-04",
+      "scanned_at": "2026-04-04T16:10:21-04:00",
+      "status": "added",
+      "strategy_id": "quote-candidate-mixed",
+      "kind": "quote_candidate_pass",
+      "notes": "Quote hunt at 2026-04-04T16:10:21-04:00. Focus: Asimov I, Robot quotes. Mode path: author, source, query, mixed. Attempted: Dune, Nineteen Eighty-Four, Portal, TRON, The Matrix, Ex Machina. Added 1 quote candidates. Added 4 supporting source leads. Research plan sources: Reddit / r/printSF, Movie Quotes .com, Quotes.net, Wikiquote / Robot, ChatGPT ideation, Gemini ideation. Research plan queries: Asimov robot law pass, Foundation control systems, Long-tail AI dystopia books, Robot rebellion film and game pass, Transcript hint sweep."
+    },
+    {
+      "id": "scan-author-candidate-asimov-131",
+      "label": "Isaac Asimov author lane / Wikiquote",
+      "provider": "Wikiquote",
+      "url": "https://www.google.com/search?q=dystopian+ai+quotes",
+      "scanned_on": "2026-04-04",
+      "scanned_at": "2026-04-04T16:11:58-04:00",
+      "status": "no_new_leads",
+      "strategy_id": "author-candidate-asimov",
+      "kind": "category_candidate_pass",
+      "notes": "Widen through canonical robot and Foundation-era Asimov works. Added 0 candidate works in this batch."
+    },
+    {
+      "id": "scan-author-candidate-asimov-132",
+      "label": "Isaac Asimov author lane / Wikipedia",
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Artificial_intelligence_in_fiction",
+      "scanned_on": "2026-04-04",
+      "scanned_at": "2026-04-04T16:11:58-04:00",
+      "status": "no_new_leads",
+      "strategy_id": "author-candidate-asimov",
+      "kind": "category_candidate_pass",
+      "notes": "Widen through canonical robot and Foundation-era Asimov works. Added 0 candidate works in this batch."
+    },
+    {
+      "id": "scan-author-candidate-asimov-133",
+      "label": "Isaac Asimov author lane / Open Library",
+      "provider": "Open Library",
+      "url": "https://openlibrary.org/search?q=artificial+intelligence+dystopia",
+      "scanned_on": "2026-04-04",
+      "scanned_at": "2026-04-04T16:11:58-04:00",
+      "status": "no_new_leads",
+      "strategy_id": "author-candidate-asimov",
+      "kind": "category_candidate_pass",
+      "notes": "Widen through canonical robot and Foundation-era Asimov works. Added 0 candidate works in this batch."
+    },
+    {
+      "id": "scan-source-candidate-imdb-134",
+      "label": "IMDb quote-site sweep / IMDb",
+      "provider": "IMDb",
+      "url": "https://www.google.com/search?q=dystopian+ai+quotes",
+      "scanned_on": "2026-04-04",
+      "scanned_at": "2026-04-04T16:11:58-04:00",
+      "status": "no_new_leads",
+      "strategy_id": "source-candidate-imdb",
+      "kind": "category_candidate_pass",
+      "notes": "Use quote-rich film and TV pages to reveal more recognizable ominous lines quickly. Added 0 candidate works in this batch."
+    },
+    {
+      "id": "scan-source-candidate-imdb-135",
+      "label": "IMDb quote-site sweep / Wikipedia",
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Artificial_intelligence_in_fiction",
+      "scanned_on": "2026-04-04",
+      "scanned_at": "2026-04-04T16:11:58-04:00",
+      "status": "no_new_leads",
+      "strategy_id": "source-candidate-imdb",
+      "kind": "category_candidate_pass",
+      "notes": "Use quote-rich film and TV pages to reveal more recognizable ominous lines quickly. Added 0 candidate works in this batch."
+    },
+    {
+      "id": "scan-query-candidate-rogueai-136",
+      "label": "Rogue AI query sweep / Google",
+      "provider": "Google",
+      "url": "https://www.google.com/search?q=dystopian+ai+quotes",
+      "scanned_on": "2026-04-04",
+      "scanned_at": "2026-04-04T16:11:58-04:00",
+      "status": "no_new_leads",
+      "strategy_id": "query-candidate-rogueai",
+      "kind": "category_candidate_pass",
+      "notes": "Query-led pass for hostile intelligence and machine-overlord language. Added 0 candidate works in this batch."
+    },
+    {
+      "id": "scan-query-candidate-rogueai-137",
+      "label": "Rogue AI query sweep / DuckDuckGo",
+      "provider": "DuckDuckGo",
+      "url": "https://duckduckgo.com/?q=dystopian+ai+quotes",
+      "scanned_on": "2026-04-04",
+      "scanned_at": "2026-04-04T16:11:58-04:00",
+      "status": "no_new_leads",
+      "strategy_id": "query-candidate-rogueai",
+      "kind": "category_candidate_pass",
+      "notes": "Query-led pass for hostile intelligence and machine-overlord language. Added 0 candidate works in this batch."
+    },
+    {
+      "id": "scan-query-candidate-rogueai-138",
+      "label": "Rogue AI query sweep / Wikipedia",
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Artificial_intelligence_in_fiction",
+      "scanned_on": "2026-04-04",
+      "scanned_at": "2026-04-04T16:11:58-04:00",
+      "status": "no_new_leads",
+      "strategy_id": "query-candidate-rogueai",
+      "kind": "category_candidate_pass",
+      "notes": "Query-led pass for hostile intelligence and machine-overlord language. Added 0 candidate works in this batch."
+    },
+    {
+      "id": "scan-quote-candidate-mixed-139",
+      "label": "Quote hunt / mixed",
+      "provider": "Local curated intake",
+      "url": "http://127.0.0.1:8123/",
+      "scanned_on": "2026-04-04",
+      "scanned_at": "2026-04-04T16:11:58-04:00",
+      "status": "no_new_quotes",
+      "strategy_id": "quote-candidate-mixed",
+      "kind": "quote_candidate_pass",
+      "notes": "Quote hunt at 2026-04-04T16:11:58-04:00. Focus: Asimov I, Robot quotes. Mode path: author, source, query, mixed. Attempted: Dune, Nineteen Eighty-Four, Portal, TRON, The Matrix, Ex Machina. Added 0 quote candidates. Added 0 supporting source leads. Research plan sources: Reddit / r/printSF, Movie Quotes .com, Quotes.net, Wikiquote / Robot, ChatGPT ideation, Gemini ideation. Research plan queries: Asimov robot law pass, Foundation control systems, Long-tail AI dystopia books, Robot rebellion film and game pass, Transcript hint sweep."
     }
   ]
 }
