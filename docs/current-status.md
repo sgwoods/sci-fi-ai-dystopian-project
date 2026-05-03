@@ -4,6 +4,8 @@ This repository is in the active curation-and-recovery-audit phase.
 
 ## Current Position
 
+- the canonical working copy going forward is now the iCloud-backed clone at
+  `/Users/stevenwoods/Library/Mobile Documents/com~apple~CloudDocs/Projects/sci-fi-ai-dystopian-project`
 - the quote review board currently contains `44` normalized records
 - the active candidate lane currently contains `0` records
 - the approved export contains `32` records
@@ -44,6 +46,8 @@ This repository is in the active curation-and-recovery-audit phase.
   projects: strong top-level README, `docs/`, `data/`, and `incoming/`
 - there is now a dedicated recovery audit documenting what is and is not yet
   safely reconstructible from GitHub alone
+- the current recovery checkpoint has been pushed to GitHub and verified in the
+  iCloud-backed clone
 
 ## Main Open Gaps
 
@@ -52,24 +56,20 @@ This repository is in the active curation-and-recovery-audit phase.
   instead of executing full live internet sourcing on every run
 - there is not yet a second-pass editorial policy for handling duplicate quote
   variants, partial lines, or multiple canonical phrasings
-- the current local state is not yet fully recoverable from `origin/main`
-  because important working-tree changes remain uncommitted
 
 ## Next Sensible Steps
 
-1. create a clean recovery checkpoint by committing and pushing the current
-   substantive working tree
-2. verify that a fresh clone can rebuild the repo and continue work without
-   missing artifacts
-3. make `Find More Quotes` lean more directly on the new source registry,
+1. keep using the iCloud-backed clone as the canonical working copy and retire
+   the older local copy from active use
+2. make `Find More Quotes` lean more directly on the new source registry,
    query library, and watchlist
-4. mine the active top-10 author lane into literary quote candidates
-5. widen the literary and story-based quote coverage
-6. mine the recognizable-classics discovery lane into quote-level
+3. mine the active top-10 author lane into literary quote candidates
+4. widen the literary and story-based quote coverage
+5. mine the recognizable-classics discovery lane into quote-level
    candidates before widening too far into less familiar material
-7. add intake items for newly found source pages or scans before review
-8. keep widening each sourcing phase in larger, less repetitive batches
-9. decide whether the approved export should also carry retrieval-oriented
+6. add intake items for newly found source pages or scans before review
+7. keep widening each sourcing phase in larger, less repetitive batches
+8. decide whether the approved export should also carry retrieval-oriented
    fields such as `tone`, `threat_level`, or `voice_style`
-10. decide how aggressively to add poster or cover art for records that still
+9. decide how aggressively to add poster or cover art for records that still
    rely on fallbacks

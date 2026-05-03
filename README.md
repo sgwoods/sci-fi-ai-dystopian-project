@@ -8,6 +8,10 @@ The goal is not only to gather quotable lines, but to preserve enough
 attribution, provenance, and local source context that the collection can be
 trusted, extended, and ingested by downstream applications with confidence.
 
+Canonical working copy going forward:
+
+- `/Users/stevenwoods/Library/Mobile Documents/com~apple~CloudDocs/Projects/sci-fi-ai-dystopian-project`
+
 ## Project Goal
 
 The primary goal is to build one canonical, ingestable approved dataset of
@@ -24,7 +28,7 @@ dystopian AI quotes while keeping the broader research trail visible:
 
 ## Current Status
 
-This repository is in the initial corpus bootstrap phase.
+This repository is in the active curation-and-recovery phase.
 
 Current first-pass position:
 
