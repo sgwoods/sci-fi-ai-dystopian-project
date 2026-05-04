@@ -1,0 +1,34 @@
+{
+  "project": "Sci-Fi AI Dystopian Project",
+  "repo_id": "sgwoods/sci-fi-ai-dystopian-project",
+  "project_class": "Standalone GitHub repo",
+  "published_release": "No formal semver release",
+  "canonical_branch": "main",
+  "preferred_active_clone": "~/Projects-All/sci-fi-ai-dystopian-project-working",
+  "preferred_public_clone": "~/Projects-All/public",
+  "optional_icloud_intake": "~/Library/Mobile Documents/com~apple~CloudDocs/Projects/sci-fi-ai-dystopian-project-intake",
+  "source_of_truth": "Git history in sgwoods/sci-fi-ai-dystopian-project, with sgwoods/public as the companion public-output repo.",
+  "working_clone_model": "Use a normal non-iCloud active clone for day-to-day work. Use iCloud for intake and backup-oriented convenience paths.",
+  "metrics": {
+    "current_track": {
+      "label": "Current Track",
+      "value": "Portable editorial baseline",
+      "note": "The curation corpus is stable enough to recover from GitHub, and the current migration priority is making the operating model portable and low-confusion across machines."
+    },
+    "current_focus": {
+      "label": "Current Focus",
+      "value": "Cross-machine portability plus quote-corpus growth",
+      "note": "The repo should remain easy to bootstrap on a new Mac while ongoing quote review and source expansion continue."
+    },
+    "build_line": {
+      "label": "Build Line",
+      "value": "review-board-v44",
+      "note": "The canonical review board currently contains 44 records and drives the generated approved, candidate, postponed, declined, and public-page artifacts."
+    },
+    "updated": {
+      "label": "Updated",
+      "value": "May 4, 2026",
+      "note": "Status, handoff docs, and bootstrap scripts are intended to stay synchronized."
+    }
+  }
+}

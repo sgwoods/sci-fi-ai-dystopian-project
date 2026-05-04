@@ -7,6 +7,7 @@ import json
 import os
 import subprocess
 import sys
+import tempfile
 import time
 import urllib.error
 import urllib.request
@@ -14,9 +15,23 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_PUBLIC_ROOT = Path(
-    os.environ.get("AI_DYSTOPIA_PUBLIC_ROOT", str(Path.home() / "GitPages" / "public"))
-)
+
+
+def default_public_root() -> Path:
+    explicit = os.environ.get("AI_DYSTOPIA_PUBLIC_ROOT")
+    if explicit:
+        return Path(explicit).expanduser()
+
+    preferred = Path.home() / "Projects-All" / "public"
+    legacy = Path.home() / "GitPages" / "public"
+    if preferred.exists():
+        return preferred
+    if legacy.exists():
+        return legacy
+    return preferred
+
+
+DEFAULT_PUBLIC_ROOT = default_public_root()
 CORE_SCRIPTS = [
     "tools/build_quotes_project.py",
     "tools/review_quotes.py",
@@ -175,6 +190,7 @@ def main() -> None:
     public_root = args.public_root.resolve()
     env = dict(os.environ)
     env["AI_DYSTOPIA_PUBLIC_ROOT"] = str(public_root)
+    env.setdefault("PYTHONPYCACHEPREFIX", str(Path(tempfile.gettempdir()) / "ai-dystopia-pyc"))
 
     assert_required_paths(project_root)
     record_count, status_counts = board_summary(project_root)

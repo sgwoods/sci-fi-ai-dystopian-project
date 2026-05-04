@@ -17,9 +17,23 @@ ROOT = Path(__file__).resolve().parents[1]
 BUILD_SCRIPT = ROOT / "tools" / "build_quotes_project.py"
 LOCAL_PUBLIC_PAGE = ROOT / "site" / "ai-dystopia-quotes-public-page.html"
 LOCAL_APPROVED_JSON = ROOT / "data" / "approved" / "ai-dystopia-quotes.approved.json"
-DEFAULT_PUBLIC_ROOT = Path(
-    os.environ.get("AI_DYSTOPIA_PUBLIC_ROOT", str(Path.home() / "GitPages" / "public"))
-)
+
+
+def default_public_root() -> Path:
+    explicit = os.environ.get("AI_DYSTOPIA_PUBLIC_ROOT")
+    if explicit:
+        return Path(explicit).expanduser()
+
+    preferred = Path.home() / "Projects-All" / "public"
+    legacy = Path.home() / "GitPages" / "public"
+    if preferred.exists():
+        return preferred
+    if legacy.exists():
+        return legacy
+    return preferred
+
+
+DEFAULT_PUBLIC_ROOT = default_public_root()
 
 PROJECT_ID = "ai-dystopia-quotes"
 PROJECT_PAGE_NAME = "ai-dystopia-quotes.html"

@@ -26,9 +26,23 @@ AUTHOR_TOP10_PATH = ROOT / "data" / "discovery" / "ai-dystopia-author-top10.json
 AUTHOR_PRIORITY_PATH = ROOT / "data" / "discovery" / "ai-dystopia-author-priority.json"
 BUILD_SCRIPT = ROOT / "tools" / "build_quotes_project.py"
 PUBLISH_SCRIPT = ROOT / "tools" / "publish_public_project.py"
-PUBLIC_ROOT = Path(
-    os.environ.get("AI_DYSTOPIA_PUBLIC_ROOT", str(Path.home() / "GitPages" / "public"))
-)
+
+
+def default_public_root() -> Path:
+    explicit = os.environ.get("AI_DYSTOPIA_PUBLIC_ROOT")
+    if explicit:
+        return Path(explicit).expanduser()
+
+    preferred = Path.home() / "Projects-All" / "public"
+    legacy = Path.home() / "GitPages" / "public"
+    if preferred.exists():
+        return preferred
+    if legacy.exists():
+        return legacy
+    return preferred
+
+
+PUBLIC_ROOT = default_public_root()
 TODAY = date.today().isoformat()
 VALID_STATUSES = {"candidate", "approved", "postponed", "declined"}
 DEFAULT_SOURCE_MORE_STRATEGY_COUNT = 3

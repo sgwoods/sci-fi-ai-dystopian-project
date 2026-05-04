@@ -1,37 +1,37 @@
 # Canonical Working Copy
 
-This project now has one canonical day-to-day working copy:
+This project’s preferred day-to-day working copy is now a normal non-iCloud
+clone:
 
-- `/Users/stevenwoods/Library/Mobile Documents/com~apple~CloudDocs/Projects/sci-fi-ai-dystopian-project`
+- `~/Projects-All/sci-fi-ai-dystopian-project-working`
 
 ## Big Picture
 
-The goal is to keep this project both:
+The goal is to keep the project both:
 
 1. editorially productive
 2. operationally safe
 
 That means:
 
-- all normal work should happen in the canonical iCloud-backed clone
-- GitHub should remain the durable remote checkpoint
-- the older local repo should no longer be treated as the primary workspace
+- all normal work should happen in the non-iCloud active clone
+- GitHub should remain the durable checkpoint
+- iCloud should be used for intake and backup-oriented convenience only
 
 ## Use This Repo
 
 For normal work, use:
 
 ```bash
-cd "/Users/stevenwoods/Library/Mobile Documents/com~apple~CloudDocs/Projects/sci-fi-ai-dystopian-project"
+cd "$HOME/Projects-All/sci-fi-ai-dystopian-project-working"
 ```
 
 ## Main Daily Commands
 
-Start of session safety check:
+Start-of-session safety check:
 
 ```bash
-pwd
-git status --short
+bash scripts/show-project-version.sh
 git pull --ff-only origin main
 ```
 
@@ -56,50 +56,26 @@ python3 tools/check_ui_routes.py --base-url http://127.0.0.1:8123
 Publish the approved JSON and public project page:
 
 ```bash
-AI_DYSTOPIA_PUBLIC_ROOT="$HOME/GitPages/public" python3 tools/publish_public_project.py --public-root "$HOME/GitPages/public"
+python3 tools/publish_public_project.py --public-root "$HOME/Projects-All/public"
 ```
 
 Bootstrap a replacement Mac:
 
 ```bash
-./scripts/bootstrap_new_mac.sh
+bash scripts/bootstrap-project-macos.sh --clone-public
 ```
 
-## Old Repo Status
+## Legacy Paths
 
-The older local repo at:
-
-- `/Users/stevenwoods/SciFi AI Dystopian Project`
-
-should now be treated as:
-
-- a transitional copy
-- a fallback/archive
-- not the normal place to continue editing
+If you still have an iCloud-backed clone or an older local folder, treat it as
+legacy or intake-oriented rather than the preferred place to continue editing.
 
 ## Safety Rule
 
 Before significant new work:
 
-1. confirm you are in the canonical iCloud-backed clone
+1. confirm you are in the non-iCloud active clone
 2. confirm `git status` is what you expect
 3. pull the latest `main` with `git pull --ff-only origin main`
 4. do the work there
 5. commit and push from there
-
-## Current Stabilization Status
-
-As of the current checkpoint:
-
-- GitHub has the recoverable project state
-- the iCloud-backed clone has been verified
-- the next work should focus on better quote sourcing and continued curation,
-  not on moving the repo around again unless a new portability issue appears
-
-## Recommended Next Steps
-
-1. use the canonical clone for all new quote curation
-2. improve `Find More Quotes` so it leans more on live source expansion
-3. refill the `Candidates` lane with stronger quote options from broader
-   internet sourcing
-4. keep promoting strong candidates and broadening literary coverage

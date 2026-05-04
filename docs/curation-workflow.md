@@ -26,7 +26,7 @@ time without forcing the reviewer to manage the machinery directly.
 7. The local source trail is preserved under `data/source-snapshots/`.
 8. Once approved content is ready for public consumption, the publish flow syncs
    the approved JSON, public project page, and shared homepage manifest into
-   `GitPages/public`.
+   the companion `public` repo, preferably at `~/Projects-All/public`.
 9. Editorial notes and policy updates live under `docs/`.
 
 ## Research Inventories
@@ -83,5 +83,5 @@ python3 tools/review_quotes.py approve <quote-id> --note "why it belongs"
 python3 tools/review_quotes.py postpone <quote-id> --note "why to hold it"
 python3 tools/review_quotes.py decline <quote-id> --note "why to drop it"
 python3 tools/review_quotes.py candidate <quote-id> --priority high --next-action "what to decide next"
-AI_DYSTOPIA_PUBLIC_ROOT="$HOME/GitPages/public" python3 tools/publish_public_project.py --public-root "$HOME/GitPages/public"
+python3 tools/publish_public_project.py --public-root "$HOME/Projects-All/public"
 ```
