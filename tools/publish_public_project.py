@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 import subprocess
 import sys
@@ -16,7 +17,9 @@ ROOT = Path(__file__).resolve().parents[1]
 BUILD_SCRIPT = ROOT / "tools" / "build_quotes_project.py"
 LOCAL_PUBLIC_PAGE = ROOT / "site" / "ai-dystopia-quotes-public-page.html"
 LOCAL_APPROVED_JSON = ROOT / "data" / "approved" / "ai-dystopia-quotes.approved.json"
-DEFAULT_PUBLIC_ROOT = Path("/Users/stevenwoods/GitPages/public")
+DEFAULT_PUBLIC_ROOT = Path(
+    os.environ.get("AI_DYSTOPIA_PUBLIC_ROOT", str(Path.home() / "GitPages" / "public"))
+)
 
 PROJECT_ID = "ai-dystopia-quotes"
 PROJECT_PAGE_NAME = "ai-dystopia-quotes.html"

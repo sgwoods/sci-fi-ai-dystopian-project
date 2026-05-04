@@ -15,6 +15,9 @@ through a small generated-data toolchain.
 - `check_ui_routes.py`
   Scriptable local route check for the review app, public page, harness page,
   and key launch controls.
+- `validate_workspace.py`
+  End-to-end portability validator for a clean checkout on a new or replacement
+  Mac.
 - `publish_public_project.py`
   Rebuilds the local project outputs, syncs the public-site copy of the page
   and approved JSON, writes the shared public manifest, and rerenders the
@@ -31,6 +34,7 @@ Everything else in the workflow is derived from that file.
 The canonical working copy for running these commands is:
 
 - `/Users/stevenwoods/Library/Mobile Documents/com~apple~CloudDocs/Projects/sci-fi-ai-dystopian-project`
+- replacement-Mac bootstrap helper: `scripts/bootstrap_new_mac.sh`
 
 ## Common Commands
 
@@ -43,7 +47,8 @@ python3 tools/review_quotes.py postpone m3gan-primary-user-now-me --note "Keep f
 python3 tools/review_quotes.py decline some-quote-id --note "Too generic."
 python3 tools/review_app_server.py --port 8123
 python3 tools/check_ui_routes.py --base-url http://127.0.0.1:8123
-python3 tools/publish_public_project.py --public-root /Users/stevenwoods/GitPages/public
+AI_DYSTOPIA_PUBLIC_ROOT="$HOME/GitPages/public" python3 tools/validate_workspace.py --public-root "$HOME/GitPages/public"
+AI_DYSTOPIA_PUBLIC_ROOT="$HOME/GitPages/public" python3 tools/publish_public_project.py --public-root "$HOME/GitPages/public"
 ```
 
 ## Review App
@@ -111,7 +116,7 @@ The recommended publish sequence is:
 
 ```bash
 python3 tools/build_quotes_project.py
-python3 tools/publish_public_project.py --public-root /Users/stevenwoods/GitPages/public
+AI_DYSTOPIA_PUBLIC_ROOT="$HOME/GitPages/public" python3 tools/publish_public_project.py --public-root "$HOME/GitPages/public"
 ```
 
 That flow will:
@@ -131,3 +136,15 @@ Useful flags:
   sync only this project's files without rerendering the shared homepage
 - `--dry-run`
   verify the publish inputs and print the intended targets without writing
+
+## New-Machine Validation
+
+To prove the repo is ready to leave this MacBook behind, run:
+
+```bash
+./scripts/bootstrap_new_mac.sh
+```
+
+That script clones or fast-forwards both the project repo and the public-site
+repo, then runs `tools/validate_workspace.py` so the replacement Mac is tested
+before it becomes the day-to-day environment.

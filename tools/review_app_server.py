@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import subprocess
 import sys
 from datetime import date, datetime
@@ -25,7 +26,9 @@ AUTHOR_TOP10_PATH = ROOT / "data" / "discovery" / "ai-dystopia-author-top10.json
 AUTHOR_PRIORITY_PATH = ROOT / "data" / "discovery" / "ai-dystopia-author-priority.json"
 BUILD_SCRIPT = ROOT / "tools" / "build_quotes_project.py"
 PUBLISH_SCRIPT = ROOT / "tools" / "publish_public_project.py"
-PUBLIC_ROOT = Path("/Users/stevenwoods/GitPages/public")
+PUBLIC_ROOT = Path(
+    os.environ.get("AI_DYSTOPIA_PUBLIC_ROOT", str(Path.home() / "GitPages" / "public"))
+)
 TODAY = date.today().isoformat()
 VALID_STATUSES = {"candidate", "approved", "postponed", "declined"}
 DEFAULT_SOURCE_MORE_STRATEGY_COUNT = 3

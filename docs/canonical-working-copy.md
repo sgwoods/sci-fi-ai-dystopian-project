@@ -56,7 +56,13 @@ python3 tools/check_ui_routes.py --base-url http://127.0.0.1:8123
 Publish the approved JSON and public project page:
 
 ```bash
-python3 tools/publish_public_project.py --public-root /Users/stevenwoods/GitPages/public
+AI_DYSTOPIA_PUBLIC_ROOT="$HOME/GitPages/public" python3 tools/publish_public_project.py --public-root "$HOME/GitPages/public"
+```
+
+Bootstrap a replacement Mac:
+
+```bash
+./scripts/bootstrap_new_mac.sh
 ```
 
 ## Old Repo Status

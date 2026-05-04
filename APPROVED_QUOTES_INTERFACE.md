@@ -22,10 +22,10 @@ Use one of these two paths:
 
 - local development source inside a checkout of this repository:
   `data/approved/ai-dystopia-quotes.approved.json`
-- machine-specific absolute example on the original development machine:
-  `/Users/stevenwoods/SciFi AI Dystopian Project/data/approved/ai-dystopia-quotes.approved.json`
+- canonical working-copy example:
+  `/Users/stevenwoods/Library/Mobile Documents/com~apple~CloudDocs/Projects/sci-fi-ai-dystopian-project/data/approved/ai-dystopia-quotes.approved.json`
 - published public copy:
-  `/Users/stevenwoods/GitPages/public/data/ai-dystopia-quotes.approved.json`
+  `$HOME/GitPages/public/data/ai-dystopia-quotes.approved.json`
 
 Source repository:
 
@@ -86,7 +86,7 @@ remain the stable reference key unless explicitly deprecated later.
 The publishing command for this project is:
 
 ```bash
-python3 tools/publish_public_project.py --public-root /Users/stevenwoods/GitPages/public
+AI_DYSTOPIA_PUBLIC_ROOT="$HOME/GitPages/public" python3 tools/publish_public_project.py --public-root "$HOME/GitPages/public"
 ```
 
 The `--public-root` value is machine-specific and should be changed on a new
@@ -103,10 +103,10 @@ That command refreshes:
 
 Use this approved corpus only:
 
-`/Users/stevenwoods/SciFi AI Dystopian Project/data/approved/ai-dystopia-quotes.approved.json`
+`/Users/stevenwoods/Library/Mobile Documents/com~apple~CloudDocs/Projects/sci-fi-ai-dystopian-project/data/approved/ai-dystopia-quotes.approved.json`
 
 If you need the published copy instead, use:
 
-`/Users/stevenwoods/GitPages/public/data/ai-dystopia-quotes.approved.json`
+`$HOME/GitPages/public/data/ai-dystopia-quotes.approved.json`
 
 Do not ingest from `data/review/` or `data/candidates/`.

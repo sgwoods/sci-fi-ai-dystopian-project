@@ -51,6 +51,7 @@ Current live position:
 - [Data index](./data/README.md): canonical data directories and what each one means
 - [Current status](./docs/current-status.md): concise live project snapshot
 - [Canonical working copy](./docs/canonical-working-copy.md): exact repo path and daily-use commands for the canonical iCloud-backed clone
+- [New machine bootstrap](./docs/new-machine-bootstrap.md): clone, validate, and start the project on a replacement Mac
 - [Project state and recovery audit](./docs/project-state-and-recovery-audit.md): exact status of the current working tree, GitHub checkpoint, and portability gaps
 - [Expanding plan](./docs/expanding-plan.md): current widening strategy including the active top-10 author lane
 - [Initial review](./docs/initial-review.md): editorial assessment of the first-pass quote set
@@ -75,6 +76,7 @@ data/
   source-snapshots/        Local source captures for each quote record
 docs/                      Status, workflow, review, and structure notes
 incoming/                  Single intake bucket for newly found material
+scripts/                   Bootstrap helpers for new-machine setup
 site/                      Generated public project page
 tools/                     Review and build scripts
 ```
@@ -98,6 +100,8 @@ Now that the repo itself is stable and recoverable, the next product work is:
 3. grow literary coverage alongside recognizable film and game coverage
 4. keep publishing only the strongest approved records into the public JSON and
    public project page
+5. keep the replacement-Mac bootstrap path proven so this repo no longer
+   depends on the current MacBook for continuity
 
 ## Record Shape
 

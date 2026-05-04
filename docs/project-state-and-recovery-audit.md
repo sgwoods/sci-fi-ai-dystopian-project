@@ -67,17 +67,18 @@ The GitHub recovery point now includes the current substantive working state,
 including the newer source-expansion system, recovery audit, and tracked local
 source snapshots.
 
-Tracked file count after the current operating-guide step is committed:
+Tracked file count after the current portability step is committed:
 
-- total tracked files: `85`
+- total tracked files: `88`
 
 Tracked top-level groups:
 
 - `data`: `61`
-- `docs`: `9`
+- `docs`: `10`
 - `incoming`: `3`
+- `scripts`: `1`
 - `site`: `3`
-- `tools`: `6`
+- `tools`: `7`
 - root docs/config files: `3`
 
 This means a clean clone of `origin/main` can recover the committed project
@@ -102,8 +103,8 @@ The project is close to portable, but not perfectly machine-agnostic yet.
 
 Known assumptions:
 
-- the publish script defaults to `/Users/stevenwoods/GitPages/public`
-  although it can be overridden with `--public-root`
+- the publish and review-app tooling default to `~/GitPages/public`
+  and can be overridden with `AI_DYSTOPIA_PUBLIC_ROOT` or `--public-root`
 - some docs and interface notes still reference absolute local paths that are
   only correct on this machine
 
@@ -137,6 +138,8 @@ without redoing work", do this next:
    - open the review UI
    - confirm the board counts match this audit
    - confirm publish still works with an explicit `--public-root`
+   - use `scripts/bootstrap_new_mac.sh` and `tools/validate_workspace.py`
+     as the baseline handoff path
 3. optionally reduce remaining machine-specific assumptions by moving default
    public-root and consumer-path guidance into a portable config pattern
 

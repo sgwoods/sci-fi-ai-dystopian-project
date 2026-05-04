@@ -25,6 +25,8 @@ This repository is in the stable-and-safe operating phase.
   author mining set and a wider top-25 ranked author file
 - the repo now has a preserved user-supplied Gemini intake and its non-duplicate
   source works have been merged into discovery as queued leads
+- the repo now has a new-machine bootstrap path and workspace validator aimed
+  specifically at replacing the current MacBook safely
 
 ## Big Picture
 
@@ -59,6 +61,8 @@ The project goal is now straightforward:
   safely from GitHub
 - the canonical iCloud-backed clone has been verified as the day-to-day working
   copy
+- the workspace can now be validated without leaving behind ambiguous build
+  diffs
 
 ## Main Open Gaps
 
@@ -82,3 +86,5 @@ The project goal is now straightforward:
    fields such as `tone`, `threat_level`, or `voice_style`
 7. decide how aggressively to add poster or cover art for records that still
    rely on fallbacks
+8. run the new-machine bootstrap path on the replacement Mac and retire this
+   MacBook only after that validation succeeds end to end

@@ -558,6 +558,10 @@ def save_json(path: Path, payload: dict[str, Any]) -> None:
     path.write_text(json.dumps(payload, indent=2, ensure_ascii=True) + "\n", encoding="utf-8")
 
 
+def build_stamp(board: dict[str, Any]) -> str:
+    return str(board.get("generated_at") or TODAY)
+
+
 def slug_counts(records: list[dict[str, Any]]) -> dict[str, int]:
     counts = {status: 0 for status in VALID_STATUSES}
     for record in records:
@@ -606,7 +610,6 @@ def sync_source_work_overrides(board: dict[str, Any]) -> dict[str, Any]:
         if override is None:
             raise KeyError(f"Missing source_work override for {record['id']}")
         record["source_work"] = override
-    board["generated_at"] = TODAY
     return board
 
 
@@ -619,11 +622,11 @@ def validate_board(board: dict[str, Any]) -> None:
             raise ValueError(f"Missing source_work for {record['id']}")
 
 
-def build_slice(board: dict[str, Any], status: str, description: str) -> dict[str, Any]:
+def build_slice(board: dict[str, Any], status: str, description: str, generated_at: str) -> dict[str, Any]:
     records = [record for record in board["records"] if record["review"]["status"] == status]
     return {
         "collection": board["collection"],
-        "generated_at": TODAY,
+        "generated_at": generated_at,
         "description": description,
         "source_board": str(BOARD_PATH.relative_to(ROOT)),
         "records": records,
@@ -671,7 +674,7 @@ def render_candidate_table(rows: list[dict[str, Any]]) -> str:
     return "\n".join(lines)
 
 
-def build_review_board_markdown(board: dict[str, Any]) -> None:
+def build_review_board_markdown(board: dict[str, Any], generated_at: str) -> None:
     records = board["records"]
     counts = slug_counts(records)
     candidates = [r for r in records if r["review"]["status"] == "candidate"]
@@ -682,7 +685,7 @@ def build_review_board_markdown(board: dict[str, Any]) -> None:
     lines = [
         "# Review Board",
         "",
-        f"Generated on `{TODAY}` from `{BOARD_PATH.relative_to(ROOT)}`.",
+        f"Generated on `{generated_at}` from `{BOARD_PATH.relative_to(ROOT)}`.",
         "",
         "## Status Summary",
         "",
@@ -775,7 +778,7 @@ def card_html(record: dict[str, Any]) -> str:
     """
 
 
-def build_site(board: dict[str, Any]) -> None:
+def build_site(board: dict[str, Any], generated_at: str) -> None:
     approved_records = [r for r in board["records"] if r["review"]["status"] == "approved"]
     counts = slug_counts(board["records"])
     source_registry = load_json(SOURCE_REGISTRY_PATH)
@@ -1137,7 +1140,7 @@ def build_site(board: dict[str, Any]) -> None:
                 </div>
                 <div class="metaCard">
                     <span class="metaLabel">Updated</span>
-                    <span class="metaValue">{TODAY}</span>
+                    <span class="metaValue">{generated_at}</span>
                 </div>
                 <div class="metaCard">
                     <span class="metaLabel">Source Places</span>
@@ -1184,7 +1187,7 @@ def build_site(board: dict[str, Any]) -> None:
                 <a class="button" href="/" target="_blank" rel="noreferrer">Project Workbench</a>
                 <a class="button" href="{PROJECT_REPO_URL}" target="_blank" rel="noreferrer">Source Project</a>
             </div>
-            <p class="footer">Generated from <code>data/review/ai-dystopia-quotes.review-board.json</code> on {TODAY}.</p>
+            <p class="footer">Generated from <code>data/review/ai-dystopia-quotes.review-board.json</code> on {generated_at}.</p>
         </section>
     </main>
 </body>
@@ -1198,6 +1201,7 @@ def build_all() -> None:
     board = load_json(BOARD_PATH)
     board = sync_source_work_overrides(board)
     validate_board(board)
+    generated_at = build_stamp(board)
     save_json(BOARD_PATH, board)
     save_json(
         APPROVED_PATH,
@@ -1205,6 +1209,7 @@ def build_all() -> None:
             board,
             "approved",
             "Approved ingest set of dystopian AI quotes.",
+            generated_at,
         ),
     )
     save_json(
@@ -1213,6 +1218,7 @@ def build_all() -> None:
             board,
             "candidate",
             "Active candidate queue for review decisions.",
+            generated_at,
         ),
     )
     save_json(
@@ -1221,6 +1227,7 @@ def build_all() -> None:
             board,
             "postponed",
             "Postponed quote records held for later review.",
+            generated_at,
         ),
     )
     save_json(
@@ -1229,10 +1236,11 @@ def build_all() -> None:
             board,
             "declined",
             "Declined quote records kept for editorial history.",
+            generated_at,
         ),
     )
-    build_review_board_markdown(board)
-    build_site(board)
+    build_review_board_markdown(board, generated_at)
+    build_site(board, generated_at)
 
 
 def parse_args() -> argparse.Namespace:
