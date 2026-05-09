@@ -19,7 +19,7 @@ This repository is in the stable-and-portable operating phase.
 - the widening-search discovery queue contains `183` source-work candidates
 - the source registry contains `21` entries, the query library `19`, and the
   follow-up watchlist `10`
-- the scanned-source log contains `139` entries
+- the scanned-source log contains `145` entries
 - the workspace validator succeeds in a normal shell environment
 
 ## Big Picture
