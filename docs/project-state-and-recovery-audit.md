@@ -32,7 +32,7 @@ Current repo facts at audit time:
 - source registry entries: `21`
 - query library entries: `19`
 - follow-up watchlist entries: `10`
-- scanned-source log entries: `139`
+- scanned-source log entries: `145`
 
 The canonical editable data file remains:
 

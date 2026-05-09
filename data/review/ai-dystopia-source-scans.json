@@ -1,6 +1,6 @@
 {
   "collection": "ai-dystopia-source-scans",
-  "generated_at": "2026-04-04",
+  "generated_at": "2026-05-04",
   "candidate_goal": 100,
   "description": "Registry of source scans and widening search strategies for the AI dystopia quotes corpus.",
   "strategies": [
@@ -1634,6 +1634,78 @@
       "strategy_id": "quote-candidate-mixed",
       "kind": "quote_candidate_pass",
       "notes": "Quote hunt at 2026-04-04T16:11:58-04:00. Focus: Asimov I, Robot quotes. Mode path: author, source, query, mixed. Attempted: Dune, Nineteen Eighty-Four, Portal, TRON, The Matrix, Ex Machina. Added 0 quote candidates. Added 0 supporting source leads. Research plan sources: Reddit / r/printSF, Movie Quotes .com, Quotes.net, Wikiquote / Robot, ChatGPT ideation, Gemini ideation. Research plan queries: Asimov robot law pass, Foundation control systems, Long-tail AI dystopia books, Robot rebellion film and game pass, Transcript hint sweep."
+    },
+    {
+      "id": "scan-source-candidate-imdb-140",
+      "label": "IMDb quote-site sweep / IMDb",
+      "provider": "IMDb",
+      "url": "https://www.google.com/search?q=dystopian+ai+quotes",
+      "scanned_on": "2026-05-04",
+      "scanned_at": "2026-05-04T17:25:46-04:00",
+      "status": "no_new_leads",
+      "strategy_id": "source-candidate-imdb",
+      "kind": "category_candidate_pass",
+      "notes": "Use quote-rich film and TV pages to reveal more recognizable ominous lines quickly. Added 0 candidate works in this batch."
+    },
+    {
+      "id": "scan-source-candidate-imdb-141",
+      "label": "IMDb quote-site sweep / Wikipedia",
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Artificial_intelligence_in_fiction",
+      "scanned_on": "2026-05-04",
+      "scanned_at": "2026-05-04T17:25:46-04:00",
+      "status": "no_new_leads",
+      "strategy_id": "source-candidate-imdb",
+      "kind": "category_candidate_pass",
+      "notes": "Use quote-rich film and TV pages to reveal more recognizable ominous lines quickly. Added 0 candidate works in this batch."
+    },
+    {
+      "id": "scan-author-candidate-robots-142",
+      "label": "Classic robot-fiction lane / Wikiquote",
+      "provider": "Wikiquote",
+      "url": "https://www.google.com/search?q=dystopian+ai+quotes",
+      "scanned_on": "2026-05-04",
+      "scanned_at": "2026-05-04T17:25:46-04:00",
+      "status": "no_new_leads",
+      "strategy_id": "author-candidate-robots",
+      "kind": "category_candidate_pass",
+      "notes": "Robot-centered literary lane spanning recognizable foundational works. Added 0 candidate works in this batch."
+    },
+    {
+      "id": "scan-author-candidate-robots-143",
+      "label": "Classic robot-fiction lane / Wikipedia",
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Artificial_intelligence_in_fiction",
+      "scanned_on": "2026-05-04",
+      "scanned_at": "2026-05-04T17:25:46-04:00",
+      "status": "no_new_leads",
+      "strategy_id": "author-candidate-robots",
+      "kind": "category_candidate_pass",
+      "notes": "Robot-centered literary lane spanning recognizable foundational works. Added 0 candidate works in this batch."
+    },
+    {
+      "id": "scan-author-candidate-robots-144",
+      "label": "Classic robot-fiction lane / Open Library",
+      "provider": "Open Library",
+      "url": "https://openlibrary.org/search?q=artificial+intelligence+dystopia",
+      "scanned_on": "2026-05-04",
+      "scanned_at": "2026-05-04T17:25:46-04:00",
+      "status": "no_new_leads",
+      "strategy_id": "author-candidate-robots",
+      "kind": "category_candidate_pass",
+      "notes": "Robot-centered literary lane spanning recognizable foundational works. Added 0 candidate works in this batch."
+    },
+    {
+      "id": "scan-quote-candidate-mixed-145",
+      "label": "Quote hunt / mixed",
+      "provider": "Local curated intake",
+      "url": "http://127.0.0.1:8123/",
+      "scanned_on": "2026-05-04",
+      "scanned_at": "2026-05-04T17:25:46-04:00",
+      "status": "no_new_quotes",
+      "strategy_id": "quote-candidate-mixed",
+      "kind": "quote_candidate_pass",
+      "notes": "Quote hunt at 2026-05-04T17:25:46-04:00. Focus: Arthur C. Clarke thinking machines robots AI dystopia quotes 2001: A Space Odyssey, 2010: Odyssey Two. Mode path: mixed, source, author, query. Attempted: Dune, Portal, Dune, 2001: A Space Odyssey, The Machine Stops, Nineteen Eighty-Four, TRON, WarGames, I Have No Mouth, and I Must Scream, Star Trek: First Contact, Ghost in the Shell, Mass Effect 3, Ex Machina. Added 0 quote candidates. Added 0 supporting source leads. Research plan sources: Wikiquote / Robot, Movie Quotes .com, Quotes.net, ChatGPT ideation, Gemini ideation, Google search. Research plan queries: Frank Herbert anti-machine, Wikiquote topic page pass, Long-tail AI dystopia books, ChatGPT widening prompt, Machine control language."
     }
   ]
 }
