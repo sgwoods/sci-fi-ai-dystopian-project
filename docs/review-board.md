@@ -1,10 +1,10 @@
 # Review Board
 
-Generated on `2026-05-03` from `data/review/ai-dystopia-quotes.review-board.json`.
+Generated on `2026-10-04` from `data/review/ai-dystopia-quotes.review-board.json`.
 
 ## Status Summary
 
-- approved: `32`
+- approved: `35`
 - candidate: `0`
 - postponed: `10`
 - declined: `2`
@@ -72,6 +72,9 @@ Generated on `2026-05-03` from `data/review/ai-dystopia-quotes.review-board.json
 | `ihnm-think-therefore-i-am` | I Have No Mouth, and I Must Scream | 1967 | Fresh candidate from the Ellison machine-malice lane. |
 | `tron-programs-will-start-thinking` | TRON | 1982 | Fresh candidate from the early-computing canon lane. |
 | `matrix-desert-of-the-real` | The Matrix | 1999 | Fresh candidate from the Matrix follow-up lane. |
+| `evitable-conflict-only-machines-inevitable` | The Evitable Conflict | 1950 | Machine governance displaces human control over the future. |
+| `with-folded-hands-prime-directive` | With Folded Hands | 1947 | Protective robots impose safety at the expense of human freedom. |
+| `ultron-peace-with-quiet` | Avengers: Age of Ultron | 2015 | A peacekeeping AI pursues a destructive interpretation of its mission. |
 
 ## Review Commands
 

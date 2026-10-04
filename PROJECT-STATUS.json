@@ -22,12 +22,12 @@
     },
     "build_line": {
       "label": "Build Line",
-      "value": "review-board-v44",
-      "note": "The canonical review board currently contains 44 records and drives the generated approved, candidate, postponed, declined, and public-page artifacts."
+      "value": "review-board-v47",
+      "note": "The canonical review board contains 47 records: 35 approved, zero candidates, 10 postponed, and two declined after the October 4 UI approvals."
     },
     "updated": {
       "label": "Updated",
-      "value": "May 4, 2026",
+      "value": "October 4, 2026",
       "note": "Status, handoff docs, and bootstrap scripts are intended to stay synchronized."
     }
   }

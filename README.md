@@ -38,11 +38,11 @@ dystopian AI quotes while keeping the broader research trail visible:
 
 Current live position:
 
-- the canonical review board contains `44` records
-- the approved export contains `32` records
+- the canonical review board contains `47` records
+- the approved export contains `35` records
 - the postponed lane contains `10` records
 - the declined lane contains `2` records
-- the active candidate lane is currently empty
+- the active candidate lane is currently empty after the October 4 UI approvals
 - the discovery system contains `183` source-work leads, `21` source places,
   `19` reusable query patterns, and `10` recurring follow-up lanes
 - local source snapshots are preserved as compact research captures rather than

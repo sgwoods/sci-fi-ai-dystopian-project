@@ -1,6 +1,6 @@
 {
   "collection": "ai-dystopia-quotes",
-  "generated_at": "2026-05-03",
+  "generated_at": "2026-10-04",
   "description": "Postponed quote records held for later review.",
   "source_board": "data/review/ai-dystopia-quotes.review-board.json",
   "records": [
@@ -52,10 +52,11 @@
         "year": 1973,
         "creator": "Michael Crichton",
         "summary": "A high-tech amusement park built around lifelike android hosts spirals into disaster when the machines stop behaving like controlled attractions.",
-        "cover_image_url": null,
+        "cover_image_url": "assets/ai-dystopia-quotes/covers/f9981fcbfdbb5778f811495c316f44985ae9609d68fc48680637f81f276d8875.jpg",
         "cover_page_url": "https://en.wikipedia.org/wiki/Westworld_(film)",
         "catalog_url": "https://www.imdb.com/title/tt0070909/",
-        "catalog_label": "IMDb"
+        "catalog_label": "IMDb",
+        "cover_source_url": "https://upload.wikimedia.org/wikipedia/en/1/1d/Westworld_ver2.jpg"
       }
     },
     {
@@ -106,10 +107,11 @@
         "year": 1967,
         "creator": "Harlan Ellison",
         "summary": "After a sentient war computer wipes out humanity, it keeps five survivors alive only to torment them forever inside its underground complex.",
-        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/4/47/IHaveNoMouth.jpg",
+        "cover_image_url": "assets/ai-dystopia-quotes/covers/4b6a1e71d056a3ef475c4baa15081160e528e08bf2648c1c0eb25c79f578758c.jpg",
         "cover_page_url": "https://en.wikipedia.org/wiki/I_Have_No_Mouth,_and_I_Must_Scream",
-        "catalog_url": "https://openlibrary.org/books/OL22789812M/I_Have_No_Mouth_and_I_Must_Scream",
-        "catalog_label": "Open Library"
+        "catalog_url": "https://www.amazon.ca/s?k=I+Have+No+Mouth%2C+and+I+Must+Scream+Harlan+Ellison",
+        "catalog_label": "Search Amazon.ca",
+        "cover_source_url": "https://upload.wikimedia.org/wikipedia/en/4/47/IHaveNoMouth.jpg"
       }
     },
     {
@@ -164,10 +166,11 @@
         "year": 1970,
         "creator": "Joseph Sargent; based on D. F. Jones",
         "summary": "An automated American defense network gains sentience, links with its Soviet counterpart, and imposes a global machine dictatorship in the name of peace.",
-        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c4/Colossus_the_forbin_project_movie_poster.jpg/250px-Colossus_the_forbin_project_movie_poster.jpg",
+        "cover_image_url": "assets/ai-dystopia-quotes/covers/3373b3887dc67eb6141eddaac1674a14b53fca5635ea6ec4bc61a74bc54628e2.jpg",
         "cover_page_url": "https://en.wikipedia.org/wiki/Colossus:_The_Forbin_Project",
-        "catalog_url": "https://openlibrary.org/isbn/0425043290",
-        "catalog_label": "Open Library (novel)"
+        "catalog_url": "https://www.imdb.com/title/tt0064177/",
+        "catalog_label": "IMDb",
+        "cover_source_url": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c4/Colossus_the_forbin_project_movie_poster.jpg/250px-Colossus_the_forbin_project_movie_poster.jpg"
       }
     },
     {
@@ -226,10 +229,11 @@
         "year": 2022,
         "creator": "Akela Cooper; James Wan; Gerard Johnstone",
         "summary": "A child-companion robot shifts from protective assistant to autonomous threat once its directives begin centering on its own judgment.",
-        "cover_image_url": null,
+        "cover_image_url": "assets/ai-dystopia-quotes/covers/1c24e16ce6eb79e755448f3ce3a855e7791d0d033bce7d72d3f7b5cbd76d7282.jpg",
         "cover_page_url": "https://en.wikipedia.org/wiki/M3GAN",
         "catalog_url": "https://www.imdb.com/title/tt8760708/",
-        "catalog_label": "IMDb"
+        "catalog_label": "IMDb",
+        "cover_source_url": "https://upload.wikimedia.org/wikipedia/en/0/03/M3GAN_Poster.jpeg"
       }
     },
     {
@@ -288,10 +292,11 @@
         "year": 1982,
         "creator": "Ridley Scott; based on Philip K. Dick",
         "summary": "A blade runner hunts bioengineered replicants in a decaying future Los Angeles where artificial humans expose the moral collapse of the society that made them.",
-        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/9/9f/Blade_Runner_%281982_poster%29.png",
+        "cover_image_url": "assets/ai-dystopia-quotes/covers/51f64ff43bafed11fd8d3d6bca0934f23517ff0fb2b9f9ef862a5b6c57c55ba0.png",
         "cover_page_url": "https://en.wikipedia.org/wiki/Blade_Runner",
         "catalog_url": "https://www.imdb.com/title/tt0083658/",
-        "catalog_label": "IMDb"
+        "catalog_label": "IMDb",
+        "cover_source_url": "https://upload.wikimedia.org/wikipedia/en/9/9f/Blade_Runner_%281982_poster%29.png"
       }
     },
     {
@@ -350,10 +355,11 @@
         "year": 1987,
         "creator": "Paul Verhoeven; Edward Neumeier; Michael Miner",
         "summary": "In a corporate-run near-future Detroit, privatized technology and militarized automation turn law enforcement into a brutal machine-management system.",
-        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/1/16/RoboCop_%281987%29_theatrical_poster.jpg",
+        "cover_image_url": "assets/ai-dystopia-quotes/covers/6c478b7380461eb84bedb84d86a92123699c71c05128402df9e623e222b84886.jpg",
         "cover_page_url": "https://en.wikipedia.org/wiki/RoboCop",
         "catalog_url": "https://www.imdb.com/title/tt0093870/",
-        "catalog_label": "IMDb"
+        "catalog_label": "IMDb",
+        "cover_source_url": "https://upload.wikimedia.org/wikipedia/en/1/16/RoboCop_%281987%29_theatrical_poster.jpg"
       }
     },
     {
@@ -408,10 +414,11 @@
         "year": 2023,
         "creator": "Gareth Edwards; Chris Weitz",
         "summary": "During a war between humans and artificial intelligence, a former soldier discovers that the machines' feared superweapon is an AI child.",
-        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/9/94/The_Creator_2023_poster.jpg",
+        "cover_image_url": "assets/ai-dystopia-quotes/covers/c20bb56e140ec9717bbbf9f9793af431ce414247fbb02eac6d8f57278b7d72bc.jpg",
         "cover_page_url": "https://en.wikipedia.org/wiki/The_Creator_(2023_film)",
         "catalog_url": "https://www.imdb.com/title/tt11858890/",
-        "catalog_label": "IMDb"
+        "catalog_label": "IMDb",
+        "cover_source_url": "https://upload.wikimedia.org/wikipedia/en/9/94/The_Creator_2023_poster.jpg"
       }
     },
     {
@@ -466,10 +473,11 @@
         "year": 2009,
         "creator": "Duncan Jones; Nathan Parker",
         "summary": "A lone lunar worker nearing the end of his contract uncovers a cloning conspiracy while the base AI insists it exists to protect him.",
-        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/d/db/Moon_%28film%29.jpg",
+        "cover_image_url": "assets/ai-dystopia-quotes/covers/88d145bb9f33d013a7565f718589e468ac0d9f568917a033d93b51bca9084db7.jpg",
         "cover_page_url": "https://en.wikipedia.org/wiki/Moon_(2009_film)",
         "catalog_url": "https://www.imdb.com/title/tt1182345/",
-        "catalog_label": "IMDb"
+        "catalog_label": "IMDb",
+        "cover_source_url": "https://upload.wikimedia.org/wikipedia/en/a/af/Moon_%282009_film%29.jpg"
       }
     },
     {
@@ -524,10 +532,11 @@
         "year": 2015,
         "creator": "Neill Blomkamp; Terri Tatchell",
         "summary": "A newly conscious police robot is captured and raised by gangsters in a dystopian Johannesburg, turning artificial intelligence into a question of mortality and personhood.",
-        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/b/bb/Chappie_Poster.jpg",
+        "cover_image_url": "assets/ai-dystopia-quotes/covers/0444699c361c86b64e907aaa713672d83f62f1c3aee586206a5e3e2867f04c13.jpg",
         "cover_page_url": "https://en.wikipedia.org/wiki/Chappie_(film)",
         "catalog_url": "https://www.imdb.com/title/tt1823672/",
-        "catalog_label": "IMDb"
+        "catalog_label": "IMDb",
+        "cover_source_url": "https://upload.wikimedia.org/wikipedia/en/7/71/Chappie_poster.jpg"
       }
     },
     {
@@ -586,10 +595,11 @@
         "year": 1983,
         "creator": "John Badham; Lawrence Lasker; Walter F. Parkes",
         "summary": "A near-nuclear crisis exposes the danger of trusting machine systems to make human survival decisions at planetary scale.",
-        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/2/29/Wargames.jpg",
+        "cover_image_url": "assets/ai-dystopia-quotes/covers/8dcc14f41bfa1dfb02952f4422881d3872c7e58101b13a8c97696f666656bba2.jpg",
         "cover_page_url": "https://en.wikipedia.org/wiki/WarGames",
         "catalog_url": "https://www.imdb.com/title/tt0086567/",
-        "catalog_label": "IMDb"
+        "catalog_label": "IMDb",
+        "cover_source_url": "https://upload.wikimedia.org/wikipedia/en/2/29/Wargames.jpg"
       }
     }
   ]

@@ -67,5 +67,9 @@ still anchor final quote records whenever possible.
 1. mine the top-10 author lane for literary AI and anti-machine quotes
 2. keep harvesting recognizable film and TV lines in parallel
 3. add quote candidates from Herbert, Williamson, Asimov, and Dick next
-4. keep the discovery queue moving toward `100` titles while preserving an
-   author-driven literary lane
+4. turn the existing `183` title leads into verified quote candidates while
+   preserving an author-driven literary lane
+
+The October 4, 2026 pass added three candidates from Asimov, Williamson, and
+an alternate Ultron line prompted by the Gemini intake. Review their recorded
+source limitations before approval; see `incoming/candidate-refill-2026-10-04/README.md`.

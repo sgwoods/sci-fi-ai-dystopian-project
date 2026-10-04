@@ -11,15 +11,15 @@ This repository is in the stable-and-portable operating phase.
 - preferred companion public clone: `~/Projects-All/public`
 - iCloud role: intake and backup-oriented convenience, not the preferred live
   Git worktree
-- the quote review board currently contains `44` normalized records
-- the active candidate lane currently contains `0` records
-- the approved export contains `32` records
+- the quote review board currently contains `47` normalized records
+- the active candidate lane contains `0` records after the October 4 UI approvals
+- the approved export contains `35` records
 - the postponed lane contains `10` records
 - the declined lane contains `2` records
 - the widening-search discovery queue contains `183` source-work candidates
 - the source registry contains `21` entries, the query library `19`, and the
   follow-up watchlist `10`
-- the scanned-source log contains `145` entries
+- the scanned-source log contains `151` entries
 - the workspace validator succeeds in a normal shell environment
 
 ## Big Picture
@@ -52,7 +52,7 @@ The project goal remains straightforward:
 ## Next Sensible Steps
 
 1. keep using the non-iCloud `Projects-All` clone as the preferred live worktree
-2. refill the empty `Candidates` lane from broader sourcing
+2. continue broader sourcing and follow up on retained source-verification notes
 3. keep `sgwoods/public` in a canonical non-iCloud clone for publish checks
 4. run the bootstrap path on the replacement Mac and retire the old machine
    only after that validation succeeds end to end

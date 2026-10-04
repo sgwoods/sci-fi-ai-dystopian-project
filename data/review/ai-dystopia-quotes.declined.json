@@ -1,6 +1,6 @@
 {
   "collection": "ai-dystopia-quotes",
-  "generated_at": "2026-05-03",
+  "generated_at": "2026-10-04",
   "description": "Declined quote records kept for editorial history.",
   "source_board": "data/review/ai-dystopia-quotes.review-board.json",
   "records": [
@@ -56,10 +56,11 @@
         "year": 1995,
         "creator": "Mamoru Oshii; based on Masamune Shirow",
         "summary": "A cyborg security operative confronts a new form of digital life in a future where human identity and networked machine consciousness blur together.",
-        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/c/ca/Ghostintheshellposter.jpg",
+        "cover_image_url": "assets/ai-dystopia-quotes/covers/9d48b965514bf8c2c2ce88989f5cc11b77f69cc7dcff9e5f7f400d697463da5e.jpg",
         "cover_page_url": "https://en.wikipedia.org/wiki/Ghost_in_the_Shell_(1995_film)",
         "catalog_url": "https://www.imdb.com/title/tt0113568/",
-        "catalog_label": "IMDb"
+        "catalog_label": "IMDb",
+        "cover_source_url": "https://upload.wikimedia.org/wikipedia/en/c/ca/Ghostintheshellposter.jpg"
       }
     },
     {
@@ -110,10 +111,11 @@
         "year": 2012,
         "creator": "BioWare",
         "summary": "During a galactic extinction war, synthetic and organic civilizations collide over survival, autonomy, and whether machine life deserves a soul.",
-        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/b/b0/Mass_Effect_3_Game_Cover.jpg",
+        "cover_image_url": "assets/ai-dystopia-quotes/covers/1c063a3e1fe24ab03e1856481344fef229a6999c531c5ea09866447f12012dc5.jpg",
         "cover_page_url": "https://en.wikipedia.org/wiki/Mass_Effect_3",
-        "catalog_url": "https://www.ea.com/games/mass-effect/mass-effect-3",
-        "catalog_label": "EA"
+        "catalog_url": "https://www.imdb.com/title/tt1839558/",
+        "catalog_label": "IMDb",
+        "cover_source_url": "https://upload.wikimedia.org/wikipedia/en/b/b0/Mass_Effect_3_Game_Cover.jpg"
       }
     }
   ]

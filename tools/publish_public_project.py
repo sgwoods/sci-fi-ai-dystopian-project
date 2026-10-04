@@ -6,6 +6,7 @@ import argparse
 import json
 import os
 import re
+import shutil
 import subprocess
 import sys
 from datetime import datetime, timezone
@@ -173,6 +174,18 @@ def publish_to_public(public_root: Path, repo_url: str, *, dry_run: bool, skip_i
     local_json = LOCAL_APPROVED_JSON.read_text(encoding="utf-8")
     public_html = render_public_page(local_html, repo_url)
     manifest = build_manifest(repo_url)
+
+    # Publish only assets referenced by approved records, not review-only covers.
+    for record in json.loads(local_json)["records"]:
+        image = record["source_work"].get("cover_image_url")
+        if image:
+            source = ROOT / "site" / image
+            destination = public_root / image
+            if not source.is_file():
+                raise ValueError(f"Missing cached cover: {source}")
+            if not dry_run:
+                destination.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copyfile(source, destination)
 
     html_path = public_root / PROJECT_PAGE_NAME
     json_path = public_root / "data" / APPROVED_EXPORT_NAME

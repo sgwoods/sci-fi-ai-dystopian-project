@@ -2381,6 +2381,8 @@ class ReviewAppHandler(BaseHTTPRequestHandler):
             content_type = "application/json; charset=utf-8"
         elif path.suffix == ".js":
             content_type = "application/javascript; charset=utf-8"
+        elif path.suffix in {".png", ".jpg", ".gif", ".webp"}:
+            content_type = {".png": "image/png", ".jpg": "image/jpeg", ".gif": "image/gif", ".webp": "image/webp"}[path.suffix]
         elif path.suffix == ".css":
             content_type = "text/css; charset=utf-8"
 

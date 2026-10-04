@@ -9,11 +9,11 @@ supposed to represent?"
 - Published release: `No formal semver release`
 - Current track: `Portable editorial baseline`
 - Current focus: `Cross-machine portability plus quote-corpus growth`
-- Build line: `review-board-v44`
+- Build line: `review-board-v47`
 - Canonical branch: `main`
 - Preferred active clone: `~/Projects-All/sci-fi-ai-dystopian-project-working`
 - Preferred public companion clone: `~/Projects-All/public`
-- Updated: `May 4, 2026`
+- Updated: `October 4, 2026`
 
 ## Source Of Truth
 

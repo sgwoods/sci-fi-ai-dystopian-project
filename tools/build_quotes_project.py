@@ -9,6 +9,8 @@ from datetime import date
 from html import escape
 from pathlib import Path
 from typing import Any
+from urllib.parse import quote_plus
+from cache_cover_images import cached_url
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -29,6 +31,39 @@ VALID_STATUSES = {"candidate", "approved", "postponed", "declined"}
 
 
 SOURCE_WORK_OVERRIDES: dict[str, dict[str, Any]] = {
+    "evitable-conflict-only-machines-inevitable": {
+        "title": "The Evitable Conflict",
+        "type": "short story",
+        "year": 1950,
+        "creator": "Isaac Asimov",
+        "summary": "Machine governance displaces human control over the future.",
+        "cover_image_url": None,
+        "cover_page_url": "https://en.wikiquote.org/wiki/Isaac_Asimov",
+        "catalog_url": "https://en.wikiquote.org/wiki/Isaac_Asimov",
+        "catalog_label": "Source context"
+    },
+    "with-folded-hands-prime-directive": {
+        "title": "With Folded Hands",
+        "type": "novelette",
+        "year": 1947,
+        "creator": "Jack Williamson",
+        "summary": "Protective robots impose safety at the expense of human freedom.",
+        "cover_image_url": None,
+        "cover_page_url": "https://galaxypress.com/jack-williamsons-with-folded-hands/",
+        "catalog_url": "https://galaxypress.com/jack-williamsons-with-folded-hands/",
+        "catalog_label": "Source context"
+    },
+    "ultron-peace-with-quiet": {
+        "title": "Avengers: Age of Ultron",
+        "type": "film",
+        "year": 2015,
+        "creator": "Joss Whedon",
+        "summary": "A peacekeeping AI pursues a destructive interpretation of its mission.",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/f/ff/Avengers_Age_of_Ultron_poster.jpg",
+        "cover_page_url": "https://en.wikipedia.org/wiki/Avengers:_Age_of_Ultron",
+        "catalog_url": "https://en.wikiquote.org/wiki/Avengers:_Age_of_Ultron",
+        "catalog_label": "Source context"
+    },
     "rur-robots-of-the-world": {
         "title": "R.U.R.",
         "type": "play",
@@ -145,7 +180,7 @@ SOURCE_WORK_OVERRIDES: dict[str, dict[str, Any]] = {
         "year": 1973,
         "creator": "Michael Crichton",
         "summary": "A high-tech amusement park built around lifelike android hosts spirals into disaster when the machines stop behaving like controlled attractions.",
-        "cover_image_url": None,
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/1/1d/Westworld_ver2.jpg",
         "cover_page_url": "https://en.wikipedia.org/wiki/Westworld_(film)",
         "catalog_url": "https://www.imdb.com/title/tt0070909/",
         "catalog_label": "IMDb",
@@ -156,7 +191,7 @@ SOURCE_WORK_OVERRIDES: dict[str, dict[str, Any]] = {
         "year": 2022,
         "creator": "Akela Cooper; James Wan; Gerard Johnstone",
         "summary": "A child-companion robot shifts from protective assistant to autonomous threat once its directives begin centering on its own judgment.",
-        "cover_image_url": None,
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/0/03/M3GAN_Poster.jpeg",
         "cover_page_url": "https://en.wikipedia.org/wiki/M3GAN",
         "catalog_url": "https://www.imdb.com/title/tt8760708/",
         "catalog_label": "IMDb",
@@ -255,7 +290,7 @@ SOURCE_WORK_OVERRIDES: dict[str, dict[str, Any]] = {
         "year": 2016,
         "creator": "Jonathan Nolan; Lisa Joy",
         "summary": "An android-populated theme park becomes the starting point for a wider struggle over consciousness, control, and machine rule in the human world.",
-        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/e/eb/Westworld_%28TV_series%29_title_card.jpg",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/WestworldLogo.png/250px-WestworldLogo.png",
         "cover_page_url": "https://en.wikipedia.org/wiki/Westworld_(TV_series)",
         "catalog_url": "https://www.imdb.com/title/tt0475784/",
         "catalog_label": "IMDb",
@@ -310,7 +345,7 @@ SOURCE_WORK_OVERRIDES: dict[str, dict[str, Any]] = {
         "year": 2014,
         "creator": "Gabe Ibanez; Igor Legarreta; Javier Sanchez Donate",
         "summary": "After ecological collapse has pushed humanity to the brink, an insurance investigator discovers robots that are evolving beyond their original constraints.",
-        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/3/33/Automata_poster.jpg",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/6/65/Automata_poster.jpg",
         "cover_page_url": "https://en.wikipedia.org/wiki/Automata_(film)",
         "catalog_url": "https://www.imdb.com/title/tt1971325/",
         "catalog_label": "IMDb",
@@ -321,7 +356,7 @@ SOURCE_WORK_OVERRIDES: dict[str, dict[str, Any]] = {
         "year": 2009,
         "creator": "Duncan Jones; Nathan Parker",
         "summary": "A lone lunar worker nearing the end of his contract uncovers a cloning conspiracy while the base AI insists it exists to protect him.",
-        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/d/db/Moon_%28film%29.jpg",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/a/af/Moon_%282009_film%29.jpg",
         "cover_page_url": "https://en.wikipedia.org/wiki/Moon_(2009_film)",
         "catalog_url": "https://www.imdb.com/title/tt1182345/",
         "catalog_label": "IMDb",
@@ -332,7 +367,7 @@ SOURCE_WORK_OVERRIDES: dict[str, dict[str, Any]] = {
         "year": 2015,
         "creator": "Neill Blomkamp; Terri Tatchell",
         "summary": "A newly conscious police robot is captured and raised by gangsters in a dystopian Johannesburg, turning artificial intelligence into a question of mortality and personhood.",
-        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/b/bb/Chappie_Poster.jpg",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/7/71/Chappie_poster.jpg",
         "cover_page_url": "https://en.wikipedia.org/wiki/Chappie_(film)",
         "catalog_url": "https://www.imdb.com/title/tt1823672/",
         "catalog_label": "IMDb",
@@ -365,7 +400,7 @@ SOURCE_WORK_OVERRIDES: dict[str, dict[str, Any]] = {
         "year": 1965,
         "creator": "Frank Herbert",
         "summary": "On the desert planet Arrakis, feuding empires, prophecy, and the anti-thinking-machine legacy of the Butlerian Jihad shape a civilizational struggle over power and survival.",
-        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/5/51/Dune_first_edition.jpg",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/b/be/Dune_by_Frank_Herbert_first_edition_cover.jpg",
         "cover_page_url": "https://en.wikipedia.org/wiki/Dune_(novel)",
         "catalog_url": "https://openlibrary.org/works/OL893415W/Dune",
         "catalog_label": "Open Library",
@@ -376,7 +411,7 @@ SOURCE_WORK_OVERRIDES: dict[str, dict[str, Any]] = {
         "year": 1949,
         "creator": "George Orwell",
         "summary": "A totalitarian superstate uses surveillance, historical revision, and psychological domination to erase truth and autonomy.",
-        "cover_image_url": None,
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/5/51/1984_first_edition_cover.jpg",
         "cover_page_url": "https://en.wikipedia.org/wiki/Nineteen_Eighty-Four",
         "catalog_url": "https://openlibrary.org/works/OL7343626W/Nineteen_Eighty-Four",
         "catalog_label": "Open Library",
@@ -387,7 +422,7 @@ SOURCE_WORK_OVERRIDES: dict[str, dict[str, Any]] = {
         "year": 2007,
         "creator": "Valve",
         "summary": "A test subject navigates a sterile research complex run by GLaDOS, an AI whose cheerful puzzle design masks deadly control and manipulation.",
-        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/9/91/Portal_standalonebox.jpg",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/9/9f/Portal_standalonebox.jpg",
         "cover_page_url": "https://en.wikipedia.org/wiki/Portal_(video_game)",
         "catalog_url": "https://store.steampowered.com/app/400/Portal/",
         "catalog_label": "Steam",
@@ -398,7 +433,7 @@ SOURCE_WORK_OVERRIDES: dict[str, dict[str, Any]] = {
         "year": 1996,
         "creator": "Jonathan Frakes; Brannon Braga; Ronald D. Moore; Rick Berman",
         "summary": "The Enterprise crew fights the Borg, a cybernetic collective that absorbs biological and technological distinctiveness into a machine-run hive.",
-        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/3/3f/Star_Trek_First_Contact_poster.jpg",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/0/01/Star_trek_first_contact_poster.jpg",
         "cover_page_url": "https://en.wikipedia.org/wiki/Star_Trek:_First_Contact",
         "catalog_url": "https://www.imdb.com/title/tt0117731/",
         "catalog_label": "IMDb",
@@ -431,7 +466,7 @@ SOURCE_WORK_OVERRIDES: dict[str, dict[str, Any]] = {
         "year": 1965,
         "creator": "Frank Herbert",
         "summary": "On Arrakis, politics, prophecy, and the legacy of the Butlerian Jihad keep fear of thinking machines alive across the entire civilization.",
-        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/5/51/Dune_first_edition.jpg",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/b/be/Dune_by_Frank_Herbert_first_edition_cover.jpg",
         "cover_page_url": "https://en.wikipedia.org/wiki/Dune_(novel)",
         "catalog_url": "https://openlibrary.org/works/OL893415W/Dune",
         "catalog_label": "Open Library",
@@ -464,7 +499,7 @@ SOURCE_WORK_OVERRIDES: dict[str, dict[str, Any]] = {
         "year": 1982,
         "creator": "Steven Lisberger",
         "summary": "A programmer is pulled into a digital world where programs fight under authoritarian control and humans begin surrendering more thought to machines.",
-        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/2/24/Tron_poster.jpg",
+        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/1/17/Tron_poster.jpg",
         "cover_page_url": "https://en.wikipedia.org/wiki/Tron",
         "catalog_url": "https://www.imdb.com/title/tt0084827/",
         "catalog_label": "IMDb",
@@ -609,7 +644,24 @@ def sync_source_work_overrides(board: dict[str, Any]) -> dict[str, Any]:
         override = SOURCE_WORK_OVERRIDES.get(record["id"])
         if override is None:
             raise KeyError(f"Missing source_work override for {record['id']}")
-        record["source_work"] = override
+        work = dict(override)
+        imdb = {
+            "2001: A Space Odyssey": "tt0062622",
+            "Colossus: The Forbin Project": "tt0064177",
+            "Demon Seed": "tt0075931",
+            "Avengers: Age of Ultron": "tt2395427",
+            "Portal": "tt1127708",
+            "Mass Effect 3": "tt1839558",
+        }
+        if work["title"] in imdb:
+            work["catalog_url"] = f'https://www.imdb.com/title/{imdb[work["title"]]}/'
+            work["catalog_label"] = "IMDb"
+        elif work["type"] in {"novel", "short story", "novelette", "play", "book"}:
+            work["catalog_url"] = "https://www.amazon.ca/s?k=" + quote_plus(work["title"] + " " + work["creator"])
+            work["catalog_label"] = "Search Amazon.ca"
+        work["cover_source_url"] = work.get("cover_image_url")
+        work["cover_image_url"] = cached_url(work["cover_source_url"])
+        record["source_work"] = work
     return board
 
 
@@ -732,7 +784,8 @@ def card_html(record: dict[str, Any]) -> str:
         image_html = (
             '<div class="coverWrap">'
             f'<img class="cover" src="{escape(source_work["cover_image_url"])}" '
-            f'alt="{escape(source_work["title"])} cover art">'
+            f'alt="{escape(source_work["title"])} cover art" '
+            'onerror="this.outerHTML=\'<div class=&quot;coverFallback&quot;>No cover</div>\'">'
             "</div>"
         )
     else:
@@ -1194,7 +1247,7 @@ def build_site(board: dict[str, Any], generated_at: str) -> None:
 </html>
 """
     ensure_parent(SITE_PATH)
-    SITE_PATH.write_text(html, encoding="utf-8")
+    SITE_PATH.write_text("\n".join(line.rstrip() for line in html.splitlines()) + "\n", encoding="utf-8")
 
 
 def build_all() -> None:

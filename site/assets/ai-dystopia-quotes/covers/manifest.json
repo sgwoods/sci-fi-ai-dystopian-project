@@ -1,0 +1,247 @@
+{
+  "https://upload.wikimedia.org/wikipedia/commons/5/51/1984_first_edition_cover.jpg": {
+    "file": "1145b0e40bc2dd1880d40473783ca92577efbb247fa96aec823f7fe03258f2ec.jpg",
+    "retrieved_at": "2026-10-04T14:07:23.923393+00:00",
+    "sha256": "1145b0e40bc2dd1880d40473783ca92577efbb247fa96aec823f7fe03258f2ec",
+    "source_page": "https://en.wikipedia.org/wiki/Nineteen_Eighty-Four",
+    "title": "Nineteen Eighty-Four"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/b/be/Dune_by_Frank_Herbert_first_edition_cover.jpg": {
+    "file": "5bc2b13c1e48240938ffc505b774e5c110f1c0bcede2bd6e99bac150493a464c.jpg",
+    "retrieved_at": "2026-10-04T14:07:17.957040+00:00",
+    "sha256": "5bc2b13c1e48240938ffc505b774e5c110f1c0bcede2bd6e99bac150493a464c",
+    "source_page": "https://en.wikipedia.org/wiki/Dune_(novel)",
+    "title": "Dune"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Rosumovi_Univerz%C3%A1ln%C3%AD_Roboti_1920.jpg/250px-Rosumovi_Univerz%C3%A1ln%C3%AD_Roboti_1920.jpg": {
+    "file": "8912ce21f5ecdb5ae2f9d3c21828dce734139883f4993735cd3ec8d27cf25338.jpg",
+    "retrieved_at": "2026-10-04T14:06:06.312335+00:00",
+    "sha256": "8912ce21f5ecdb5ae2f9d3c21828dce734139883f4993735cd3ec8d27cf25338",
+    "source_page": "https://en.wikipedia.org/wiki/R.U.R.",
+    "title": "R.U.R."
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/WestworldLogo.png/250px-WestworldLogo.png": {
+    "file": "368846fd1ea9e81af71aa7e4c4b14a643663e223a4395e0189f364a78c6f071f.png",
+    "retrieved_at": "2026-10-04T14:07:19.157251+00:00",
+    "sha256": "368846fd1ea9e81af71aa7e4c4b14a643663e223a4395e0189f364a78c6f071f",
+    "source_page": "https://en.wikipedia.org/wiki/Westworld_(TV_series)",
+    "title": "Westworld"
+  },
+  "https://upload.wikimedia.org/wikipedia/en/0/01/Star_trek_first_contact_poster.jpg": {
+    "file": "04197cd381eacdfab4a9a1139355862ec0fdec265ff8780a4b482d14c52b0c7c.jpg",
+    "retrieved_at": "2026-10-04T14:07:20.383010+00:00",
+    "sha256": "04197cd381eacdfab4a9a1139355862ec0fdec265ff8780a4b482d14c52b0c7c",
+    "source_page": "https://en.wikipedia.org/wiki/Star_Trek:_First_Contact",
+    "title": "Star Trek: First Contact"
+  },
+  "https://upload.wikimedia.org/wikipedia/en/0/03/M3GAN_Poster.jpeg": {
+    "file": "1c24e16ce6eb79e755448f3ce3a855e7791d0d033bce7d72d3f7b5cbd76d7282.jpg",
+    "retrieved_at": "2026-10-04T14:07:27.574699+00:00",
+    "sha256": "1c24e16ce6eb79e755448f3ce3a855e7791d0d033bce7d72d3f7b5cbd76d7282",
+    "source_page": "https://en.wikipedia.org/wiki/M3GAN",
+    "title": "M3GAN"
+  },
+  "https://upload.wikimedia.org/wikipedia/en/1/16/RoboCop_%281987%29_theatrical_poster.jpg": {
+    "file": "6c478b7380461eb84bedb84d86a92123699c71c05128402df9e623e222b84886.jpg",
+    "retrieved_at": "2026-10-04T14:06:24.043425+00:00",
+    "sha256": "6c478b7380461eb84bedb84d86a92123699c71c05128402df9e623e222b84886",
+    "source_page": "https://en.wikipedia.org/wiki/RoboCop",
+    "title": "RoboCop"
+  },
+  "https://upload.wikimedia.org/wikipedia/en/1/17/Tron_poster.jpg": {
+    "file": "304b727638c827027e305101c431591220bcdff0a03f756285fd810925b9eaed.jpg",
+    "retrieved_at": "2026-10-04T14:07:25.117334+00:00",
+    "sha256": "304b727638c827027e305101c431591220bcdff0a03f756285fd810925b9eaed",
+    "source_page": "https://en.wikipedia.org/wiki/Tron",
+    "title": "TRON"
+  },
+  "https://upload.wikimedia.org/wikipedia/en/1/1d/Westworld_ver2.jpg": {
+    "file": "f9981fcbfdbb5778f811495c316f44985ae9609d68fc48680637f81f276d8875.jpg",
+    "retrieved_at": "2026-10-04T14:07:26.369372+00:00",
+    "sha256": "f9981fcbfdbb5778f811495c316f44985ae9609d68fc48680637f81f276d8875",
+    "source_page": "https://en.wikipedia.org/wiki/Westworld_(film)",
+    "title": "Westworld"
+  },
+  "https://upload.wikimedia.org/wikipedia/en/1/1e/Black_Mirror_-_White_Christmas.jpg": {
+    "file": "f54afafc66224e9929bf3c5a1f5890edb7afd0e18bff696602b74957b0a77679.jpg",
+    "retrieved_at": "2026-10-04T14:06:19.451656+00:00",
+    "sha256": "f54afafc66224e9929bf3c5a1f5890edb7afd0e18bff696602b74957b0a77679",
+    "source_page": "https://en.wikipedia.org/wiki/Black_Mirror:_White_Christmas",
+    "title": "Black Mirror: White Christmas"
+  },
+  "https://upload.wikimedia.org/wikipedia/en/2/24/UpgradePoster.jpg": {
+    "file": "95b350cc5cf13e2d413a5382ed03c1c17ae9bf1b8194c56dc887e50b762aaf3c.jpg",
+    "retrieved_at": "2026-10-04T14:06:17.183331+00:00",
+    "sha256": "95b350cc5cf13e2d413a5382ed03c1c17ae9bf1b8194c56dc887e50b762aaf3c",
+    "source_page": "https://en.wikipedia.org/wiki/Upgrade_(film)",
+    "title": "Upgrade"
+  },
+  "https://upload.wikimedia.org/wikipedia/en/2/29/Wargames.jpg": {
+    "file": "8dcc14f41bfa1dfb02952f4422881d3872c7e58101b13a8c97696f666656bba2.jpg",
+    "retrieved_at": "2026-10-04T14:06:03.883486+00:00",
+    "sha256": "8dcc14f41bfa1dfb02952f4422881d3872c7e58101b13a8c97696f666656bba2",
+    "source_page": "https://en.wikipedia.org/wiki/WarGames",
+    "title": "WarGames"
+  },
+  "https://upload.wikimedia.org/wikipedia/en/3/33/Alien_Covenant_Teaser_Poster.jpg": {
+    "file": "202fe8cf2123f430f2f7db398572ea54265defbe513298c9c75394232214dce1.jpg",
+    "retrieved_at": "2026-10-04T14:06:13.526318+00:00",
+    "sha256": "202fe8cf2123f430f2f7db398572ea54265defbe513298c9c75394232214dce1",
+    "source_page": "https://en.wikipedia.org/wiki/Alien:_Covenant",
+    "title": "Alien: Covenant"
+  },
+  "https://upload.wikimedia.org/wikipedia/en/3/3b/Movie_poster_i_robot.jpg": {
+    "file": "23f6eb8f2288681652fba575e87fe282cf3bb7ed63a39c8328246857db55e92d.jpg",
+    "retrieved_at": "2026-10-04T14:06:11.141515+00:00",
+    "sha256": "23f6eb8f2288681652fba575e87fe282cf3bb7ed63a39c8328246857db55e92d",
+    "source_page": "https://en.wikipedia.org/wiki/I,_Robot_(film)",
+    "title": "I, Robot"
+  },
+  "https://upload.wikimedia.org/wikipedia/en/4/44/Her2013Poster.jpg": {
+    "file": "4568a7128598b8c8dbe5a185df62c6a61c3301be867f00dc93aa10882a83cd44.jpg",
+    "retrieved_at": "2026-10-04T14:05:40.003590+00:00",
+    "sha256": "4568a7128598b8c8dbe5a185df62c6a61c3301be867f00dc93aa10882a83cd44",
+    "source_page": "https://en.wikipedia.org/wiki/Her_(film)",
+    "title": "Her"
+  },
+  "https://upload.wikimedia.org/wikipedia/en/4/47/IHaveNoMouth.jpg": {
+    "file": "4b6a1e71d056a3ef475c4baa15081160e528e08bf2648c1c0eb25c79f578758c.jpg",
+    "retrieved_at": "2026-10-04T14:06:21.749903+00:00",
+    "sha256": "4b6a1e71d056a3ef475c4baa15081160e528e08bf2648c1c0eb25c79f578758c",
+    "source_page": "https://en.wikipedia.org/wiki/I_Have_No_Mouth,_and_I_Must_Scream",
+    "title": "I Have No Mouth, and I Must Scream"
+  },
+  "https://upload.wikimedia.org/wikipedia/en/6/65/Automata_poster.jpg": {
+    "file": "e0247ecbdd157613fab5f48fe865186f439f71312944aff0c8e4ab77d1d34db7.jpg",
+    "retrieved_at": "2026-10-04T14:07:21.588170+00:00",
+    "sha256": "e0247ecbdd157613fab5f48fe865186f439f71312944aff0c8e4ab77d1d34db7",
+    "source_page": "https://en.wikipedia.org/wiki/Automata_(film)",
+    "title": "Aut\u00f3mata"
+  },
+  "https://upload.wikimedia.org/wikipedia/en/7/71/Chappie_poster.jpg": {
+    "file": "0444699c361c86b64e907aaa713672d83f62f1c3aee586206a5e3e2867f04c13.jpg",
+    "retrieved_at": "2026-10-04T14:07:29.933225+00:00",
+    "sha256": "0444699c361c86b64e907aaa713672d83f62f1c3aee586206a5e3e2867f04c13",
+    "source_page": "https://en.wikipedia.org/wiki/Chappie_(film)",
+    "title": "Chappie"
+  },
+  "https://upload.wikimedia.org/wikipedia/en/9/94/The_Creator_2023_poster.jpg": {
+    "file": "c20bb56e140ec9717bbbf9f9793af431ce414247fbb02eac6d8f57278b7d72bc.jpg",
+    "retrieved_at": "2026-10-04T14:06:25.275858+00:00",
+    "sha256": "c20bb56e140ec9717bbbf9f9793af431ce414247fbb02eac6d8f57278b7d72bc",
+    "source_page": "https://en.wikipedia.org/wiki/The_Creator_(2023_film)",
+    "title": "The Creator"
+  },
+  "https://upload.wikimedia.org/wikipedia/en/9/97/Metropolis_%28German_three-sheet_poster%29.jpg": {
+    "file": "627bc3aa759797ca4e661460c32629d71724bbd24c3ecd537189d2df403bd044.jpg",
+    "retrieved_at": "2026-10-04T14:06:14.760974+00:00",
+    "sha256": "627bc3aa759797ca4e661460c32629d71724bbd24c3ecd537189d2df403bd044",
+    "source_page": "https://en.wikipedia.org/wiki/Metropolis_(1927_film)",
+    "title": "Metropolis"
+  },
+  "https://upload.wikimedia.org/wikipedia/en/9/9b/Blade_Runner_2049_poster.png": {
+    "file": "6338b6e944c66233b16a99d58ae96722ce160ece3a2711633ce0e8cd1b3f49a3.png",
+    "retrieved_at": "2026-10-04T14:06:15.971416+00:00",
+    "sha256": "6338b6e944c66233b16a99d58ae96722ce160ece3a2711633ce0e8cd1b3f49a3",
+    "source_page": "https://en.wikipedia.org/wiki/Blade_Runner_2049",
+    "title": "Blade Runner 2049"
+  },
+  "https://upload.wikimedia.org/wikipedia/en/9/9f/Blade_Runner_%281982_poster%29.png": {
+    "file": "51f64ff43bafed11fd8d3d6bca0934f23517ff0fb2b9f9ef862a5b6c57c55ba0.png",
+    "retrieved_at": "2026-10-04T14:05:59.045408+00:00",
+    "sha256": "51f64ff43bafed11fd8d3d6bca0934f23517ff0fb2b9f9ef862a5b6c57c55ba0",
+    "source_page": "https://en.wikipedia.org/wiki/Blade_Runner",
+    "title": "Blade Runner"
+  },
+  "https://upload.wikimedia.org/wikipedia/en/9/9f/Portal_standalonebox.jpg": {
+    "file": "42ca7b5eae6b1e366b4d69017657f69f0b485f56ab88bba8efd2e8b2867b0e0b.jpg",
+    "retrieved_at": "2026-10-04T14:07:22.744892+00:00",
+    "sha256": "42ca7b5eae6b1e366b4d69017657f69f0b485f56ab88bba8efd2e8b2867b0e0b",
+    "source_page": "https://en.wikipedia.org/wiki/Portal_(video_game)",
+    "title": "Portal"
+  },
+  "https://upload.wikimedia.org/wikipedia/en/a/af/Moon_%282009_film%29.jpg": {
+    "file": "88d145bb9f33d013a7565f718589e468ac0d9f568917a033d93b51bca9084db7.jpg",
+    "retrieved_at": "2026-10-04T14:07:28.749236+00:00",
+    "sha256": "88d145bb9f33d013a7565f718589e468ac0d9f568917a033d93b51bca9084db7",
+    "source_page": "https://en.wikipedia.org/wiki/Moon_(2009_film)",
+    "title": "Moon"
+  },
+  "https://upload.wikimedia.org/wikipedia/en/b/b0/Mass_Effect_3_Game_Cover.jpg": {
+    "file": "1c063a3e1fe24ab03e1856481344fef229a6999c531c5ea09866447f12012dc5.jpg",
+    "retrieved_at": "2026-10-04T14:06:28.764978+00:00",
+    "sha256": "1c063a3e1fe24ab03e1856481344fef229a6999c531c5ea09866447f12012dc5",
+    "source_page": "https://en.wikipedia.org/wiki/Mass_Effect_3",
+    "title": "Mass Effect 3"
+  },
+  "https://upload.wikimedia.org/wikipedia/en/c/ca/Ghostintheshellposter.jpg": {
+    "file": "9d48b965514bf8c2c2ce88989f5cc11b77f69cc7dcff9e5f7f400d697463da5e.jpg",
+    "retrieved_at": "2026-10-04T14:06:12.361199+00:00",
+    "sha256": "9d48b965514bf8c2c2ce88989f5cc11b77f69cc7dcff9e5f7f400d697463da5e",
+    "source_page": "https://en.wikipedia.org/wiki/Ghost_in_the_Shell_(1995_film)",
+    "title": "Ghost in the Shell"
+  },
+  "https://upload.wikimedia.org/wikipedia/en/e/e6/AI_Poster.jpg": {
+    "file": "69bb2a879c8d4fafa67508b04a8c6aa256c65cac1e1b3ccbcbcefee65535cdc9.jpg",
+    "retrieved_at": "2026-10-04T14:06:10.008857+00:00",
+    "sha256": "69bb2a879c8d4fafa67508b04a8c6aa256c65cac1e1b3ccbcbcefee65535cdc9",
+    "source_page": "https://en.wikipedia.org/wiki/A.I._Artificial_Intelligence",
+    "title": "A.I. Artificial Intelligence"
+  },
+  "https://upload.wikimedia.org/wikipedia/en/f/ff/Avengers_Age_of_Ultron_poster.jpg": {
+    "file": "e742d61a8ee174828b9bab23362008c4a8eb1e6e9802377128fa2936cc0c2d5b.jpg",
+    "retrieved_at": "2026-10-04T14:07:16.709112+00:00",
+    "sha256": "e742d61a8ee174828b9bab23362008c4a8eb1e6e9802377128fa2936cc0c2d5b",
+    "source_page": "https://en.wikipedia.org/wiki/Avengers:_Age_of_Ultron",
+    "title": "Avengers: Age of Ultron"
+  },
+  "https://upload.wikimedia.org/wikipedia/en/thumb/1/11/2001_A_Space_Odyssey_%281968%29.png/250px-2001_A_Space_Odyssey_%281968%29.png": {
+    "file": "0485b4b74f3a337594f1fa8b2bc90a1c60c8867e98853d99aaf8083894a648d7.png",
+    "retrieved_at": "2026-10-04T14:06:00.295832+00:00",
+    "sha256": "0485b4b74f3a337594f1fa8b2bc90a1c60c8867e98853d99aaf8083894a648d7",
+    "source_page": "https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey",
+    "title": "2001: A Space Odyssey"
+  },
+  "https://upload.wikimedia.org/wikipedia/en/thumb/5/5e/Terminator_2-Judgment_Day.png/250px-Terminator_2-Judgment_Day.png": {
+    "file": "678b03543ef2476c2ddbb40cff88ce2f420f28fe1f6269156b929fceaaddb5e5.png",
+    "retrieved_at": "2026-10-04T14:06:07.548269+00:00",
+    "sha256": "678b03543ef2476c2ddbb40cff88ce2f420f28fe1f6269156b929fceaaddb5e5",
+    "source_page": "https://en.wikipedia.org/wiki/Terminator_2:_Judgment_Day",
+    "title": "Terminator 2: Judgment Day"
+  },
+  "https://upload.wikimedia.org/wikipedia/en/thumb/6/6d/The_Terminator.png/250px-The_Terminator.png": {
+    "file": "a868c76b3e47b786e32cb8aa4ba9e8484f53388c17fe85400ab17e36d8bbaf43.png",
+    "retrieved_at": "2026-10-04T14:06:05.121635+00:00",
+    "sha256": "a868c76b3e47b786e32cb8aa4ba9e8484f53388c17fe85400ab17e36d8bbaf43",
+    "source_page": "https://en.wikipedia.org/wiki/The_Terminator",
+    "title": "The Terminator"
+  },
+  "https://upload.wikimedia.org/wikipedia/en/thumb/9/9c/Demon_Seed_1977.jpg/250px-Demon_Seed_1977.jpg": {
+    "file": "1a8080e91d5b6c2a2cf8d3cc5e325350c579080dabf914f89f83f89fcc42af2d.jpg",
+    "retrieved_at": "2026-10-04T14:06:02.709882+00:00",
+    "sha256": "1a8080e91d5b6c2a2cf8d3cc5e325350c579080dabf914f89f83f89fcc42af2d",
+    "source_page": "https://en.wikipedia.org/wiki/Demon_Seed",
+    "title": "Demon Seed"
+  },
+  "https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Ex-machina-uk-poster.jpg/250px-Ex-machina-uk-poster.jpg": {
+    "file": "b98675d535a6325ddd74ae0b29e9c40ab766668d6c85d5127d8b9e1bc7a33897.jpg",
+    "retrieved_at": "2026-10-04T14:06:08.730600+00:00",
+    "sha256": "b98675d535a6325ddd74ae0b29e9c40ab766668d6c85d5127d8b9e1bc7a33897",
+    "source_page": "https://en.wikipedia.org/wiki/Ex_Machina_(film)",
+    "title": "Ex Machina"
+  },
+  "https://upload.wikimedia.org/wikipedia/en/thumb/c/c4/Colossus_the_forbin_project_movie_poster.jpg/250px-Colossus_the_forbin_project_movie_poster.jpg": {
+    "file": "3373b3887dc67eb6141eddaac1674a14b53fca5635ea6ec4bc61a74bc54628e2.jpg",
+    "retrieved_at": "2026-10-04T14:05:41.783118+00:00",
+    "sha256": "3373b3887dc67eb6141eddaac1674a14b53fca5635ea6ec4bc61a74bc54628e2",
+    "source_page": "https://en.wikipedia.org/wiki/Colossus:_The_Forbin_Project",
+    "title": "Colossus: The Forbin Project"
+  },
+  "https://upload.wikimedia.org/wikipedia/en/thumb/d/db/The_Matrix.png/250px-The_Matrix.png": {
+    "file": "4fa9903f2a1244556d10ae3e388cb887bbe586193fa2d1e4b0a01b103122470e.png",
+    "retrieved_at": "2026-10-04T14:06:01.534297+00:00",
+    "sha256": "4fa9903f2a1244556d10ae3e388cb887bbe586193fa2d1e4b0a01b103122470e",
+    "source_page": "https://en.wikipedia.org/wiki/The_Matrix",
+    "title": "The Matrix"
+  }
+}

@@ -1163,7 +1163,7 @@
         function coverHtml(record) {
             const image = record.source_work?.cover_image_url;
             if (image) {
-                return `<img class="cover" src="${escapeHtml(image)}" alt="${escapeHtml(record.work_title)} cover">`;
+                return `<img class="cover" src="${escapeHtml(image)}" alt="${escapeHtml(record.work_title)} cover" onerror="this.outerHTML='<div class=&quot;coverFallback&quot;>No cover</div>'">`;
             }
             const initials = record.work_title.split(/\s+/).slice(0, 3).map((part) => part[0] || "").join("").toUpperCase();
             return `<div class="coverFallback">${escapeHtml(initials || "AI")}</div>`;

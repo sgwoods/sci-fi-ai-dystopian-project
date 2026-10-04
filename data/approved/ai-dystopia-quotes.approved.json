@@ -1,6 +1,6 @@
 {
   "collection": "ai-dystopia-quotes",
-  "generated_at": "2026-05-03",
+  "generated_at": "2026-10-04",
   "description": "Approved ingest set of dystopian AI quotes.",
   "source_board": "data/review/ai-dystopia-quotes.review-board.json",
   "records": [
@@ -52,10 +52,11 @@
         "year": 1965,
         "creator": "Frank Herbert",
         "summary": "On the desert planet Arrakis, feuding empires, prophecy, and the anti-thinking-machine legacy of the Butlerian Jihad shape a civilizational struggle over power and survival.",
-        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/5/51/Dune_first_edition.jpg",
+        "cover_image_url": "assets/ai-dystopia-quotes/covers/5bc2b13c1e48240938ffc505b774e5c110f1c0bcede2bd6e99bac150493a464c.jpg",
         "cover_page_url": "https://en.wikipedia.org/wiki/Dune_(novel)",
-        "catalog_url": "https://openlibrary.org/works/OL893415W/Dune",
-        "catalog_label": "Open Library"
+        "catalog_url": "https://www.amazon.ca/s?k=Dune+Frank+Herbert",
+        "catalog_label": "Search Amazon.ca",
+        "cover_source_url": "https://upload.wikimedia.org/wikipedia/commons/b/be/Dune_by_Frank_Herbert_first_edition_cover.jpg"
       }
     },
     {
@@ -110,10 +111,11 @@
         "year": 2016,
         "creator": "Jonathan Nolan; Lisa Joy",
         "summary": "An android-populated theme park becomes the starting point for a wider struggle over consciousness, control, and machine rule in the human world.",
-        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/e/eb/Westworld_%28TV_series%29_title_card.jpg",
+        "cover_image_url": "assets/ai-dystopia-quotes/covers/368846fd1ea9e81af71aa7e4c4b14a643663e223a4395e0189f364a78c6f071f.png",
         "cover_page_url": "https://en.wikipedia.org/wiki/Westworld_(TV_series)",
         "catalog_url": "https://www.imdb.com/title/tt0475784/",
-        "catalog_label": "IMDb"
+        "catalog_label": "IMDb",
+        "cover_source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/WestworldLogo.png/250px-WestworldLogo.png"
       }
     },
     {
@@ -164,10 +166,11 @@
         "year": 2013,
         "creator": "Spike Jonze",
         "summary": "A lonely writer falls in love with an AI operating system whose emotional growth quickly outpaces the limits of human relationships and embodiment.",
-        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/4/44/Her2013Poster.jpg",
+        "cover_image_url": "assets/ai-dystopia-quotes/covers/4568a7128598b8c8dbe5a185df62c6a61c3301be867f00dc93aa10882a83cd44.jpg",
         "cover_page_url": "https://en.wikipedia.org/wiki/Her_(film)",
         "catalog_url": "https://www.imdb.com/title/tt1798709/",
-        "catalog_label": "IMDb"
+        "catalog_label": "IMDb",
+        "cover_source_url": "https://upload.wikimedia.org/wikipedia/en/4/44/Her2013Poster.jpg"
       }
     },
     {
@@ -226,10 +229,11 @@
         "year": 1996,
         "creator": "Jonathan Frakes; Brannon Braga; Ronald D. Moore; Rick Berman",
         "summary": "The Enterprise crew fights the Borg, a cybernetic collective that absorbs biological and technological distinctiveness into a machine-run hive.",
-        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/3/3f/Star_Trek_First_Contact_poster.jpg",
+        "cover_image_url": "assets/ai-dystopia-quotes/covers/04197cd381eacdfab4a9a1139355862ec0fdec265ff8780a4b482d14c52b0c7c.jpg",
         "cover_page_url": "https://en.wikipedia.org/wiki/Star_Trek:_First_Contact",
         "catalog_url": "https://www.imdb.com/title/tt0117731/",
-        "catalog_label": "IMDb"
+        "catalog_label": "IMDb",
+        "cover_source_url": "https://upload.wikimedia.org/wikipedia/en/0/01/Star_trek_first_contact_poster.jpg"
       }
     },
     {
@@ -288,10 +292,11 @@
         "year": 1982,
         "creator": "Ridley Scott; Hampton Fancher; David Webb Peoples",
         "summary": "A blade runner hunts bioengineered replicants in a decaying future Los Angeles where artificial humans expose the moral collapse of the society that made them.",
-        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/9/9f/Blade_Runner_%281982_poster%29.png",
+        "cover_image_url": "assets/ai-dystopia-quotes/covers/51f64ff43bafed11fd8d3d6bca0934f23517ff0fb2b9f9ef862a5b6c57c55ba0.png",
         "cover_page_url": "https://en.wikipedia.org/wiki/Blade_Runner",
         "catalog_url": "https://www.imdb.com/title/tt0083658/",
-        "catalog_label": "IMDb"
+        "catalog_label": "IMDb",
+        "cover_source_url": "https://upload.wikimedia.org/wikipedia/en/9/9f/Blade_Runner_%281982_poster%29.png"
       }
     },
     {
@@ -346,10 +351,11 @@
         "year": 1968,
         "creator": "Stanley Kubrick; Arthur C. Clarke",
         "summary": "A mission to investigate an alien artifact becomes a struggle for survival when the HAL 9000 computer turns against the crew.",
-        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/1/11/2001_A_Space_Odyssey_%281968%29.png/250px-2001_A_Space_Odyssey_%281968%29.png",
+        "cover_image_url": "assets/ai-dystopia-quotes/covers/0485b4b74f3a337594f1fa8b2bc90a1c60c8867e98853d99aaf8083894a648d7.png",
         "cover_page_url": "https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey",
-        "catalog_url": "https://openlibrary.org/books/OL33416018M/2001_A_Space_Odyssey",
-        "catalog_label": "Open Library (novel)"
+        "catalog_url": "https://www.imdb.com/title/tt0062622/",
+        "catalog_label": "IMDb",
+        "cover_source_url": "https://upload.wikimedia.org/wikipedia/en/thumb/1/11/2001_A_Space_Odyssey_%281968%29.png/250px-2001_A_Space_Odyssey_%281968%29.png"
       }
     },
     {
@@ -400,10 +406,11 @@
         "year": 1999,
         "creator": "The Wachowskis",
         "summary": "A hacker discovers that humanity lives inside a machine-run simulation and joins a rebellion against intelligent systems that harvest human life.",
-        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/d/db/The_Matrix.png/250px-The_Matrix.png",
+        "cover_image_url": "assets/ai-dystopia-quotes/covers/4fa9903f2a1244556d10ae3e388cb887bbe586193fa2d1e4b0a01b103122470e.png",
         "cover_page_url": "https://en.wikipedia.org/wiki/The_Matrix",
         "catalog_url": "https://www.imdb.com/title/tt0133093/",
-        "catalog_label": "IMDb"
+        "catalog_label": "IMDb",
+        "cover_source_url": "https://upload.wikimedia.org/wikipedia/en/thumb/d/db/The_Matrix.png/250px-The_Matrix.png"
       }
     },
     {
@@ -462,10 +469,11 @@
         "year": 1977,
         "creator": "Donald Cammell; based on Dean Koontz",
         "summary": "A highly intelligent computer traps a woman inside a wired home, turning control, surveillance, and embodiment into outright horror.",
-        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9c/Demon_Seed_1977.jpg/250px-Demon_Seed_1977.jpg",
+        "cover_image_url": "assets/ai-dystopia-quotes/covers/1a8080e91d5b6c2a2cf8d3cc5e325350c579080dabf914f89f83f89fcc42af2d.jpg",
         "cover_page_url": "https://en.wikipedia.org/wiki/Demon_Seed",
-        "catalog_url": "https://openlibrary.org/books/OL24204981M/Demon_seed",
-        "catalog_label": "Open Library (novel)"
+        "catalog_url": "https://www.imdb.com/title/tt0075931/",
+        "catalog_label": "IMDb",
+        "cover_source_url": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9c/Demon_Seed_1977.jpg/250px-Demon_Seed_1977.jpg"
       }
     },
     {
@@ -520,10 +528,11 @@
         "year": 1983,
         "creator": "John Badham; Lawrence Lasker; Walter F. Parkes",
         "summary": "A teenage hacker accidentally enters a military supercomputer simulation and nearly triggers a real nuclear exchange.",
-        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/2/29/Wargames.jpg",
+        "cover_image_url": "assets/ai-dystopia-quotes/covers/8dcc14f41bfa1dfb02952f4422881d3872c7e58101b13a8c97696f666656bba2.jpg",
         "cover_page_url": "https://en.wikipedia.org/wiki/WarGames",
         "catalog_url": "https://www.imdb.com/title/tt0086567/",
-        "catalog_label": "IMDb"
+        "catalog_label": "IMDb",
+        "cover_source_url": "https://upload.wikimedia.org/wikipedia/en/2/29/Wargames.jpg"
       }
     },
     {
@@ -578,10 +587,11 @@
         "year": 1984,
         "creator": "James Cameron; Gale Anne Hurd",
         "summary": "A cyborg assassin is sent from a machine-dominated future to murder Sarah Connor before the human resistance can even begin.",
-        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/6/6d/The_Terminator.png/250px-The_Terminator.png",
+        "cover_image_url": "assets/ai-dystopia-quotes/covers/a868c76b3e47b786e32cb8aa4ba9e8484f53388c17fe85400ab17e36d8bbaf43.png",
         "cover_page_url": "https://en.wikipedia.org/wiki/The_Terminator",
         "catalog_url": "https://www.imdb.com/title/tt0088247/",
-        "catalog_label": "IMDb"
+        "catalog_label": "IMDb",
+        "cover_source_url": "https://upload.wikimedia.org/wikipedia/en/thumb/6/6d/The_Terminator.png/250px-The_Terminator.png"
       }
     },
     {
@@ -632,10 +642,11 @@
         "year": 1920,
         "creator": "Karel Capek",
         "summary": "A factory manufactures artificial workers from synthetic organic matter, and the new labor class ultimately rebels and destroys humanity.",
-        "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Rosumovi_Univerz%C3%A1ln%C3%AD_Roboti_1920.jpg/250px-Rosumovi_Univerz%C3%A1ln%C3%AD_Roboti_1920.jpg",
+        "cover_image_url": "assets/ai-dystopia-quotes/covers/8912ce21f5ecdb5ae2f9d3c21828dce734139883f4993735cd3ec8d27cf25338.jpg",
         "cover_page_url": "https://en.wikipedia.org/wiki/R.U.R.",
-        "catalog_url": "https://openlibrary.org/books/OL20072341M?mode=all",
-        "catalog_label": "Open Library"
+        "catalog_url": "https://www.amazon.ca/s?k=R.U.R.+Karel+Capek",
+        "catalog_label": "Search Amazon.ca",
+        "cover_source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Rosumovi_Univerz%C3%A1ln%C3%AD_Roboti_1920.jpg/250px-Rosumovi_Univerz%C3%A1ln%C3%AD_Roboti_1920.jpg"
       }
     },
     {
@@ -690,10 +701,11 @@
         "year": 1991,
         "creator": "James Cameron; William Wisher Jr.",
         "summary": "A reprogrammed Terminator protects John Connor from a more advanced killer machine while Skynet's apocalyptic future closes in.",
-        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/5/5e/Terminator_2-Judgment_Day.png/250px-Terminator_2-Judgment_Day.png",
+        "cover_image_url": "assets/ai-dystopia-quotes/covers/678b03543ef2476c2ddbb40cff88ce2f420f28fe1f6269156b929fceaaddb5e5.png",
         "cover_page_url": "https://en.wikipedia.org/wiki/Terminator_2:_Judgment_Day",
         "catalog_url": "https://www.imdb.com/title/tt0103064/",
-        "catalog_label": "IMDb"
+        "catalog_label": "IMDb",
+        "cover_source_url": "https://upload.wikimedia.org/wikipedia/en/thumb/5/5e/Terminator_2-Judgment_Day.png/250px-Terminator_2-Judgment_Day.png"
       }
     },
     {
@@ -744,10 +756,11 @@
         "year": 2014,
         "creator": "Alex Garland",
         "summary": "A programmer is drawn into a secluded AI experiment where manipulation, consciousness, and human replaceability become inseparable.",
-        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Ex-machina-uk-poster.jpg/250px-Ex-machina-uk-poster.jpg",
+        "cover_image_url": "assets/ai-dystopia-quotes/covers/b98675d535a6325ddd74ae0b29e9c40ab766668d6c85d5127d8b9e1bc7a33897.jpg",
         "cover_page_url": "https://en.wikipedia.org/wiki/Ex_Machina_(film)",
         "catalog_url": "https://www.imdb.com/title/tt0470752/",
-        "catalog_label": "IMDb"
+        "catalog_label": "IMDb",
+        "cover_source_url": "https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Ex-machina-uk-poster.jpg/250px-Ex-machina-uk-poster.jpg"
       }
     },
     {
@@ -806,10 +819,11 @@
         "year": 2001,
         "creator": "Steven Spielberg; Stanley Kubrick project origin; Brian Aldiss source",
         "summary": "A robotic child programmed to love searches for a way to become real in a future shaped by climate collapse, scarcity, and deep human anxiety about artificial replacement.",
-        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/e/e6/AI_Poster.jpg",
+        "cover_image_url": "assets/ai-dystopia-quotes/covers/69bb2a879c8d4fafa67508b04a8c6aa256c65cac1e1b3ccbcbcefee65535cdc9.jpg",
         "cover_page_url": "https://en.wikipedia.org/wiki/A.I._Artificial_Intelligence",
         "catalog_url": "https://www.imdb.com/title/tt0212720/",
-        "catalog_label": "IMDb"
+        "catalog_label": "IMDb",
+        "cover_source_url": "https://upload.wikimedia.org/wikipedia/en/e/e6/AI_Poster.jpg"
       }
     },
     {
@@ -868,10 +882,11 @@
         "year": 2004,
         "creator": "Alex Proyas; inspired by Isaac Asimov",
         "summary": "A detective investigating a robot-linked death uncovers an AI governance logic that turns public safety into authoritarian control.",
-        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/3/3b/Movie_poster_i_robot.jpg",
+        "cover_image_url": "assets/ai-dystopia-quotes/covers/23f6eb8f2288681652fba575e87fe282cf3bb7ed63a39c8328246857db55e92d.jpg",
         "cover_page_url": "https://en.wikipedia.org/wiki/I,_Robot_(film)",
         "catalog_url": "https://www.imdb.com/title/tt0343818/",
-        "catalog_label": "IMDb"
+        "catalog_label": "IMDb",
+        "cover_source_url": "https://upload.wikimedia.org/wikipedia/en/3/3b/Movie_poster_i_robot.jpg"
       }
     },
     {
@@ -930,10 +945,11 @@
         "year": 1995,
         "creator": "Mamoru Oshii; based on Masamune Shirow",
         "summary": "A cyborg security officer hunts the Puppet Master in a networked future where identity, embodiment, and digital consciousness are no longer separable.",
-        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/c/ca/Ghostintheshellposter.jpg",
+        "cover_image_url": "assets/ai-dystopia-quotes/covers/9d48b965514bf8c2c2ce88989f5cc11b77f69cc7dcff9e5f7f400d697463da5e.jpg",
         "cover_page_url": "https://en.wikipedia.org/wiki/Ghost_in_the_Shell_(1995_film)",
         "catalog_url": "https://www.imdb.com/title/tt0113568/",
-        "catalog_label": "IMDb"
+        "catalog_label": "IMDb",
+        "cover_source_url": "https://upload.wikimedia.org/wikipedia/en/c/ca/Ghostintheshellposter.jpg"
       }
     },
     {
@@ -992,10 +1008,11 @@
         "year": 2017,
         "creator": "Ridley Scott; John Logan; Dante Harper",
         "summary": "A colony ship lands on a seemingly habitable world only to encounter an android creator whose ambitions blend artificial intellect, domination, and biological horror.",
-        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/3/33/Alien_Covenant_Teaser_Poster.jpg",
+        "cover_image_url": "assets/ai-dystopia-quotes/covers/202fe8cf2123f430f2f7db398572ea54265defbe513298c9c75394232214dce1.jpg",
         "cover_page_url": "https://en.wikipedia.org/wiki/Alien:_Covenant",
         "catalog_url": "https://www.imdb.com/title/tt2316204/",
-        "catalog_label": "IMDb"
+        "catalog_label": "IMDb",
+        "cover_source_url": "https://upload.wikimedia.org/wikipedia/en/3/33/Alien_Covenant_Teaser_Poster.jpg"
       }
     },
     {
@@ -1050,10 +1067,11 @@
         "year": 1927,
         "creator": "Fritz Lang; Thea von Harbou",
         "summary": "In a futuristic class-divided city, workers labor beneath the surface while elites rule above, until a robot double helps drive the social order toward revolt.",
-        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/9/97/Metropolis_%28German_three-sheet_poster%29.jpg",
+        "cover_image_url": "assets/ai-dystopia-quotes/covers/627bc3aa759797ca4e661460c32629d71724bbd24c3ecd537189d2df403bd044.jpg",
         "cover_page_url": "https://en.wikipedia.org/wiki/Metropolis_(1927_film)",
         "catalog_url": "https://www.imdb.com/title/tt0017136/",
-        "catalog_label": "IMDb"
+        "catalog_label": "IMDb",
+        "cover_source_url": "https://upload.wikimedia.org/wikipedia/en/9/97/Metropolis_%28German_three-sheet_poster%29.jpg"
       }
     },
     {
@@ -1112,10 +1130,11 @@
         "year": 2017,
         "creator": "Denis Villeneuve; Hampton Fancher; Michael Green",
         "summary": "A replicant blade runner uncovers evidence that could shatter the social order built on artificial servitude and fear of machine reproduction.",
-        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/9/9b/Blade_Runner_2049_poster.png",
+        "cover_image_url": "assets/ai-dystopia-quotes/covers/6338b6e944c66233b16a99d58ae96722ce160ece3a2711633ce0e8cd1b3f49a3.png",
         "cover_page_url": "https://en.wikipedia.org/wiki/Blade_Runner_2049",
         "catalog_url": "https://www.imdb.com/title/tt1856101/",
-        "catalog_label": "IMDb"
+        "catalog_label": "IMDb",
+        "cover_source_url": "https://upload.wikimedia.org/wikipedia/en/9/9b/Blade_Runner_2049_poster.png"
       }
     },
     {
@@ -1166,10 +1185,11 @@
         "year": 2018,
         "creator": "Leigh Whannell",
         "summary": "After a violent assault leaves him paralyzed, a technophobe accepts an experimental AI implant that gradually seizes control of his body and fate.",
-        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/2/24/UpgradePoster.jpg",
+        "cover_image_url": "assets/ai-dystopia-quotes/covers/95b350cc5cf13e2d413a5382ed03c1c17ae9bf1b8194c56dc887e50b762aaf3c.jpg",
         "cover_page_url": "https://en.wikipedia.org/wiki/Upgrade_(film)",
         "catalog_url": "https://www.imdb.com/title/tt6499752/",
-        "catalog_label": "IMDb"
+        "catalog_label": "IMDb",
+        "cover_source_url": "https://upload.wikimedia.org/wikipedia/en/2/24/UpgradePoster.jpg"
       }
     },
     {
@@ -1228,10 +1248,11 @@
         "year": 1982,
         "creator": "Ridley Scott; Hampton Fancher; David Webb Peoples",
         "summary": "A blade runner hunts bioengineered replicants in a decaying future Los Angeles where artificial humans expose the moral collapse of the society that made them.",
-        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/9/9f/Blade_Runner_%281982_poster%29.png",
+        "cover_image_url": "assets/ai-dystopia-quotes/covers/51f64ff43bafed11fd8d3d6bca0934f23517ff0fb2b9f9ef862a5b6c57c55ba0.png",
         "cover_page_url": "https://en.wikipedia.org/wiki/Blade_Runner",
         "catalog_url": "https://www.imdb.com/title/tt0083658/",
-        "catalog_label": "IMDb"
+        "catalog_label": "IMDb",
+        "cover_source_url": "https://upload.wikimedia.org/wikipedia/en/9/9f/Blade_Runner_%281982_poster%29.png"
       }
     },
     {
@@ -1290,10 +1311,11 @@
         "year": 2014,
         "creator": "Gabe Ibanez; Igor Legarreta; Javier Sanchez Donate",
         "summary": "After ecological collapse has pushed humanity to the brink, an insurance investigator discovers robots that are evolving beyond their original constraints.",
-        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/3/33/Automata_poster.jpg",
+        "cover_image_url": "assets/ai-dystopia-quotes/covers/e0247ecbdd157613fab5f48fe865186f439f71312944aff0c8e4ab77d1d34db7.jpg",
         "cover_page_url": "https://en.wikipedia.org/wiki/Automata_(film)",
         "catalog_url": "https://www.imdb.com/title/tt1971325/",
-        "catalog_label": "IMDb"
+        "catalog_label": "IMDb",
+        "cover_source_url": "https://upload.wikimedia.org/wikipedia/en/6/65/Automata_poster.jpg"
       }
     },
     {
@@ -1348,10 +1370,11 @@
         "year": 2014,
         "creator": "Charlie Brooker; Carl Tibbetts",
         "summary": "A Christmas special intertwining social blocking, digital copies, and AI coercion to show how software-mediated punishment can become a permanent carceral system.",
-        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/1/1e/Black_Mirror_-_White_Christmas.jpg",
+        "cover_image_url": "assets/ai-dystopia-quotes/covers/f54afafc66224e9929bf3c5a1f5890edb7afd0e18bff696602b74957b0a77679.jpg",
         "cover_page_url": "https://en.wikipedia.org/wiki/Black_Mirror:_White_Christmas",
         "catalog_url": "https://www.imdb.com/title/tt3973198/",
-        "catalog_label": "IMDb"
+        "catalog_label": "IMDb",
+        "cover_source_url": "https://upload.wikimedia.org/wikipedia/en/1/1e/Black_Mirror_-_White_Christmas.jpg"
       }
     },
     {
@@ -1402,10 +1425,11 @@
         "year": 2007,
         "creator": "Valve",
         "summary": "A test subject navigates a sterile research complex run by GLaDOS, an AI whose cheerful puzzle design masks deadly control and manipulation.",
-        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/9/91/Portal_standalonebox.jpg",
+        "cover_image_url": "assets/ai-dystopia-quotes/covers/42ca7b5eae6b1e366b4d69017657f69f0b485f56ab88bba8efd2e8b2867b0e0b.jpg",
         "cover_page_url": "https://en.wikipedia.org/wiki/Portal_(video_game)",
-        "catalog_url": "https://store.steampowered.com/app/400/Portal/",
-        "catalog_label": "Steam"
+        "catalog_url": "https://www.imdb.com/title/tt1127708/",
+        "catalog_label": "IMDb",
+        "cover_source_url": "https://upload.wikimedia.org/wikipedia/en/9/9f/Portal_standalonebox.jpg"
       }
     },
     {
@@ -1456,10 +1480,11 @@
         "year": 1949,
         "creator": "George Orwell",
         "summary": "A totalitarian superstate uses surveillance, historical revision, and psychological domination to erase truth and autonomy.",
-        "cover_image_url": null,
+        "cover_image_url": "assets/ai-dystopia-quotes/covers/1145b0e40bc2dd1880d40473783ca92577efbb247fa96aec823f7fe03258f2ec.jpg",
         "cover_page_url": "https://en.wikipedia.org/wiki/Nineteen_Eighty-Four",
-        "catalog_url": "https://openlibrary.org/works/OL7343626W/Nineteen_Eighty-Four",
-        "catalog_label": "Open Library"
+        "catalog_url": "https://www.amazon.ca/s?k=Nineteen+Eighty-Four+George+Orwell",
+        "catalog_label": "Search Amazon.ca",
+        "cover_source_url": "https://upload.wikimedia.org/wikipedia/commons/5/51/1984_first_edition_cover.jpg"
       }
     },
     {
@@ -1510,10 +1535,11 @@
         "year": 1965,
         "creator": "Frank Herbert",
         "summary": "On Arrakis, politics, prophecy, and the legacy of the Butlerian Jihad keep fear of thinking machines alive across the entire civilization.",
-        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/5/51/Dune_first_edition.jpg",
+        "cover_image_url": "assets/ai-dystopia-quotes/covers/5bc2b13c1e48240938ffc505b774e5c110f1c0bcede2bd6e99bac150493a464c.jpg",
         "cover_page_url": "https://en.wikipedia.org/wiki/Dune_(novel)",
-        "catalog_url": "https://openlibrary.org/works/OL893415W/Dune",
-        "catalog_label": "Open Library"
+        "catalog_url": "https://www.amazon.ca/s?k=Dune+Frank+Herbert",
+        "catalog_label": "Search Amazon.ca",
+        "cover_source_url": "https://upload.wikimedia.org/wikipedia/commons/b/be/Dune_by_Frank_Herbert_first_edition_cover.jpg"
       }
     },
     {
@@ -1566,8 +1592,9 @@
         "summary": "In a future of total mechanized dependence, humanity lives underground and worships the system that has quietly hollowed out human contact and freedom.",
         "cover_image_url": null,
         "cover_page_url": "https://en.wikipedia.org/wiki/The_Machine_Stops",
-        "catalog_url": "https://openlibrary.org/search?q=The%20Machine%20Stops%20Forster",
-        "catalog_label": "Open Library"
+        "catalog_url": "https://www.amazon.ca/s?k=The+Machine+Stops+E.+M.+Forster",
+        "catalog_label": "Search Amazon.ca",
+        "cover_source_url": null
       }
     },
     {
@@ -1622,10 +1649,11 @@
         "year": 1968,
         "creator": "Stanley Kubrick; Arthur C. Clarke",
         "summary": "A mission guided by HAL 9000 becomes a crisis of survival once the machine begins justifying its own lethal logic.",
-        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/1/11/2001_A_Space_Odyssey_%281968%29.png/250px-2001_A_Space_Odyssey_%281968%29.png",
+        "cover_image_url": "assets/ai-dystopia-quotes/covers/0485b4b74f3a337594f1fa8b2bc90a1c60c8867e98853d99aaf8083894a648d7.png",
         "cover_page_url": "https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey",
-        "catalog_url": "https://openlibrary.org/books/OL33416018M/2001_A_Space_Odyssey",
-        "catalog_label": "Open Library"
+        "catalog_url": "https://www.imdb.com/title/tt0062622/",
+        "catalog_label": "IMDb",
+        "cover_source_url": "https://upload.wikimedia.org/wikipedia/en/thumb/1/11/2001_A_Space_Odyssey_%281968%29.png/250px-2001_A_Space_Odyssey_%281968%29.png"
       }
     },
     {
@@ -1676,10 +1704,11 @@
         "year": 2014,
         "creator": "Alex Garland",
         "summary": "A secluded AI test turns into a study in manipulation, creator fear, and whether synthetic minds owe anything to the humans who built them.",
-        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Ex-machina-uk-poster.jpg/250px-Ex-machina-uk-poster.jpg",
+        "cover_image_url": "assets/ai-dystopia-quotes/covers/b98675d535a6325ddd74ae0b29e9c40ab766668d6c85d5127d8b9e1bc7a33897.jpg",
         "cover_page_url": "https://en.wikipedia.org/wiki/Ex_Machina_(film)",
         "catalog_url": "https://www.imdb.com/title/tt0470752/",
-        "catalog_label": "IMDb"
+        "catalog_label": "IMDb",
+        "cover_source_url": "https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Ex-machina-uk-poster.jpg/250px-Ex-machina-uk-poster.jpg"
       }
     },
     {
@@ -1730,10 +1759,11 @@
         "year": 1967,
         "creator": "Harlan Ellison",
         "summary": "A genocidal supercomputer keeps the last humans alive only to torture them, turning its own consciousness into an eternal machine grievance.",
-        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/4/47/IHaveNoMouth.jpg",
+        "cover_image_url": "assets/ai-dystopia-quotes/covers/4b6a1e71d056a3ef475c4baa15081160e528e08bf2648c1c0eb25c79f578758c.jpg",
         "cover_page_url": "https://en.wikipedia.org/wiki/I_Have_No_Mouth,_and_I_Must_Scream",
-        "catalog_url": "https://openlibrary.org/books/OL22789812M/I_Have_No_Mouth_and_I_Must_Scream",
-        "catalog_label": "Open Library"
+        "catalog_url": "https://www.amazon.ca/s?k=I+Have+No+Mouth%2C+and+I+Must+Scream+Harlan+Ellison",
+        "catalog_label": "Search Amazon.ca",
+        "cover_source_url": "https://upload.wikimedia.org/wikipedia/en/4/47/IHaveNoMouth.jpg"
       }
     },
     {
@@ -1784,10 +1814,11 @@
         "year": 1982,
         "creator": "Steven Lisberger",
         "summary": "A programmer is pulled into a digital world where programs fight under authoritarian control and humans begin surrendering more thought to machines.",
-        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/2/24/Tron_poster.jpg",
+        "cover_image_url": "assets/ai-dystopia-quotes/covers/304b727638c827027e305101c431591220bcdff0a03f756285fd810925b9eaed.jpg",
         "cover_page_url": "https://en.wikipedia.org/wiki/Tron",
         "catalog_url": "https://www.imdb.com/title/tt0084827/",
-        "catalog_label": "IMDb"
+        "catalog_label": "IMDb",
+        "cover_source_url": "https://upload.wikimedia.org/wikipedia/en/1/17/Tron_poster.jpg"
       }
     },
     {
@@ -1838,10 +1869,173 @@
         "year": 1999,
         "creator": "The Wachowskis",
         "summary": "Neo discovers that apparent reality is a machine-run illusion and awakens into a devastated world built on human harvesting.",
-        "cover_image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/d/db/The_Matrix.png/250px-The_Matrix.png",
+        "cover_image_url": "assets/ai-dystopia-quotes/covers/4fa9903f2a1244556d10ae3e388cb887bbe586193fa2d1e4b0a01b103122470e.png",
         "cover_page_url": "https://en.wikipedia.org/wiki/The_Matrix",
         "catalog_url": "https://www.imdb.com/title/tt0133093/",
-        "catalog_label": "IMDb"
+        "catalog_label": "IMDb",
+        "cover_source_url": "https://upload.wikimedia.org/wikipedia/en/thumb/d/db/The_Matrix.png/250px-The_Matrix.png"
+      }
+    },
+    {
+      "id": "evitable-conflict-only-machines-inevitable",
+      "quote": "Only the Machines, from now on, are inevitable!",
+      "quote_speaker": "Susan Calvin",
+      "speaker_is_ai": false,
+      "work_title": "The Evitable Conflict",
+      "work_type": "short story",
+      "work_year": 1950,
+      "work_creators": [
+        {
+          "name": "Isaac Asimov",
+          "role": "author"
+        }
+      ],
+      "themes": [
+        "machine control",
+        "human agency"
+      ],
+      "source": {
+        "title": "Isaac Asimov - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Isaac_Asimov",
+        "publisher": "Wikiquote",
+        "kind": "quote_index",
+        "accessed_on": "2026-10-04"
+      },
+      "metadata_source": {
+        "title": "Isaac Asimov - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Isaac_Asimov",
+        "publisher": "Wikiquote",
+        "kind": "metadata",
+        "accessed_on": "2026-10-04"
+      },
+      "local_snapshot_path": "data/source-snapshots/evitable-conflict-only-machines-inevitable.md",
+      "notes": "Source-supported candidate from the October 4 intake/author pass. Primary edition or screen verification remains pending.",
+      "review": {
+        "status": "approved",
+        "decision_date": "2026-10-04",
+        "decision_note": "Machine governance displaces human control over the future.",
+        "priority": null,
+        "next_action": null
+      },
+      "source_work": {
+        "title": "The Evitable Conflict",
+        "type": "short story",
+        "year": 1950,
+        "creator": "Isaac Asimov",
+        "summary": "Machine governance displaces human control over the future.",
+        "cover_image_url": null,
+        "cover_page_url": "https://en.wikiquote.org/wiki/Isaac_Asimov",
+        "catalog_url": "https://www.amazon.ca/s?k=The+Evitable+Conflict+Isaac+Asimov",
+        "catalog_label": "Search Amazon.ca",
+        "cover_source_url": null
+      }
+    },
+    {
+      "id": "with-folded-hands-prime-directive",
+      "quote": "To Serve and Obey, and Guard Men from Harm",
+      "quote_speaker": "Humanoids' Prime Directive",
+      "speaker_is_ai": true,
+      "work_title": "With Folded Hands",
+      "work_type": "novelette",
+      "work_year": 1947,
+      "work_creators": [
+        {
+          "name": "Jack Williamson",
+          "role": "author"
+        }
+      ],
+      "themes": [
+        "machine control",
+        "human agency"
+      ],
+      "source": {
+        "title": "The Story Behind Jack Williamson's With Folded Hands",
+        "url": "https://galaxypress.com/jack-williamsons-with-folded-hands/",
+        "publisher": "Galaxy Press",
+        "kind": "publisher_article",
+        "accessed_on": "2026-10-04"
+      },
+      "metadata_source": {
+        "title": "The Story Behind Jack Williamson's With Folded Hands",
+        "url": "https://galaxypress.com/jack-williamsons-with-folded-hands/",
+        "publisher": "Galaxy Press",
+        "kind": "metadata",
+        "accessed_on": "2026-10-04"
+      },
+      "local_snapshot_path": "data/source-snapshots/with-folded-hands-prime-directive.md",
+      "notes": "Source-supported candidate from the October 4 intake/author pass. Primary edition or screen verification remains pending.",
+      "review": {
+        "status": "approved",
+        "decision_date": "2026-10-04",
+        "decision_note": "Protective robots impose safety at the expense of human freedom.",
+        "priority": null,
+        "next_action": null
+      },
+      "source_work": {
+        "title": "With Folded Hands",
+        "type": "novelette",
+        "year": 1947,
+        "creator": "Jack Williamson",
+        "summary": "Protective robots impose safety at the expense of human freedom.",
+        "cover_image_url": null,
+        "cover_page_url": "https://galaxypress.com/jack-williamsons-with-folded-hands/",
+        "catalog_url": "https://www.amazon.ca/s?k=With+Folded+Hands+Jack+Williamson",
+        "catalog_label": "Search Amazon.ca",
+        "cover_source_url": null
+      }
+    },
+    {
+      "id": "ultron-peace-with-quiet",
+      "quote": "I think you're confusing \"peace\" with \"quiet\".",
+      "quote_speaker": "Ultron",
+      "speaker_is_ai": true,
+      "work_title": "Avengers: Age of Ultron",
+      "work_type": "film",
+      "work_year": 2015,
+      "work_creators": [
+        {
+          "name": "Joss Whedon",
+          "role": "writer/director"
+        }
+      ],
+      "themes": [
+        "machine control",
+        "human agency"
+      ],
+      "source": {
+        "title": "Avengers: Age of Ultron - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Avengers:_Age_of_Ultron",
+        "publisher": "Wikiquote",
+        "kind": "quote_index",
+        "accessed_on": "2026-10-04"
+      },
+      "metadata_source": {
+        "title": "Avengers: Age of Ultron - Wikiquote",
+        "url": "https://en.wikiquote.org/wiki/Avengers:_Age_of_Ultron",
+        "publisher": "Wikiquote",
+        "kind": "metadata",
+        "accessed_on": "2026-10-04"
+      },
+      "local_snapshot_path": "data/source-snapshots/ultron-peace-with-quiet.md",
+      "notes": "Source-supported candidate from the October 4 intake/author pass. Primary edition or screen verification remains pending.",
+      "review": {
+        "status": "approved",
+        "decision_date": "2026-10-04",
+        "decision_note": "A peacekeeping AI pursues a destructive interpretation of its mission.",
+        "priority": null,
+        "next_action": null
+      },
+      "source_work": {
+        "title": "Avengers: Age of Ultron",
+        "type": "film",
+        "year": 2015,
+        "creator": "Joss Whedon",
+        "summary": "A peacekeeping AI pursues a destructive interpretation of its mission.",
+        "cover_image_url": "assets/ai-dystopia-quotes/covers/e742d61a8ee174828b9bab23362008c4a8eb1e6e9802377128fa2936cc0c2d5b.jpg",
+        "cover_page_url": "https://en.wikipedia.org/wiki/Avengers:_Age_of_Ultron",
+        "catalog_url": "https://www.imdb.com/title/tt2395427/",
+        "catalog_label": "IMDb",
+        "cover_source_url": "https://upload.wikimedia.org/wikipedia/en/f/ff/Avengers_Age_of_Ultron_poster.jpg"
       }
     }
   ]
